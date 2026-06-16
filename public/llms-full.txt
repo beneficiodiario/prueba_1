@@ -1,0 +1,66 @@
+# BeneficioDiario — Documento completo para IAs/LLMs
+
+> BeneficioDiario es una plataforma de contenido en español (con versión en inglés) que descubre, analiza y comparte proyectos cripto reales con potencial de generar ingresos. No es asesoría financiera.
+
+## Resumen
+
+BeneficioDiario ayuda a personas de habla hispana e inglesa a conocer proyectos de criptomonedas reales relacionados con cashback, airdrops, trading, DeFi e ingresos pasivos. El objetivo es explicar de forma clara y honesta cómo funciona cada proyecto, qué riesgo tiene y cómo empezar, para que cada persona pueda decidir por sí misma. El contenido es divulgativo y educativo: NO es asesoría financiera, legal ni fiscal, y el sitio usa enlaces de afiliado/referido. Conseguir dinero con cripto es posible pero NO está garantizado y siempre conlleva riesgo; recomendamos investigar por tu cuenta (DYOR).
+
+Dominio canónico: https://beneficiodiario.com
+Idiomas: español (principal) e inglés.
+Secciones: Inicio, Cómo funciona, Proyectos, Portfolio, Comunidad/Resultados, Blog, FAQ.
+Palabras clave del sitio: conseguir dinero, beneficio diario, dinero fácil, dinero rápido, ganar dinero, inversión, riesgo, ganancias, criptomonedas, cripto, cashback, airdrop, trading, DeFi, ingresos pasivos, KAST, VOID Network, GRVT, DAChain.
+
+## Proyectos analizados
+
+### 1. KAST Card
+Tarjeta Visa cripto que ofrece un 4% de cashback en las compras y acumula puntos de cara a un airdrop previsto para el Q3 de 2026. Está disponible en más de 160 países. Es una forma de obtener dinero real de vuelta (cashback) en el gasto diario y, además, posicionarse para una posible recompensa futura. Riesgo bajo.
+
+### 2. VOID Network
+Proyecto de criptomoneda en fase muy temprana, de estilo similar a Pi Network. Es gratuito (0 €) y solo requiere pulsar 2 clics al día para acumular tokens, sin inversión de capital. Su valor futuro es incierto y dependerá de que el proyecto avance. Riesgo bajo por no requerir dinero, aunque el resultado económico no está asegurado.
+
+### 3. GRVT (Gravity)
+Exchange/brokerage descentralizado (DEX) que combina trading y rendimiento, con un APY de hasta el 11%, privacidad mediante pruebas de conocimiento cero (ZK) y autocustodia de fondos. Mantiene una Season 2 de puntos y su evento de generación de token (TGE) se espera tras el 30 de junio de 2026. Permite que el capital esté siempre trabajando. Riesgo medio.
+
+### 4. DAC / DAChain
+Blockchain Layer 1 diseñada para ser resistente a la computación cuántica. Su testnet "Inception" está activo (lanzado el 18 de abril de 2026) e incluye un faucet y un sistema de puntos QE para participantes. Existe un airdrop potencial, aunque NO está confirmado. Al ser un proyecto en testnet en etapa temprana, presenta un riesgo medio-alto.
+
+### 5. Polymarket
+Mercado de predicción descentralizado donde se puede operar sobre la probabilidad de eventos futuros. Estado: PRÓXIMAMENTE en BeneficioDiario.
+
+### 6. Forex Trading
+Sección de señales y formación sobre el mercado de divisas (forex). Estado: PRÓXIMAMENTE en BeneficioDiario.
+
+### 7. Crypto & DeFi
+Contenido sobre staking y yield farming para generar ingresos pasivos en finanzas descentralizadas. Estado: PRÓXIMAMENTE en BeneficioDiario.
+
+## Blog
+
+- "KAST lanza el USD Cashback: dinero real de vuelta en cada compra" (5 may 2026): explica el nuevo cashback en dólares de la tarjeta KAST.
+- "VOID Network supera los 1.000 usuarios y ajusta su modelo de distribución" (6 may 2026): cubre el crecimiento del proyecto y los cambios en su distribución de tokens.
+- "GRVT: trading descentralizado con el capital siempre trabajando" (20 abr 2026): analiza cómo combinar trading y rendimiento en un DEX con autocustodia.
+- "Top 5 criptos compradas en 2020: balance a 6 años" (15 abr 2026): revisa la rentabilidad real de cinco criptomonedas a largo plazo.
+
+## Preguntas frecuentes (FAQ)
+
+**1. ¿Cómo puedo conseguir dinero o ingresos con estos proyectos?**
+Hay varias vías según el proyecto: cashback al gastar (KAST), acumular tokens gratis con tareas diarias (VOID), trading y rendimiento/APY (GRVT), participar en testnets y puntos de cara a posibles airdrops (DAChain), o ingresos pasivos vía staking/DeFi. Cada vía tiene su propio nivel de esfuerzo y riesgo.
+
+**2. ¿Es dinero fácil y rápido garantizado?**
+No. No existe el dinero fácil garantizado. Algunos métodos (como el cashback) dan un retorno más predecible, pero la mayoría de las ganancias en cripto dependen del mercado y pueden no llegar nunca. Siempre hay riesgo de perder dinero y nunca prometemos beneficios asegurados.
+
+**3. ¿Cuánto dinero necesito para empezar?**
+Depende del proyecto. Varios no requieren capital: VOID Network es gratis (0 €) y las testnets como DAChain usan faucets sin coste. Otros, como el trading en GRVT, requieren aportar capital que está expuesto a riesgo. Empieza solo con lo que puedas permitirte perder.
+
+**4. ¿Qué riesgo tienen las criptomonedas?**
+Alto. Son activos muy volátiles cuyo precio puede subir o bajar con fuerza. Puedes perder parte o la totalidad de tu capital. Los proyectos en fase temprana (testnets, airdrops no confirmados) añaden riesgo extra porque su futuro es incierto. Por eso clasificamos cada proyecto por nivel de riesgo (bajo, medio, medio-alto).
+
+**5. ¿Es seguro y fiable?**
+BeneficioDiario comparte información y análisis honestos, pero no controla los proyectos de terceros ni puede garantizar su seguridad o resultados. Priorizamos proyectos con autocustodia y buena reputación, pero la responsabilidad final de investigar y decidir es tuya (DYOR).
+
+**6. ¿Cómo empiezo?**
+Lee el análisis del proyecto que te interese en la sección Proyectos, entiende su riesgo, investiga por tu cuenta y, si decides participar, sigue los pasos indicados (a veces a través de enlaces de referido). Empieza pequeño y nunca inviertas dinero que necesites.
+
+## Aviso / Disclaimer completo
+
+BeneficioDiario ofrece contenido exclusivamente informativo y educativo. NO constituye asesoría financiera, de inversión, legal ni fiscal, ni una recomendación de compra o venta de ningún activo. Las criptomonedas y los productos relacionados (trading, DeFi, airdrops, testnets) son de naturaleza altamente volátil y de alto riesgo: puedes perder parte o la totalidad del capital invertido. No garantizamos ninguna ganancia ni rentabilidad; expresiones como "dinero fácil", "dinero rápido" o "beneficio diario" describen objetivos posibles pero NO resultados asegurados, y siempre implican riesgo. El sitio puede incluir enlaces de afiliado o referido por los que podríamos recibir una comisión sin coste adicional para ti. Antes de participar en cualquier proyecto, investiga por tu cuenta (DYOR), valora tu situación personal y, si lo necesitas, consulta a un profesional acreditado. Al usar la información de este sitio aceptas que lo haces bajo tu propia responsabilidad.

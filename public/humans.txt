@@ -1,0 +1,14 @@
+/* TEAM */
+  Equipo: BeneficioDiario
+  Contacto: contacto@beneficiodiario.com
+  Redes: YouTube https://www.youtube.com/@beneficiodiario_com
+         Twitter/X https://twitter.com/BeneficioDiario
+
+/* SITE */
+  Sitio: BeneficioDiario
+  Dominio: https://beneficiodiario.com
+  Idiomas / Languages: es, en
+  Tecnologia: React, Vite, Tailwind CSS
+  Tipo: SPA (single page application)
+  Estandares: HTML5, CSS3, robots.txt, sitemap.xml, llms.txt
+  Ultima actualizacion: 2026-05-23

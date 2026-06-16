@@ -1,0 +1,34 @@
+# BeneficioDiario
+
+> BeneficioDiario es una plataforma de contenido en español (con versión en inglés) que descubre, analiza y comparte proyectos cripto reales con potencial de generar ingresos. No es asesoría financiera.
+
+Aquí un modelo de lenguaje encontrará análisis honestos de proyectos de criptomonedas (cashback, airdrops, trading, DeFi e ingresos pasivos), artículos de blog y una sección de preguntas frecuentes. El contenido está principalmente en español e inglés, es divulgativo y educativo, no constituye asesoría financiera y usa enlaces de afiliado/referido. Toda inversión en cripto conlleva riesgo: no hay ganancias garantizadas y recomendamos investigar por tu cuenta (DYOR).
+
+## Proyectos
+
+- [KAST Card](https://beneficiodiario.com/#proyectos): tarjeta Visa cripto con 4% de cashback y puntos para airdrop (Q3 2026); disponible en más de 160 países. Riesgo bajo.
+- [VOID Network](https://beneficiodiario.com/#proyectos): proyecto en fase temprana tipo Pi Network, gratis (0 €), 2 clics al día para acumular tokens. Riesgo bajo.
+- [GRVT (Gravity)](https://beneficiodiario.com/#proyectos): exchange/brokerage descentralizado (DEX) con trading y rendimiento (hasta 11% APY), privacidad ZK y autocustodia. Season 2 de puntos; TGE tras el 30 de junio de 2026. Riesgo medio.
+- [DAC / DAChain](https://beneficiodiario.com/#proyectos): blockchain Layer 1 resistente a computación cuántica; testnet "Inception" activo (18 abril 2026), faucet y puntos QE. Airdrop potencial no confirmado. Riesgo medio-alto.
+- [Markets](https://beneficiodiario.com/#proyectos): app móvil construida sobre Hyperliquid para operar cripto, índices, acciones, oro y petróleo con transparencia on-chain. Gamificada (niveles, misiones). Posible doble airdrop: Hyperliquid (HYPE) y Kinetiq. Riesgo medio.
+- [Abstract](https://beneficiodiario.com/#proyectos): blockchain Layer 2 enfocada en cripto de consumo (gaming, NFTs, IA, social). Cartera Abstract Global Wallet (AGW) sin frase semilla; Portal con las mejores apps, comunidades y proyectos del ecosistema. Comunidad española activa (Telegram, X, YouTube) administrada por BeneficioDiario. Riesgo bajo.
+- [Polymarket](https://beneficiodiario.com/#proyectos): mercado de predicción descentralizado. Próximamente.
+- [Forex Trading](https://beneficiodiario.com/#proyectos): señales y formación de divisas. Próximamente.
+- [Crypto & DeFi](https://beneficiodiario.com/#proyectos): staking y yield farming. Próximamente.
+
+## Blog
+
+- [KAST lanza el USD Cashback: dinero real de vuelta en cada compra](https://beneficiodiario.com/blog/kast-usd-cashback-dinero-real): el cashback en dólares de la tarjeta KAST (5 may 2026).
+- [VOID Network supera los 1.000 usuarios y ajusta su modelo de distribución](https://beneficiodiario.com/blog/void-network-1000-usuarios): crecimiento y cambios en la distribución de tokens (6 may 2026).
+- [GRVT: trading descentralizado con el capital siempre trabajando](https://beneficiodiario.com/blog/grvt-trading-descentralizado): trading y rendimiento en un DEX con autocustodia (20 abr 2026).
+- [Top 5 criptos compradas en 2020: balance a 6 años](https://beneficiodiario.com/blog/top-5-criptos-2020-balance): revisión de rentabilidad a largo plazo (15 abr 2026).
+
+## Recursos
+
+- [Cómo funciona](https://beneficiodiario.com/#como-funciona): explicación del método de descubrimiento y análisis de proyectos.
+- [FAQ](https://beneficiodiario.com/#faq): preguntas frecuentes sobre ingresos, riesgo y cómo empezar.
+- [Portfolio](https://beneficiodiario.com/#portfolio): seguimiento de proyectos y resultados de la comunidad.
+
+## Aviso
+
+BeneficioDiario es contenido informativo y educativo; NO es asesoría financiera, legal ni fiscal. Las criptomonedas son activos volátiles y de alto riesgo: puedes perder parte o la totalidad de tu capital. No existen ganancias garantizadas ni "dinero fácil" asegurado; cualquier beneficio depende del mercado y conlleva riesgo. El sitio puede contener enlaces de afiliado o referido. Investiga siempre por tu cuenta (DYOR) antes de participar en cualquier proyecto.
