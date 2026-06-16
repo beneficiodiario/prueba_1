@@ -1,20 +1,38 @@
 # BeneficioDiario — configuración para IONOS (Apache)
 
+# Evita que Apache invente variantes de URL o liste directorios.
+Options -MultiViews -Indexes
+# No añadir barra final automática a las carpetas (lo gestionamos nosotros).
+DirectorySlash Off
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Forzar HTTPS (evita bucles detrás del proxy de IONOS)
+  # 1) Forzar HTTPS (IONOS termina SSL en su proxy → comprobamos X-Forwarded-Proto
+  #    para no entrar en bucle de redirección).
   RewriteCond %{HTTPS} off
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # No tocar archivos o carpetas que existen
-  # (sirve /blog/<slug>/index.html, /assets, imágenes, etc.)
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  # 2) Una sola forma canónica: SIN barra final (salvo la raíz "/").
+  #    /blog/slug/  ->  /blog/slug   (la misma URL que está en el sitemap y el canonical)
+  RewriteCond %{REQUEST_URI} !^/$
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+  # 3) Página prerenderizada (/blog/slug, /en, /en/blog/slug, /privacidad...):
+  #    servir su index.html SIN redirigir → la URL sin barra responde 200 directo.
+  RewriteCond %{REQUEST_URI} !^/$
   RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^ %{REQUEST_URI}/index.html [L]
+
+  # 4) Archivo existente (assets con hash, imágenes, sitemap, robots, ads.txt...):
+  #    servir tal cual.
+  RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^ - [L]
 
-  # Cualquier otra ruta -> index.html (React Router se encarga)
+  # 5) Resto (la raíz y cualquier ruta de React Router) -> index.html.
   RewriteRule ^ /index.html [L]
 </IfModule>
 
