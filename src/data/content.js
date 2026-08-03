@@ -87,8 +87,8 @@ export const projects = [
     tagColor: '#00b4d8',
     emoji: '⚡',
     desc: {
-      es: 'GRVT (Gravity) es una plataforma de trading descentralizado que va más allá del concepto tradicional de exchange*. Están construyendo lo que llaman un brokerage on-chain*: un entorno donde tu capital no está parado, sino generando rendimiento mientras operas.\n\nCombina la velocidad y privacidad de las finanzas descentralizadas con la eficiencia institucional de los grandes exchanges*. Con más de $90M en TVL* y $470M en interés abierto*, los datos respaldan la narrativa. Estamos en la Season 2 de puntos, con snapshot* previsto en Q2 2026.',
-      en: 'GRVT (Gravity) is a decentralized trading platform that goes beyond the traditional exchange* concept. They are building what they call a brokerage on-chain*: an environment where your capital is not idle, but generating yield while you trade.\n\nIt combines the speed and privacy of decentralized finance with the institutional efficiency of major exchanges*. With over $90M in TVL* and $470M in open interest*, the data backs up the narrative. We are in Season 2 of points, with snapshot* expected in Q2 2026.',
+      es: 'GRVT (Gravity) es una plataforma de trading descentralizado que va más allá del concepto tradicional de exchange*. Están construyendo lo que llaman un brokerage on-chain*: un entorno donde tu capital no está parado, sino generando rendimiento mientras operas.\n\nEl airdrop* ya se ha cerrado y repartido: nuestra asignación fue de 452,76 GRVT, unos 106 $ al cambio del reparto. No se libera de golpe, va por tramos (vesting*): el primero llegó el 30 de julio de 2026 y el siguiente está previsto para el 30 de noviembre. La plataforma sigue operativa para hacer trading.',
+      en: 'GRVT (Gravity) is a decentralized trading platform that goes beyond the traditional exchange* concept. They are building what they call a brokerage on-chain*: an environment where your capital is not idle, but generating yield while you trade.\n\nThe airdrop* is now closed and distributed: our allocation was 452.76 GRVT, around $106 at distribution rates. It is not released all at once but in tranches (vesting*): the first landed on 30 July 2026 and the next is scheduled for 30 November. The platform remains live for trading.',
     },
     features: {
       es: [
@@ -108,9 +108,44 @@ export const projects = [
         'Team with background at Goldman Sachs, DBS Bank and Meta',
       ],
     },
+    // El airdrop está cerrado, pero la plataforma sigue operativa: la
+    // frecuencia se refiere al trading, no al reparto.
     stats: {
-      es: { roi: 'Variable', risk: 'Medio', time: 'Activo', min: 'Variable' },
-      en: { roi: 'Variable', risk: 'Medium', time: 'Active', min: 'Variable' },
+      es: { roi: '106 $', risk: 'Medio', time: 'Activo', min: 'Variable' },
+      en: { roi: '$106', risk: 'Medium', time: 'Active', min: 'Variable' },
+    },
+    // Resultado real del airdrop, con las cifras del panel de GRVT.
+    // Se muestra tal cual: es la prueba de que lo que publicamos lo usamos.
+    airdrop: {
+      status: 'closed',
+      label:      { es: 'Airdrop cerrado', en: 'Airdrop closed' },
+      totalUsd:   106,
+      token:      'GRVT',
+      allocation: 452.764752,
+      claimed:    22.638237,
+      nextUnlock: { amount: 45.276475, date: '2026-11-30' },
+      lastClaim:  '2026-07-30',
+      rows: {
+        es: [
+          { label: 'Asignación total', value: '452,764752 GRVT' },
+          { label: 'Ya reclamado',     value: '22,638237 GRVT' },
+          { label: 'Próximo tramo',    value: '45,276475 GRVT · 30 nov 2026' },
+        ],
+        en: [
+          { label: 'Total allocation', value: '452.764752 GRVT' },
+          { label: 'Already claimed',  value: '22.638237 GRVT' },
+          { label: 'Next tranche',     value: '45.276475 GRVT · 30 Nov 2026' },
+        ],
+      },
+      note: {
+        es: 'Cifras reales de nuestra cuenta. El reparto es por tramos, no se cobra todo de golpe.',
+        en: 'Real figures from our own account. Distribution is in tranches, not paid out all at once.',
+      },
+      // Capturas de prueba. Si el archivo no existe, el bloque no se muestra.
+      proof: [
+        { src: '/grvt-airdrop-allocation.png', alt: { es: 'Panel de GRVT con la asignación del airdrop', en: 'GRVT panel showing the airdrop allocation' } },
+        { src: '/grvt-airdrop-claim.png',      alt: { es: 'Correo de GRVT confirmando el tramo reclamado', en: 'GRVT email confirming the claimed tranche' } },
+      ],
     },
     gradient: 'linear-gradient(135deg, #0f3460, #00b4d8)',
     image: '/grvt-cover.png',
