@@ -19,6 +19,11 @@ export const GA_MEASUREMENT_ID = 'G-DBEE0W706C' // ej: 'G-ABCD1234EF'
 //   client = tu ID de editor (ca-pub-XXXX). slots = el número de cada bloque.
 export const ADS_ENABLED = true // pon false para ocultar TODOS los anuncios
 
+// Alto de la barra superior. Vive aquí y no en el componente porque el
+// layout necesita el valor de inmediato, mientras que el componente se
+// carga aparte para que no pueda bloquear el arranque de la web.
+export const TOP_BAR_HEIGHT = 90
+
 export const ADSENSE = {
   client: 'ca-pub-9078026717479448', // ID de editor de AdSense
   slots: {

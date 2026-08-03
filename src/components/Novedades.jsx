@@ -1,84 +1,120 @@
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
+import { motion } from 'motion/react'
 import { Link } from 'react-router-dom'
-import { FiClock, FiArrowUpRight } from 'react-icons/fi'
+import { Section, Eyebrow } from './ui/Section'
+import { Card, Badge } from './ui/Card'
+import { SiTelegram, SiX, SiYoutube, FiClock, FiArrowUpRight, FiRadio } from './ui/icons'
 import { blogPosts } from '../data/content'
 import { ABSTRACT_COMMUNITY } from '../config'
+import { fadeUp, stagger, viewport, duration, ease, revealInitial } from '../lib/motion'
 
 const T = {
-  label:    { es: '📢 NOVEDADES',  en: '📢 NEWS' },
-  newBadge: { es: 'NUEVO',         en: 'NEW' },
+  eyebrow:  { es: 'Novedades', en: 'Latest' },
+  newBadge: { es: 'Nuevo', en: 'New' },
   readMore: { es: 'Leer artículo', en: 'Read article' },
+  join:     { es: 'Únete a la comunidad', en: 'Join the community' },
 }
 
-export default function Novedades({ darkMode = false, lang = 'es' }) {
-  const [ref, vis] = useInView({ triggerOnce: true, threshold: 0.15 })
+const SOCIALS = [
+  { key: 'telegram', label: 'Telegram', Icon: SiTelegram, className: 'bg-[#229ED9] text-white' },
+  { key: 'x',        label: 'X',        Icon: SiX,        className: 'bg-fg text-bg' },
+  { key: 'youtube',  label: 'YouTube',  Icon: SiYoutube,  className: 'bg-[#ff0033] text-white' },
+]
+
+export default function Novedades({ lang }) {
   const post = blogPosts[0]
-  if (!post || !post.content) return null
+  if (!post?.content) return null
 
   const title   = post.title?.[lang]   || post.title?.es
   const excerpt = post.excerpt?.[lang] || post.excerpt?.es
   const tag     = post.tag?.[lang]     || post.tag?.es
   const href    = `${lang === 'en' ? '/en' : ''}/blog/${post.slug}`
 
+  const links = SOCIALS.filter((s) => ABSTRACT_COMMUNITY?.[s.key])
+
   return (
-    <section id="novedades" className={`py-12 px-5 sm:px-8 transition-colors duration-500 ${darkMode ? 'bg-[#0a0f1e]' : 'bg-white'}`}>
-      <div className="max-w-6xl mx-auto">
-        <span className="block text-center font-body text-[11px] font-bold text-[#22c55e] tracking-[0.12em] uppercase mb-4">{T.label[lang]}</span>
-        <motion.div ref={ref} initial={{ opacity: 0, y: 25 }} animate={vis ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }}>
-          <Link to={href}
-            className={`card-shine group block rounded-2xl overflow-hidden border hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#22c55e]/10 transition-all duration-500 ${darkMode ? 'bg-white/5 border-white/10' : 'bg-white border-gray-100 shadow-lg shadow-black/[0.03]'}`}>
-            <div className="relative h-56 sm:h-64 overflow-hidden" style={{ background: 'linear-gradient(135deg,#047857,#22c55e)' }}>
-              <img src={post.image} alt={title} loading="lazy"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                onError={e => { e.target.style.display = 'none' }} />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
-              <div className="absolute top-4 left-4 flex gap-2">
-                <span className="bg-white/90 backdrop-blur-sm rounded-lg px-2.5 py-1 font-body text-[10px] font-bold text-emerald-700 tracking-wider">{tag}</span>
-                <span className="bg-[#22c55e] rounded-lg px-2.5 py-1 font-body text-[10px] font-bold text-white">{T.newBadge[lang]}</span>
-              </div>
-            </div>
-            <div className="p-6 sm:p-7">
-              <div className="flex items-center gap-3 mb-3">
-                <span className="font-body text-[11px] text-gray-400">{post.date}</span>
-                <span className="w-1 h-1 rounded-full bg-gray-400" />
-                <span className="font-body text-[11px] text-gray-400 flex items-center gap-1"><FiClock size={10} /> {post.readTime}</span>
-              </div>
-              <h2 className={`font-display font-extrabold text-[clamp(20px,2.5vw,28px)] leading-snug mb-3 group-hover:text-[#22c55e] transition-colors ${darkMode ? 'text-white' : 'text-gray-900'}`}>{title}</h2>
-              <p className={`font-body text-sm leading-relaxed mb-4 ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>{excerpt}</p>
-              <div className="inline-flex items-center gap-1 font-display font-semibold text-sm text-[#22c55e] group-hover:gap-2.5 transition-all">
-                {T.readMore[lang]} <FiArrowUpRight size={14} />
-              </div>
-            </div>
-          </Link>
+    <Section id="novedades" tone="base" compact>
+      <motion.div
+        variants={stagger(0.08)}
+        initial={revealInitial}
+        whileInView="visible"
+        viewport={viewport}
+      >
+        <motion.div variants={fadeUp} className="flex justify-center mb-5">
+          <Eyebrow icon={FiRadio} className="!text-success-fg">
+            <span className="live-dot w-1.5 h-1.5 rounded-full bg-success" aria-hidden="true" />
+            {T.eyebrow[lang]}
+          </Eyebrow>
         </motion.div>
 
-        {(ABSTRACT_COMMUNITY?.telegram || ABSTRACT_COMMUNITY?.x || ABSTRACT_COMMUNITY?.youtube) && (
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
-            <span className={`font-body text-[12px] mr-2 ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
-              {lang === 'es' ? 'Únete a la comunidad:' : 'Join the community:'}
-            </span>
-            {ABSTRACT_COMMUNITY.telegram && (
-              <a href={ABSTRACT_COMMUNITY.telegram} target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 bg-[#229ED9] text-white rounded-xl px-3.5 py-2 font-display font-semibold text-[12px] hover:-translate-y-0.5 transition-all">
-                Telegram <FiArrowUpRight size={12} />
-              </a>
-            )}
-            {ABSTRACT_COMMUNITY.x && (
-              <a href={ABSTRACT_COMMUNITY.x} target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 bg-black text-white rounded-xl px-3.5 py-2 font-display font-semibold text-[12px] hover:-translate-y-0.5 transition-all">
-                X <FiArrowUpRight size={12} />
-              </a>
-            )}
-            {ABSTRACT_COMMUNITY.youtube && (
-              <a href={ABSTRACT_COMMUNITY.youtube} target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 bg-red-600 text-white rounded-xl px-3.5 py-2 font-display font-semibold text-[12px] hover:-translate-y-0.5 transition-all">
-                YouTube <FiArrowUpRight size={12} />
-              </a>
-            )}
-          </div>
+        <motion.div variants={fadeUp}>
+          <Card interactive shine className="group">
+            <Link to={href} className="block">
+              <div className="relative h-56 sm:h-72 overflow-hidden bg-gradient-to-br from-emerald-800 to-success">
+                <img
+                  src={post.image}
+                  alt=""
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-[900ms] ease-out-expo group-hover:scale-[1.05]"
+                  onError={(e) => { e.currentTarget.style.display = 'none' }}
+                />
+                <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent" />
+                <div className="absolute top-4 left-4 flex flex-wrap gap-2">
+                  <Badge tone="onImage">{tag}</Badge>
+                  <Badge tone="success" className="!bg-success !text-white !border-success">
+                    {T.newBadge[lang]}
+                  </Badge>
+                </div>
+              </div>
+
+              <div className="p-6 sm:p-8">
+                <div className="flex items-center gap-3 mb-3 font-body text-[11px] text-fg-subtle">
+                  <time>{post.date}</time>
+                  <span aria-hidden="true" className="w-1 h-1 rounded-full bg-fg-subtle" />
+                  <span className="flex items-center gap-1">
+                    <FiClock size={11} aria-hidden="true" /> {post.readTime}
+                  </span>
+                </div>
+
+                <h2 className="font-display text-display-3 text-fg mb-3 transition-colors duration-base group-hover:text-success-fg text-balance">
+                  {title}
+                </h2>
+
+                <p className="font-body text-lead text-fg-muted mb-5 measure">{excerpt}</p>
+
+                <span className="inline-flex items-center gap-1.5 font-display font-semibold text-sm text-success-fg">
+                  {T.readMore[lang]}
+                  <FiArrowUpRight
+                    size={15}
+                    aria-hidden="true"
+                    className="transition-transform duration-base ease-out-quart group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  />
+                </span>
+              </div>
+            </Link>
+          </Card>
+        </motion.div>
+
+        {links.length > 0 && (
+          <motion.div variants={fadeUp} className="mt-7 flex flex-wrap items-center justify-center gap-2.5">
+            <span className="font-body text-[13px] text-fg-subtle mr-1">{T.join[lang]}</span>
+            {links.map(({ key, label, Icon, className }) => (
+              <motion.a
+                key={key}
+                href={ABSTRACT_COMMUNITY[key]}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.96 }}
+                transition={{ duration: duration.base, ease: ease.out }}
+                className={`inline-flex items-center gap-2 min-h-[40px] rounded-xl px-4 font-display font-semibold text-[13px] shadow-e1 hover:shadow-e2 transition-shadow ${className}`}
+              >
+                <Icon size={14} aria-hidden="true" />
+                {label}
+              </motion.a>
+            ))}
+          </motion.div>
         )}
-      </div>
-    </section>
+      </motion.div>
+    </Section>
   )
 }

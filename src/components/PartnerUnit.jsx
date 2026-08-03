@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 
 // Bloque de anuncio de Google AdSense (formato responsive)
-export default function AdsenseUnit({ client, slot }) {
+export default function PartnerUnit({ client, slot }) {
   const pushed = useRef(false)
   useEffect(() => {
     if (pushed.current) return

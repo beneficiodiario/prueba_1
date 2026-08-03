@@ -23,8 +23,10 @@
          crossorigin="anonymous"></script>
 
     <!-- ══════════════════ SEO PRINCIPAL ══════════════════ -->
-    <title>BeneficioDiario · Proyectos cripto rentables para generar ingresos cada día</title>
-    <meta name="description" content="Descubre y analiza proyectos cripto reales para generar ingresos: Abstract (L2), KAST Card, VOID Network, GRVT, DAChain y Markets (Hyperliquid). Comunidad española de Abstract Chain. No es asesoría financiera." />
+    <!-- Debe coincidir con PAGES.home.es de src/data/seo.js: es lo que ve
+         el buscador antes de que arranque React. -->
+    <title>BeneficioDiario · Proyectos cripto rentables analizados</title>
+    <meta name="description" content="Analizamos proyectos cripto reales para generar ingresos: Abstract, KAST, VOID Network, GRVT y DAChain. Riesgo explicado sin humo. No es asesoría financiera." />
     <meta name="keywords" content="conseguir dinero, beneficio diario, dinero fácil, dinero rápido, ganar dinero, inversión, riesgo, ganancias, criptomonedas, cripto, cashback, airdrop, trading, DeFi, ingresos pasivos, Abstract, Abstract Chain, AGW, Abstract Global Wallet, Layer 2, comunidad española Abstract, KAST Card, VOID Network, GRVT, DAChain, Markets, Hyperliquid, HYPE, Kinetiq, app de trading, invertir en cripto" />
     <link rel="canonical" href="https://beneficiodiario.com/" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -76,8 +78,27 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="msapplication-config" content="/browserconfig.xml" />
     <meta name="msapplication-TileColor" content="#00b4d8" />
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a0f1e" />
+    <!-- Sin media query: lo gestiona el script de tema de abajo, que es
+         quien conoce la preferencia guardada por el usuario. -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Tema antes del primer pintado: evita el destello blanco a quien
+         navega en modo noche. Va en línea y sin defer a propósito. -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('bd_dark');
+          var dark = saved === '1' ? true
+                   : saved === '0' ? false
+                   : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var root = document.documentElement;
+          if (dark) root.classList.add('dark');
+          root.style.colorScheme = dark ? 'dark' : 'light';
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute('content', dark ? '#080c18' : '#ffffff');
+        } catch (e) { /* almacenamiento bloqueado: se queda en claro */ }
+      })();
+    </script>
 
     <!-- ══════════════════ RENDIMIENTO (preconnect / dns-prefetch) ══════════════════ -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -85,7 +106,10 @@
     <link rel="dns-prefetch" href="https://api.coingecko.com" />
     <link rel="dns-prefetch" href="https://cryptologos.cc" />
     <link rel="dns-prefetch" href="https://images.unsplash.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Outfit = titulares · Inter Tight = interfaz · Newsreader = cuerpo de
+         los artículos (una serif se lee mejor en textos largos) · JetBrains
+         Mono = cifras y códigos de referido. Solo los pesos que se usan. -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
     <!-- ══════════════════ DATOS ESTRUCTURADOS (Schema.org JSON-LD) ══════════════════ -->
     <!-- Para Google, Bing y motores de IA (ChatGPT, Claude, Perplexity, Gemini) -->

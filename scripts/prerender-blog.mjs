@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 import { blogPosts } from '../src/data/content.js'
 import { PRIVACY } from '../src/data/legal.js'
-import { faqs } from '../src/data/seo.js'
+import { faqs, PAGES } from '../src/data/seo.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')
@@ -67,7 +67,9 @@ for (const post of blogPosts) {
     const content = post.content[lang] || post.content.es
     const img = absUrl(post.extraImage || post.image)
     const url = lang === 'en' ? enUrl : esUrl
-    const title = `${t} · BeneficioDiario`
+    // Google recorta el título a unos 60 caracteres y ya añade el nombre
+    // del sitio por su cuenta: el sufijo solo se pone si cabe.
+    const title = t.length > 45 ? t : `${t} · BeneficioDiario`
     const paragraphs = content.split('\n\n').map(s => s.trim()).filter(Boolean)
     const refLabel = post.refLabel?.[lang] || (lang === 'en' ? 'Access' : 'Acceder')
 
@@ -100,8 +102,8 @@ for (const post of blogPosts) {
 // Home en inglés (/en)
 {
   const url = `${SITE}/en`
-  const title = 'BeneficioDiario · Profitable crypto projects to earn income every day'
-  const desc = 'Discover, analyze and learn how to earn income with real crypto projects: KAST Card, VOID Network, GRVT and DAChain. Honest information about risk. Not financial advice.'
+  // Mismos textos que la SPA: buscador y usuario deben leer lo mismo.
+  const { title, description: desc } = PAGES.home.en
   const alts = [{ lang: 'es', href: `${SITE}/` }, { lang: 'en', href: url }, { lang: 'x-default', href: `${SITE}/` }]
   const body =
     `<main style="max-width:760px;margin:0 auto;padding:72px 20px;font-family:system-ui,-apple-system,sans-serif;color:#1f2937">` +
@@ -122,8 +124,7 @@ for (const post of blogPosts) {
 // Página de privacidad (ES)
 {
   const url = `${SITE}/privacidad`
-  const title = `${PRIVACY.title} · BeneficioDiario`
-  const desc = 'Política de privacidad y cookies de BeneficioDiario: qué datos tratamos, cookies de analítica y publicidad, terceros y tus derechos (RGPD).'
+  const { title, description: desc } = PAGES.privacy.es
   const body =
     `<main style="max-width:720px;margin:0 auto;padding:72px 20px;font-family:system-ui,-apple-system,sans-serif;color:#1f2937">` +
     `<p><a href="/" style="color:#0077b6;text-decoration:none">← BeneficioDiario</a></p>` +

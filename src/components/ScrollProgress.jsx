@@ -1,15 +1,18 @@
-import { motion, useScroll, useSpring } from 'framer-motion'
+import { motion, useScroll, useSpring } from 'motion/react'
 
-// Barra de progreso de lectura fijada arriba (encima del navbar).
+/**
+ * Barra de progreso de lectura, fijada arriba del todo.
+ * scaleX sobre el eje X: no toca el diseño ni provoca reflow.
+ */
 export default function ScrollProgress() {
   const { scrollYProgress } = useScroll()
-  const scaleX = useSpring(scrollYProgress, { stiffness: 120, damping: 30, restDelta: 0.001 })
+  const scaleX = useSpring(scrollYProgress, { stiffness: 140, damping: 30, restDelta: 0.001 })
 
   return (
     <motion.div
       aria-hidden="true"
       style={{ scaleX }}
-      className="fixed top-0 left-0 right-0 h-[3px] z-[60] origin-left bg-gradient-to-r from-[#00b4d8] via-[#0077b6] to-[#00b4d8]"
+      className="fixed inset-x-0 top-0 h-[3px] z-overlay origin-left bg-gradient-to-r from-brand-500 via-brand-700 to-brand-500"
     />
   )
 }

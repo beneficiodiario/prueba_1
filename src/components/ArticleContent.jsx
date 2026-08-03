@@ -1,99 +1,114 @@
-// Renderiza el cuerpo de un artículo con formato visual (párrafos, listas, tablas, datos)
-export default function ArticleContent({ content, darkMode }) {
+// ════════════════════════════════════════════════════════════════
+//  Cuerpo de un artículo.
+//  El contenido llega como texto plano con convenciones sencillas:
+//   · línea que empieza por "·"  → viñeta dentro de un panel
+//   · línea con "→" y "%"        → fila de tabla resultado
+//   · bloque que abre con un tér-
+//     mino de precio o ROI       → panel de datos etiqueta/valor
+//   · pregunta corta             → subtítulo de sección
+//   · el resto                   → párrafo
+//  El cuerpo va en serif: se lee mejor en textos largos que la sans
+//  de la interfaz, y da el aire de medio de análisis que buscamos.
+// ════════════════════════════════════════════════════════════════
+
+const DATA_BLOCK = /^(Bitcoin|Ethereum|Solana|BNB|XRP|Precio|Price|ROI|Valor|Current|Approximate)/
+const QUESTION_OPENERS = ['¿', 'What', 'How', 'Why', 'When']
+
+const isBulletBlock = (b) => b.startsWith('·') || b.includes('\n·')
+const isResultTable = (b) => b.includes('→') && b.includes('%')
+const isHeading = (b) =>
+  QUESTION_OPENERS.some((o) => b.startsWith(o)) || (b.trimEnd().endsWith('?') && b.length < 80)
+
+function BulletPanel({ lines }) {
+  return (
+    <div className="rounded-card border border-brand-500/20 bg-brand-500/[0.06] p-5">
+      <ul className="space-y-2 list-none">
+        {lines.map((line, j) =>
+          line.startsWith('·') ? (
+            <li key={j} className="flex items-start gap-2.5">
+              <span aria-hidden="true" className="mt-[0.45em] w-1.5 h-1.5 rounded-full bg-brand-500 shrink-0" />
+              <span className="font-serif text-[15px] leading-relaxed text-fg-muted">
+                {line.replace(/^·\s*/, '')}
+              </span>
+            </li>
+          ) : (
+            <li key={j} className="font-display font-bold text-sm text-fg pb-1">{line}</li>
+          ),
+        )}
+      </ul>
+    </div>
+  )
+}
+
+function ResultTable({ lines }) {
+  return (
+    <div className="rounded-card border border-line overflow-hidden">
+      {lines.map((line, j) => {
+        const [left, right] = line.split('→').map((s) => s.trim())
+        return (
+          <div
+            key={j}
+            className={`flex items-center justify-between gap-4 px-4 py-3 ${j % 2 === 0 ? 'bg-surface-2' : ''}`}
+          >
+            <span className="font-mono text-sm text-fg-muted">{left}</span>
+            <span className="font-mono font-bold text-sm text-success-fg tabular">{right}</span>
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
+function DataPanel({ title, rows }) {
+  return (
+    <div className="rounded-card border border-line bg-surface-2 p-5">
+      <p className="font-display font-bold text-sm text-fg mb-3">{title}</p>
+      <dl className="space-y-0">
+        {rows.map((line, j) => {
+          const [label, value] = line.split(':').map((s) => s?.trim())
+          if (!value) {
+            return <p key={j} className="font-serif text-sm text-fg-muted py-1">{line}</p>
+          }
+          return (
+            <div key={j} className="flex justify-between items-center gap-4 py-2 border-b border-line/60 last:border-0">
+              <dt className="font-body text-xs text-fg-subtle">{label}</dt>
+              <dd className="font-mono text-xs font-semibold text-fg tabular">{value}</dd>
+            </div>
+          )
+        })}
+      </dl>
+    </div>
+  )
+}
+
+export default function ArticleContent({ content }) {
   if (!content) return null
-  const paraC = darkMode ? 'text-gray-300' : 'text-gray-600'
-  const headC = darkMode ? 'text-white' : 'text-gray-900'
-  const boxC  = darkMode ? 'bg-[#00b4d8]/8 border-[#00b4d8]/20' : 'bg-[#00b4d8]/5 border-[#00b4d8]/15'
-  const numBoxC = darkMode ? 'bg-white/5 border-white/10' : 'bg-gray-50 border-gray-100'
 
   const blocks = content.split('\n\n').filter(Boolean)
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-5">
       {blocks.map((block, i) => {
-        // Bloque de puntos con ·
-        if (block.includes('\n·') || block.startsWith('·')) {
-          const lines = block.split('\n').filter(Boolean)
+        const lines = block.split('\n').filter(Boolean)
+
+        if (isBulletBlock(block)) return <BulletPanel key={i} lines={lines} />
+        if (isResultTable(block)) return <ResultTable key={i} lines={lines} />
+        if (DATA_BLOCK.test(block)) {
+          return <DataPanel key={i} title={lines[0]} rows={lines.slice(1)} />
+        }
+        if (isHeading(block)) {
           return (
-            <div key={i} className={`rounded-2xl p-4 border ${boxC}`}>
-              {lines.map((line, j) => (
-                <div key={j} className="flex items-start gap-2.5 py-1">
-                  {line.startsWith('·') ? (
-                    <>
-                      <span className="text-[#00b4d8] font-bold mt-0.5 flex-shrink-0">→</span>
-                      <p className={`font-body text-sm leading-relaxed ${paraC}`}>{line.replace(/^·\s*/, '')}</p>
-                    </>
-                  ) : (
-                    <p className={`font-body text-sm font-semibold leading-relaxed ${headC}`}>{line}</p>
-                  )}
-                </div>
-              ))}
-            </div>
+            <h2 key={i} className="font-display font-bold text-xl text-fg pt-4 text-balance">
+              {block}
+            </h2>
           )
         }
 
-        // Tabla de resultados (líneas con →)
-        if (block.includes('→') && block.includes('%')) {
-          const lines = block.split('\n').filter(Boolean)
-          return (
-            <div key={i} className={`rounded-2xl border overflow-hidden ${darkMode ? 'border-white/10' : 'border-gray-100'}`}>
-              {lines.map((line, j) => {
-                const [left, right] = line.split('→').map(s => s.trim())
-                return (
-                  <div key={j} className={`flex items-center justify-between px-4 py-2.5 ${j % 2 === 0 ? (darkMode ? 'bg-white/3' : 'bg-gray-50/60') : ''}`}>
-                    <span className={`font-mono text-sm ${paraC}`}>{left}</span>
-                    <span className="font-mono font-bold text-sm text-emerald-500">{right}</span>
-                  </div>
-                )
-              })}
-            </div>
-          )
-        }
-
-        // Datos de cripto (precio / ROI) — líneas con ":"
-        if (block.match(/^(Bitcoin|Ethereum|Solana|BNB|XRP|Precio|Price|ROI|Valor|Current|Approximate)/)) {
-          const lines = block.split('\n').filter(Boolean)
-          const title = lines[0]
-          const rest = lines.slice(1)
-          return (
-            <div key={i} className={`rounded-2xl p-4 border ${numBoxC}`}>
-              <p className={`font-display font-bold text-sm mb-2 ${headC}`}>{title}</p>
-              {rest.map((line, j) => {
-                const [label, value] = line.split(':').map(s => s?.trim())
-                return value ? (
-                  <div key={j} className="flex justify-between items-center py-1 border-b border-[#00b4d8]/10 last:border-0">
-                    <span className={`font-body text-xs ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>{label}</span>
-                    <span className={`font-mono text-xs font-semibold ${darkMode ? 'text-gray-200' : 'text-gray-700'}`}>{value}</span>
-                  </div>
-                ) : (
-                  <p key={j} className={`font-body text-xs ${paraC}`}>{line}</p>
-                )
-              })}
-            </div>
-          )
-        }
-
-        // Título de sección (¿...? o termina en ?)
-        if (block.startsWith('¿') || block.startsWith('What') || block.startsWith('How') || (block.trim().endsWith('?') && block.length < 80)) {
-          return <p key={i} className={`font-display font-bold text-base pt-2 ${headC}`}>{block}</p>
-        }
-
-        // Resumen / tabla final
-        if (block.startsWith('·') || (block.includes('·') && block.split('\n').every(l => l.startsWith('·') || l === ''))) {
-          return (
-            <div key={i} className={`rounded-2xl p-4 border ${boxC}`}>
-              {block.split('\n').filter(Boolean).map((line, j) => (
-                <div key={j} className="flex items-start gap-2 py-0.5">
-                  <span className="text-[#00b4d8] flex-shrink-0">•</span>
-                  <p className={`font-body text-sm ${paraC}`}>{line.replace(/^·\s*/, '')}</p>
-                </div>
-              ))}
-            </div>
-          )
-        }
-
-        // Párrafo normal
-        return <p key={i} className={`font-body text-sm leading-relaxed ${paraC}`}>{block}</p>
+        return (
+          <p key={i} className="font-serif text-[17px] leading-[1.75] text-fg-muted">
+            {block}
+          </p>
+        )
       })}
     </div>
   )

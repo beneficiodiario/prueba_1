@@ -1,40 +1,43 @@
-import { useState, useEffect } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
-import { FiArrowUp } from 'react-icons/fi'
+import { useState } from 'react'
+import { AnimatePresence, motion, useScroll, useMotionValueEvent } from 'motion/react'
+import { FiArrowUp } from './ui/icons'
+import { duration, ease } from '../lib/motion'
 
-// Botón flotante para volver arriba. Aparece tras desplazar la página.
+const LABEL = { es: 'Volver arriba', en: 'Back to top' }
+
+/** Botón flotante para volver al inicio de la página. */
 export default function BackToTop({ lang = 'es' }) {
   const [show, setShow] = useState(false)
+  const { scrollY } = useScroll()
 
-  useEffect(() => {
-    const onScroll = () => setShow(window.scrollY > 700)
-    window.addEventListener('scroll', onScroll, { passive: true })
-    onScroll()
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  useMotionValueEvent(scrollY, 'change', (v) => setShow(v > 700))
 
   const toTop = () => {
-    // Usa Lenis si está disponible para mantener el scroll suave; si no, scroll nativo.
-    if (window.__lenis) window.__lenis.scrollTo(0, { duration: 1.2 })
+    // Con Lenis activo hay que pedírselo a él; si no, scroll nativo.
+    if (window.__lenis) window.__lenis.scrollTo(0, { duration: 1.1 })
     else window.scrollTo({ top: 0, behavior: 'smooth' })
   }
+
+  const label = LABEL[lang] || LABEL.es
 
   return (
     <AnimatePresence>
       {show && (
         <motion.button
-          initial={{ opacity: 0, scale: 0.6, y: 20 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.6, y: 20 }}
-          whileHover={{ y: -3 }}
-          whileTap={{ scale: 0.9 }}
-          transition={{ duration: 0.3, ease: [0.23, 1, 0.32, 1] }}
+          key="back-to-top"
+          type="button"
           onClick={toTop}
-          aria-label={lang === 'es' ? 'Volver arriba' : 'Back to top'}
-          title={lang === 'es' ? 'Volver arriba' : 'Back to top'}
-          className="fixed bottom-6 right-6 z-[55] w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg shadow-[#00b4d8]/30 bg-gradient-to-br from-[#00b4d8] to-[#0077b6] hover:shadow-xl hover:shadow-[#00b4d8]/40 transition-shadow"
+          aria-label={label}
+          title={label}
+          initial={{ opacity: 0, scale: 0.7, y: 16 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.7, y: 16, transition: { duration: duration.fast } }}
+          whileHover={{ y: -3 }}
+          whileTap={{ scale: 0.92 }}
+          transition={{ duration: duration.base, ease: ease.out }}
+          className="fixed bottom-6 right-6 z-overlay w-12 h-12 rounded-full flex items-center justify-center text-white bg-gradient-to-br from-brand-500 to-brand-700 shadow-glow hover:shadow-e4 transition-shadow duration-base"
         >
-          <FiArrowUp size={20} />
+          <FiArrowUp size={20} aria-hidden="true" />
         </motion.button>
       )}
     </AnimatePresence>

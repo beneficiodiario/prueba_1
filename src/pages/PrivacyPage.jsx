@@ -1,57 +1,93 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { FiArrowLeft } from 'react-icons/fi'
+import { motion } from 'motion/react'
+import { useTheme } from '../lib/theme'
+import { Button } from '../components/ui/Button'
+import { FiArrowLeft, FiSun, FiMoon } from '../components/ui/icons'
 import { PRIVACY } from '../data/legal'
-
-const SITE = 'https://beneficiodiario.com'
+import { PAGES } from '../data/seo'
+import { useSeo } from '../lib/seo'
+import { fadeUp, stagger, revealInitial } from '../lib/motion'
 
 export default function PrivacyPage() {
-  useEffect(() => {
-    const prev = document.title
-    document.title = `${PRIVACY.title} · BeneficioDiario`
-    let c = document.head.querySelector('link[rel="canonical"]')
-    const prevHref = c ? c.getAttribute('href') : null
-    if (!c) { c = document.createElement('link'); c.setAttribute('rel', 'canonical'); document.head.appendChild(c) }
-    c.setAttribute('href', `${SITE}/privacidad`)
-    window.scrollTo(0, 0)
-    return () => { document.title = prev; if (prevHref) c.setAttribute('href', prevHref) }
-  }, [])
+  const { dark, toggle } = useTheme()
+
+  // Página legal: se indexa, pero no compite por posiciones.
+  useSeo({ ...PAGES.privacy.es, lang: 'es', type: 'website' })
+
+  useEffect(() => { window.scrollTo(0, 0) }, [])
 
   return (
-    <div className="min-h-screen bg-white text-gray-900">
-      <header className="border-b border-gray-100">
-        <div className="max-w-3xl mx-auto px-5 sm:px-8 h-[64px] flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2.5">
-            <img src="/logo-bd.png" alt="BeneficioDiario" className="w-8 h-8 object-contain" />
-            <span className="font-display font-bold text-base bg-gradient-to-r from-gray-900 to-[#0077b6] bg-clip-text text-transparent">BeneficioDiario</span>
+    <div className="min-h-screen bg-bg text-fg transition-colors duration-slow">
+      <header className="sticky top-0 z-nav backdrop-blur-xl bg-bg/85 border-b border-line">
+        <div className="container-page max-w-prose h-16 flex items-center justify-between gap-3">
+          <Link to="/" className="flex items-center gap-2.5 group min-w-0">
+            <img
+              src="/logo-bd.png" alt="" width="32" height="32"
+              className="w-8 h-8 object-contain transition-transform duration-slow ease-out-expo group-hover:scale-110"
+            />
+            <span className="font-display font-bold text-base text-fg truncate">
+              Beneficio<span className="text-brand-fg">Diario</span>
+            </span>
           </Link>
-          <Link to="/" className="inline-flex items-center gap-1.5 font-body text-[13px] font-medium text-gray-500 hover:text-[#00b4d8] transition-colors">
-            <FiArrowLeft size={14} /> Inicio
-          </Link>
+
+          <div className="flex items-center gap-2 shrink-0">
+            <Link
+              to="/"
+              className="group inline-flex items-center gap-1.5 font-body text-[13px] font-medium text-fg-muted hover:text-brand-fg transition-colors duration-base"
+            >
+              <FiArrowLeft
+                size={14}
+                aria-hidden="true"
+                className="transition-transform duration-base ease-out-quart group-hover:-translate-x-1"
+              />
+              Inicio
+            </Link>
+            <button
+              type="button"
+              onClick={toggle}
+              aria-label={dark ? 'Cambiar a modo día' : 'Cambiar a modo noche'}
+              className="w-[38px] h-[38px] rounded-lg bg-surface-2 border border-line flex items-center justify-center text-fg-muted hover:text-fg hover:border-brand-500/40 transition-colors duration-base"
+            >
+              {dark ? <FiSun size={15} className="text-warning-fg" /> : <FiMoon size={15} className="text-brand-fg" />}
+            </button>
+          </div>
         </div>
       </header>
 
-      <main className="max-w-3xl mx-auto px-5 sm:px-8 py-12">
-        <h1 className="font-display font-extrabold text-[clamp(26px,4vw,38px)] tracking-tight mb-1">{PRIVACY.title}</h1>
-        <p className="font-body text-xs text-gray-400 mb-8">{PRIVACY.updated}</p>
+      <motion.main
+        variants={stagger(0.05)}
+        initial={revealInitial}
+        animate="visible"
+        className="container-page max-w-prose py-14"
+      >
+        <motion.h1 variants={fadeUp} className="font-display text-display-2 text-fg mb-2 text-balance">
+          {PRIVACY.title}
+        </motion.h1>
 
-        <div className="space-y-7">
+        <motion.p variants={fadeUp} className="font-body text-xs text-fg-subtle mb-10">
+          {PRIVACY.updated}
+        </motion.p>
+
+        <div className="space-y-9">
           {PRIVACY.sections.map((s, i) => (
-            <section key={i}>
-              <h2 className="font-display font-bold text-lg mb-2">{s.h}</h2>
+            <motion.section key={i} variants={fadeUp}>
+              <h2 className="font-display font-bold text-lg text-fg mb-3">{s.h}</h2>
               {s.p.map((para, j) => (
-                <p key={j} className="font-body text-sm leading-relaxed text-gray-600 mb-2">{para}</p>
+                <p key={j} className="font-serif text-[16px] leading-[1.75] text-fg-muted mb-3">
+                  {para}
+                </p>
               ))}
-            </section>
+            </motion.section>
           ))}
         </div>
 
-        <div className="mt-10 pt-6 border-t border-gray-100">
-          <Link to="/" className="inline-flex items-center gap-2 font-display font-semibold text-sm text-[#00b4d8]">
-            <FiArrowLeft size={15} /> Volver a BeneficioDiario
-          </Link>
-        </div>
-      </main>
+        <motion.div variants={fadeUp} className="mt-12 pt-7 border-t border-line">
+          <Button to="/" variant="secondary">
+            <FiArrowLeft size={15} aria-hidden="true" /> Volver a BeneficioDiario
+          </Button>
+        </motion.div>
+      </motion.main>
     </div>
   )
 }

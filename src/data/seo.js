@@ -9,6 +9,31 @@ export const SITE = {
   email: 'contacto@beneficiodiario.com',
 }
 
+// ── Metadatos por página ──
+// Título ≤ 60 caracteres y descripción entre 150 y 160: es lo que Google
+// muestra sin recortar. Cada página tiene los suyos, no se reciclan.
+export const PAGES = {
+  home: {
+    es: {
+      title: 'BeneficioDiario · Proyectos cripto rentables analizados',
+      description: 'Analizamos proyectos cripto reales para generar ingresos: Abstract, KAST, VOID Network, GRVT y DAChain. Riesgo explicado sin humo. No es asesoría financiera.',
+      path: '/',
+    },
+    en: {
+      title: 'BeneficioDiario · Profitable crypto projects, analyzed',
+      description: 'We analyze real crypto projects to generate income: Abstract, KAST Card, VOID Network, GRVT, DAChain and Markets. Risk explained honestly. Not financial advice.',
+      path: '/en',
+    },
+  },
+  privacy: {
+    es: {
+      title: 'Política de privacidad y cookies · BeneficioDiario',
+      description: 'Cómo tratamos tus datos en BeneficioDiario: cookies propias y de terceros, analítica, publicidad, consentimiento y tus derechos. Actualizada y en lenguaje claro.',
+      path: '/privacidad',
+    },
+  },
+}
+
 // ── Frequently asked questions (bilingual) ──
 export const faqs = [
   {
