@@ -25,6 +25,7 @@ import WhoWeAre from './components/WhoWeAre'
 import Footer from './components/Footer'
 import ScrollProgress from './components/ScrollProgress'
 import BackToTop from './components/BackToTop'
+import LearningGuides from './components/LearningGuides'
 
 // Aparte del arranque: si un bloqueador impide traer este módulo, se
 // pierde la barra de patrocinadores pero la web sigue funcionando.
@@ -112,7 +113,7 @@ export default function App({ initialLang = 'es' }) {
   useSeo({
     ...page,
     lang,
-    image: '/void-cover.png',
+    image: '/logo-bd.png',
     alternates: { es: '/', en: '/en' },
     jsonLd: homeJsonLd({ lang, faqs, url: page.path }),
   })
@@ -142,6 +143,7 @@ export default function App({ initialLang = 'es' }) {
 
       <main id="contenido">
         <Hero {...props} />
+        <LearningGuides {...props} />
         <Novedades {...props} />
         <Marquee />
         <HowItWorks {...props} />

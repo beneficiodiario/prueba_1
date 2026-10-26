@@ -1,6 +1,6 @@
 /* TEAM */
   Equipo: BeneficioDiario
-  Contacto: contacto@beneficiodiario.com
+  Contacto: info@beneficiodiario.com
   Redes: YouTube https://www.youtube.com/@beneficiodiario_com
          Twitter/X https://twitter.com/BeneficioDiario
 

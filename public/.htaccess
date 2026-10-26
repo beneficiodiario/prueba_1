@@ -4,6 +4,7 @@
 Options -MultiViews -Indexes
 # No añadir barra final automática a las carpetas (lo gestionamos nosotros).
 DirectorySlash Off
+ErrorDocument 404 /404.html
 # Servir texto siempre como UTF-8.
 AddDefaultCharset UTF-8
 
@@ -42,8 +43,13 @@ AddDefaultCharset UTF-8
   RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^ - [L]
 
-  # 5) Resto (la raíz y cualquier ruta de React Router) -> index.html.
-  RewriteRule ^ /index.html [L]
+  # HTML estático de las rutas públicas, sin barra ni extensión.
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.+)$ $1.html [L]
+
+  RewriteRule ^$ /index.html [L]
+  # Una ruta desconocida debe responder 404, sin caer en la home (soft 404).
+  RewriteRule ^ - [R=404,L]
 </IfModule>
 
 # ════════════════════════════════════════════════════════════════

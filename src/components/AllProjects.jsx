@@ -10,7 +10,7 @@ const OTHERS = projects.filter((p) => !p.featured)
 
 const T = {
   eyebrow: { es: 'Más oportunidades', en: 'More opportunities' },
-  title:   { es: 'Otros proyectos activos', en: 'Other active projects' },
+  title:   { es: 'Otros proyectos en seguimiento', en: 'More projects on our radar' },
   sub: {
     es: 'Proyectos que seguimos de cerca y que todavía están tomando forma.',
     en: 'Projects we follow closely that are still taking shape.',

@@ -11,14 +11,14 @@ import { blurUp, stagger, ease, duration, revealInitial } from '../lib/motion'
 
 const T = {
   badge:  { es: 'Proyectos analizados · 2026', en: 'Analyzed projects · 2026' },
-  lead:   { es: 'Tu beneficio,', en: 'Your profit,' },
+  lead:   { es: 'Beneficio Diario', en: 'Beneficio Diario' },
   seq:    {
     es: ['cada día', 3000, 'sin complicaciones', 2500, 'con cripto', 2500, 'con KAST', 3000, 'con VOID', 2500],
     en: ['every day', 3000, 'without the noise', 2500, 'with crypto', 2500, 'with KAST', 3000, 'with VOID', 2500],
   },
   sub: {
-    es: 'Descubrimos, analizamos y compartimos proyectos rentables para que generes ingresos de forma inteligente. Desde KAST Card hasta DAC, pasando por VOID Network y GRVT.',
-    en: 'We discover, analyze and share profitable projects so you can generate income intelligently. From KAST Card to DAC, through VOID Network and GRVT.',
+    es: 'Tu portal gratuito sobre criptomonedas, ingresos pasivos, airdrops y cashback. Información, riesgos y enlaces a sitios de terceros. Sin login, sin registro y sin ganancias garantizadas.',
+    en: 'Your free portal about crypto, passive income, airdrops and cashback. Information, risks and links to third-party sites. No login, no registration and no guaranteed returns.',
   },
   cta1:   { es: 'Explorar proyectos', en: 'Explore projects' },
   cta2:   { es: 'Ver en YouTube', en: 'Watch on YouTube' },

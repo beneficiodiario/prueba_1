@@ -2,21 +2,23 @@ import { Link } from 'react-router-dom'
 import { Button } from './ui/Button'
 import { SiYoutube, FiAlertTriangle } from './ui/icons'
 import { YOUTUBE_URL } from '../data/content'
+import { LEGAL_LINKS } from '../data/legalPages'
+import { useConsent } from '../lib/ConsentContext'
 
 const YOUTUBE_HANDLE = '@beneficiodiario_com'
 
 const T = {
   desc: {
-    es: 'Descubrimos y compartimos proyectos rentables para generar ingresos de forma inteligente. KAST, VOID Network, GRVT, DAC y más.',
-    en: 'We discover and share profitable projects to generate income intelligently. KAST, VOID Network, GRVT, DAC and more.',
+    es: 'Portal gratuito de información sobre criptomonedas, ingresos pasivos y sitios de terceros. Sin login ni registro.',
+    en: 'Free information about crypto, passive income and third-party sites. No login or registration.',
   },
   rights: { es: '© 2026 BeneficioDiario. Todos los derechos reservados.', en: '© 2026 BeneficioDiario. All rights reserved.' },
-  made:   { es: 'Hecho en España para inversores con criterio', en: 'Made in Spain for investors who do their homework' },
+  made:   { es: 'Barcelona, España · Portal informativo gratuito', en: 'Barcelona, Spain · Free information portal' },
   privacy:{ es: 'Privacidad y cookies', en: 'Privacy & cookies' },
   notice: { es: 'Aviso de riesgo', en: 'Risk notice' },
   disclaimer: {
-    es: 'BeneficioDiario comparte información sobre proyectos e inversiones con fines educativos e informativos. No somos asesores financieros y no garantizamos ganancias: toda inversión en criptomonedas conlleva riesgo y puedes perder parte o la totalidad de tu capital. Esta web contiene enlaces de afiliado y de referido por los que podemos recibir una comisión sin coste adicional para ti. Investiga por tu cuenta (DYOR) antes de invertir.',
-    en: 'BeneficioDiario shares information about projects and investments for educational and informational purposes. We are not financial advisors and we do not guarantee profits: all crypto investment involves risk and you may lose part or all of your capital. This site contains affiliate and referral links through which we may earn a commission at no extra cost to you. Do your own research (DYOR) before investing.',
+    es: 'BeneficioDiario comparte información sobre proyectos e inversiones con fines educativos e informativos. No somos asesores financieros y no garantizamos ganancias: toda inversión en criptomonedas conlleva riesgo y puedes perder parte o la totalidad de tu capital. Esta web contiene enlaces de afiliado y de referido por los que podemos recibir una comisión según las condiciones del proveedor. Investiga por tu cuenta (DYOR) antes de invertir.',
+    en: 'BeneficioDiario shares information about projects and investments for educational and informational purposes. We are not financial advisors and we do not guarantee profits: all crypto investment involves risk and you may lose part or all of your capital. This site contains affiliate and referral links through which we may earn a commission under the provider’s terms. Do your own research (DYOR) before investing.',
   },
   cols: {
     es: { projects: 'Proyectos', content: 'Contenido', community: 'Comunidad', how: 'Cómo funciona', faq: 'Preguntas frecuentes' },
@@ -24,7 +26,9 @@ const T = {
   },
 }
 
-export default function Footer({ lang }) {
+export default function Footer({ lang = 'es' }) {
+  const { openPreferences } = useConsent()
+  const home = lang === 'en' ? '/en' : '/'
   const c = T.cols[lang] || T.cols.es
 
   const columns = [
@@ -40,17 +44,21 @@ export default function Footer({ lang }) {
     {
       title: c.content,
       links: [
-        { label: 'Blog',      href: '#blog' },
-        { label: 'Portfolio', href: '#portfolio' },
-        { label: c.how,       href: '#como-funciona' },
+        { label: 'Blog', href: `${home}#blog` },
+        { label: lang === 'en' ? 'Passive income (ES)' : 'Ingresos pasivos', href: '/ingresos-pasivos' },
+        { label: lang === 'en' ? 'Crypto guide (ES)' : 'Guía de criptomonedas', href: '/criptomonedas' },
+        { label: 'Airdrops', href: '/airdrops' },
+        { label: lang === 'en' ? 'Glossary (ES)' : 'Glosario cripto', href: '/glosario-cripto' },
       ],
     },
     {
       title: c.community,
       links: [
         { label: 'YouTube',    href: YOUTUBE_URL, external: true },
-        { label: c.faq,        href: '#faq' },
-        { label: T.notice[lang], href: '#faq' },
+        { label: c.faq, href: `${home}#faq` },
+        { label: lang === 'en' ? 'About (ES)' : 'Sobre el portal', href: '/sobre-beneficio-diario' },
+        { label: lang === 'en' ? 'Editorial policy (ES)' : 'Política editorial', href: '/politica-editorial' },
+        { label: lang === 'en' ? 'Contact (ES)' : 'Contacto', href: '/contacto' },
       ],
     },
   ]
@@ -86,7 +94,7 @@ export default function Footer({ lang }) {
                 {col.links.map((link) => (
                   <li key={link.label}>
                     <a
-                      href={link.href}
+                      href={link.href.startsWith('#') ? `${home}${link.href}` : link.href}
                       {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                       className="font-body text-xs text-fg-muted hover:text-brand-fg transition-colors duration-base"
                     >
@@ -107,6 +115,12 @@ export default function Footer({ lang }) {
           </p>
         </div>
 
+        <nav aria-label={lang === 'en' ? 'Legal information (Spanish)' : 'Información legal'} className="flex flex-wrap gap-x-5 gap-y-3 border-t border-line pt-6 pb-6 font-body text-xs text-fg-muted">
+          {LEGAL_LINKS.map(link => <Link key={link.path} to={link.path} className="hover:text-brand-fg underline-offset-4 hover:underline">{link.label}{lang === 'en' ? ' (ES)' : ''}</Link>)}
+          <button type="button" onClick={openPreferences} className="text-brand-fg underline underline-offset-4">{lang === 'en' ? 'Privacy preferences' : 'Configurar privacidad'}</button>
+          <a href="mailto:info@beneficiodiario.com" className="hover:text-brand-fg">info@beneficiodiario.com</a>
+          <a href="/sitemap.xml" className="hover:text-brand-fg">Sitemap</a>
+        </nav>
         <div className="border-t border-line pt-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
           <p className="font-body text-[11px] text-fg-subtle">
             {T.rights[lang]}{' · '}

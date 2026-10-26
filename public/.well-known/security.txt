@@ -1,5 +1,5 @@
 # Security policy for BeneficioDiario (https://beneficiodiario.com)
-Contact: mailto:contacto@beneficiodiario.com
+Contact: mailto:info@beneficiodiario.com
 Preferred-Languages: es, en
 Expires: 2027-05-23T00:00:00.000Z
 Canonical: https://beneficiodiario.com/.well-known/security.txt

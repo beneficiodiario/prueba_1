@@ -1,66 +1,412 @@
-# BeneficioDiario — Documento completo para IAs/LLMs
+# Beneficio Diario
 
-> BeneficioDiario es una plataforma de contenido en español (con versión en inglés) que descubre, analiza y comparte proyectos cripto reales con potencial de generar ingresos. No es asesoría financiera.
+> Portal gratuito de información sobre criptomonedas, ingresos pasivos, airdrops y cashback. Sin registro. Guías, riesgos y enlaces a servicios de terceros.
 
-## Resumen
+Nombre alternativo: BeneficioDiario. Portal gestionado por particulares desde Barcelona, España. Contacto: info@beneficiodiario.com. No exige login ni registro propios, no gestiona fondos y no garantiza rendimientos. Los registros o pagos en terceros se rigen por sus condiciones. Puede financiarse con publicidad y referidos.
 
-BeneficioDiario ayuda a personas de habla hispana e inglesa a conocer proyectos de criptomonedas reales relacionados con cashback, airdrops, trading, DeFi e ingresos pasivos. El objetivo es explicar de forma clara y honesta cómo funciona cada proyecto, qué riesgo tiene y cómo empezar, para que cada persona pueda decidir por sí misma. El contenido es divulgativo y educativo: NO es asesoría financiera, legal ni fiscal, y el sitio usa enlaces de afiliado/referido. Conseguir dinero con cripto es posible pero NO está garantizado y siempre conlleva riesgo; recomendamos investigar por tu cuenta (DYOR).
+Este archivo es una ayuda de navegación, no un mecanismo de posicionamiento ni una garantía de inclusión en respuestas de IA. Para vigencia, fuentes, riesgos y alcance, consulta cada página.
 
-Dominio canónico: https://beneficiodiario.com
-Idiomas: español (principal) e inglés.
-Secciones: Inicio, Cómo funciona, Proyectos, Portfolio, Comunidad/Resultados, Blog, FAQ.
-Palabras clave del sitio: conseguir dinero, beneficio diario, dinero fácil, dinero rápido, ganar dinero, inversión, riesgo, ganancias, criptomonedas, cripto, cashback, airdrop, trading, DeFi, ingresos pasivos, KAST, VOID Network, GRVT, DAChain.
+## Contenidos públicos
 
-## Proyectos analizados
+- [Beneficio Diario | Criptomonedas e ingresos pasivos](https://beneficiodiario.com/): Portal gratuito sobre criptomonedas, ingresos pasivos, airdrops y cashback. Guías y riesgos de sitios de terceros, sin login ni registro en Beneficio Diario.
+- [Nos sumamos a Abstract: la comunidad española y por qué nos parece importante](https://beneficiodiario.com/blog/beneficiodiario-comunidad-abstract-espanol): Javier Rodríguez, cofundador de BeneficioDiario, es ahora administrador de la comunidad española de Abstract Chain. Te contamos qué es Abstract y cómo unirte.
+- [Markets: opera en Hyperliquid desde el móvil y posiciónate para el airdrop](https://beneficiodiario.com/blog/markets-hyperliquid-app): Markets es una app móvil sobre Hyperliquid para operar cripto, acciones e índices desde el teléfono, ver a los mejores traders y farmear kPoints de cara a posibles airdrops.
+- [KAST lanza el USD Cashback: dinero real de vuelta en cada compra](https://beneficiodiario.com/blog/kast-usd-cashback-dinero-real): KAST acaba de activar el cashback en dólares reales. Ya no son puntos ni tokens: es USD directo a tu saldo cada vez que usas la tarjeta.
+- [VOID Network supera los 1.000 usuarios y ajusta su modelo de distribución](https://beneficiodiario.com/blog/void-network-1000-usuarios): El proyecto acaba de cruzar el primer hito importante: más de 1.000 usuarios en fase early access. La app de iOS estará lista en unas dos semanas.
+- [GRVT: trading descentralizado con el capital siempre trabajando](https://beneficiodiario.com/blog/grvt-trading-descentralizado): Qué es GRVT, cómo funciona su Season 2 de puntos y por qué lo tenemos en el radar de cara al snapshot de Q2 2026.
+- [Top 5 criptos compradas en 2020: balance a 6 años](https://beneficiodiario.com/blog/top-5-criptos-2020-balance): BTC, ETH, SOL, BNB y XRP. ¿Cuánto habrías ganado invirtiendo €1.000 en cada una en 2020? Los números reales, sin filtros.
+- [Qué es Beneficio Diario y cómo funciona](https://beneficiodiario.com/sobre-beneficio-diario): Beneficio Diario es un portal gratuito de información sobre criptomonedas, airdrops, cashback y sitios de terceros. Sin login, sin registro y sin gestionar fondos.
 
-### 1. KAST Card
-Tarjeta Visa cripto que ofrece un 4% de cashback en las compras y acumula puntos de cara a un airdrop previsto para el Q3 de 2026. Está disponible en más de 160 países. Es una forma de obtener dinero real de vuelta (cashback) en el gasto diario y, además, posicionarse para una posible recompensa futura. Riesgo bajo.
+### Qué encontrarás
 
-### 2. VOID Network
-Proyecto de criptomoneda en fase muy temprana, de estilo similar a Pi Network. Es gratuito (0 €) y solo requiere pulsar 2 clics al día para acumular tokens, sin inversión de capital. Su valor futuro es incierto y dependerá de que el proyecto avance. Riesgo bajo por no requerir dinero, aunque el resultado económico no está asegurado.
+Guías para entender criptomonedas, posibles ingresos pasivos, airdrops, testnets, cashback y herramientas de terceros. El objetivo es distinguir qué ofrece cada opción, qué exige y qué riesgos y costes tiene. No todas las actividades generan ingresos y algunas pueden ocasionar pérdidas.
 
-### 3. GRVT (Gravity)
-Exchange/brokerage descentralizado (DEX) que combina trading y rendimiento, con un APY de hasta el 11%, privacidad mediante pruebas de conocimiento cero (ZK) y autocustodia de fondos. Mantiene una Season 2 de puntos y su evento de generación de token (TGE) se espera tras el 30 de junio de 2026. Permite que el capital esté siempre trabajando. Riesgo medio.
+### Quiénes publican
 
-### 4. DAC / DAChain
-Blockchain Layer 1 diseñada para ser resistente a la computación cuántica. Su testnet "Inception" está activo (lanzado el 18 de abril de 2026) e incluye un faucet y un sistema de puntos QE para participantes. Existe un airdrop potencial, aunque NO está confirmado. Al ser un proyecto en testnet en etapa temprana, presenta un riesgo medio-alto.
+El proyecto editorial está impulsado por Sergio Olmo y Javier Rodríguez. La presentación del equipo está disponible en la portada. Beneficio Diario es el nombre del portal: no se presenta como una empresa de inversión ni como una entidad autorizada para gestionar dinero.
 
-### 5. Polymarket
-Mercado de predicción descentralizado donde se puede operar sobre la probabilidad de eventos futuros. Estado: PRÓXIMAMENTE en BeneficioDiario.
+### Tu relación con los terceros
 
-### 6. Forex Trading
-Sección de señales y formación sobre el mercado de divisas (forex). Estado: PRÓXIMAMENTE en BeneficioDiario.
+No abrimos cuentas, custodiamos activos, conectamos carteras ni ejecutamos operaciones. Los registros y verificaciones que exija una plataforma enlazada se realizan en su propio sitio y bajo sus condiciones. Nunca nos envíes fondos, contraseñas o frases semilla.
 
-### 7. Crypto & DeFi
-Contenido sobre staking y yield farming para generar ingresos pasivos en finanzas descentralizadas. Estado: PRÓXIMAMENTE en BeneficioDiario.
+### Cómo se financia
 
-## Blog
+El portal puede obtener ingresos mediante anuncios y enlaces de afiliación o referido. La consulta sigue siendo gratuita. La política de transparencia explica los incentivos y sus posibles conflictos de interés.
 
-- "KAST lanza el USD Cashback: dinero real de vuelta en cada compra" (5 may 2026): explica el nuevo cashback en dólares de la tarjeta KAST.
-- "VOID Network supera los 1.000 usuarios y ajusta su modelo de distribución" (6 may 2026): cubre el crecimiento del proyecto y los cambios en su distribución de tokens.
-- "GRVT: trading descentralizado con el capital siempre trabajando" (20 abr 2026): analiza cómo combinar trading y rendimiento en un DEX con autocustodia.
-- "Top 5 criptos compradas en 2020: balance a 6 años" (15 abr 2026): revisa la rentabilidad real de cinco criptomonedas a largo plazo.
+### Contacto y correcciones
 
-## Preguntas frecuentes (FAQ)
+El proyecto se gestiona desde Barcelona, España. Puedes escribir a info@beneficiodiario.com para consultas, errores, enlaces rotos, privacidad o colaboraciones. Lee la política editorial para conocer el alcance de los análisis y las correcciones.
+- [Contactar con Beneficio Diario](https://beneficiodiario.com/contacto): Contacto del portal Beneficio Diario en Barcelona, España: info@beneficiodiario.com. Consultas, privacidad, correcciones, enlaces rotos y colaboraciones.
 
-**1. ¿Cómo puedo conseguir dinero o ingresos con estos proyectos?**
-Hay varias vías según el proyecto: cashback al gastar (KAST), acumular tokens gratis con tareas diarias (VOID), trading y rendimiento/APY (GRVT), participar en testnets y puntos de cara a posibles airdrops (DAChain), o ingresos pasivos vía staking/DeFi. Cada vía tiene su propio nivel de esfuerzo y riesgo.
+### Consultas y correcciones
 
-**2. ¿Es dinero fácil y rápido garantizado?**
-No. No existe el dinero fácil garantizado. Algunos métodos (como el cashback) dan un retorno más predecible, pero la mayoría de las ganancias en cripto dependen del mercado y pueden no llegar nunca. Siempre hay riesgo de perder dinero y nunca prometemos beneficios asegurados.
+Indica la página o el enlace al que te refieres y explica el error o la duda. Si tienes una fuente oficial o documentación que permita comprobarlo, incluye su dirección. No prometemos una respuesta en un plazo fijo.
 
-**3. ¿Cuánto dinero necesito para empezar?**
-Depende del proyecto. Varios no requieren capital: VOID Network es gratis (0 €) y las testnets como DAChain usan faucets sin coste. Otros, como el trading en GRVT, requieren aportar capital que está expuesto a riesgo. Empieza solo con lo que puedas permitirte perder.
+### Privacidad
 
-**4. ¿Qué riesgo tienen las criptomonedas?**
-Alto. Son activos muy volátiles cuyo precio puede subir o bajar con fuerza. Puedes perder parte o la totalidad de tu capital. Los proyectos en fase temprana (testnets, airdrops no confirmados) añaden riesgo extra porque su futuro es incierto. Por eso clasificamos cada proyecto por nivel de riesgo (bajo, medio, medio-alto).
+Puedes utilizar el mismo correo para ejercer derechos o plantear dudas sobre tus datos. Explica qué solicitas y evita enviar documentación de identidad salvo que sea necesaria y te indiquemos cómo facilitarla de forma proporcionada.
 
-**5. ¿Es seguro y fiable?**
-BeneficioDiario comparte información y análisis honestos, pero no controla los proyectos de terceros ni puede garantizar su seguridad o resultados. Priorizamos proyectos con autocustodia y buena reputación, pero la responsabilidad final de investigar y decidir es tuya (DYOR).
+### Incidencias con una plataforma
 
-**6. ¿Cómo empiezo?**
-Lee el análisis del proyecto que te interese en la sección Proyectos, entiende su riesgo, investiga por tu cuenta y, si decides participar, sigue los pasos indicados (a veces a través de enlaces de referido). Empieza pequeño y nunca inviertas dinero que necesites.
+No tenemos acceso a cuentas, depósitos ni operaciones de los servicios enlazados. Contacta con el soporte oficial del proveedor para retiradas, bloqueos, tarjetas, KYC o recompensas. Podemos revisar la información del portal, pero no actuar sobre tu cuenta externa.
 
-## Aviso / Disclaimer completo
+### Colaboraciones
 
-BeneficioDiario ofrece contenido exclusivamente informativo y educativo. NO constituye asesoría financiera, de inversión, legal ni fiscal, ni una recomendación de compra o venta de ningún activo. Las criptomonedas y los productos relacionados (trading, DeFi, airdrops, testnets) son de naturaleza altamente volátil y de alto riesgo: puedes perder parte o la totalidad del capital invertido. No garantizamos ninguna ganancia ni rentabilidad; expresiones como "dinero fácil", "dinero rápido" o "beneficio diario" describen objetivos posibles pero NO resultados asegurados, y siempre implican riesgo. El sitio puede incluir enlaces de afiliado o referido por los que podríamos recibir una comisión sin coste adicional para ti. Antes de participar en cualquier proyecto, investiga por tu cuenta (DYOR), valora tu situación personal y, si lo necesitas, consulta a un profesional acreditado. Al usar la información de este sitio aceptas que lo haces bajo tu propia responsabilidad.
+Identifica el proyecto, la entidad responsable, el sitio oficial y las condiciones de la propuesta. Las colaboraciones comerciales deben estar identificadas; no ofrecemos garantías de cobertura, resultados ni posicionamiento.
+
+### Protege tu información
+
+No envíes contraseñas, códigos de acceso, claves privadas, frases semilla ni datos bancarios. No solicitamos transferencias para desbloquear una inversión o entregar un premio. El tratamiento de los mensajes se explica en la política de privacidad.
+- [Política editorial y fuentes de Beneficio Diario](https://beneficiodiario.com/politica-editorial): Criterios de publicación, fuentes, fechas, riesgos, afiliación y corrección de errores en las guías y artículos de Beneficio Diario.
+
+### Fuentes y comprobación
+
+Priorizamos documentación del proveedor, condiciones oficiales y comunicaciones de los reguladores. Contrastamos los datos cuando resulta posible. Una fuente oficial puede contener información comercial: su existencia no demuestra que una promesa vaya a cumplirse.
+
+Cuando una recompensa, fecha o lanzamiento no están confirmados deben tratarse como hipótesis. No equiparamos puntos, tokens de testnet o expectativas de airdrop a un saldo de dinero disponible.
+
+### Fechas y vigencia
+
+Las noticias reflejan el contexto de su fecha de publicación. Un artículo antiguo no confirma que una campaña siga activa hoy. Cambiar el diseño o desplegar el sitio no equivale a revisar el contenido, y no actualizamos automáticamente su fecha editorial por ese motivo.
+
+### Experiencias y resultados
+
+Diferenciamos experiencias personales, datos de terceros y simulaciones cuando se aportan. No son auditorías ni rentabilidades representativas. Los resultados pasados no garantizan los futuros y deben interpretarse junto a costes, impuestos, periodo y riesgo.
+
+### Financiación y conflictos
+
+La publicidad, la afiliación y los referidos pueden influir en la selección de temas. Identificamos esos enlaces y explicamos los incentivos en Transparencia. No presentamos un enlace comercial como certificación independiente de seguridad.
+
+### Errores y límites
+
+Si detectas un error, envía la URL, el dato cuestionado y la fuente a info@beneficiodiario.com. Podemos corregir, ampliar o retirar una publicación. Los cambios materiales deben explicar qué se ha corregido; no cambiamos fechas para simular actualidad.
+
+No somos una agencia de calificación ni un servicio de asesoramiento individual. Las etiquetas de riesgo son orientativas y no recogen todos los riesgos de cada plataforma.
+- [Ingresos pasivos: opciones, costes y riesgos · Beneficio Diario](https://beneficiodiario.com/ingresos-pasivos): Qué son los ingresos pasivos, en qué se diferencian del trading, cashback y airdrops, y qué riesgos y costes revisar antes de utilizar una plataforma.
+
+### Pasivo no significa automático ni sin riesgo
+
+Crear un producto, mantener un activo o utilizar un protocolo puede exigir capital, conocimientos y trabajo inicial y periódico. El ingreso bruto puede ocultar costes de mantenimiento, comisiones, impuestos o depreciación. Si una oferta promete cobrar sin esfuerzo y sin riesgo, necesitas contrastar cómo se financia.
+
+Compara el resultado neto con el tiempo dedicado y el capital expuesto. Una recompensa elevada puede compensar riesgos elevados o un incentivo temporal, en lugar de demostrar que el negocio es sostenible.
+
+### Staking y recompensas de red
+
+En determinadas redes de prueba de participación, el staking vincula activos a la seguridad de la red y puede generar recompensas. Las condiciones varían: hay riesgos de precio, indisponibilidad, penalizaciones, custodia o contratos. Un token de staking líquido añade riesgos propios y no equivale a una cuenta bancaria.
+
+Distingue el staking nativo de la promesa comercial de rendimiento de una plataforma. Averigua quién controla las claves, de dónde procede la recompensa y cómo y cuándo puedes salir.
+
+### Préstamos y liquidez en DeFi
+
+Prestar activos o aportar liquidez puede producir comisiones o incentivos. También introduce exposición a contratos, oráculos, deudas, pérdida de paridad, contrapartes y pérdida impermanente. Un APY puede ser variable y calcularse con supuestos que no se cumplirán.
+
+Pregunta en qué activo se paga, si el rendimiento se capitaliza, qué liquidez existe para retirarlo y qué ocurriría con el protocolo en un escenario de estrés. No compares una tasa anualizada de pocos días con una rentabilidad anual realizada.
+
+### Qué no debe confundirse con ingreso pasivo
+
+El cashback es la devolución de parte de una compra, y normalmente requiere gasto previo. El trading supone decisiones activas y puede generar pérdidas. Las tareas de airdrops requieren tiempo y no aseguran recibir tokens. Ahorrar un gasto o acumular puntos no es lo mismo que cobrar un ingreso.
+
+En Beneficio Diario explicamos estas categorías por separado. No necesitas registrarte aquí: cualquier operación se realiza en el servicio externo, si decides utilizarlo después de leer sus condiciones.
+
+### Lista de comprobación antes de participar
+
+Identifica la entidad, la jurisdicción, el origen del rendimiento, las condiciones de salida y todos los costes. Revisa la documentación y las advertencias del regulador; una presencia en redes o un referido no demuestra autorización.
+
+Anota escenarios de pérdida y la exposición total, incluidos activos depositados, permisos de cartera y costes operativos. Si no puedes explicar cómo se genera el rendimiento, falta información para valorar la propuesta.
+- [Criptomonedas: guía inicial y riesgos · Beneficio Diario](https://beneficiodiario.com/criptomonedas): Conceptos para entender criptomonedas, wallets, exchanges, stablecoins y DeFi. Qué comprobar antes de usar una plataforma y cómo proteger tus claves.
+
+### Moneda, token y red
+
+Una red puede tener un activo nativo para pagar comisiones o participar en su seguridad. Otros tokens representan utilidades, derechos o incentivos definidos por un proyecto. El nombre, el número de unidades o una cotización inicial no bastan para valorar un activo.
+
+Una blockchain no garantiza que todos los proyectos que se anuncian sobre ella sean fiables. Comprueba documentación, direcciones de contrato, mecanismos de emisión, distribución y restricciones.
+
+### Wallets y claves privadas
+
+Una wallet permite interactuar con direcciones y firmar operaciones; no guarda necesariamente las monedas como archivos. En autocustodia, conservar y proteger las claves es tu responsabilidad. En custodia, dependes del proveedor para acceder a los activos.
+
+La frase semilla puede permitir controlar una cartera. No la compartas con soportes, formularios ni con Beneficio Diario. Verifica la red y dirección antes de una operación: muchos errores o firmas maliciosas son irreversibles.
+
+### Exchanges y DeFi
+
+Un exchange permite intercambiar activos según sus condiciones. Los protocolos DeFi utilizan contratos inteligentes para funciones como intercambio o préstamos. Una interfaz descentralizada no elimina dependencias técnicas, riesgos de administración, contratos u oráculos.
+
+Antes de usar un proveedor comprueba la entidad real, los permisos para operar donde resides, las comisiones, la custodia, las condiciones de retirada y el procedimiento de reclamaciones. Evita asumir que todo producto está cubierto por una garantía.
+
+### Stablecoins y volatilidad
+
+Las stablecoins buscan seguir una referencia, por ejemplo una moneda fiduciaria, mediante distintos mecanismos. Pueden perder esa referencia, presentar riesgos de reservas o de emisor y tener restricciones de reembolso. No son automáticamente equivalentes a un depósito bancario.
+
+La volatilidad también afecta a tokens de recompensas y activos utilizados para pagar comisiones. Un ingreso expresado en tokens puede perder valor antes de poder utilizarlo.
+
+### Cómo utilizar este portal
+
+Puedes leer gratuitamente guías y artículos, comparar explicaciones y consultar las fuentes. No necesitas una cuenta en Beneficio Diario. Los enlaces pueden ser de referido y las condiciones se comprueban en el sitio del proveedor.
+
+Empieza por el glosario si encuentras términos como gas, APY, KYC, DYOR o slashing. El aviso de riesgos detalla las limitaciones de los ejemplos financieros.
+- [Airdrops y testnets: cómo funcionan y sus riesgos · Beneficio Diario](https://beneficiodiario.com/airdrops): Qué son los airdrops, puntos, snapshots y testnets. Cómo revisar requisitos, costes, elegibilidad y señales de fraude sin confundir expectativas con dinero.
+
+### Airdrop confirmado frente a expectativa
+
+Distingue un anuncio oficial con reglas de una posibilidad comentada por la comunidad. Incluso una distribución anunciada puede cambiar sus condiciones o resultar inaccesible en tu país. Si un contenido habla de una campaña pasada, comprueba si sigue abierta.
+
+Un snapshot suele registrar un estado en una fecha; no demuestra por sí solo quién cobrará ni cuánto. Las comprobaciones de actividad artificial, identidad o jurisdicción pueden afectar a la elegibilidad.
+
+### Puntos y testnets no son dinero
+
+Los puntos pueden ser un sistema interno sin conversión garantizada. En una testnet se prueban funciones con activos de prueba que habitualmente no representan un derecho a tokens de la red principal.
+
+Separa las recompensas recibidas, los importes realizables y las estimaciones. No calcules una rentabilidad como si todos los puntos fueran vendibles al precio de un token que todavía no existe.
+
+### Costes que conviene medir
+
+Aunque una tarea no exija depósito, puede consumir tiempo, comisiones de red, datos móviles o información personal. Otras campañas exigen volumen de trading o capital expuesto. Las comisiones y las pérdidas pueden superar la recompensa.
+
+Lee si existen bloqueos, requisitos de custodia, pagos para reclamar o condiciones de referido. Ningún código de Beneficio Diario garantiza elegibilidad ni un premio.
+
+### Protege la cartera
+
+Comprueba el dominio y el anuncio en canales oficiales. Desconfía de mensajes que exijan tu frase semilla, pagos para desbloquear una recompensa o firmas cuyo alcance no entiendes. Los permisos de contrato pueden permitir mover activos.
+
+Un enlace aparentemente gratuito puede conducir a phishing. Revisa las autorizaciones, las redes y la procedencia del sitio; no confundas una cartera separada para pruebas con una garantía de seguridad.
+
+### Cómo leer nuestras publicaciones
+
+Mostramos artículos con su fecha original. Los resultados históricos no convierten una campaña cerrada en una oportunidad activa. Consulta la documentación del proyecto para fechas, criterios y reclamaciones.
+
+El portal es gratuito y no pide registro. Si decides probar un tercero, su cuenta, privacidad y condiciones son responsabilidad de ese servicio. Nuestros enlaces pueden incluir un referido.
+- [Glosario cripto: airdrop, staking, APY, DeFi y DYOR · Beneficio Diario](https://beneficiodiario.com/glosario-cripto): Significado de términos cripto e ingresos pasivos: airdrop, testnet, snapshot, staking, APY, APR, DeFi, gas, wallet, KYC, cashback, slashing y DYOR.
+
+### Airdrop, puntos, snapshot y testnet
+
+Airdrop: distribución de tokens con reglas fijadas por un proyecto. Puntos: unidades internas que pueden no convertirse en un activo. Snapshot: registro de un estado o actividad en una fecha. Testnet: red de pruebas; sus activos no equivalen necesariamente a dinero.
+
+### Staking y slashing
+
+Staking: participación con activos en ciertos mecanismos de prueba de participación, con condiciones y posibles recompensas. Slashing: penalización que puede reducir activos vinculados a un validador en determinadas redes. El staking delegado, líquido o a través de custodios añade condiciones propias.
+
+### APR y APY
+
+APR: tasa anual expresada sin incorporar necesariamente capitalización. APY: tasa anual que incorpora una hipótesis de capitalización. Comprueba frecuencia, variabilidad, activo de pago y costes. Ninguna de las dos garantiza lo que realmente cobrarás.
+
+### DeFi, liquidez y pérdida impermanente
+
+DeFi: servicios financieros construidos con contratos inteligentes. Aportar liquidez facilita intercambios u otras operaciones a cambio de comisiones o incentivos. La pérdida impermanente describe una diferencia de valor frente a mantener los activos por separado en ciertos pools; puede materializarse al salir.
+
+### Wallet, seed phrase y gas
+
+Wallet: herramienta para gestionar claves o interactuar con direcciones. Seed phrase o frase semilla: palabras que permiten recuperar o controlar una cartera; nunca las compartas. Gas: coste de ejecutar operaciones en una red, pagado según sus reglas. Una operación fallida también puede consumir comisiones.
+
+### Stablecoin, exchange y KYC
+
+Stablecoin: activo que intenta seguir una referencia y puede perderla. Exchange: servicio de intercambio de activos. KYC: comprobaciones de identidad que un proveedor puede exigir. Beneficio Diario no realiza KYC ni abre cuentas; esos requisitos corresponden al tercero.
+
+### Cashback, referido y DYOR
+
+Cashback: devolución de parte de una compra, con condiciones; no es rentabilidad de inversión. Referido: enlace o código que atribuye una acción y puede conceder incentivos. DYOR, do your own research: investigar fuentes, costes y riesgos antes de actuar; no es una exención de responsabilidad de quien publica.
+
+### Trading, apalancamiento y FOMO
+
+Trading: compraventa activa; no equivale a ingreso pasivo. Apalancamiento: exposición que amplifica resultados y pérdidas y puede causar liquidaciones. FOMO: miedo a quedarse fuera; una emoción que puede precipitar decisiones sin información suficiente.
+- [Aviso legal de Beneficio Diario](https://beneficiodiario.com/aviso-legal): Información sobre Beneficio Diario, portal gratuito gestionado por particulares: contacto, acceso libre, enlaces a terceros y propiedad intelectual.
+
+### El portal y su contacto
+
+Beneficio Diario es el nombre de un portal informativo gestionado por particulares desde Barcelona, España. Su dominio es beneficiodiario.com y el correo de contacto es info@beneficiodiario.com. No se presenta como una sociedad mercantil ni como una entidad financiera.
+
+El acceso gratuito no elimina las obligaciones que puedan resultar aplicables a quien gestiona el portal por la publicidad, los referidos o el tratamiento de datos. El nombre del portal es una denominación editorial.
+
+### Objeto y acceso gratuito
+
+Publicamos información educativa y enlaces sobre criptomonedas, airdrops, cashback, ingresos pasivos y plataformas de terceros. Consultar el portal es gratuito y no exige iniciar sesión, crear una cuenta ni facilitar datos de pago.
+
+No ofrecemos cuentas de inversión, custodia, cambio de criptoactivos, ejecución de órdenes ni asesoramiento individualizado. No recibimos depósitos ni solicitamos claves privadas, frases semilla o transferencias de dinero.
+
+### Servicios externos
+
+Al seguir un enlace externo sales del portal. El registro, KYC, pagos, depósitos, comisiones y condiciones dependen de su proveedor. Una cuenta en una plataforma externa no es una cuenta de Beneficio Diario.
+
+Un enlace no acredita la solvencia, autorización, seguridad o disponibilidad del proveedor. Verifica la entidad responsable, su documentación y las restricciones de tu país antes de utilizarlo.
+
+### Publicidad y propiedad intelectual
+
+El portal puede financiarse mediante publicidad, colaboraciones y afiliación o referidos. Identificamos los espacios publicitarios y explicamos los conflictos de interés en la política de transparencia.
+
+Los textos y elementos originales pertenecen a sus respectivos autores. Las marcas, logotipos e imágenes de terceros pertenecen a sus titulares. Puedes enlazar nuestras páginas y realizar citas dentro de los límites legales identificando la fuente. Para otros usos o para comunicar una infracción, contacta por correo.
+
+### Responsabilidad y derechos
+
+Procuramos corregir los errores, pero los datos y servicios externos pueden cambiar. No garantizamos resultados económicos ni disponibilidad ininterrumpida. Estas condiciones no excluyen responsabilidades que no puedan limitarse legalmente ni derechos imperativos.
+
+Se atenderá a la normativa aplicable. Si tienes la condición de consumidor, se mantienen las normas y la competencia judicial que te correspondan; no imponemos renuncia a los tribunales legalmente competentes.
+- [Política de privacidad · Beneficio Diario](https://beneficiodiario.com/privacidad): Datos técnicos, contacto, Vercel Web Analytics, publicidad y derechos de privacidad en Beneficio Diario. Sin cuentas de usuario ni registro obligatorio.
+
+### Gestión y contacto
+
+El portal Beneficio Diario se gestiona por particulares desde Barcelona, España. Para cuestiones sobre tus datos escribe a info@beneficiodiario.com. La información disponible sobre la gestión del sitio se recoge en el aviso legal.
+
+### Sin cuentas ni registro
+
+Puedes consultar el contenido sin registrarte ni iniciar sesión. No hay perfiles de usuario, cuentas de inversión, conexiones de cartera ni formularios de pago propios. No pedimos contraseñas, documentos de identidad, claves privadas ni frases semilla.
+
+La ausencia de registro no significa ausencia de tratamiento de datos: el alojamiento, la seguridad, tus correos y los servicios opcionales pueden tratar información técnica o personal.
+
+### Datos, finalidades y bases jurídicas
+
+Alojamiento y seguridad: el proveedor puede tratar IP, fechas, solicitudes y datos técnicos para entregar la web y prevenir abusos. La base es el interés legítimo en prestar y proteger el servicio, con las garantías y ponderación correspondientes.
+
+Contacto: tratamos tu correo y el mensaje para atender la consulta. La base es el interés legítimo en responder o las medidas precontractuales solicitadas, según el caso. No envíes datos sensibles o documentación innecesaria.
+
+Analítica: Vercel Web Analytics se carga solo si consientes la categoría de analítica. La base aplicada en este portal es tu consentimiento, aunque la herramienta no use cookies de terceros. No habilitamos Google Analytics.
+
+Publicidad: las integraciones opcionales se bloquean hasta que consientes esa categoría. El consentimiento puede retirarse en cualquier momento y rechazarlo no impide leer la web.
+
+### Vercel Web Analytics
+
+Permite obtener estadísticas agregadas sobre páginas visitadas, fuentes de tráfico y características generales del dispositivo o región. Según su documentación, no usa cookies de terceros y utiliza un identificador derivado de la solicitud que se descarta tras 24 horas. Este plazo no equivale a la conservación de todas las estadísticas.
+
+Eliminamos consultas y fragmentos de las URL enviadas a la analítica. No enviamos nombres, correos o contenido de formularios como eventos. La recogida requiere que el servicio esté activado en Vercel y que hayas aceptado la analítica.
+
+### Proveedores y newsletter externa
+
+Vercel Inc. puede prestar alojamiento y analítica. La configuración publicitaria puede utilizar Google AdSense o A-ADS con consentimiento y cuando haya espacios activos. Google Fonts sirve fuentes tipográficas y recibe la solicitud técnica de descarga, que incluye la IP.
+
+La newsletter es opcional y se tramita en una página externa de Beehiiv. Aquí no introduces un correo ni lo enviamos en parámetros de URL. Revisa el formulario externo, su información de privacidad, quién lo gestiona y cómo darte de baja antes de suscribirte.
+
+No vendemos bases de datos de usuarios ni disponemos de cuentas propias. Las comunicaciones a autoridades se realizan cuando exista una obligación o requerimiento legal aplicable.
+
+### Transferencias y conservación
+
+Algunos proveedores pueden tratar datos fuera del Espacio Económico Europeo. Cuando proceda deben existir garantías válidas, como una decisión de adecuación aplicable o cláusulas contractuales tipo y medidas complementarias. Consulta los acuerdos de cada proveedor para conocer las entidades y mecanismos concretos.
+
+Los mensajes se conservan mientras sean necesarios para atender la consulta y, cuando proceda, durante los plazos legales de responsabilidad. Los registros y estadísticas siguen la configuración y los plazos del proveedor; no les atribuimos un plazo único.
+
+La elección de privacidad caduca a los seis meses y se solicita de nuevo. La preferencia de tema visual permanece localmente hasta que la cambies o borres el almacenamiento del navegador.
+
+### Tus derechos
+
+Cuando corresponda puedes ejercer acceso, rectificación, supresión, oposición, limitación y portabilidad, y retirar tu consentimiento sin afectar a la licitud del tratamiento anterior. Escribe a info@beneficiodiario.com; solo pediremos información proporcionada para verificar la solicitud.
+
+Puedes reclamar ante la Agencia Española de Protección de Datos u otra autoridad competente. El enlace «Configurar privacidad» permite cambiar las categorías opcionales sin dejar de consultar el portal.
+
+### Menores y cambios
+
+El contenido financiero se dirige a personas adultas. Los terceros pueden exigir mayoría de edad y otros requisitos. No invitamos a menores a invertir ni solicitamos conscientemente sus datos. Actualizaremos esta política si cambian los tratamientos y pediremos un nuevo consentimiento cuando sea necesario.
+- [Política de cookies y tecnologías similares · Beneficio Diario](https://beneficiodiario.com/cookies): Almacenamiento y servicios opcionales de Beneficio Diario: cómo aceptar, rechazar, configurar y retirar la analítica y la publicidad.
+
+### Decide por separado
+
+Puedes aceptar todo, rechazar las tecnologías opcionales o elegir por separado analítica y publicidad. Ambas categorías están desactivadas por defecto. El enlace «Configurar privacidad» del pie de página permite cambiar tu elección en cualquier momento.
+
+### Almacenamiento propio
+
+bd_cookie_consent: almacenamiento local que guarda categorías, versión de política y fecha de decisión durante seis meses para respetar tu elección. No es un identificador publicitario.
+
+bd_dark: almacenamiento local que recuerda el tema visual. No se comparte con anunciantes y puedes borrarlo en el navegador. No hay cookies para mantener una sesión de usuario, porque no hay cuentas propias.
+
+### Analítica opcional de Vercel
+
+Vercel Web Analytics no usa cookies de terceros según su documentación. Trata información de las solicitudes y un hash de visita de duración limitada para estadísticas. En este portal lo bloqueamos igualmente hasta que aceptes la analítica. No cargamos Google Analytics.
+
+Eliminamos consultas y fragmentos de las URL antes de enviar eventos. La duración del identificador de visita no equivale al plazo de conservación de los informes agregados.
+
+### Publicidad de terceros
+
+Google AdSense y A-ADS solo se cargan con permiso publicitario y espacios configurados. Sus scripts o marcos pueden procesar IP, datos técnicos y sus propios identificadores. El proveedor y la duración de cada tecnología dependen de la campaña servida: consulta sus políticas.
+
+Esta herramienta de preferencias no sustituye una CMP certificada cuando la red publicitaria la exige. Antes de activar espacios de AdSense en territorios donde Google exige una CMP certificada debe configurarse esa CMP.
+
+### Recursos y páginas externas
+
+Los referidos pueden incluir un código de atribución del proveedor. Una vez sales del portal, las tecnologías de ese sitio se rigen por su política. La newsletter de Beehiiv es externa y opcional.
+
+Google Fonts y las imágenes externas de los contenidos implican conexiones técnicas con sus respectivos servidores para descargar esos recursos.
+
+### Retirar permisos y borrar datos
+
+Abre «Configurar privacidad», cambia las categorías y guarda. Al retirar un permiso concedido recargamos la página para detener recursos ya cargados y bloquear nuevas cargas o eventos. La retirada no elimina información que un tercero ya hubiera recibido.
+
+Puedes borrar cookies y almacenamiento local desde las opciones del navegador. Las cookies de dominios externos deben eliminarse desde el navegador o las herramientas del tercero. Si borras la elección, volveremos a solicitarla.
+- [Condiciones de uso del portal · Beneficio Diario](https://beneficiodiario.com/condiciones-de-uso): Consulta gratuita de Beneficio Diario, sin registro ni venta propia: uso de los contenidos, enlaces y relaciones con proveedores externos.
+
+### Alcance del servicio
+
+El portal ofrece contenido informativo gratuito sobre sitios de terceros. No necesitas una cuenta ni celebras un contrato de inversión con nosotros. No vendemos criptoactivos, productos financieros ni suscripciones de acceso.
+
+### Uso permitido
+
+Respeta la ley y los derechos de sus autores. No alteres el servicio, distribuyas código malicioso o suplantes al equipo. Compartir enlaces o realizar citas dentro de los límites legales está permitido. El rastreo autorizado en robots.txt no cede derechos de autor ni garantiza la exactitud del contenido.
+
+### Plataformas de terceros
+
+Comprueba costes, privacidad, entidad responsable, requisitos y riesgos antes de registrarte en un sitio enlazado. Sus exigencias de KYC, edad, residencia o capital pertenecen al proveedor externo.
+
+Las incidencias de operaciones, tarjetas, recompensas o retiradas se reclaman ante ese proveedor. Puedes avisarnos de errores, enlaces rotos o suplantaciones para revisarlos.
+
+### Información y disponibilidad
+
+Los ejemplos y resultados históricos no predicen rendimientos futuros. Pueden no incluir comisiones, impuestos o variaciones de cambio salvo indicación expresa. Podemos actualizar o retirar contenido. No garantizamos la permanencia de promociones ni disponibilidad ininterrumpida.
+
+Estas condiciones no limitan derechos irrenunciables. Las leyes aplicables y los tribunales competentes se determinan conforme a la normativa, respetando las protecciones imperativas del consumidor.
+
+### Sin ventas ni devoluciones propias
+
+No ofrecemos pagos ni contratación de productos en el portal. Por ello no existe un procedimiento propio de entrega, devolución o desistimiento para operaciones de terceros. Los derechos de una contratación externa se ejercen frente a su proveedor.
+
+Para dudas sobre el portal escribe a info@beneficiodiario.com. La versión vigente y su fecha de actualización aparecen en estas páginas.
+- [Aviso de riesgos financieros y de criptoactivos · Beneficio Diario](https://beneficiodiario.com/aviso-de-riesgos): Riesgos de criptoactivos, airdrops, cashback, trading y DeFi. Beneficio Diario es informativo y no garantiza ingresos ni rentabilidad.
+
+### Sin asesoramiento individualizado
+
+El contenido es educativo y general. No considera tu patrimonio, experiencia, objetivos o tolerancia al riesgo. No constituye asesoramiento financiero, jurídico o fiscal ni una oferta de inversión de Beneficio Diario.
+
+### Pérdida de capital y protección
+
+Los criptoactivos pueden sufrir volatilidad extrema, falta de liquidez y pérdida total de valor. No todos los productos o proveedores tienen la misma regulación. No presupongas que existe garantía de depósitos o indemnización. Una autorización no garantiza rendimientos ni elimina el riesgo.
+
+### Staking, DeFi e ingresos pasivos
+
+Un APY es una tasa estimada o histórica, sujeta a condiciones. Existen riesgos de contraparte, bloqueo, slashing, pérdida de paridad de stablecoins, fallos de contratos y puentes y pérdida impermanente en ciertos pools.
+
+La rentabilidad puede ser negativa tras gastos e impuestos. Obtener recompensas puede exigir tiempo y mantenimiento: no son ingresos automáticos garantizados.
+
+### Airdrops y testnets
+
+Acumular puntos o realizar tareas no garantiza recibir tokens, cumplir los criterios o conseguir algo con valor de mercado. Un punto no equivale necesariamente a dinero. Existen costes de gas, exposición de datos, phishing y permisos peligrosos incluso sin depósito.
+
+No compartas frases semilla. Revisa cada dominio, firma y permiso. La elegibilidad y las fechas dependen del proveedor y pueden cambiar.
+
+### Cashback y trading
+
+El cashback devuelve parte de un gasto y no es rentabilidad de inversión. Revisa límites, tarifas y condiciones. Los porcentajes promocionales pueden cambiar.
+
+El trading y los derivados requieren gestión activa: no son ingresos pasivos. El apalancamiento amplifica pérdidas y puede provocar liquidaciones o responsabilidades adicionales según el producto.
+
+### Verificación y fiscalidad
+
+Verifica la entidad y la documentación oficial, y consulta avisos del regulador. Una etiqueta editorial de riesgo no es una certificación. Los resultados anteriores no representan lo que obtendrás.
+
+La fiscalidad depende de tu residencia y operaciones. Guarda registros y busca asesoramiento cualificado cuando sea necesario.
+- [Transparencia, publicidad y afiliación · Beneficio Diario](https://beneficiodiario.com/transparencia): Cómo puede financiarse Beneficio Diario mediante publicidad y referidos, identificación de enlaces comerciales y conflictos de interés.
+
+### Acceso gratuito y financiación
+
+Consultar el portal es gratis y no exige registro. Podemos recibir ingresos de publicidad, colaboraciones o referidos. Gestionarlo como particulares no significa que carezca de financiación o intereses económicos.
+
+### Enlaces y códigos de referido
+
+Una plataforma puede atribuirnos tu registro u operación y concedernos una comisión, puntos o recompensas si utilizas nuestro enlace o código. Los incentivos dependen del proveedor y no garantizamos bonos para el visitante.
+
+No afirmamos que las condiciones, el precio o las comisiones sean siempre idénticos a los de un acceso sin referido. Compara la oferta oficial antes de participar.
+
+### Identificación y conflicto de interés
+
+Los enlaces comerciales se identifican como referidos o afiliados cuando corresponde y utilizan el atributo sponsored. Los anuncios se etiquetan como «Publicidad». Una relación comercial puede influir en qué proyectos se cubren o destacan: considera ese conflicto al leer.
+
+Una mención, posición en portada o anuncio no acredita solvencia, autorización ni rentabilidad. Los servicios enlazados son independientes de Beneficio Diario.
+
+### Resultados y correcciones
+
+Los resultados publicados tienen el alcance y fecha indicados y no son una auditoría ni el resultado de todas las personas. Las simulaciones deben diferenciarse de operaciones efectivamente realizadas.
+
+Priorizamos fuentes oficiales y explicamos riesgos y limitaciones. Comunica errores o publicidad insuficientemente identificada a info@beneficiodiario.com. La política editorial explica cómo revisamos los contenidos.

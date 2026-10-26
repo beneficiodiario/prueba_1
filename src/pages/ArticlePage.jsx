@@ -8,12 +8,14 @@ import { Button } from '../components/ui/Button'
 import { Badge } from '../components/ui/Card'
 import { FiArrowLeft, FiArrowUpRight, FiClock, FiSun, FiMoon } from '../components/ui/icons'
 import { blogPosts } from '../data/content'
-import { SITE } from '../data/seo'
-import { useSeo, articleJsonLd } from '../lib/seo'
+import { useSeo } from '../lib/seo'
+import { articleMeta } from '../data/routes'
+import { articleDate } from '../lib/structuredData'
+import NotFoundPage from './NotFoundPage'
+import Footer from '../components/Footer'
 import { trackEvent } from '../lib/metrics'
 import { fadeUp, stagger, ease, revealInitial } from '../lib/motion'
 
-const SITE_NAME = SITE.name
 
 const T = {
   home:       { es: 'Inicio', en: 'Home' },
@@ -84,51 +86,21 @@ function ArticleHeader({ lang, homeHref, onToggleLang }) {
 
 export default function ArticlePage({ lang = 'es' }) {
   const { slug } = useParams()
+  const post = blogPosts.find(p => p.slug === slug && p.content?.[lang])
+  return post ? <PublishedArticle key={`${lang}-${slug}`} post={post} lang={lang} /> : <NotFoundPage />
+}
+
+function PublishedArticle({ post, lang }) {
+  const slug = post.slug
   const navigate = useNavigate()
-  const post = blogPosts.find((p) => p.slug === slug)
   const homeHref = lang === 'en' ? '/en' : '/'
 
   const toggleLang = () => navigate(lang === 'en' ? `/blog/${slug}` : `/en/blog/${slug}`)
 
-  const heading = post ? (post.title[lang] || post.title.es) : T.notFound[lang]
-  const excerpt = post ? (post.excerpt[lang] || post.excerpt.es) : ''
-  const path = `${lang === 'en' ? '/en' : ''}/blog/${slug}`
-  const image = post?.extraImage || post?.image
 
-  useSeo({
-    // El sufijo con la marca solo si el titular deja sitio: Google recorta
-    // en unos 60 caracteres y ya añade el nombre del sitio por su cuenta.
-    title: heading.length > 45 ? heading : `${heading} · ${SITE_NAME}`,
-    description: excerpt,
-    path,
-    image,
-    type: 'article',
-    lang,
-    noindex: !post,
-    alternates: { es: `/blog/${slug}`, en: `/en/blog/${slug}` },
-    jsonLd: post
-      ? articleJsonLd({ title: heading, description: excerpt, image, date: post.date, url: path, lang })
-      : null,
-  })
+  useSeo(articleMeta(post, lang))
 
-  useEffect(() => {
-    if (!post) return
-    if (typeof window.gtag === 'function') {
-      window.gtag('event', 'page_view', { page_title: heading, page_path: path })
-    }
-    window.scrollTo(0, 0)
-  }, [post, heading, path])
-
-  if (!post) {
-    return (
-      <div className="min-h-screen bg-bg text-fg flex flex-col items-center justify-center gap-5 px-6 text-center">
-        <h1 className="font-display text-display-3">{T.notFound[lang]}</h1>
-        <Button to={homeHref} variant="secondary">
-          <FiArrowLeft size={16} aria-hidden="true" /> {T.backHome[lang]}
-        </Button>
-      </div>
-    )
-  }
+  useEffect(() => { window.scrollTo(0, 0) }, [post])
 
   const refLabel = post.refLabel?.[lang] || T.defaultRef[lang]
 
@@ -158,7 +130,7 @@ export default function ArticlePage({ lang = 'es' }) {
 
         <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-3 mb-4">
           <Badge tone="brand">{post.tag?.[lang] || post.tag?.es}</Badge>
-          <time className="font-body text-[11px] text-fg-subtle">{post.date}</time>
+          <time dateTime={articleDate(post)} className="font-body text-[11px] text-fg-subtle">{post.date}</time>
           <span aria-hidden="true" className="w-1 h-1 rounded-full bg-fg-subtle" />
           <span className="font-body text-[11px] text-fg-subtle flex items-center gap-1">
             <FiClock size={11} aria-hidden="true" /> {post.readTime}
@@ -171,6 +143,8 @@ export default function ArticlePage({ lang = 'es' }) {
         >
           {post.title[lang] || post.title.es}
         </motion.h1>
+        <p className="font-body text-xs text-fg-muted mb-5">{lang === 'en' ? 'By Beneficio Diario editorial team. Published in its original historical context.' : 'Por el equipo editorial de Beneficio Diario. Publicado en su contexto histórico original.'} <Link to="/politica-editorial" className="text-brand-fg underline">{lang === 'en' ? 'Editorial policy (ES)' : 'Política editorial'}</Link></p>
+        <aside className="font-body text-sm text-fg-muted border border-line rounded-xl p-4 mb-7">{lang === 'en' ? 'May contain referral links. Campaigns and terms can change: check official information. No returns are guaranteed.' : 'Puede contener enlaces de referido. Las campañas y condiciones pueden cambiar: consulta la información oficial. No hay rentabilidad garantizada.'} <Link to="/transparencia" className="text-brand-fg underline">{lang === 'en' ? 'Transparency (ES)' : 'Transparencia'}</Link></aside>
 
         <motion.figure variants={fadeUp} className="rounded-card overflow-hidden border border-line mb-8 bg-surface-2">
           <img
@@ -242,11 +216,7 @@ export default function ArticlePage({ lang = 'es' }) {
         </div>
       </motion.article>
 
-      <footer className="border-t border-line py-9 px-5 text-center">
-        <p className="font-body text-[11px] leading-relaxed text-fg-subtle max-w-[62ch] mx-auto">
-          {T.footer[lang]}
-        </p>
-      </footer>
+      <Footer lang={lang} />
     </div>
   )
 }

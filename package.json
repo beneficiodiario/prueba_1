@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prerender-blog.mjs",
-    "preview": "vite preview"
+    "build": "vite build && vite build --ssr src/prerender.jsx --outDir .prerender && node scripts/prerender.mjs",
+    "preview": "node scripts/preview-static.mjs",
+    "test": "node --test scripts/verify-seo.test.mjs",
+    "check": "npm run build && npm test"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "lenis": "^1.1.0",
     "motion": "^12.43.0",
     "react": "^18.3.1",

@@ -18,10 +18,10 @@ const BTN_LABEL = {
 
 const T = {
   eyebrow: { es: 'Proyectos destacados', en: 'Featured projects' },
-  title:   { es: 'Proyectos activos ahora mismo', en: 'Currently active projects' },
+  title:   { es: 'Proyectos que seguimos', en: 'Projects we follow' },
   sub: {
-    es: 'Solo publicamos proyectos que hemos analizado y probado. Cada uno con su guía, código de referido y datos reales.',
-    en: 'We only publish projects we have analyzed and tested. Each one with its guide, referral code and real data.',
+    es: 'Información sobre plataformas de terceros. Comprueba la vigencia de cada campaña, sus costes y condiciones oficiales. Los enlaces pueden incluir referidos.',
+    en: 'Information about third-party platforms. Check current campaign availability, costs and official terms. Links may include referrals.',
   },
   more:     { es: 'Más proyectos', en: 'More projects' },
   code:     { es: 'Código', en: 'Code' },

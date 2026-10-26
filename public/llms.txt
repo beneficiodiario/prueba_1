@@ -1,34 +1,30 @@
-# BeneficioDiario
+# Beneficio Diario
 
-> BeneficioDiario es una plataforma de contenido en español (con versión en inglés) que descubre, analiza y comparte proyectos cripto reales con potencial de generar ingresos. No es asesoría financiera.
+> Portal gratuito de información sobre criptomonedas, ingresos pasivos, airdrops y cashback. Sin registro. Guías, riesgos y enlaces a servicios de terceros.
 
-Aquí un modelo de lenguaje encontrará análisis honestos de proyectos de criptomonedas (cashback, airdrops, trading, DeFi e ingresos pasivos), artículos de blog y una sección de preguntas frecuentes. El contenido está principalmente en español e inglés, es divulgativo y educativo, no constituye asesoría financiera y usa enlaces de afiliado/referido. Toda inversión en cripto conlleva riesgo: no hay ganancias garantizadas y recomendamos investigar por tu cuenta (DYOR).
+Nombre alternativo: BeneficioDiario. Portal gestionado por particulares desde Barcelona, España. Contacto: info@beneficiodiario.com. No exige login ni registro propios, no gestiona fondos y no garantiza rendimientos. Los registros o pagos en terceros se rigen por sus condiciones. Puede financiarse con publicidad y referidos.
 
-## Proyectos
+Este archivo es una ayuda de navegación, no un mecanismo de posicionamiento ni una garantía de inclusión en respuestas de IA. Para vigencia, fuentes, riesgos y alcance, consulta cada página.
 
-- [KAST Card](https://beneficiodiario.com/#proyectos): tarjeta Visa cripto con 4% de cashback y puntos para airdrop (Q3 2026); disponible en más de 160 países. Riesgo bajo.
-- [VOID Network](https://beneficiodiario.com/#proyectos): proyecto en fase temprana tipo Pi Network, gratis (0 €), 2 clics al día para acumular tokens. Riesgo bajo.
-- [GRVT (Gravity)](https://beneficiodiario.com/#proyectos): exchange/brokerage descentralizado (DEX) con trading y rendimiento (hasta 11% APY), privacidad ZK y autocustodia. Season 2 de puntos; TGE tras el 30 de junio de 2026. Riesgo medio.
-- [DAC / DAChain](https://beneficiodiario.com/#proyectos): blockchain Layer 1 resistente a computación cuántica; testnet "Inception" activo (18 abril 2026), faucet y puntos QE. Airdrop potencial no confirmado. Riesgo medio-alto.
-- [Markets](https://beneficiodiario.com/#proyectos): app móvil construida sobre Hyperliquid para operar cripto, índices, acciones, oro y petróleo con transparencia on-chain. Gamificada (niveles, misiones). Posible doble airdrop: Hyperliquid (HYPE) y Kinetiq. Riesgo medio.
-- [Abstract](https://beneficiodiario.com/#proyectos): blockchain Layer 2 enfocada en cripto de consumo (gaming, NFTs, IA, social). Cartera Abstract Global Wallet (AGW) sin frase semilla; Portal con las mejores apps, comunidades y proyectos del ecosistema. Comunidad española activa (Telegram, X, YouTube) administrada por BeneficioDiario. Riesgo bajo.
-- [Polymarket](https://beneficiodiario.com/#proyectos): mercado de predicción descentralizado. Próximamente.
-- [Forex Trading](https://beneficiodiario.com/#proyectos): señales y formación de divisas. Próximamente.
-- [Crypto & DeFi](https://beneficiodiario.com/#proyectos): staking y yield farming. Próximamente.
+## Contenidos públicos
 
-## Blog
-
-- [KAST lanza el USD Cashback: dinero real de vuelta en cada compra](https://beneficiodiario.com/blog/kast-usd-cashback-dinero-real): el cashback en dólares de la tarjeta KAST (5 may 2026).
-- [VOID Network supera los 1.000 usuarios y ajusta su modelo de distribución](https://beneficiodiario.com/blog/void-network-1000-usuarios): crecimiento y cambios en la distribución de tokens (6 may 2026).
-- [GRVT: trading descentralizado con el capital siempre trabajando](https://beneficiodiario.com/blog/grvt-trading-descentralizado): trading y rendimiento en un DEX con autocustodia (20 abr 2026).
-- [Top 5 criptos compradas en 2020: balance a 6 años](https://beneficiodiario.com/blog/top-5-criptos-2020-balance): revisión de rentabilidad a largo plazo (15 abr 2026).
-
-## Recursos
-
-- [Cómo funciona](https://beneficiodiario.com/#como-funciona): explicación del método de descubrimiento y análisis de proyectos.
-- [FAQ](https://beneficiodiario.com/#faq): preguntas frecuentes sobre ingresos, riesgo y cómo empezar.
-- [Portfolio](https://beneficiodiario.com/#portfolio): seguimiento de proyectos y resultados de la comunidad.
-
-## Aviso
-
-BeneficioDiario es contenido informativo y educativo; NO es asesoría financiera, legal ni fiscal. Las criptomonedas son activos volátiles y de alto riesgo: puedes perder parte o la totalidad de tu capital. No existen ganancias garantizadas ni "dinero fácil" asegurado; cualquier beneficio depende del mercado y conlleva riesgo. El sitio puede contener enlaces de afiliado o referido. Investiga siempre por tu cuenta (DYOR) antes de participar en cualquier proyecto.
+- [Beneficio Diario | Criptomonedas e ingresos pasivos](https://beneficiodiario.com/): Portal gratuito sobre criptomonedas, ingresos pasivos, airdrops y cashback. Guías y riesgos de sitios de terceros, sin login ni registro en Beneficio Diario.
+- [Nos sumamos a Abstract: la comunidad española y por qué nos parece importante](https://beneficiodiario.com/blog/beneficiodiario-comunidad-abstract-espanol): Javier Rodríguez, cofundador de BeneficioDiario, es ahora administrador de la comunidad española de Abstract Chain. Te contamos qué es Abstract y cómo unirte.
+- [Markets: opera en Hyperliquid desde el móvil y posiciónate para el airdrop](https://beneficiodiario.com/blog/markets-hyperliquid-app): Markets es una app móvil sobre Hyperliquid para operar cripto, acciones e índices desde el teléfono, ver a los mejores traders y farmear kPoints de cara a posibles airdrops.
+- [KAST lanza el USD Cashback: dinero real de vuelta en cada compra](https://beneficiodiario.com/blog/kast-usd-cashback-dinero-real): KAST acaba de activar el cashback en dólares reales. Ya no son puntos ni tokens: es USD directo a tu saldo cada vez que usas la tarjeta.
+- [VOID Network supera los 1.000 usuarios y ajusta su modelo de distribución](https://beneficiodiario.com/blog/void-network-1000-usuarios): El proyecto acaba de cruzar el primer hito importante: más de 1.000 usuarios en fase early access. La app de iOS estará lista en unas dos semanas.
+- [GRVT: trading descentralizado con el capital siempre trabajando](https://beneficiodiario.com/blog/grvt-trading-descentralizado): Qué es GRVT, cómo funciona su Season 2 de puntos y por qué lo tenemos en el radar de cara al snapshot de Q2 2026.
+- [Top 5 criptos compradas en 2020: balance a 6 años](https://beneficiodiario.com/blog/top-5-criptos-2020-balance): BTC, ETH, SOL, BNB y XRP. ¿Cuánto habrías ganado invirtiendo €1.000 en cada una en 2020? Los números reales, sin filtros.
+- [Qué es Beneficio Diario y cómo funciona](https://beneficiodiario.com/sobre-beneficio-diario): Beneficio Diario es un portal gratuito de información sobre criptomonedas, airdrops, cashback y sitios de terceros. Sin login, sin registro y sin gestionar fondos.
+- [Contactar con Beneficio Diario](https://beneficiodiario.com/contacto): Contacto del portal Beneficio Diario en Barcelona, España: info@beneficiodiario.com. Consultas, privacidad, correcciones, enlaces rotos y colaboraciones.
+- [Política editorial y fuentes de Beneficio Diario](https://beneficiodiario.com/politica-editorial): Criterios de publicación, fuentes, fechas, riesgos, afiliación y corrección de errores en las guías y artículos de Beneficio Diario.
+- [Ingresos pasivos: opciones, costes y riesgos · Beneficio Diario](https://beneficiodiario.com/ingresos-pasivos): Qué son los ingresos pasivos, en qué se diferencian del trading, cashback y airdrops, y qué riesgos y costes revisar antes de utilizar una plataforma.
+- [Criptomonedas: guía inicial y riesgos · Beneficio Diario](https://beneficiodiario.com/criptomonedas): Conceptos para entender criptomonedas, wallets, exchanges, stablecoins y DeFi. Qué comprobar antes de usar una plataforma y cómo proteger tus claves.
+- [Airdrops y testnets: cómo funcionan y sus riesgos · Beneficio Diario](https://beneficiodiario.com/airdrops): Qué son los airdrops, puntos, snapshots y testnets. Cómo revisar requisitos, costes, elegibilidad y señales de fraude sin confundir expectativas con dinero.
+- [Glosario cripto: airdrop, staking, APY, DeFi y DYOR · Beneficio Diario](https://beneficiodiario.com/glosario-cripto): Significado de términos cripto e ingresos pasivos: airdrop, testnet, snapshot, staking, APY, APR, DeFi, gas, wallet, KYC, cashback, slashing y DYOR.
+- [Aviso legal de Beneficio Diario](https://beneficiodiario.com/aviso-legal): Información sobre Beneficio Diario, portal gratuito gestionado por particulares: contacto, acceso libre, enlaces a terceros y propiedad intelectual.
+- [Política de privacidad · Beneficio Diario](https://beneficiodiario.com/privacidad): Datos técnicos, contacto, Vercel Web Analytics, publicidad y derechos de privacidad en Beneficio Diario. Sin cuentas de usuario ni registro obligatorio.
+- [Política de cookies y tecnologías similares · Beneficio Diario](https://beneficiodiario.com/cookies): Almacenamiento y servicios opcionales de Beneficio Diario: cómo aceptar, rechazar, configurar y retirar la analítica y la publicidad.
+- [Condiciones de uso del portal · Beneficio Diario](https://beneficiodiario.com/condiciones-de-uso): Consulta gratuita de Beneficio Diario, sin registro ni venta propia: uso de los contenidos, enlaces y relaciones con proveedores externos.
+- [Aviso de riesgos financieros y de criptoactivos · Beneficio Diario](https://beneficiodiario.com/aviso-de-riesgos): Riesgos de criptoactivos, airdrops, cashback, trading y DeFi. Beneficio Diario es informativo y no garantiza ingresos ni rentabilidad.
+- [Transparencia, publicidad y afiliación · Beneficio Diario](https://beneficiodiario.com/transparencia): Cómo puede financiarse Beneficio Diario mediante publicidad y referidos, identificación de enlaces comerciales y conflictos de interés.

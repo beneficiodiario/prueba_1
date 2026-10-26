@@ -4,14 +4,9 @@
 //  Cambia solo los valores entre comillas; no toques los nombres.
 // ════════════════════════════════════════════════════════════════
 
-// ── 1) GOOGLE ANALYTICS 4 ───────────────────────────────────────
-// Pega aquí tu "ID de medición". Tiene el formato G-XXXXXXXXXX.
-// Cómo conseguirlo:
-//   1. Entra en https://analytics.google.com y crea una cuenta.
-//   2. Crea una propiedad para tu web y un "Flujo de datos" web.
-//   3. Copia el ID de medición (Administrar → Flujos de datos).
-// Mientras esté vacío ('') la analítica no se carga.
-export const GA_MEASUREMENT_ID = 'G-DBEE0W706C' // ej: 'G-ABCD1234EF'
+// ── 1) ANALÍTICA ───────────────────────────────────────────────
+// Vercel Web Analytics se integra en ConsentProvider. Actívalo en el panel
+// del proyecto Vercel; solo se carga al aceptar la categoría de analítica.
 
 // ── 2) ANUNCIOS (Google AdSense) ────────────────────────────────
 // Cuando AdSense te apruebe, crea "bloques de anuncios" y pega sus números

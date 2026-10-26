@@ -19,7 +19,7 @@ export default function PartnerSlot({ slot = 'banner', lang = 'es', className = 
 
   const size = SIZES[slot] || SIZES.banner
   const adsenseSlot = ADSENSE?.slots?.[slot]
-  const useAdsense = adsenseEnabled() && adsenseSlot
+  const useAdsense = consent === 'accepted' && adsenseEnabled() && adsenseSlot
   // A-ADS no respeta el Consent Mode de Google: solo se carga si el usuario acepta.
   const aadsUnit = consent === 'accepted' && A_ADS?.[slot]
 

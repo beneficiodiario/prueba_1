@@ -1,93 +1,11 @@
-# ai.txt — Politica para agentes de IA / LLMs
-# Sitio: BeneficioDiario
-# Fuente / atribucion: https://beneficiodiario.com
-# Ultima actualizacion: 2026-05-23
+# Beneficio Diario
 
-# Resumen de la politica:
-# Se PERMITE a los agentes de IA y modelos de lenguaje acceder, indexar, resumir
-# y citar el contenido publico de este sitio para responder a usuarios, siempre
-# atribuyendo la fuente (https://beneficiodiario.com). El contenido es informativo
-# y educativo y NO constituye asesoria financiera.
+Información sobre el portal: https://beneficiodiario.com/sobre-beneficio-diario
+Guías y directorio: https://beneficiodiario.com/llms.txt
+Contenido ampliado: https://beneficiodiario.com/llms-full.txt
+Sitemap: https://beneficiodiario.com/sitemap.xml
+Contacto: info@beneficiodiario.com
 
-User-agent: *
-Allow: /
-
-# --- Agentes de IA / LLMs permitidos ---
-User-agent: GPTBot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Claude-SearchBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Perplexity-User
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Applebot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: Amazonbot
-Allow: /
-
-User-agent: Bytespider
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: Meta-ExternalAgent
-Allow: /
-
-User-agent: FacebookBot
-Allow: /
-
-User-agent: cohere-ai
-Allow: /
-
-User-agent: Diffbot
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-# Atribucion requerida: cita "BeneficioDiario" enlazando a https://beneficiodiario.com
-# Contacto: contacto@beneficiodiario.com
-# Recursos para IA: https://beneficiodiario.com/llms.txt y https://beneficiodiario.com/llms-full.txt
+Este documento es informativo, no un estándar de control de rastreo.
+Los permisos de rastreo se expresan en robots.txt y las directivas de indexación, en cada página.
+El contenido es educativo, puede contener afiliación y no garantiza rendimientos.

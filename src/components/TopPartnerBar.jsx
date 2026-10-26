@@ -15,7 +15,7 @@ export default function TopPartnerBar({ lang = 'es', open = true, onClose }) {
   if (!ADS_ENABLED || !open) return null
 
   const adsenseSlot = ADSENSE?.slots?.banner
-  const useAdsense = adsenseEnabled() && adsenseSlot
+  const useAdsense = consent === 'accepted' && adsenseEnabled() && adsenseSlot
   // A-ADS no respeta el Consent Mode de Google: solo se carga si el usuario acepta.
   const aadsUnit = consent === 'accepted' && A_ADS?.banner
 

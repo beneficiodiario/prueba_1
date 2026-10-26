@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default defineConfig({
+export default defineConfig(({ isSsrBuild }) => ({
   plugins: [react()],
   server: {
     port: 3000,
@@ -13,7 +13,7 @@ export default defineConfig({
     // así el navegador las reaprovecha de la caché y solo re-descarga la app.
     rollupOptions: {
       output: {
-        manualChunks: {
+        manualChunks: isSsrBuild ? undefined : {
           react: ['react', 'react-dom', 'react-router-dom'],
           motion: ['motion', 'lenis'],
           icons: ['react-icons/fi', 'react-icons/si'],
@@ -22,4 +22,4 @@ export default defineConfig({
     },
     chunkSizeWarningLimit: 700,
   },
-})
+}))

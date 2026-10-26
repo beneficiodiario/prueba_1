@@ -4,7 +4,7 @@ import { Button } from './ui/Button'
 import { FiArrowUpRight } from './ui/icons'
 import { fadeUp, stagger, viewport, revealInitial } from '../lib/motion'
 
-const EMAIL = 'contacto@beneficiodiario.com'
+const EMAIL = 'info@beneficiodiario.com'
 
 const T = {
   eyebrow: { es: 'Para proyectos', en: 'For projects' },

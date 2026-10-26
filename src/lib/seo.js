@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { SITE } from '../data/seo'
+export { articleJsonLd, homeJsonLd } from './structuredData'
 
 // ════════════════════════════════════════════════════════════════
 //  SEO por página.
@@ -86,14 +87,15 @@ export function useSeo({
   alternates,
   jsonLd,
   noindex = false,
+  canonical = true,
 }) {
   // Las dependencias se serializan: así un objeto nuevo con el mismo
   // contenido no vuelve a disparar el efecto en cada render.
-  const key = JSON.stringify({ title, description, path, image, type, lang, alternates, jsonLd, noindex })
+  const key = JSON.stringify({ title, description, path, image, type, lang, alternates, jsonLd, noindex, canonical })
 
   useEffect(() => {
     const url = abs(path)
-    const img = abs(image || '/void-cover.png')
+    const img = abs(image || SITE.logo)
     const undo = []
 
     const prevTitle = document.title
@@ -106,7 +108,12 @@ export function useSeo({
 
     undo.push(meta('description', description))
     undo.push(meta('robots', noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1'))
-    undo.push(link('canonical', url))
+    const previousCanonicals = [...document.head.querySelectorAll('link[rel=canonical]')]
+    if (canonical) undo.push(link('canonical', url))
+    else {
+      previousCanonicals.forEach(el => el.remove())
+      undo.push(() => previousCanonicals.forEach(el => document.head.appendChild(el)))
+    }
 
     undo.push(property('og:type', type))
     undo.push(property('og:site_name', SITE.name))
@@ -123,9 +130,9 @@ export function useSeo({
 
     // hreflang: se sustituyen en bloque porque su número varía por página
     const prevAlternates = [...document.head.querySelectorAll('link[rel="alternate"][hreflang]')]
-    if (alternates) {
+    {
       prevAlternates.forEach((el) => el.remove())
-      const added = Object.entries({ ...alternates, 'x-default': alternates.es })
+      const added = Object.entries(alternates ? { ...alternates, 'x-default': alternates.es } : {})
         .map(([hreflang, href]) => {
           const el = document.createElement('link')
           el.setAttribute('rel', 'alternate')
@@ -140,7 +147,7 @@ export function useSeo({
       })
     }
 
-    if (jsonLd) {
+    {
       // El index.html ya trae datos estructurados para los buscadores.
       // Se apartan mientras esta página está montada: dos bloques a la vez
       // se contradicen y Google marca la página como duplicada.
@@ -151,7 +158,7 @@ export function useSeo({
       script.type = 'application/ld+json'
       script.dataset.seo = 'page'
       script.textContent = JSON.stringify(jsonLd)
-      document.head.appendChild(script)
+      if (jsonLd) document.head.appendChild(script)
 
       undo.push(() => {
         script.remove()
@@ -163,62 +170,3 @@ export function useSeo({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key])
 }
-
-/** Datos estructurados de un artículo del blog. */
-export const articleJsonLd = ({ title, description, image, date, url, lang }) => ({
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: title,
-  description,
-  image: abs(image),
-  datePublished: date,
-  inLanguage: lang,
-  author: { '@type': 'Organization', name: SITE.name, url: SITE.url },
-  publisher: {
-    '@type': 'Organization',
-    name: SITE.name,
-    logo: { '@type': 'ImageObject', url: abs(SITE.logo) },
-  },
-  mainEntityOfPage: abs(url),
-})
-
-/** Datos estructurados de la portada: la web + las preguntas frecuentes. */
-export const homeJsonLd = ({ lang, faqs, url }) => ({
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'WebSite',
-      '@id': `${SITE.url}/#website`,
-      name: SITE.name,
-      url: abs(url),
-      inLanguage: lang,
-      description: SITE.description,
-      publisher: { '@id': `${SITE.url}/#org` },
-    },
-    {
-      '@type': 'Organization',
-      '@id': `${SITE.url}/#org`,
-      name: SITE.name,
-      url: SITE.url,
-      logo: { '@type': 'ImageObject', url: abs(SITE.logo) },
-      sameAs: [SITE.twitter, SITE.youtube].filter(Boolean),
-      email: SITE.email,
-    },
-    {
-      '@type': 'FAQPage',
-      '@id': `${abs(url)}#faq`,
-      mainEntity: faqs.map((f) => ({
-        '@type': 'Question',
-        name: f.q[lang],
-        acceptedAnswer: { '@type': 'Answer', text: f.a[lang] },
-      })),
-    },
-    {
-      '@type': 'BreadcrumbList',
-      '@id': `${abs(url)}#breadcrumb`,
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: lang === 'en' ? 'Home' : 'Inicio', item: abs(url) },
-      ],
-    },
-  ],
-})

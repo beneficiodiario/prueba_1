@@ -3,6 +3,7 @@ node_modules/
 
 # Build de producción (se genera con `npm run build` y se sube dist/ a IONOS por FTP)
 dist/
+.prerender/
 
 # Logs
 logs

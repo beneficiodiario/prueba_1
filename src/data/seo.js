@@ -1,119 +1,111 @@
 // ── Site metadata (SEO) ──
 export const SITE = {
-  name: 'BeneficioDiario',
+  name: 'Beneficio Diario',
+  alternateName: 'BeneficioDiario',
   url: 'https://beneficiodiario.com',
-  description: 'Descubre, analiza y comparte proyectos cripto reales para generar ingresos: KAST, VOID Network, GRVT, DAChain y más. Información honesta sobre riesgo. No es asesoría financiera.',
+  description: 'Portal gratuito de información sobre criptomonedas, ingresos pasivos, airdrops y cashback. Sin registro. Guías, riesgos y enlaces a servicios de terceros.',
   logo: '/logo-bd.png',
   twitter: 'https://twitter.com/BeneficioDiario',
   youtube: 'https://www.youtube.com/@beneficiodiario_com',
-  email: 'contacto@beneficiodiario.com',
+  email: 'info@beneficiodiario.com',
 }
 
 // ── Metadatos por página ──
-// Título ≤ 60 caracteres y descripción entre 150 y 160: es lo que Google
-// muestra sin recortar. Cada página tiene los suyos, no se reciclan.
+// Títulos y descripciones propios por idioma; los fragmentos dependen del buscador.
 export const PAGES = {
   home: {
     es: {
-      title: 'BeneficioDiario · Proyectos cripto rentables analizados',
-      description: 'Analizamos proyectos cripto reales para generar ingresos: Abstract, KAST, VOID Network, GRVT y DAChain. Riesgo explicado sin humo. No es asesoría financiera.',
+      title: 'Beneficio Diario | Criptomonedas e ingresos pasivos',
+      description: 'Portal gratuito sobre criptomonedas, ingresos pasivos, airdrops y cashback. Guías y riesgos de sitios de terceros, sin login ni registro en Beneficio Diario.',
       path: '/',
     },
     en: {
-      title: 'BeneficioDiario · Profitable crypto projects, analyzed',
-      description: 'We analyze real crypto projects to generate income: Abstract, KAST Card, VOID Network, GRVT, DAChain and Markets. Risk explained honestly. Not financial advice.',
+      title: 'Beneficio Diario | Crypto and passive income guides',
+      description: 'Free information about crypto, passive income, airdrops and cashback. Guides, risks and links to third-party services. No account or login on this portal.',
       path: '/en',
-    },
-  },
-  privacy: {
-    es: {
-      title: 'Política de privacidad y cookies · BeneficioDiario',
-      description: 'Cómo tratamos tus datos en BeneficioDiario: cookies propias y de terceros, analítica, publicidad, consentimiento y tus derechos. Actualizada y en lenguaje claro.',
-      path: '/privacidad',
     },
   },
 }
 
-// ── Frequently asked questions (bilingual) ──
 export const faqs = [
   {
-    q: {
-      es: '¿Qué es BeneficioDiario y cómo funciona?',
-      en: 'What is BeneficioDiario and how does it work?',
+    "q": {
+      "es": "¿Qué es Beneficio Diario?",
+      "en": "What is Beneficio Diario?"
     },
-    a: {
-      es: 'BeneficioDiario es una plataforma de contenido e información donde descubrimos, analizamos y compartimos proyectos cripto reales con potencial de generar ingresos: desde la tarjeta KAST con cashback hasta proyectos en fase temprana como VOID Network, GRVT o DAChain. No gestionamos tu dinero ni invertimos por ti: te damos el análisis, las métricas, el nivel de riesgo y la guía paso a paso para que decidas tú con criterio.',
-      en: 'BeneficioDiario is a content and information platform where we discover, analyze and share real crypto projects with the potential to generate income: from the KAST card with cashback to early-stage projects such as VOID Network, GRVT or DAChain. We don\'t manage your money or invest for you: we give you the analysis, the metrics, the risk level and the step-by-step guide so you can decide for yourself with good judgment.',
-    },
+    "a": {
+      "es": "Beneficio Diario es un portal gratuito gestionado por particulares con información sobre criptomonedas, ingresos pasivos, airdrops y cashback. Publicamos guías y enlaces a sitios de terceros. No somos una entidad financiera ni gestionamos fondos.",
+      "en": "Beneficio Diario is a free portal run by individuals, with information about crypto, passive income, airdrops and cashback. We publish guides and links to third-party sites. We are not a financial institution and do not manage funds."
+    }
   },
   {
-    q: {
-      es: '¿Cómo puedo conseguir dinero o generar ingresos con estos proyectos?',
-      en: 'How can I make money or generate income with these projects?',
+    "q": {
+      "es": "¿Necesito registrarme o iniciar sesión?",
+      "en": "Do I need to register or log in?"
     },
-    a: {
-      es: 'Hay varias vías según el proyecto. Algunos no requieren inversión, como acumular tokens en VOID Network o participar en el testnet de DAChain con unos minutos al día. Otros generan beneficio por uso, como el 4% de cashback de la tarjeta KAST. Y otros, como GRVT o Forex, implican operar con capital y conllevan más riesgo. En todos los casos explicamos cómo empezar y qué esperar de forma realista.',
-      en: 'There are several ways depending on the project. Some require no investment, such as accumulating tokens on VOID Network or taking part in the DAChain testnet with a few minutes a day. Others generate a benefit through usage, such as the 4% cashback from the KAST card. And others, like GRVT or Forex, involve trading with capital and carry more risk. In every case we explain how to get started and what to expect realistically.',
-    },
+    "a": {
+      "es": "No. Todo el contenido de Beneficio Diario se puede consultar sin login ni registro. Los sitios de terceros pueden pedirte una cuenta, verificación de identidad u otros requisitos bajo sus propias condiciones. La newsletter externa es opcional.",
+      "en": "No. You can read all Beneficio Diario content without an account or login. Third-party sites may require an account, identity checks or other conditions. The external newsletter is optional."
+    }
   },
   {
-    q: {
-      es: '¿Es dinero fácil y rápido? ¿Están garantizadas las ganancias?',
-      en: 'Is it easy and fast money? Are the profits guaranteed?',
+    "q": {
+      "es": "¿Qué son los ingresos pasivos?",
+      "en": "What is passive income?"
     },
-    a: {
-      es: 'No. El \'dinero fácil, rápido y garantizado\' no existe, y conviene desconfiar de quien lo promete. Toda inversión conlleva riesgo y puedes perder parte o todo tu capital. Lo que sí ofrecemos es seleccionar proyectos con utilidad real, explicar su riesgo de forma honesta y mostrarte oportunidades de posicionamiento temprano. La constancia y el criterio importan más que la prisa.',
-      en: 'No. \'Easy, fast and guaranteed money\' does not exist, and you should be wary of anyone who promises it. Every investment carries risk and you can lose part or all of your capital. What we do offer is to select projects with real utility, explain their risk honestly and show you early-positioning opportunities. Consistency and good judgment matter more than haste.',
-    },
+    "a": {
+      "es": "Son ingresos que pueden requerir menos intervención continua después de un trabajo o inversión inicial. No significan dinero sin esfuerzo ni sin riesgo. Staking y DeFi tienen riesgos propios; trading, tareas de airdrops y cashback no deben confundirse con ingresos pasivos garantizados.",
+      "en": "Income that may require less ongoing intervention after initial work or investment. It does not mean effortless or risk-free money. Staking and DeFi have their own risks; trading, airdrop tasks and cashback are not guaranteed passive income."
+    }
   },
   {
-    q: {
-      es: '¿Cuánto dinero necesito para empezar a invertir?',
-      en: 'How much money do I need to start investing?',
+    "q": {
+      "es": "¿Un airdrop o una testnet garantizan ganar dinero?",
+      "en": "Does an airdrop or testnet guarantee earnings?"
     },
-    a: {
-      es: 'Depende del proyecto. VOID Network y el testnet de DAChain son gratuitos (0 €). KAST funciona con el gasto de tu día a día. GRVT, Forex o DeFi requieren un capital que decides tú, y siempre recomendamos empezar con cantidades que puedas permitirte arriesgar.',
-      en: 'It depends on the project. VOID Network and the DAChain testnet are free (€0). KAST works with your everyday spending. GRVT, Forex or DeFi require capital that you decide on, and we always recommend starting with amounts you can afford to risk.',
-    },
+    "a": {
+      "es": "No. Acumular puntos o realizar tareas no garantiza que haya un reparto, que seas elegible ni que los tokens tengan valor. Puede haber costes de red, tiempo, exposición de datos y riesgos de cartera. Comprueba siempre la fecha y las reglas oficiales.",
+      "en": "No. Points and tasks do not guarantee a distribution, eligibility or tokens with market value. There may be network fees, time costs, data exposure and wallet risks. Always check the date and official rules."
+    }
   },
   {
-    q: {
-      es: '¿Qué riesgo tienen las criptomonedas y las inversiones que analizáis?',
-      en: 'What risk do the cryptocurrencies and investments you analyze carry?',
+    "q": {
+      "es": "¿Es dinero fácil o hay rentabilidad garantizada?",
+      "en": "Is this easy money or guaranteed profit?"
     },
-    a: {
-      es: 'Las criptomonedas son activos volátiles: su precio puede subir o bajar con fuerza. Por eso cada proyecto de la web lleva un indicador de riesgo (bajo, medio o alto) y recomendamos siempre hacer tu propia investigación (DYOR) antes de invertir. No somos asesores financieros.',
-      en: 'Cryptocurrencies are volatile assets: their price can rise or fall sharply. That is why every project on the site carries a risk indicator (low, medium or high) and we always recommend doing your own research (DYOR) before investing. We are not financial advisors.',
-    },
+    "a": {
+      "es": "No garantizamos ingresos ni rentabilidad. Los criptoactivos pueden perder todo su valor. Los ejemplos, porcentajes promocionales y resultados pasados dependen de su fecha y condiciones y no aseguran un resultado futuro.",
+      "en": "We do not guarantee income or returns. Cryptoassets can lose all their value. Examples, promotional rates and past results depend on their date and conditions and do not guarantee future outcomes."
+    }
   },
   {
-    q: {
-      es: '¿Cuáles son los mejores proyectos para generar ganancias ahora mismo?',
-      en: 'Which are the best projects to generate profits right now?',
+    "q": {
+      "es": "¿Cómo se financia el portal?",
+      "en": "How is the portal funded?"
     },
-    a: {
-      es: 'Nuestros seis destacados actuales son: Abstract (Layer 2 para apps de consumo con Abstract Global Wallet, ecosistema en expansión y comunidad española administrada por BeneficioDiario), Markets (app móvil sobre Hyperliquid para operar y farmear posibles airdrops de HYPE y Kinetiq), KAST Card (cashback en cada compra, riesgo bajo), VOID Network (acumular tokens gratis en fase temprana), GRVT (trading descentralizado con rendimiento) y DAChain (testnet de una blockchain de capa 1 resistente a la computación cuántica). Cada uno tiene su guía y su código de referido en la web.',
-      en: 'Our six current highlights are: Abstract (Layer 2 for consumer apps with Abstract Global Wallet, a growing ecosystem and a Spanish community run by BeneficioDiario), Markets (mobile app on Hyperliquid to trade and farm potential HYPE and Kinetiq airdrops), KAST Card (cashback on every purchase, low risk), VOID Network (accumulate free tokens in an early stage), GRVT (decentralized trading with yield) and DAChain (testnet of a layer 1 blockchain resistant to quantum computing). Each one has its guide and its referral code on the site.',
-    },
+    "a": {
+      "es": "Podemos recibir ingresos de publicidad, colaboraciones y enlaces de afiliación o referido. Estos incentivos pueden influir en la selección de proyectos. El acceso sigue siendo gratuito. Consulta la política de transparencia y las condiciones del proveedor.",
+      "en": "We may earn revenue from advertising, partnerships and affiliate or referral links. These incentives may influence project selection. Access remains free. Read our transparency policy and the provider’s terms."
+    }
   },
   {
-    q: {
-      es: '¿BeneficioDiario es seguro y fiable, o es una estafa?',
-      en: 'Is BeneficioDiario safe and trustworthy, or is it a scam?',
+    "q": {
+      "es": "¿Qué datos recoge la analítica?",
+      "en": "What does analytics collect?"
     },
-    a: {
-      es: 'BeneficioDiario es un proyecto de contenido transparente: solo publicamos proyectos que analizamos y usamos nosotros mismos, y siempre explicamos el riesgo real, no solo los beneficios. Usamos enlaces de afiliado/referido, lo que significa que podemos recibir una comisión sin coste adicional para ti. No somos asesores financieros y nunca te pediremos que nos transfieras tu dinero.',
-      en: 'BeneficioDiario is a transparent content project: we only publish projects that we analyze and use ourselves, and we always explain the real risk, not just the benefits. We use affiliate/referral links, which means we may receive a commission at no extra cost to you. We are not financial advisors and we will never ask you to transfer your money to us.',
-    },
+    "a": {
+      "es": "Con tu consentimiento, Vercel Web Analytics permite obtener estadísticas de navegación. No cargamos Google Analytics. Puedes rechazar o configurar por separado analítica y publicidad y cambiar la elección desde el pie de página.",
+      "en": "With your consent, Vercel Web Analytics provides browsing statistics. We do not load Google Analytics. You can reject or configure analytics and advertising separately and change your choice in the footer."
+    }
   },
   {
-    q: {
-      es: '¿Cómo empiezo y me registro en un proyecto?',
-      en: 'How do I get started and sign up for a project?',
+    "q": {
+      "es": "¿Cómo contacto con Beneficio Diario?",
+      "en": "How do I contact Beneficio Diario?"
     },
-    a: {
-      es: 'Elige el proyecto que te interese en la sección Proyectos, lee su análisis y guía, copia el código de referido y regístrate a través del enlace. En proyectos como VOID o el testnet de DAChain estarás operativo en minutos y sin invertir nada.',
-      en: 'Choose the project you\'re interested in from the Projects section, read its analysis and guide, copy the referral code and sign up through the link. With projects like VOID or the DAChain testnet you\'ll be up and running in minutes and without investing anything.',
-    },
-  },
+    "a": {
+      "es": "Puedes escribir a info@beneficiodiario.com para consultas, correcciones y privacidad. El portal se gestiona desde Barcelona, España. Para problemas con depósitos, cuentas o recompensas de un tercero debes contactar con su soporte oficial.",
+      "en": "Email info@beneficiodiario.com for questions, corrections and privacy requests. The portal is run from Barcelona, Spain. For third-party deposits, accounts or rewards, contact the provider’s official support."
+    }
+  }
 ]
