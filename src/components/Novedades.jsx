@@ -2,23 +2,16 @@ import { motion } from 'motion/react'
 import { Link } from 'react-router-dom'
 import { Section, Eyebrow } from './ui/Section'
 import { Card, Badge } from './ui/Card'
-import { SiTelegram, SiX, SiYoutube, FiClock, FiArrowUpRight, FiRadio } from './ui/icons'
+import { FiClock, FiArrowUpRight, FiRadio } from './ui/icons'
 import { blogPosts } from '../data/content'
-import { ABSTRACT_COMMUNITY } from '../config'
-import { fadeUp, stagger, viewport, duration, ease, revealInitial } from '../lib/motion'
+import { articleDate } from '../lib/structuredData'
+import { fadeUp, stagger, viewport, revealInitial } from '../lib/motion'
 
 const T = {
   eyebrow:  { es: 'Novedades', en: 'Latest' },
   newBadge: { es: 'Nuevo', en: 'New' },
   readMore: { es: 'Leer artículo', en: 'Read article' },
-  join:     { es: 'Únete a la comunidad', en: 'Join the community' },
 }
-
-const SOCIALS = [
-  { key: 'telegram', label: 'Telegram', Icon: SiTelegram, className: 'bg-[#229ED9] text-white' },
-  { key: 'x',        label: 'X',        Icon: SiX,        className: 'bg-fg text-bg' },
-  { key: 'youtube',  label: 'YouTube',  Icon: SiYoutube,  className: 'bg-[#ff0033] text-white' },
-]
 
 export default function Novedades({ lang }) {
   const post = blogPosts[0]
@@ -28,8 +21,6 @@ export default function Novedades({ lang }) {
   const excerpt = post.excerpt?.[lang] || post.excerpt?.es
   const tag     = post.tag?.[lang]     || post.tag?.es
   const href    = `${lang === 'en' ? '/en' : ''}/blog/${post.slug}`
-
-  const links = SOCIALS.filter((s) => ABSTRACT_COMMUNITY?.[s.key])
 
   return (
     <Section id="novedades" tone="base" compact>
@@ -52,7 +43,7 @@ export default function Novedades({ lang }) {
               <div className="relative h-56 sm:h-72 overflow-hidden bg-gradient-to-br from-emerald-800 to-success">
                 <img
                   src={post.image}
-                  alt=""
+                  alt={post.imageAlt?.[lang] || ''}
                   loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-[900ms] ease-out-expo group-hover:scale-[1.05]"
                   onError={(e) => { e.currentTarget.style.display = 'none' }}
@@ -68,7 +59,7 @@ export default function Novedades({ lang }) {
 
               <div className="p-6 sm:p-8">
                 <div className="flex items-center gap-3 mb-3 font-body text-[11px] text-fg-subtle">
-                  <time>{post.date}</time>
+                  <time dateTime={articleDate(post)}>{post.date}</time>
                   <span aria-hidden="true" className="w-1 h-1 rounded-full bg-fg-subtle" />
                   <span className="flex items-center gap-1">
                     <FiClock size={11} aria-hidden="true" /> {post.readTime}
@@ -93,27 +84,6 @@ export default function Novedades({ lang }) {
             </Link>
           </Card>
         </motion.div>
-
-        {links.length > 0 && (
-          <motion.div variants={fadeUp} className="mt-7 flex flex-wrap items-center justify-center gap-2.5">
-            <span className="font-body text-[13px] text-fg-subtle mr-1">{T.join[lang]}</span>
-            {links.map(({ key, label, Icon, className }) => (
-              <motion.a
-                key={key}
-                href={ABSTRACT_COMMUNITY[key]}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.96 }}
-                transition={{ duration: duration.base, ease: ease.out }}
-                className={`inline-flex items-center gap-2 min-h-[40px] rounded-xl px-4 font-display font-semibold text-[13px] shadow-e1 hover:shadow-e2 transition-shadow ${className}`}
-              >
-                <Icon size={14} aria-hidden="true" />
-                {label}
-              </motion.a>
-            ))}
-          </motion.div>
-        )}
       </motion.div>
     </Section>
   )

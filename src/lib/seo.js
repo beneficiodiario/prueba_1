@@ -82,6 +82,7 @@ export function useSeo({
   description,
   path = '/',
   image,
+  imageAlt,
   type = 'website',
   lang = 'es',
   alternates,
@@ -91,7 +92,7 @@ export function useSeo({
 }) {
   // Las dependencias se serializan: así un objeto nuevo con el mismo
   // contenido no vuelve a disparar el efecto en cada render.
-  const key = JSON.stringify({ title, description, path, image, type, lang, alternates, jsonLd, noindex, canonical })
+  const key = JSON.stringify({ title, description, path, image, imageAlt, type, lang, alternates, jsonLd, noindex, canonical })
 
   useEffect(() => {
     const url = abs(path)
@@ -121,12 +122,14 @@ export function useSeo({
     undo.push(property('og:description', description))
     undo.push(property('og:url', url))
     undo.push(property('og:image', img))
+    undo.push(property('og:image:alt', imageAlt || SITE.name))
     undo.push(property('og:locale', lang === 'en' ? 'en_US' : 'es_ES'))
 
     undo.push(meta('twitter:card', 'summary_large_image'))
     undo.push(meta('twitter:title', title))
     undo.push(meta('twitter:description', description))
     undo.push(meta('twitter:image', img))
+    undo.push(meta('twitter:image:alt', imageAlt || SITE.name))
 
     // hreflang: se sustituyen en bloque porque su número varía por página
     const prevAlternates = [...document.head.querySelectorAll('link[rel="alternate"][hreflang]')]

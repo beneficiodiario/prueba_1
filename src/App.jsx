@@ -2,8 +2,8 @@ import { useEffect, useRef, useState, lazy, Suspense } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useReducedMotion } from 'motion/react'
 import Lenis from 'lenis'
-import { useSeo, homeJsonLd } from './lib/seo'
-import { PAGES, faqs } from './data/seo'
+import { useSeo } from './lib/seo'
+import { homeMeta } from './data/routes'
 import { TOP_BAR_HEIGHT } from './config'
 import { SafeBoundary } from './components/SafeBoundary'
 
@@ -19,7 +19,6 @@ import Results from './components/Results'
 import Blog from './components/Blog'
 import FAQ from './components/FAQ'
 import CTA from './components/CTA'
-import Newsletter from './components/Newsletter'
 import ForProjects from './components/ForProjects'
 import WhoWeAre from './components/WhoWeAre'
 import Footer from './components/Footer'
@@ -109,14 +108,7 @@ export default function App({ initialLang = 'es' }) {
   const lang = initialLang
   const setLang = (l) => navigate(l === 'en' ? '/en' : '/')
 
-  const page = PAGES.home[lang] || PAGES.home.es
-  useSeo({
-    ...page,
-    lang,
-    image: '/logo-bd.png',
-    alternates: { es: '/', en: '/en' },
-    jsonLd: homeJsonLd({ lang, faqs, url: page.path }),
-  })
+  useSeo(homeMeta(lang === 'en' ? 'en' : 'es'))
 
   useLenis(!reduced)
   const cursorRef = useCursorGlow(!reduced)
@@ -154,7 +146,6 @@ export default function App({ initialLang = 'es' }) {
         <Blog {...props} />
         <FAQ {...props} />
         <CTA {...props} />
-        <Newsletter {...props} />
         <ForProjects {...props} />
         <WhoWeAre {...props} />
       </main>

@@ -9,7 +9,7 @@ import { Badge } from '../components/ui/Card'
 import { FiArrowLeft, FiArrowUpRight, FiClock, FiSun, FiMoon } from '../components/ui/icons'
 import { blogPosts } from '../data/content'
 import { useSeo } from '../lib/seo'
-import { articleMeta } from '../data/routes'
+import { articleMeta, articlePath, DOCUMENT_PAGES } from '../data/routes'
 import { articleDate } from '../lib/structuredData'
 import NotFoundPage from './NotFoundPage'
 import Footer from '../components/Footer'
@@ -27,6 +27,9 @@ const T = {
   backHome:   { es: 'Volver al inicio', en: 'Back to home' },
   defaultRef: { es: 'Acceder', en: 'Access' },
   toggleLang: { es: 'Read in English', en: 'Leer en español' },
+  updated:    { es: 'Actualización', en: 'Update' },
+  guides:     { es: 'Guías relacionadas', en: 'Related guides (Spanish)' },
+  more:       { es: 'Más artículos', en: 'More articles' },
   footer: {
     es: '© 2026 BeneficioDiario · Contenido informativo, no es asesoría financiera. Incluye enlaces de afiliado. Invierte bajo tu responsabilidad (DYOR).',
     en: '© 2026 BeneficioDiario · Informational content, not financial advice. Contains affiliate links. Invest at your own risk (DYOR).',
@@ -84,6 +87,87 @@ function ArticleHeader({ lang, homeHref, onToggleLang }) {
   )
 }
 
+/** Bloque de registro con código de referido. Un artículo puede tener dos (p. ej. delta neutral). */
+function RefCta({ post, link, code, label, lang }) {
+  return (
+    <motion.aside
+      initial={revealInitial ? { opacity: 0, y: 16 } : false}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.45, ease: ease.out }}
+      className="rounded-card border border-brand-500/25 bg-brand-500/[0.06] p-5 sm:p-6"
+    >
+      <p className="font-body text-xs text-fg-muted mb-3">
+        {code ? T.refText[lang] : T.joinText[lang]}
+      </p>
+
+      {code && (
+        <div className="flex items-center gap-2 rounded-xl border border-dashed border-brand-500/35 bg-surface px-3 py-2.5 mb-4">
+          <span className="font-body text-[10px] text-fg-subtle uppercase tracking-[0.12em]">
+            {T.code[lang]}
+          </span>
+          <code className="font-mono font-bold text-sm text-brand-fg flex-1">{code}</code>
+        </div>
+      )}
+
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer sponsored"
+        onClick={() => trackEvent('affiliate_click', { project: post.id, location: 'article_page' })}
+        className="flex items-center justify-center gap-2 w-full min-h-[52px] rounded-2xl text-white font-display font-bold text-sm bg-gradient-to-br from-violet-600 to-purple-500 shadow-e2 transition-[transform,filter,box-shadow] duration-base ease-out-quart hover:-translate-y-0.5 hover:brightness-110 hover:shadow-e3"
+      >
+        {label?.[lang] || T.defaultRef[lang]}
+        <FiArrowUpRight size={16} aria-hidden="true" />
+      </a>
+    </motion.aside>
+  )
+}
+
+/** Enlazado interno: guías del mismo tema y otros artículos del blog. */
+function RelatedContent({ post, lang }) {
+  const guides = (post.related || []).map(path => DOCUMENT_PAGES.find(page => page.path === path)).filter(Boolean)
+  const others = blogPosts.filter(p => p.slug !== post.slug && p.content?.[lang]).slice(0, 3)
+  if (!guides.length && !others.length) return null
+
+  return (
+    <nav aria-label={T.guides[lang]} className="mt-12 grid gap-8 sm:grid-cols-2">
+      {guides.length > 0 && (
+        <div>
+          <h2 className="font-display font-bold text-sm uppercase tracking-[0.1em] text-fg mb-4">{T.guides[lang]}</h2>
+          <ul className="space-y-4">
+            {guides.map(page => (
+              <li key={page.path}>
+                <Link to={page.path} className="group block">
+                  <span className="font-display font-semibold text-[15px] text-brand-fg group-hover:underline">{page.title}</span>
+                  <span className="block font-body text-xs leading-relaxed text-fg-muted mt-1">{page.description}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {others.length > 0 && (
+        <div>
+          <h2 className="font-display font-bold text-sm uppercase tracking-[0.1em] text-fg mb-4">{T.more[lang]}</h2>
+          <ul className="space-y-4">
+            {others.map(p => (
+              <li key={p.slug}>
+                <Link to={articlePath(p, lang)} className="group block">
+                  <span className="font-display font-semibold text-[15px] text-brand-fg group-hover:underline">{p.title[lang]}</span>
+                  <span className="block font-body text-xs text-fg-subtle mt-1">
+                    <time dateTime={articleDate(p)}>{p.date}</time> · {p.tag?.[lang]}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </nav>
+  )
+}
+
 export default function ArticlePage({ lang = 'es' }) {
   const { slug } = useParams()
   const post = blogPosts.find(p => p.slug === slug && p.content?.[lang])
@@ -102,7 +186,10 @@ function PublishedArticle({ post, lang }) {
 
   useEffect(() => { window.scrollTo(0, 0) }, [post])
 
-  const refLabel = post.refLabel?.[lang] || T.defaultRef[lang]
+  const modified = post.modifiedAt
+    ? new Intl.DateTimeFormat(lang === 'en' ? 'en-GB' : 'es-ES', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Madrid' })
+      .format(new Date(`${post.modifiedAt}T12:00:00Z`))
+    : null
 
   return (
     <div className="min-h-screen bg-bg text-fg transition-colors duration-slow">
@@ -146,11 +233,21 @@ function PublishedArticle({ post, lang }) {
         <p className="font-body text-xs text-fg-muted mb-5">{lang === 'en' ? 'By Beneficio Diario editorial team. Published in its original historical context.' : 'Por el equipo editorial de Beneficio Diario. Publicado en su contexto histórico original.'} <Link to="/politica-editorial" className="text-brand-fg underline">{lang === 'en' ? 'Editorial policy (ES)' : 'Política editorial'}</Link></p>
         <aside className="font-body text-sm text-fg-muted border border-line rounded-xl p-4 mb-7">{lang === 'en' ? 'May contain referral links. Campaigns and terms can change: check official information. No returns are guaranteed.' : 'Puede contener enlaces de referido. Las campañas y condiciones pueden cambiar: consulta la información oficial. No hay rentabilidad garantizada.'} <Link to="/transparencia" className="text-brand-fg underline">{lang === 'en' ? 'Transparency (ES)' : 'Transparencia'}</Link></aside>
 
+        {post.updateNote?.[lang] && (
+          <aside role="note" className="rounded-xl border border-warning/30 bg-warning/[0.07] p-4 sm:p-5 mb-7">
+            <p className="font-display font-bold text-xs uppercase tracking-[0.1em] text-warning-fg mb-2">
+              {T.updated[lang]}{modified && <> · <time dateTime={post.modifiedAt}>{modified}</time></>}
+            </p>
+            <p className="font-body text-sm leading-relaxed text-fg-muted">{post.updateNote[lang]}</p>
+          </aside>
+        )}
+
         <motion.figure variants={fadeUp} className="rounded-card overflow-hidden border border-line mb-8 bg-surface-2">
           <img
             src={post.image}
-            alt=""
+            alt={post.imageAlt?.[lang] || ''}
             loading="eager"
+            fetchpriority="high"
             className="w-full object-cover max-h-[22rem]"
             onError={(e) => {
               e.currentTarget.style.display = 'none'
@@ -167,45 +264,20 @@ function PublishedArticle({ post, lang }) {
           <ArticleContent content={post.content?.[lang] || post.content?.es} />
         </motion.div>
 
-        {post.extraImage && (
+        {post.extraImage && post.extraImage !== post.image && (
           <figure className="mt-8 rounded-card overflow-hidden border border-line">
-            <img src={post.extraImage} alt="" loading="lazy" className="w-full object-cover" />
+            <img src={post.extraImage} alt={post.imageAlt?.[lang] || ''} loading="lazy" className="w-full object-cover" />
           </figure>
         )}
 
-        {post.refLink && (
-          <motion.aside
-            initial={revealInitial ? { opacity: 0, y: 16 } : false}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.45, ease: ease.out }}
-            className="mt-10 rounded-card border border-brand-500/25 bg-brand-500/[0.06] p-5 sm:p-6"
-          >
-            <p className="font-body text-xs text-fg-muted mb-3">
-              {post.refCode ? T.refText[lang] : T.joinText[lang]}
-            </p>
-
-            {post.refCode && (
-              <div className="flex items-center gap-2 rounded-xl border border-dashed border-brand-500/35 bg-surface px-3 py-2.5 mb-4">
-                <span className="font-body text-[10px] text-fg-subtle uppercase tracking-[0.12em]">
-                  {T.code[lang]}
-                </span>
-                <code className="font-mono font-bold text-sm text-brand-fg flex-1">{post.refCode}</code>
-              </div>
-            )}
-
-            <a
-              href={post.refLink}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              onClick={() => trackEvent('affiliate_click', { project: post.id, location: 'article_page' })}
-              className="flex items-center justify-center gap-2 w-full min-h-[52px] rounded-2xl text-white font-display font-bold text-sm bg-gradient-to-br from-violet-600 to-purple-500 shadow-e2 transition-[transform,filter,box-shadow] duration-base ease-out-quart hover:-translate-y-0.5 hover:brightness-110 hover:shadow-e3"
-            >
-              {refLabel}
-              <FiArrowUpRight size={16} aria-hidden="true" />
-            </a>
-          </motion.aside>
+        {(post.refLink || post.extraRefLink) && (
+          <div className={`mt-10 grid gap-4 ${post.refLink && post.extraRefLink ? 'sm:grid-cols-2' : ''}`}>
+            {post.refLink && <RefCta post={post} link={post.refLink} code={post.refCode} label={post.refLabel} lang={lang} />}
+            {post.extraRefLink && <RefCta post={post} link={post.extraRefLink} code={post.extraRefCode} label={post.extraRefLabel} lang={lang} />}
+          </div>
         )}
+
+        <RelatedContent post={post} lang={lang} />
 
         <PartnerSlot slot="inArticle" lang={lang} className="mt-10" />
 

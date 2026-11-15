@@ -6,7 +6,11 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/:path*", "has": [{ "type": "host", "value": "www.beneficiodiario.com" }], "destination": "https://beneficiodiario.com/:path*", "permanent": true }
+    { "source": "/:path*", "has": [{ "type": "host", "value": "www.beneficiodiario.com" }], "destination": "https://beneficiodiario.com/:path*", "permanent": true },
+    { "source": "/blog/beneficiodiario-comunidad-abstract-espanol", "destination": "/airdrops", "permanent": true },
+    { "source": "/en/blog/beneficiodiario-comunidad-abstract-espanol", "destination": "/en", "permanent": true },
+    { "source": "/blog/markets-hyperliquid-app", "destination": "/perp-dex", "permanent": true },
+    { "source": "/en/blog/markets-hyperliquid-app", "destination": "/en", "permanent": true }
   ],
   "headers": [
     {

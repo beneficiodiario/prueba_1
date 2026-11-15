@@ -13,7 +13,8 @@ const esc = (value = '') => String(value).replaceAll('&', '&amp;').replaceAll('"
 const template = readFileSync(resolve(dist, 'index.html'), 'utf8')
   .replace(/\s*<title>[\s\S]*?<\/title>/g, '')
   .replace(/\s*<meta\s+(?:name="(?:description|robots|googlebot|twitter:[^"]+)"|property="(?:og:|article:)[^"]+")[^>]*>/g, '')
-  .replace(/\s*<link rel="(?:canonical|alternate)"[^>]*>/g, '')
+  // Solo canonical y hreflang: el <link rel="alternate"> hacia llms.txt se conserva.
+  .replace(/\s*<link rel="(?:canonical"|alternate" hreflang=)[^>]*>/g, '')
   .replace(/\s*<script type="application\/ld\+json">[\s\S]*?<\/script>/g, '')
 
 for (const page of [...INDEXABLE_ROUTES, NOT_FOUND_META]) {
@@ -30,12 +31,21 @@ for (const page of [...INDEXABLE_ROUTES, NOT_FOUND_META]) {
     `<meta property="og:description" content="${esc(page.description)}" />`,
     `<meta property="og:url" content="${esc(absoluteUrl(page.path))}" />`,
     `<meta property="og:image" content="${esc(image)}" />`,
-    `<meta property="og:image:alt" content="${esc(SITE.name)}" />`,
+    `<meta property="og:image:alt" content="${esc(page.imageAlt || SITE.name)}" />`,
     `<meta property="og:locale" content="${page.lang === 'en' ? 'en_US' : 'es_ES'}" />`,
+    ...(page.alternates ? [`<meta property="og:locale:alternate" content="${page.lang === 'en' ? 'es_ES' : 'en_US'}" />`] : []),
+    ...(page.type === 'article' ? [
+      `<meta property="article:published_time" content="${page.published}" />`,
+      `<meta property="article:modified_time" content="${page.modified || page.published}" />`,
+      ...(page.section ? [`<meta property="article:section" content="${esc(page.section)}" />`] : []),
+      ...page.tags.map(tag => `<meta property="article:tag" content="${esc(tag)}" />`),
+    ] : []),
     `<meta name="twitter:card" content="summary_large_image" />`,
+    `<meta name="twitter:site" content="@BeneficioDiario" />`,
     `<meta name="twitter:title" content="${esc(page.title)}" />`,
     `<meta name="twitter:description" content="${esc(page.description)}" />`,
     `<meta name="twitter:image" content="${esc(image)}" />`,
+    `<meta name="twitter:image:alt" content="${esc(page.imageAlt || SITE.name)}" />`,
     ...Object.entries(page.alternates ? { ...page.alternates, 'x-default': page.alternates.es } : {}).map(([lang, path]) => `<link rel="alternate" hreflang="${lang}" href="${esc(absoluteUrl(path))}" />`),
     ...(page.jsonLd ? [`<script type="application/ld+json">${JSON.stringify(page.jsonLd).replaceAll('<', '\\u003c')}</script>`] : []),
   ].join('\n    ')

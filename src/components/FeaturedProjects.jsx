@@ -12,8 +12,8 @@ import { fadeUp, stagger, viewport, duration, ease, revealInitial } from '../lib
 const ROWS = [1, 2, 3].map((n) => projects.filter((p) => p.featured && p.featuredRow === n))
 
 const BTN_LABEL = {
-  es: { kast: 'Acceder a KAST', void: 'Unirse a VOID Network', grvt: 'Explorar GRVT', dac: 'Entrar al testnet de DAC', markets: 'Probar Markets', abstract: 'Entrar en Abstract' },
-  en: { kast: 'Access KAST', void: 'Join VOID Network', grvt: 'Explore GRVT', dac: 'Enter DAC testnet', markets: 'Try Markets', abstract: 'Enter Abstract' },
+  es: { risex: 'Entrar en RISEx', txflow: 'Entrar en TxFlow', onchain: 'Entrar en Onchain.cc', void: 'Unirse a VOID Network', grvt: 'Explorar GRVT' },
+  en: { risex: 'Join RISEx', txflow: 'Join TxFlow', onchain: 'Explore Onchain.cc', void: 'Join VOID Network', grvt: 'Explore GRVT' },
 }
 
 const T = {
@@ -36,7 +36,8 @@ const T = {
 }
 
 const HIGH_RISK = ['Alto', 'High', 'Medio-Alto', 'Medium-High']
-const MID_RISK  = ['Medio', 'Medium']
+// "Variable" no es riesgo bajo: en un perp DEX depende del apalancamiento.
+const MID_RISK  = ['Medio', 'Medium', 'Variable']
 
 /** Colorea el riesgo, pero el texto siempre lo dice: el color no es el único indicador. */
 const riskColor = (risk) =>
@@ -93,14 +94,14 @@ function FeaturedCard({ p, lang }) {
   const stats    = p.stats?.[lang]    || p.stats?.es    || p.stats || {}
 
   return (
-    <motion.article variants={fadeUp} className="h-full">
+    <motion.article id={`proyecto-${p.id}`} variants={fadeUp} className="h-full scroll-mt-28">
       <Tilt3D max={7} scale={1.015} className="h-full">
       <Card interactive className="group h-full flex flex-col">
         {/* Cabecera con imagen: la foto se acerca despacio al pasar el ratón */}
         <div className="relative h-44 sm:h-52 shrink-0 overflow-hidden" style={{ background: p.gradient }}>
           <img
             src={p.image}
-            alt=""
+            alt={`${p.title}: ${p.tag}`}
             loading="lazy"
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-[900ms] ease-out-expo group-hover:scale-[1.06]"
             onError={(e) => { e.currentTarget.style.display = 'none' }}
@@ -196,7 +197,7 @@ function Row({ items, lang, className = '' }) {
       initial={revealInitial}
       whileInView="visible"
       viewport={viewport}
-      className={`grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6 ${className}`}
+      className={`grid grid-cols-1 ${items.length === 3 ? 'md:grid-cols-2 lg:grid-cols-3' : 'lg:grid-cols-2'} gap-5 sm:gap-6 ${className}`}
     >
       {items.map((p) => <FeaturedCard key={p.id} p={p} lang={lang} />)}
     </motion.div>

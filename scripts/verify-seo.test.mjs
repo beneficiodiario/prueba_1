@@ -5,7 +5,8 @@ import { resolve } from 'node:path'
 import { INDEXABLE_ROUTES } from '../src/data/routes.js'
 import { LEGAL_LINKS } from '../src/data/legalPages.js'
 import { absoluteUrl } from '../src/lib/structuredData.js'
-import { makeSitemap } from './seo-resources.mjs'
+import { makeSitemap, makeLlms } from './seo-resources.mjs'
+import { REDIRECTS } from '../src/data/redirects.js'
 import { CONSENT_KEY, CONSENT_MAX_AGE, CONSENT_VERSION, getConsent, setConsent } from '../src/lib/consent.js'
 import { sanitizeAnalyticsEvent } from '../src/lib/metrics.js'
 import { createPreviewServer } from './preview-static.mjs'
@@ -121,4 +122,77 @@ test('HTTP local: páginas públicas 200, URL inexistente 404 y normalización d
     assert.equal((await fetch(`${base}/privacidad/`, { redirect: 'manual' })).status, 308)
     assert.equal((await fetch(`${base}/privacidad.html`, { redirect: 'manual' })).status, 308)
   } finally { await new Promise(resolve => server.close(resolve)) }
+})
+
+test('Títulos y descripciones caben en el resultado de búsqueda', () => {
+  for (const page of INDEXABLE_ROUTES) {
+    assert.ok(page.title.length <= 65, `Título largo (${page.title.length}): ${page.path}`)
+    assert.ok(page.description.length >= 70 && page.description.length <= 165, `Descripción fuera de rango (${page.description.length}): ${page.path}`)
+  }
+})
+
+test('Las URLs retiradas redirigen con 301 a una página indexable, igual en Vercel, Apache y local', async () => {
+  const indexable = new Set(INDEXABLE_ROUTES.map(page => page.path))
+  const vercel = JSON.parse(readFileSync('vercel.json')).redirects
+  const htaccess = readFileSync('public/.htaccess', 'utf8')
+  const sitemap = readFileSync('dist/sitemap.xml', 'utf8')
+  for (const { from, to } of REDIRECTS) {
+    assert.ok(!indexable.has(from), `${from} sigue publicada`)
+    assert.ok(indexable.has(to), `${from} redirige a ${to}, que no es indexable`)
+    assert.ok(!sitemap.includes(absoluteUrl(from)), `${from} sigue en el sitemap`)
+    assert.ok(vercel.some(r => r.source === from && r.destination === to && r.permanent), `vercel.json: falta ${from}`)
+    assert.ok(htaccess.includes(`RewriteRule ^${from.slice(1)}/?$ ${to} [R=301,L]`), `.htaccess: falta ${from}`)
+  }
+  const server = createPreviewServer()
+  await new Promise(resolve => server.listen(0, '127.0.0.1', resolve))
+  const base = `http://127.0.0.1:${server.address().port}`
+  try {
+    for (const { from, to } of REDIRECTS) {
+      const result = await fetch(`${base}${from}`, { redirect: 'manual' })
+      assert.equal(result.status, 301, from)
+      assert.equal(result.headers.get('location'), to, from)
+    }
+  } finally { await new Promise(resolve => server.close(resolve)) }
+})
+
+test('llms.txt y llms-full.txt están sincronizados y solo enlazan a URLs vivas', () => {
+  const live = new Set(INDEXABLE_ROUTES.map(page => page.path))
+  for (const [file, full] of [['llms.txt', false], ['llms-full.txt', true]]) {
+    const text = readFileSync(`dist/${file}`, 'utf8')
+    assert.equal(text, makeLlms(full), file)
+    assert.equal(text, readFileSync(`public/${file}`, 'utf8'), file)
+    assert.ok(text.startsWith('# Beneficio Diario\n\n> '), `${file}: falta H1 y resumen`)
+    assert.ok(!/\w\*/.test(text), `${file}: quedan asteriscos de glosario`)
+    for (const { from } of REDIRECTS) assert.ok(!text.includes(absoluteUrl(from)), `${file}: enlaza a la URL retirada ${from}`)
+    for (const match of text.matchAll(/https:\/\/beneficiodiario\.com(\/[^\s)#]*)?/g)) {
+      const path = match[1] || '/'
+      assert.ok(live.has(path) || existsSync(resolve('dist', path.slice(1))), `${file}: enlace roto ${match[0]}`)
+    }
+  }
+  const index = readFileSync('dist/llms.txt', 'utf8')
+  for (const page of INDEXABLE_ROUTES.filter(page => page.lang === 'es')) assert.ok(index.includes(absoluteUrl(page.path)), `llms.txt: falta ${page.path}`)
+  assert.ok(index.includes('\n## Optional\n'), 'llms.txt: falta la sección Optional')
+  const full = readFileSync('dist/llms-full.txt', 'utf8')
+  for (const page of INDEXABLE_ROUTES.filter(page => page.type === 'article' && page.lang === 'es')) assert.ok(full.includes(absoluteUrl(page.path)), `llms-full.txt: falta ${page.path}`)
+})
+
+test('robots.txt permite el rastreo a buscadores e IA y declara el sitemap', () => {
+  const robots = readFileSync('dist/robots.txt', 'utf8')
+  assert.ok(!/^Disallow:\s*\/\s*$/m.test(robots), 'Hay un Disallow: / que bloquea todo un grupo')
+  assert.ok(robots.includes('Sitemap: https://beneficiodiario.com/sitemap.xml'))
+  for (const bot of ['*', 'OAI-SearchBot', 'GPTBot', 'ClaudeBot', 'Claude-SearchBot', 'PerplexityBot', 'Google-Extended']) {
+    assert.ok(robots.includes(`User-agent: ${bot}\n`), `robots.txt: falta ${bot}`)
+  }
+  // Cada grupo debe terminar en un Allow: un User-agent suelto al final de un grupo lo dejaría sin reglas.
+  for (const group of robots.split(/\n\s*\n/).filter(block => block.includes('User-agent:'))) {
+    assert.ok(/\nAllow: \/\s*$/.test(group.trimEnd() + '\n'), `Grupo sin Allow: ${group.split('\n').find(l => l.startsWith('User-agent'))}`)
+  }
+})
+
+test('Las imágenes principales de los artículos tienen texto alternativo', () => {
+  for (const page of INDEXABLE_ROUTES.filter(page => page.type === 'article')) {
+    const hero = htmlByPath.get(page.path).match(/<img[^>]*fetchpriority="high"[^>]*>/)
+    assert.ok(hero, `${page.path}: falta la imagen principal`)
+    assert.match(hero[0], /alt="[^"]+"/, `${page.path}: imagen principal sin alt`)
+  }
 })

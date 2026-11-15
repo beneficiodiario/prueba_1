@@ -22,7 +22,7 @@ const TEAM = [
   {
     name: 'Javier Rodríguez',
     role: { es: 'Cofundador', en: 'Co-founder' },
-    bio:  { es: 'Administrador de la comunidad española de Abstract.', en: 'Admin of the Spanish Abstract community.' },
+    bio:  { es: 'Creador de contenido en BeneficioDiario.com.', en: 'Content creator at BeneficioDiario.com.' },
     photo: '/javier.png',
   },
 ]

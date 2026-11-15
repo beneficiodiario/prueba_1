@@ -5,6 +5,7 @@ import { Card, Badge } from './ui/Card'
 import { Button } from './ui/Button'
 import { SiYoutube, FiClock, FiArrowUpRight } from './ui/icons'
 import { blogPosts, YOUTUBE_URL } from '../data/content'
+import { articleDate } from '../lib/structuredData'
 import { fadeUp, stagger, viewport, revealInitial } from '../lib/motion'
 
 const T = {
@@ -35,7 +36,7 @@ function PostCard({ post, lang }) {
           <div className="relative h-52 sm:h-64 shrink-0 overflow-hidden bg-surface-2">
             <img
               src={post.image}
-              alt=""
+              alt={post.imageAlt?.[lang] || ''}
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-[900ms] ease-out-expo group-hover:scale-[1.06]"
               onError={(e) => {
@@ -46,13 +47,13 @@ function PostCard({ post, lang }) {
             <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
             <div className="absolute top-4 left-4 flex flex-wrap gap-2">
               <Badge tone="onImage">{tag}</Badge>
-              {readable && <Badge tone="brand" className="!bg-brand-500 !text-white !border-brand-500">{T.newBadge[lang]}</Badge>}
+              {readable && !post.updateNote && <Badge tone="brand" className="!bg-brand-500 !text-white !border-brand-500">{T.newBadge[lang]}</Badge>}
             </div>
           </div>
 
           <div className="p-6 flex flex-col flex-1">
             <div className="flex items-center gap-3 mb-3 font-body text-[11px] text-fg-subtle">
-              <time>{post.date}</time>
+              <time dateTime={articleDate(post)}>{post.date}</time>
               <span aria-hidden="true" className="w-1 h-1 rounded-full bg-fg-subtle" />
               <span className="flex items-center gap-1">
                 <FiClock size={11} aria-hidden="true" /> {post.readTime}
