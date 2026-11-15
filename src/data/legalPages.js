@@ -29,7 +29,7 @@ export const LEGAL_PAGES = [
     ],
   },
   {
-    path: '/privacidad', label: 'Privacidad', title: 'Política de privacidad',
+    path: '/privacidad', label: 'Privacidad', updated: '2026-11-15', title: 'Política de privacidad',
     description: 'Datos técnicos, contacto, Vercel Web Analytics, publicidad y derechos de privacidad en Beneficio Diario. Sin cuentas de usuario ni registro obligatorio.',
     sections: [
       { h: 'Gestión y contacto', p: [
@@ -49,11 +49,11 @@ export const LEGAL_PAGES = [
         'Permite obtener estadísticas agregadas sobre páginas visitadas, fuentes de tráfico y características generales del dispositivo o región. Según su documentación, no usa cookies de terceros y utiliza un identificador derivado de la solicitud que se descarta tras 24 horas. Este plazo no equivale a la conservación de todas las estadísticas.',
         'Eliminamos consultas y fragmentos de las URL enviadas a la analítica. No enviamos nombres, correos o contenido de formularios como eventos. La recogida requiere que el servicio esté activado en Vercel y que hayas aceptado la analítica.',
       ], links: [{ label: 'Privacidad de Vercel Web Analytics', href: 'https://vercel.com/docs/analytics/privacy-policy' }, { label: 'Acuerdo de tratamiento de Vercel', href: 'https://vercel.com/legal/dpa' }] },
-      { h: 'Proveedores y newsletter externa', p: [
+      { h: 'Proveedores', p: [
         'Vercel Inc. puede prestar alojamiento y analítica. La configuración publicitaria puede utilizar Google AdSense o A-ADS con consentimiento y cuando haya espacios activos. Google Fonts sirve fuentes tipográficas y recibe la solicitud técnica de descarga, que incluye la IP.',
-        'La newsletter es opcional y se tramita en una página externa de Beehiiv. Aquí no introduces un correo ni lo enviamos en parámetros de URL. Revisa el formulario externo, su información de privacidad, quién lo gestiona y cómo darte de baja antes de suscribirte.',
+        'El portal no tiene newsletter ni formularios de suscripción: no recogemos direcciones de correo salvo las que nos envíes tú al escribirnos.',
         'No vendemos bases de datos de usuarios ni disponemos de cuentas propias. Las comunicaciones a autoridades se realizan cuando exista una obligación o requerimiento legal aplicable.',
-      ], links: [{ label: 'Privacidad de Google', href: 'https://policies.google.com/privacy' }, { label: 'Privacidad de A-ADS', href: 'https://a-ads.com/privacy' }, { label: 'Privacidad de Beehiiv', href: 'https://www.beehiiv.com/privacy' }, { label: 'Google Fonts y privacidad', href: 'https://developers.google.com/fonts/faq/privacy' }] },
+      ], links: [{ label: 'Privacidad de Google', href: 'https://policies.google.com/privacy' }, { label: 'Privacidad de A-ADS', href: 'https://a-ads.com/privacy' }, { label: 'Google Fonts y privacidad', href: 'https://developers.google.com/fonts/faq/privacy' }] },
       { h: 'Transferencias y conservación', p: [
         'Algunos proveedores pueden tratar datos fuera del Espacio Económico Europeo. Cuando proceda deben existir garantías válidas, como una decisión de adecuación aplicable o cláusulas contractuales tipo y medidas complementarias. Consulta los acuerdos de cada proveedor para conocer las entidades y mecanismos concretos.',
         'Los mensajes se conservan mientras sean necesarios para atender la consulta y, cuando proceda, durante los plazos legales de responsabilidad. Los registros y estadísticas siguen la configuración y los plazos del proveedor; no les atribuimos un plazo único.',
@@ -69,7 +69,7 @@ export const LEGAL_PAGES = [
     ],
   },
   {
-    path: '/cookies', label: 'Cookies y privacidad', title: 'Política de cookies y tecnologías similares',
+    path: '/cookies', label: 'Cookies y privacidad', updated: '2026-11-15', title: 'Política de cookies y tecnologías similares',
     description: 'Almacenamiento y servicios opcionales de Beneficio Diario: cómo aceptar, rechazar, configurar y retirar la analítica y la publicidad.',
     sections: [
       { h: 'Decide por separado', p: [
@@ -88,7 +88,7 @@ export const LEGAL_PAGES = [
         'Esta herramienta de preferencias no sustituye una CMP certificada cuando la red publicitaria la exige. Antes de activar espacios de AdSense en territorios donde Google exige una CMP certificada debe configurarse esa CMP.',
       ], links: [{ label: 'Cookies de Google', href: 'https://policies.google.com/technologies/cookies' }, { label: 'Política de A-ADS', href: 'https://a-ads.com/privacy' }] },
       { h: 'Recursos y páginas externas', p: [
-        'Los referidos pueden incluir un código de atribución del proveedor. Una vez sales del portal, las tecnologías de ese sitio se rigen por su política. La newsletter de Beehiiv es externa y opcional.',
+        'Los referidos pueden incluir un código de atribución del proveedor. Una vez sales del portal, las tecnologías de ese sitio se rigen por su política.',
         'Google Fonts y las imágenes externas de los contenidos implican conexiones técnicas con sus respectivos servidores para descargar esos recursos.',
       ] },
       { h: 'Retirar permisos y borrar datos', p: [
@@ -170,6 +170,7 @@ export const LEGAL_PAGES = [
       ] },
     ],
   },
-].map(page => ({ ...page, kind: 'legal', updated: LEGAL_UPDATED }))
+// Cada página conserva su propia fecha: solo cambia cuando cambia su texto.
+].map(page => ({ ...page, kind: 'legal', updated: page.updated || LEGAL_UPDATED }))
 
 export const LEGAL_LINKS = LEGAL_PAGES.map(({ path, label }) => ({ path, label }))

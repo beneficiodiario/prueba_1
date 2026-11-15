@@ -2,16 +2,23 @@ import { createServer } from 'node:http'
 import { readFile, stat } from 'node:fs/promises'
 import { resolve, extname, sep } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { REDIRECTS } from '../src/data/redirects.js'
 
 const root = fileURLToPath(new URL('../dist/', import.meta.url))
-const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.xml': 'application/xml; charset=utf-8', '.txt': 'text/plain; charset=utf-8', '.json': 'application/json', '.webmanifest': 'application/manifest+json', '.png': 'image/png', '.jpg': 'image/jpeg', '.svg': 'image/svg+xml', '.woff2': 'font/woff2' }
+const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.xml': 'application/xml; charset=utf-8', '.txt': 'text/plain; charset=utf-8', '.json': 'application/json', '.webmanifest': 'application/manifest+json', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.woff2': 'font/woff2' }
+const redirects = new Map(REDIRECTS.map(({ from, to }) => [from, to]))
 
 export function createPreviewServer() {
   return createServer(async (request, response) => {
     try {
       const url = new URL(request.url, 'http://localhost')
       const pathname = decodeURIComponent(url.pathname)
-      if (pathname !== '/' && (pathname.endsWith('/') || pathname.endsWith('.html') && pathname !== '/404.html')) {
+      if (redirects.has(pathname.replace(/\/$/, ''))) {
+        response.writeHead(301, { Location: redirects.get(pathname.replace(/\/$/, '')) })
+        response.end()
+        return
+      }
+      if (pathname !== '/' &&(pathname.endsWith('/') || pathname.endsWith('.html') && pathname !== '/404.html')) {
         response.writeHead(308, { Location: pathname.replace(/(?:\/|\.html)$/, '') + url.search })
         response.end()
         return

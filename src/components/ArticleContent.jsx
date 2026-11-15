@@ -16,8 +16,37 @@ const QUESTION_OPENERS = ['¿', 'What', 'How', 'Why', 'When']
 
 const isBulletBlock = (b) => b.startsWith('·') || b.includes('\n·')
 const isResultTable = (b) => b.includes('→') && b.includes('%')
+const isStep = (b) => /^\d+\.\s/.test(b)
+// Pregunta, o línea suelta y corta sin puntuación final ("En resumen", "Qué riesgos tiene").
 const isHeading = (b) =>
   QUESTION_OPENERS.some((o) => b.startsWith(o)) || (b.trimEnd().endsWith('?') && b.length < 80)
+  || (!b.includes('\n') && b.length <= 60 && !/[.:,;!…]$/.test(b.trimEnd()))
+
+/** Agrupa los pasos numerados consecutivos en una sola lista ordenada. */
+function groupSteps(blocks) {
+  return blocks.reduce((acc, block) => {
+    const last = acc[acc.length - 1]
+    if (isStep(block) && Array.isArray(last)) last.push(block)
+    else acc.push(isStep(block) ? [block] : block)
+    return acc
+  }, [])
+}
+
+function StepList({ steps }) {
+  return (
+    <ol className="space-y-4 list-none">
+      {steps.map((step, j) => {
+        const [, n, text] = step.match(/^(\d+)\.\s([\s\S]*)$/)
+        return (
+          <li key={j} className="flex items-start gap-3.5">
+            <span aria-hidden="true" className="mt-0.5 w-7 h-7 rounded-full bg-brand-500/10 text-brand-fg font-mono font-bold text-xs flex items-center justify-center shrink-0">{n}</span>
+            <span className="font-serif text-[17px] leading-[1.75] text-fg-muted">{text}</span>
+          </li>
+        )
+      })}
+    </ol>
+  )
+}
 
 function BulletPanel({ lines }) {
   return (
@@ -84,11 +113,12 @@ function DataPanel({ title, rows }) {
 export default function ArticleContent({ content }) {
   if (!content) return null
 
-  const blocks = content.split('\n\n').filter(Boolean)
+  const blocks = groupSteps(content.split('\n\n').filter(Boolean))
 
   return (
     <div className="space-y-5">
       {blocks.map((block, i) => {
+        if (Array.isArray(block)) return <StepList key={i} steps={block} />
         const lines = block.split('\n').filter(Boolean)
 
         if (isBulletBlock(block)) return <BulletPanel key={i} lines={lines} />

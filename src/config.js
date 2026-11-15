@@ -34,19 +34,3 @@ export const A_ADS = {
   banner: '2438815',
   inArticle: '',
 }
-
-// ── 3) NEWSLETTER (Beehiiv) ─────────────────────────────────────
-// ID del formulario de Beehiiv (Grow → Subscribe Forms → Embed). Es el valor
-// que aparece en data-beehiiv-form="..." dentro del código que te da Beehiiv.
-// Mientras esté vacío verás un cajón de ejemplo.
-export const BEEHIIV_FORM_ID = '5729e3fe-2866-4dc3-9cb7-10c7694b174d'
-
-// ── 4) COMUNIDAD ESPAÑOLA DE ABSTRACT (sección "Novedades") ────
-// Pega aquí los enlaces de la comunidad española de Abstract Chain.
-// Cualquier campo vacío oculta su botón. Si están todos vacíos se muestra
-// solo el aviso "enlaces próximamente".
-export const ABSTRACT_COMMUNITY = {
-  telegram: 'https://t.me/AbstractESP',
-  x:        'https://x.com/AbstractChainES',
-  youtube:  'https://www.youtube.com/@AbstractEspa%C3%B1ol',
-}

@@ -3,8 +3,15 @@ export const SITE = {
   name: 'Beneficio Diario',
   alternateName: 'BeneficioDiario',
   url: 'https://beneficiodiario.com',
-  description: 'Portal gratuito de información sobre criptomonedas, ingresos pasivos, airdrops y cashback. Sin registro. Guías, riesgos y enlaces a servicios de terceros.',
+  description: 'Portal gratuito en español sobre criptomonedas, airdrops, perp DEX, farming de puntos e ingresos pasivos. Guías, riesgos y enlaces a servicios de terceros, sin registro.',
+  // Temas que cubre el portal: alimentan el JSON-LD y los recursos para LLMs.
+  topics: {
+    es: ['Airdrops cripto', 'Perp DEX', 'Farming de puntos', 'Estrategia delta neutral', 'Ingresos pasivos', 'DeFi', 'Criptomonedas'],
+    en: ['Crypto airdrops', 'Perp DEX', 'Points farming', 'Delta neutral strategy', 'Passive income', 'DeFi', 'Cryptocurrencies'],
+  },
   logo: '/logo-bd.png',
+  // Imagen al compartir la portada (1672×941, cabe en summary_large_image).
+  ogImage: '/delta-neutral-cover.webp',
   twitter: 'https://twitter.com/BeneficioDiario',
   youtube: 'https://www.youtube.com/@beneficiodiario_com',
   email: 'info@beneficiodiario.com',
@@ -15,13 +22,13 @@ export const SITE = {
 export const PAGES = {
   home: {
     es: {
-      title: 'Beneficio Diario | Criptomonedas e ingresos pasivos',
-      description: 'Portal gratuito sobre criptomonedas, ingresos pasivos, airdrops y cashback. Guías y riesgos de sitios de terceros, sin login ni registro en Beneficio Diario.',
+      title: 'Beneficio Diario | Airdrops, perp DEX e ingresos con cripto',
+      description: 'Guías gratuitas de airdrops, perp DEX, farming de puntos e ingresos pasivos: RISEx, TxFlow, Onchain.cc, VOID y GRVT, con sus riesgos y sin registro.',
       path: '/',
     },
     en: {
-      title: 'Beneficio Diario | Crypto and passive income guides',
-      description: 'Free information about crypto, passive income, airdrops and cashback. Guides, risks and links to third-party services. No account or login on this portal.',
+      title: 'Beneficio Diario | Crypto airdrops, perp DEXes and income',
+      description: 'Free guides on crypto airdrops, perp DEXes, points farming and passive income: RISEx, TxFlow, Onchain.cc, VOID and GRVT, with their risks. No sign-up.',
       path: '/en',
     },
   },
@@ -44,8 +51,48 @@ export const faqs = [
       "en": "Do I need to register or log in?"
     },
     "a": {
-      "es": "No. Todo el contenido de Beneficio Diario se puede consultar sin login ni registro. Los sitios de terceros pueden pedirte una cuenta, verificación de identidad u otros requisitos bajo sus propias condiciones. La newsletter externa es opcional.",
-      "en": "No. You can read all Beneficio Diario content without an account or login. Third-party sites may require an account, identity checks or other conditions. The external newsletter is optional."
+      "es": "No. Todo el contenido de Beneficio Diario se puede consultar sin login ni registro. Los sitios de terceros pueden pedirte una cuenta, verificación de identidad u otros requisitos bajo sus propias condiciones.",
+      "en": "No. You can read all Beneficio Diario content without an account or login. Third-party sites may require an account, identity checks or other conditions."
+    }
+  },
+  {
+    "q": {
+      "es": "¿Qué proyectos seguís ahora mismo?",
+      "en": "Which projects do you follow right now?"
+    },
+    "a": {
+      "es": "En noviembre de 2026 seguimos tres perp DEX con programas de puntos activos (RISEx, TxFlow y Onchain.cc), VOID Network, un proyecto gratuito en fase temprana, y GRVT, que ya repartió su airdrop y sigue operativo como perp DEX. Ninguna recompensa está garantizada y las condiciones cambian: cada ficha explica su riesgo y enlaza a la web oficial.",
+      "en": "As of November 2026 we follow three perp DEXes with active points programmes (RISEx, TxFlow and Onchain.cc), VOID Network, a free early-stage project, and GRVT, which has already distributed its airdrop and remains live as a perp DEX. No reward is guaranteed and terms change: each card explains its risk and links to the official site."
+    }
+  },
+  {
+    "q": {
+      "es": "¿Qué es un perp DEX y cómo funcionan sus puntos?",
+      "en": "What is a perp DEX and how do its points work?"
+    },
+    "a": {
+      "es": "Un perp DEX es un exchange descentralizado de contratos perpetuos: permite operar long o short con apalancamiento y sin fecha de vencimiento. Muchos reparten puntos por volumen, comisiones o interés abierto que podrían convertirse en un airdrop, aunque no está garantizado. El apalancamiento puede liquidar tu posición; lo explicamos en la guía de perp DEX.",
+      "en": "A perp DEX is a decentralized exchange for perpetual contracts: you can go long or short with leverage and no expiry date. Many hand out points for volume, fees or open interest that might turn into an airdrop, although this is not guaranteed. Leverage can liquidate your position; our perp DEX guide (in Spanish) explains it."
+    }
+  },
+  {
+    "q": {
+      "es": "¿Qué es la estrategia delta neutral?",
+      "en": "What is the delta neutral strategy?"
+    },
+    "a": {
+      "es": "Es abrir dos posiciones opuestas del mismo tamaño en plataformas distintas, por ejemplo long en TxFlow y short en RISEx, para que el precio afecte poco al conjunto mientras se acumula actividad en ambas. No elimina el riesgo: cada lado puede liquidarse por separado, el funding puede ir en contra y las comisiones se duplican.",
+      "en": "It means opening two opposite positions of the same size on different platforms, for example long on TxFlow and short on RISEx, so price moves barely affect the whole while activity builds up on both. It does not remove risk: each side can be liquidated separately, funding can go against you and fees double."
+    }
+  },
+  {
+    "q": {
+      "es": "¿Cuánto dinero necesito para empezar?",
+      "en": "How much money do I need to start?"
+    },
+    "a": {
+      "es": "Depende del proyecto. VOID Network no pide depósito. En los perp DEX que seguimos, una referencia práctica es de unos 50 USDC para probar con posiciones pequeñas, más las comisiones de red. Empieza solo con dinero que puedas permitirte perder y sin apalancamiento alto.",
+      "en": "It depends on the project. VOID Network requires no deposit. On the perp DEXes we follow, a practical reference is around 50 USDC to test with small positions, plus network fees. Only start with money you can afford to lose and without high leverage."
     }
   },
   {

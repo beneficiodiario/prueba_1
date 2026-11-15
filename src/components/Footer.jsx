@@ -35,10 +35,11 @@ export default function Footer({ lang = 'es' }) {
     {
       title: c.projects,
       links: [
-        { label: 'KAST Card',    href: '#proyectos' },
-        { label: 'VOID Network', href: '#proyectos' },
-        { label: 'GRVT',         href: '#proyectos' },
-        { label: 'DAC',          href: '#proyectos' },
+        { label: 'RISEx',        href: '#proyecto-risex' },
+        { label: 'TxFlow',       href: '#proyecto-txflow' },
+        { label: 'Onchain.cc',   href: '#proyecto-onchain' },
+        { label: 'VOID Network', href: '#proyecto-void' },
+        { label: 'GRVT',         href: '#proyecto-grvt' },
       ],
     },
     {
@@ -48,6 +49,7 @@ export default function Footer({ lang = 'es' }) {
         { label: lang === 'en' ? 'Passive income (ES)' : 'Ingresos pasivos', href: '/ingresos-pasivos' },
         { label: lang === 'en' ? 'Crypto guide (ES)' : 'Guía de criptomonedas', href: '/criptomonedas' },
         { label: 'Airdrops', href: '/airdrops' },
+        { label: lang === 'en' ? 'Perp DEX guide (ES)' : 'Perp DEX', href: '/perp-dex' },
         { label: lang === 'en' ? 'Glossary (ES)' : 'Glosario cripto', href: '/glosario-cripto' },
       ],
     },

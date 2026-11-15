@@ -26,9 +26,9 @@ Legales: `/aviso-legal`, `/privacidad`, `/cookies`, `/condiciones-de-uso`, `/avi
 
 Información: `/sobre-beneficio-diario`, `/contacto` y `/politica-editorial`.
 
-Guías: `/ingresos-pasivos`, `/criptomonedas`, `/airdrops` y `/glosario-cripto`.
+Guías: `/ingresos-pasivos`, `/criptomonedas`, `/airdrops`, `/perp-dex` y `/glosario-cripto`.
 
-Las nuevas páginas están en español; no se declaran traducciones inexistentes. Se conservan ambas portadas y seis noticias en ES y EN. No hay venta propia, checkout ni cuenta de usuario: no se inventan políticas de envíos o devoluciones para servicios ajenos.
+Las nuevas páginas están en español; no se declaran traducciones inexistentes. Se conservan ambas portadas y cinco noticias en ES y EN. No hay venta propia, checkout ni cuenta de usuario: no se inventan políticas de envíos o devoluciones para servicios ajenos.
 
 ## ChatGPT y buscadores
 
@@ -70,3 +70,20 @@ Vercel Analytics no usa cookies de terceros según su documentación, pero eso n
 La comprobación en navegador incluye la 404, navegación a guías y reapertura de preferencias. Tras rechazar no se cargan scripts de analítica ni marcos publicitarios; aceptar solo analítica añade el script de Vercel sin anuncios; retirarlo recarga y elimina esas cargas.
 
 La validación local no sustituye comprobar la respuesta una vez desplegada. Se utiliza el mecanismo documentado para sitios estáticos, sin redirigir rutas desconocidas a inicio. [404 personalizadas en Vercel](https://vercel.com/kb/guide/custom-404-page).
+
+## Revisión del 15 de noviembre de 2026
+
+Contenido importado de `Fiveat/BeneficioDiario_2026` (commits del 14 de noviembre), que partía de la base anterior al rediseño. Se ha portado el contenido, no el código.
+
+| Cambio | Detalle |
+| --- | --- |
+| Proyectos | RISEx, TxFlow, Onchain.cc, VOID Network y GRVT. Fuera KAST, DAC, Abstract y Markets. GRVT conserva el bloque con la asignación real del airdrop. |
+| Noticias | Nueva: estrategia delta neutral en TxFlow y RISEx. KAST y GRVT pasan a archivo con nota de actualización fechada y `dateModified`. |
+| URLs retiradas | Los artículos de Abstract y Markets redirigen con 301 (`src/data/redirects.js`, repetido en `vercel.json` y `.htaccess`; el test comprueba que coinciden). |
+| Tema perp DEX | Guía pilar `/perp-dex` (perpetuos, funding, liquidación, puntos, delta neutral) y glosario ampliado. Guías y artículos se enlazan entre sí. |
+| llms.txt | Estructura de llmstxt.org: proyectos con fecha de revisión, guías, noticias con estado, sección inglesa y `Optional`. `llms-full.txt` lleva el texto íntegro. |
+| robots.txt | Permiso explícito a los rastreadores de búsqueda, consulta y entrenamiento de OpenAI, Anthropic, Perplexity, Google, Apple y otros. |
+| Metadatos | Títulos ≤ 65 y descripciones de 70 a 165 caracteres (comprobado en test), `og:image:alt`, `article:*`, `twitter:site`, imágenes propias en el sitemap y `lastmod` de portada. |
+| Newsletter | Retirada junto al bloque de la comunidad de Abstract; privacidad y cookies actualizadas. |
+
+La portada actualiza `PROJECTS_REVIEWED_AT` en `src/data/content.js`: cámbiala solo cuando se revisen de verdad las condiciones de los proyectos.

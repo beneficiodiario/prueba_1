@@ -25,6 +25,12 @@ AddDefaultCharset UTF-8
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+  # Artículos retirados → su tema más cercano (lista en src/data/redirects.js).
+  RewriteRule ^blog/beneficiodiario-comunidad-abstract-espanol/?$ /airdrops [R=301,L]
+  RewriteRule ^en/blog/beneficiodiario-comunidad-abstract-espanol/?$ /en [R=301,L]
+  RewriteRule ^blog/markets-hyperliquid-app/?$ /perp-dex [R=301,L]
+  RewriteRule ^en/blog/markets-hyperliquid-app/?$ /en [R=301,L]
+
   # 2) Una sola forma canónica: SIN barra final (salvo la raíz "/").
   #    /blog/slug/  ->  /blog/slug   (la misma URL del sitemap y el canonical)
   RewriteCond %{REQUEST_URI} !^/$

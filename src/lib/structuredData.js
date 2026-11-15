@@ -25,26 +25,46 @@ const breadcrumb = (name, url, lang = 'es') => ({
   ],
 })
 
-export const homeJsonLd = ({ lang, faqs, url }) => ({
+const topics = lang => (SITE.topics?.[lang] || []).map(name => ({ '@type': 'Thing', name }))
+
+/** Lo mismo que se ve en la portada: los proyectos destacados, cada uno con su ancla. */
+const projectList = (projects, lang, url) => ({
+  '@type': 'ItemList', name: lang === 'en' ? 'Projects we follow' : 'Proyectos que seguimos',
+  itemListOrder: 'https://schema.org/ItemListUnordered',
+  itemListElement: projects.map((p, i) => ({
+    '@type': 'ListItem', position: i + 1, name: p.title, url: absoluteUrl(`${url}#proyecto-${p.id}`),
+    description: plainText(p.desc?.[lang] || '').split('\n')[0],
+  })),
+})
+
+/** Texto limpio: sin los asteriscos que remiten al glosario. */
+export const plainText = text => String(text).replaceAll('*', '')
+
+export const homeJsonLd = ({ lang, faqs, url, projects = [] }) => ({
   '@context': 'https://schema.org', '@graph': [
     publisher,
     { '@type': 'WebSite', '@id': `${SITE.url}/#website`, name: SITE.name, alternateName: SITE.alternateName,
       url: `${SITE.url}/`, inLanguage: ['es', 'en'], description: SITE.description,
       publisher: { '@id': publisher['@id'] } },
     { '@type': 'WebPage', '@id': absoluteUrl(url), name: SITE.name, url: absoluteUrl(url),
-      inLanguage: lang, isPartOf: { '@id': `${SITE.url}/#website` }, isAccessibleForFree: true },
+      inLanguage: lang, isPartOf: { '@id': `${SITE.url}/#website` }, isAccessibleForFree: true,
+      about: topics(lang) },
+    ...(projects.length ? [projectList(projects, lang, url)] : []),
     { '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q[lang],
       acceptedAnswer: { '@type': 'Answer', text: f.a[lang] } })) },
     breadcrumb(SITE.name, url, lang),
   ],
 })
 
-export const articleJsonLd = ({ title, description, image, date, url, lang }) => ({
+export const articleJsonLd = ({ title, description, image, date, modified, section, keywords, url, lang }) => ({
   '@context': 'https://schema.org', '@graph': [publisher, {
     '@type': 'Article', headline: title, description, image: absoluteUrl(image || SITE.logo),
-    datePublished: date, inLanguage: lang, isAccessibleForFree: true,
+    datePublished: date, dateModified: modified || date, inLanguage: lang, isAccessibleForFree: true,
+    ...(section ? { articleSection: section } : {}),
+    ...(keywords?.length ? { keywords: keywords.join(', ') } : {}),
     author: { '@type': 'Organization', name: SITE.name, url: absoluteUrl('/politica-editorial') },
     publisher: { '@id': publisher['@id'] }, mainEntityOfPage: absoluteUrl(url),
+    isPartOf: { '@id': `${SITE.url}/#website` },
   }, breadcrumb(title, url, lang)],
 })
 
@@ -54,5 +74,8 @@ export const documentJsonLd = page => ({
     name: page.title, description: page.description, url: absoluteUrl(page.path), inLanguage: 'es',
     dateModified: page.updated, isAccessibleForFree: true, isPartOf: { '@id': `${SITE.url}/#website` },
     publisher: { '@id': publisher['@id'] },
+    // Las guías son el pilar de cada tema: se declaran sus apartados como tal.
+    ...(page.kind === 'guide' ? { about: { '@type': 'Thing', name: page.label },
+      hasPart: page.sections.map(section => ({ '@type': 'WebPageElement', name: section.h })) } : {}),
   }, breadcrumb(page.label, page.path)],
 })

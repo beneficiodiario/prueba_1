@@ -8,14 +8,14 @@ import { fadeUp, scaleIn, stagger, viewport, revealInitial } from '../lib/motion
 
 const TESTIMONIALS = {
   es: [
-    { name: 'Carlos M.', role: 'Administrador de empresas', avatar: 'CM', text: 'Llevo 8 meses siguiendo los proyectos de BeneficioDiario y la selección es excelente. La transparencia es lo que más valoro: siempre explican el riesgo real, no solo los beneficios.' },
-    { name: 'Laura G.', role: 'Usuaria de KAST', avatar: 'LG', text: 'Empecé con KAST sin saber nada de cripto. La explicación fue tan clara que en una tarde ya tenía todo configurado. Llevo meses acumulando puntos sin hacer nada especial.' },
-    { name: 'Miguel Á.', role: 'Usuario de KAST', avatar: 'MA', text: 'Con KAST llevo más de 300 € en cashback acumulados solo gastando en el día a día. Es de esas cosas que no cuestan nada y dan más de lo que esperas.' },
+    { name: 'Carlos M.', role: 'Administrador de empresas', avatar: 'CM', text: 'Llevo meses siguiendo los proyectos de BeneficioDiario y la selección es excelente. La transparencia es lo que más valoro: siempre explican el riesgo real, no solo los beneficios.' },
+    { name: 'Laura G.', role: 'Usuaria de VOID Network', avatar: 'LG', text: 'Entré en VOID con los dos clics diarios sin poner un euro. Me gustó la explicación clara: que es tiempo, no dinero, y que las recompensas no están garantizadas. Sin humo.' },
+    { name: 'Miguel Á.', role: 'Trader en perp DEX', avatar: 'MA', text: 'La guía de la estrategia delta neutral entre TxFlow y RISEx me ahorró estudiar los dos por separado. Lo mejor es que insisten en el riesgo del apalancamiento y del funding, que suele olvidarse.' },
   ],
   en: [
-    { name: 'Carlos M.', role: 'Business manager', avatar: 'CM', text: "I've been following BeneficioDiario projects for 8 months and the selection is excellent. Transparency is what I value most: they always explain the real risk, not just the benefits." },
-    { name: 'Laura G.', role: 'KAST user', avatar: 'LG', text: "I started with KAST knowing nothing about crypto. The explanation was so clear that in one afternoon I had everything set up. I've been accumulating points for months without doing anything special." },
-    { name: 'Miguel Á.', role: 'KAST user', avatar: 'MA', text: "With KAST I've accumulated over €300 in cashback just by spending normally. It's one of those things that costs nothing and gives more than you expect." },
+    { name: 'Carlos M.', role: 'Business manager', avatar: 'CM', text: "I've been following BeneficioDiario projects for months and the selection is excellent. Transparency is what I value most: they always explain the real risk, not just the benefits." },
+    { name: 'Laura G.', role: 'VOID Network user', avatar: 'LG', text: "I joined VOID with the two daily clicks without putting in a single euro. I liked the clear explanation: it's time, not money, and rewards are not guaranteed. No hype." },
+    { name: 'Miguel Á.', role: 'Perp DEX trader', avatar: 'MA', text: 'The delta neutral strategy guide between TxFlow and RISEx saved me from researching both separately. The best part is they insist on the risk of leverage and funding, which is usually overlooked.' },
   ],
 }
 
@@ -30,12 +30,12 @@ const T = {
   stats: {
     es: [
       { value: 96, suffix: '%',  label: 'Satisfacción' },
-      { value: 6,  suffix: '',   label: 'Proyectos activos' },
+      { value: 5,  suffix: '',   label: 'Proyectos activos' },
       { value: 24, suffix: '/7', label: 'Contenido y soporte' },
     ],
     en: [
       { value: 96, suffix: '%',  label: 'Satisfaction' },
-      { value: 6,  suffix: '',   label: 'Active projects' },
+      { value: 5,  suffix: '',   label: 'Active projects' },
       { value: 24, suffix: '/7', label: 'Content & support' },
     ],
   },

@@ -1,257 +1,802 @@
 # Beneficio Diario
 
-> Portal gratuito de información sobre criptomonedas, ingresos pasivos, airdrops y cashback. Sin registro. Guías, riesgos y enlaces a servicios de terceros.
+> Portal gratuito en español sobre criptomonedas, airdrops, perp DEX, farming de puntos e ingresos pasivos. Guías, riesgos y enlaces a servicios de terceros, sin registro.
 
-Nombre alternativo: BeneficioDiario. Portal gestionado por particulares desde Barcelona, España. Contacto: info@beneficiodiario.com. No exige login ni registro propios, no gestiona fondos y no garantiza rendimientos. Los registros o pagos en terceros se rigen por sus condiciones. Puede financiarse con publicidad y referidos.
+Beneficio Diario (también escrito BeneficioDiario) es un portal editorial gratuito gestionado por particulares desde Barcelona, España. Publica en español y mantiene la portada y las noticias también en inglés. Contacto: info@beneficiodiario.com.
 
-Este archivo es una ayuda de navegación, no un mecanismo de posicionamiento ni una garantía de inclusión en respuestas de IA. Para vigencia, fuentes, riesgos y alcance, consulta cada página.
+- No es una entidad financiera ni un asesor: no gestiona fondos, no abre cuentas y no pide registro.
+- No garantiza rendimientos. Puntos, testnets y campañas no equivalen a dinero; un airdrop puede no llegar a producirse.
+- Se financia con publicidad y enlaces de referido, identificados en la web. Ese incentivo puede influir en la selección de proyectos.
+- Las cifras y campañas tienen fecha. Al citar, indica la fecha del artículo o de la revisión de proyectos (2026-11-15).
+- Temas: Airdrops cripto, Perp DEX, Farming de puntos, Estrategia delta neutral, Ingresos pasivos, DeFi, Criptomonedas.
 
-## Contenidos públicos
+Este archivo contiene el texto completo de las páginas públicas en español. Índice resumido: https://beneficiodiario.com/llms.txt
 
-- [Beneficio Diario | Criptomonedas e ingresos pasivos](https://beneficiodiario.com/): Portal gratuito sobre criptomonedas, ingresos pasivos, airdrops y cashback. Guías y riesgos de sitios de terceros, sin login ni registro en Beneficio Diario.
-- [Nos sumamos a Abstract: la comunidad española y por qué nos parece importante](https://beneficiodiario.com/blog/beneficiodiario-comunidad-abstract-espanol): Javier Rodríguez, cofundador de BeneficioDiario, es ahora administrador de la comunidad española de Abstract Chain. Te contamos qué es Abstract y cómo unirte.
-- [Markets: opera en Hyperliquid desde el móvil y posiciónate para el airdrop](https://beneficiodiario.com/blog/markets-hyperliquid-app): Markets es una app móvil sobre Hyperliquid para operar cripto, acciones e índices desde el teléfono, ver a los mejores traders y farmear kPoints de cara a posibles airdrops.
-- [KAST lanza el USD Cashback: dinero real de vuelta en cada compra](https://beneficiodiario.com/blog/kast-usd-cashback-dinero-real): KAST acaba de activar el cashback en dólares reales. Ya no son puntos ni tokens: es USD directo a tu saldo cada vez que usas la tarjeta.
-- [VOID Network supera los 1.000 usuarios y ajusta su modelo de distribución](https://beneficiodiario.com/blog/void-network-1000-usuarios): El proyecto acaba de cruzar el primer hito importante: más de 1.000 usuarios en fase early access. La app de iOS estará lista en unas dos semanas.
-- [GRVT: trading descentralizado con el capital siempre trabajando](https://beneficiodiario.com/blog/grvt-trading-descentralizado): Qué es GRVT, cómo funciona su Season 2 de puntos y por qué lo tenemos en el radar de cara al snapshot de Q2 2026.
-- [Top 5 criptos compradas en 2020: balance a 6 años](https://beneficiodiario.com/blog/top-5-criptos-2020-balance): BTC, ETH, SOL, BNB y XRP. ¿Cuánto habrías ganado invirtiendo €1.000 en cada una en 2020? Los números reales, sin filtros.
-- [Qué es Beneficio Diario y cómo funciona](https://beneficiodiario.com/sobre-beneficio-diario): Beneficio Diario es un portal gratuito de información sobre criptomonedas, airdrops, cashback y sitios de terceros. Sin login, sin registro y sin gestionar fondos.
+## Proyectos que seguimos (revisado 2026-11-15)
 
-### Qué encontrarás
+### RISEx
 
-Guías para entender criptomonedas, posibles ingresos pasivos, airdrops, testnets, cashback y herramientas de terceros. El objetivo es distinguir qué ofrece cada opción, qué exige y qué riesgos y costes tiene. No todas las actividades generan ingresos y algunas pueden ocasionar pérdidas.
+Ficha: https://beneficiodiario.com/#proyecto-risex · Categoría: PERP DEX · RISE L2
 
-### Quiénes publican
+RISEx es un exchange descentralizado de contratos perpetuos construido sobre RISE, una red de capa 2. Su programa RISE Points Season 1: Ignite distribuye puntos semanalmente según la actividad elegible. Los puntos pueden ayudar a posicionarse ante futuras recompensas, pero el valor, reparto y fecha de un posible airdrop no están garantizados ni definidos públicamente. Conecta tu wallet, revisa las reglas y costes antes de operar. El apalancamiento puede provocar pérdidas rápidas: no operes solo para acumular puntos.
 
-El proyecto editorial está impulsado por Sergio Olmo y Javier Rodríguez. La presentación del equipo está disponible en la portada. Beneficio Diario es el nombre del portal: no se presenta como una empresa de inversión ni como una entidad autorizada para gestionar dinero.
+- Programa RISE Points Season 1: Ignite activo; consulta las reglas oficiales
+- Puntos semanales según actividad elegible
+- La actividad puede incluir volumen, comisiones e interés abierto
+- El referido puede ofrecer ventajas según las condiciones vigentes
+- Dificultad media: requiere entender órdenes, comisiones y perpetuos
+- Airdrop potencial, no garantizado; sin asignación individual confirmada
 
-### Tu relación con los terceros
+Rentabilidad: Variable · Riesgo: Variable · Frecuencia: Sem/Día · Mínimo orientativo: $50
 
-No abrimos cuentas, custodiamos activos, conectamos carteras ni ejecutamos operaciones. Los registros y verificaciones que exija una plataforma enlazada se realizan en su propio sitio y bajo sus condiciones. Nunca nos envíes fondos, contraseñas o frases semilla.
+Web oficial (enlace de referido, código javiitolevelup): https://www.rise.trade/invite/javiitolevelup
 
-### Cómo se financia
+### TxFlow
 
-El portal puede obtener ingresos mediante anuncios y enlaces de afiliación o referido. La consulta sigue siendo gratuita. La política de transparencia explica los incentivos y sus posibles conflictos de interés.
+Ficha: https://beneficiodiario.com/#proyecto-txflow · Categoría: PERP DEX · LAYER 1
 
-### Contacto y correcciones
+TxFlow es una infraestructura blockchain de capa 1 con mercados on-chain de spot, perpetuos y predicciones. Su exchange utiliza un libro de órdenes on-chain. El referido anuncia un 5% de descuento en comisiones para los primeros 25 millones de dólares de volumen, sujeto a condiciones. No hay un airdrop ni un token confirmado públicamente. Existen campañas puntuales de créditos de comisiones y fuentes externas mencionan posible contabilización retroactiva de actividad, pero no debe tratarse como una promesa oficial. Revisa campañas activas y evita asumir riesgo solo por especular con recompensas.
 
-El proyecto se gestiona desde Barcelona, España. Puedes escribir a info@beneficiodiario.com para consultas, errores, enlaces rotos, privacidad o colaboraciones. Lee la política editorial para conocer el alcance de los análisis y las correcciones.
-- [Contactar con Beneficio Diario](https://beneficiodiario.com/contacto): Contacto del portal Beneficio Diario en Barcelona, España: info@beneficiodiario.com. Consultas, privacidad, correcciones, enlaces rotos y colaboraciones.
+- Mercados on-chain de perpetuos, spot y predicciones sobre TxFlow L1
+- Referido: descuento anunciado del 5% en comisiones para los primeros $25M de volumen
+- Puede haber campañas temporales de créditos de comisiones
+- Airdrop y token no confirmados oficialmente
+- Dificultad media-alta: plataforma nueva y trading especializado
+- Tiempo inicial estimado: 10–20 minutos; luego depende de la actividad
 
-### Consultas y correcciones
+Rentabilidad: Variable · Riesgo: Variable · Frecuencia: Sem/Día · Mínimo orientativo: $50
 
-Indica la página o el enlace al que te refieres y explica el error o la duda. Si tienes una fuente oficial o documentación que permita comprobarlo, incluye su dirección. No prometemos una respuesta en un plazo fijo.
+Web oficial (enlace de referido, código M12HAK2TB6): https://app.txflow.com/r/M12HAK2TB6
 
-### Privacidad
+### Onchain.cc
 
-Puedes utilizar el mismo correo para ejercer derechos o plantear dudas sobre tus datos. Explica qué solicitas y evita enviar documentación de identidad salvo que sea necesaria y te indiquemos cómo facilitarla de forma proporcionada.
+Ficha: https://beneficiodiario.com/#proyecto-onchain · Categoría: PERP DEX · PREDICTIONS
 
-### Incidencias con una plataforma
+Onchain.cc es una terminal de trading autocustodiada con perpetuos, spot, memecoins, mercados de predicción y swaps. Su programa Colosseum Season 2 está activo y anuncia un fondo de recompensas de 300.000 USD, sesiones semanales, misiones, cajas de botín y puntos de clasificación. Lo que reciba cada usuario depende de las reglas y resultados de la campaña; no es una cantidad garantizada ni implica necesariamente un airdrop de token. Las operaciones elegibles suman puntos y el rango desbloquea cashback de parte de las comisiones en USDC. Comprueba las comisiones antes de operar.
 
-No tenemos acceso a cuentas, depósitos ni operaciones de los servicios enlazados. Contacta con el soporte oficial del proveedor para retiradas, bloqueos, tarjetas, KYC o recompensas. Podemos revisar la información del portal, pero no actuar sobre tu cuenta externa.
+- Colosseum Season 2 activo: fondo anunciado de 300.000 USD en recompensas
+- Perpetuos, spot, predicciones, swaps y mercados de memecoins
+- Puntos, misiones, sesiones semanales y cajas de botín
+- Cashback anunciado del 25% al 50% de las comisiones según rango
+- Dificultad media: conectar wallet y revisar mercado y costes
+- Recompensas de campaña activas; airdrop de token no garantizado
 
-### Colaboraciones
+Rentabilidad: Variable · Riesgo: Variable · Frecuencia: Diaria · Mínimo orientativo: $50
 
-Identifica el proyecto, la entidad responsable, el sitio oficial y las condiciones de la propuesta. Las colaboraciones comerciales deben estar identificadas; no ofrecemos garantías de cobertura, resultados ni posicionamiento.
+Web oficial (enlace de referido, código 75308D2B): https://app.onchain.cc/?referral=75308D2B
 
-### Protege tu información
+### VOID Network
 
-No envíes contraseñas, códigos de acceso, claves privadas, frases semilla ni datos bancarios. No solicitamos transferencias para desbloquear una inversión o entregar un premio. El tratamiento de los mensajes se explica en la política de privacidad.
-- [Política editorial y fuentes de Beneficio Diario](https://beneficiodiario.com/politica-editorial): Criterios de publicación, fuentes, fechas, riesgos, afiliación y corrección de errores en las guías y artículos de Beneficio Diario.
+Ficha: https://beneficiodiario.com/#proyecto-void · Categoría: EARLY STAGE
 
-### Fuentes y comprobación
+VOID Network es un proyecto en fase muy temprana que recuerda a lo que fue PI Network en sus inicios, pero con una base técnica más sólida desde el principio. La idea es sencilla: participar ahora, cuando hay poca gente dentro, para acumular tokens VOID antes de que el proyecto escale.
 
-Priorizamos documentación del proveedor, condiciones oficiales y comunicaciones de los reguladores. Contrastamos los datos cuando resulta posible. Una fuente oficial puede contener información comercial: su existencia no demuestra que una promesa vaya a cumplirse.
+El coste es mínimo: dos clics al día (uno cada 12 horas) y una ruleta adicional disponible cada hora después de empezar a minar. Sin dinero, sin complicaciones. Solo tiempo y constancia.
 
-Cuando una recompensa, fecha o lanzamiento no están confirmados deben tratarse como hipótesis. No equiparamos puntos, tokens de testnet o expectativas de airdrop a un saldo de dinero disponible.
+- Solo 2 clics al día, sin inversión económica
+- Fase BETA activa: 500 tokens de bono por registro
+- Mecánica de minado cada 12 horas + ruleta de bonus
+- Blockchain propia en desarrollo con utilidades futuras
+- Comunidad en crecimiento acelerado desde fase temprana
+- Modelo similar al de PI Network en sus inicios
 
-### Fechas y vigencia
+Rentabilidad: Variable · Riesgo: Bajo · Frecuencia: Diario · Mínimo orientativo: €0
 
-Las noticias reflejan el contexto de su fecha de publicación. Un artículo antiguo no confirma que una campaña siga activa hoy. Cambiar el diseño o desplegar el sitio no equivale a revisar el contenido, y no actualizamos automáticamente su fecha editorial por ese motivo.
+Web oficial (enlace de referido, código 6FFB3B1B): https://app.voidnetwork.app/auth?ref=6FFB3B1B
 
-### Experiencias y resultados
+### GRVT
 
-Diferenciamos experiencias personales, datos de terceros y simulaciones cuando se aportan. No son auditorías ni rentabilidades representativas. Los resultados pasados no garantizan los futuros y deben interpretarse junto a costes, impuestos, periodo y riesgo.
+Ficha: https://beneficiodiario.com/#proyecto-grvt · Categoría: TRADING DEX
 
-### Financiación y conflictos
+GRVT (Gravity) es una plataforma de trading descentralizado que va más allá del concepto tradicional de exchange. Están construyendo lo que llaman un brokerage on-chain: un entorno donde tu capital no está parado, sino generando rendimiento mientras operas.
 
-La publicidad, la afiliación y los referidos pueden influir en la selección de temas. Identificamos esos enlaces y explicamos los incentivos en Transparencia. No presentamos un enlace comercial como certificación independiente de seguridad.
+El airdrop ya se ha cerrado y repartido: nuestra asignación fue de 452,76 GRVT, unos 106 $ al cambio del reparto. No se libera de golpe, va por tramos (vesting): el primero llegó el 30 de julio de 2026 y el siguiente está previsto para el 30 de noviembre. La plataforma sigue plenamente operativa como perp DEX.
 
-### Errores y límites
+- Balance "composable": tu capital genera yield mientras tradeas
+- Depósitos con rendimiento de hasta 11% APY
+- Privacidad ZK y autocustodia de fondos
+- Airdrop cerrado: ahora funciona como perp DEX del día a día
+- Niveles VIP con mejores condiciones y rebates de fees
+- Equipo con background en Goldman Sachs, DBS Bank y Meta
 
-Si detectas un error, envía la URL, el dato cuestionado y la fuente a info@beneficiodiario.com. Podemos corregir, ampliar o retirar una publicación. Los cambios materiales deben explicar qué se ha corregido; no cambiamos fechas para simular actualidad.
+Rentabilidad: 106 $ · Riesgo: Medio · Frecuencia: Activo · Mínimo orientativo: Variable
 
-No somos una agencia de calificación ni un servicio de asesoramiento individual. Las etiquetas de riesgo son orientativas y no recogen todos los riesgos de cada plataforma.
-- [Ingresos pasivos: opciones, costes y riesgos · Beneficio Diario](https://beneficiodiario.com/ingresos-pasivos): Qué son los ingresos pasivos, en qué se diferencian del trading, cashback y airdrops, y qué riesgos y costes revisar antes de utilizar una plataforma.
+Resultado del airdrop (Airdrop cerrado):
+- Asignación total: 452,764752 GRVT
+- Ya reclamado: 22,638237 GRVT
+- Próximo tramo: 45,276475 GRVT · 30 nov 2026
+Cifras reales de nuestra cuenta. El reparto es por tramos, no se cobra todo de golpe.
 
-### Pasivo no significa automático ni sin riesgo
+Web oficial (enlace de referido, código QUE4FO5): https://grvt.io/?ref=QUE4FO5
+
+## Preguntas frecuentes
+
+### ¿Qué es Beneficio Diario?
+
+Beneficio Diario es un portal gratuito gestionado por particulares con información sobre criptomonedas, ingresos pasivos, airdrops y cashback. Publicamos guías y enlaces a sitios de terceros. No somos una entidad financiera ni gestionamos fondos.
+
+### ¿Necesito registrarme o iniciar sesión?
+
+No. Todo el contenido de Beneficio Diario se puede consultar sin login ni registro. Los sitios de terceros pueden pedirte una cuenta, verificación de identidad u otros requisitos bajo sus propias condiciones.
+
+### ¿Qué proyectos seguís ahora mismo?
+
+En noviembre de 2026 seguimos tres perp DEX con programas de puntos activos (RISEx, TxFlow y Onchain.cc), VOID Network, un proyecto gratuito en fase temprana, y GRVT, que ya repartió su airdrop y sigue operativo como perp DEX. Ninguna recompensa está garantizada y las condiciones cambian: cada ficha explica su riesgo y enlaza a la web oficial.
+
+### ¿Qué es un perp DEX y cómo funcionan sus puntos?
+
+Un perp DEX es un exchange descentralizado de contratos perpetuos: permite operar long o short con apalancamiento y sin fecha de vencimiento. Muchos reparten puntos por volumen, comisiones o interés abierto que podrían convertirse en un airdrop, aunque no está garantizado. El apalancamiento puede liquidar tu posición; lo explicamos en la guía de perp DEX.
+
+### ¿Qué es la estrategia delta neutral?
+
+Es abrir dos posiciones opuestas del mismo tamaño en plataformas distintas, por ejemplo long en TxFlow y short en RISEx, para que el precio afecte poco al conjunto mientras se acumula actividad en ambas. No elimina el riesgo: cada lado puede liquidarse por separado, el funding puede ir en contra y las comisiones se duplican.
+
+### ¿Cuánto dinero necesito para empezar?
+
+Depende del proyecto. VOID Network no pide depósito. En los perp DEX que seguimos, una referencia práctica es de unos 50 USDC para probar con posiciones pequeñas, más las comisiones de red. Empieza solo con dinero que puedas permitirte perder y sin apalancamiento alto.
+
+### ¿Qué son los ingresos pasivos?
+
+Son ingresos que pueden requerir menos intervención continua después de un trabajo o inversión inicial. No significan dinero sin esfuerzo ni sin riesgo. Staking y DeFi tienen riesgos propios; trading, tareas de airdrops y cashback no deben confundirse con ingresos pasivos garantizados.
+
+### ¿Un airdrop o una testnet garantizan ganar dinero?
+
+No. Acumular puntos o realizar tareas no garantiza que haya un reparto, que seas elegible ni que los tokens tengan valor. Puede haber costes de red, tiempo, exposición de datos y riesgos de cartera. Comprueba siempre la fecha y las reglas oficiales.
+
+### ¿Es dinero fácil o hay rentabilidad garantizada?
+
+No garantizamos ingresos ni rentabilidad. Los criptoactivos pueden perder todo su valor. Los ejemplos, porcentajes promocionales y resultados pasados dependen de su fecha y condiciones y no aseguran un resultado futuro.
+
+### ¿Cómo se financia el portal?
+
+Podemos recibir ingresos de publicidad, colaboraciones y enlaces de afiliación o referido. Estos incentivos pueden influir en la selección de proyectos. El acceso sigue siendo gratuito. Consulta la política de transparencia y las condiciones del proveedor.
+
+### ¿Qué datos recoge la analítica?
+
+Con tu consentimiento, Vercel Web Analytics permite obtener estadísticas de navegación. No cargamos Google Analytics. Puedes rechazar o configurar por separado analítica y publicidad y cambiar la elección desde el pie de página.
+
+### ¿Cómo contacto con Beneficio Diario?
+
+Puedes escribir a info@beneficiodiario.com para consultas, correcciones y privacidad. El portal se gestiona desde Barcelona, España. Para problemas con depósitos, cuentas o recompensas de un tercero debes contactar con su soporte oficial.
+
+## Guías por tema
+
+### Ingresos pasivos: opciones, costes y riesgos
+
+URL: https://beneficiodiario.com/ingresos-pasivos · Actualizado: 2026-10-26
+
+Los ingresos pasivos son entradas de dinero que, una vez preparado un activo o sistema, pueden requerir menos intervención continua. No significan dinero gratis ni rentabilidad garantizada.
+
+#### Pasivo no significa automático ni sin riesgo
 
 Crear un producto, mantener un activo o utilizar un protocolo puede exigir capital, conocimientos y trabajo inicial y periódico. El ingreso bruto puede ocultar costes de mantenimiento, comisiones, impuestos o depreciación. Si una oferta promete cobrar sin esfuerzo y sin riesgo, necesitas contrastar cómo se financia.
 
 Compara el resultado neto con el tiempo dedicado y el capital expuesto. Una recompensa elevada puede compensar riesgos elevados o un incentivo temporal, en lugar de demostrar que el negocio es sostenible.
 
-### Staking y recompensas de red
+#### Staking y recompensas de red
 
 En determinadas redes de prueba de participación, el staking vincula activos a la seguridad de la red y puede generar recompensas. Las condiciones varían: hay riesgos de precio, indisponibilidad, penalizaciones, custodia o contratos. Un token de staking líquido añade riesgos propios y no equivale a una cuenta bancaria.
 
 Distingue el staking nativo de la promesa comercial de rendimiento de una plataforma. Averigua quién controla las claves, de dónde procede la recompensa y cómo y cuándo puedes salir.
 
-### Préstamos y liquidez en DeFi
+- Ethereum: explicación del staking: https://ethereum.org/es/staking/
+
+#### Préstamos y liquidez en DeFi
 
 Prestar activos o aportar liquidez puede producir comisiones o incentivos. También introduce exposición a contratos, oráculos, deudas, pérdida de paridad, contrapartes y pérdida impermanente. Un APY puede ser variable y calcularse con supuestos que no se cumplirán.
 
 Pregunta en qué activo se paga, si el rendimiento se capitaliza, qué liquidez existe para retirarlo y qué ocurriría con el protocolo en un escenario de estrés. No compares una tasa anualizada de pocos días con una rentabilidad anual realizada.
 
-### Qué no debe confundirse con ingreso pasivo
+#### Qué no debe confundirse con ingreso pasivo
 
 El cashback es la devolución de parte de una compra, y normalmente requiere gasto previo. El trading supone decisiones activas y puede generar pérdidas. Las tareas de airdrops requieren tiempo y no aseguran recibir tokens. Ahorrar un gasto o acumular puntos no es lo mismo que cobrar un ingreso.
 
 En Beneficio Diario explicamos estas categorías por separado. No necesitas registrarte aquí: cualquier operación se realiza en el servicio externo, si decides utilizarlo después de leer sus condiciones.
 
-### Lista de comprobación antes de participar
+#### Lista de comprobación antes de participar
 
 Identifica la entidad, la jurisdicción, el origen del rendimiento, las condiciones de salida y todos los costes. Revisa la documentación y las advertencias del regulador; una presencia en redes o un referido no demuestra autorización.
 
 Anota escenarios de pérdida y la exposición total, incluidos activos depositados, permisos de cartera y costes operativos. Si no puedes explicar cómo se genera el rendimiento, falta información para valorar la propuesta.
-- [Criptomonedas: guía inicial y riesgos · Beneficio Diario](https://beneficiodiario.com/criptomonedas): Conceptos para entender criptomonedas, wallets, exchanges, stablecoins y DeFi. Qué comprobar antes de usar una plataforma y cómo proteger tus claves.
 
-### Moneda, token y red
+- CNMV: portal del inversor: https://www.cnmv.es/portal/Inversor
+- ESMA: información para inversores: https://www.esma.europa.eu/investor-corner
+
+### Criptomonedas: guía inicial y riesgos
+
+URL: https://beneficiodiario.com/criptomonedas · Actualizado: 2026-10-26
+
+Las criptomonedas son activos digitales cuyo funcionamiento suele apoyarse en criptografía y registros distribuidos. Su utilidad, derechos, liquidez y protección dependen de cada activo y servicio.
+
+#### Moneda, token y red
 
 Una red puede tener un activo nativo para pagar comisiones o participar en su seguridad. Otros tokens representan utilidades, derechos o incentivos definidos por un proyecto. El nombre, el número de unidades o una cotización inicial no bastan para valorar un activo.
 
 Una blockchain no garantiza que todos los proyectos que se anuncian sobre ella sean fiables. Comprueba documentación, direcciones de contrato, mecanismos de emisión, distribución y restricciones.
 
-### Wallets y claves privadas
+#### Wallets y claves privadas
 
 Una wallet permite interactuar con direcciones y firmar operaciones; no guarda necesariamente las monedas como archivos. En autocustodia, conservar y proteger las claves es tu responsabilidad. En custodia, dependes del proveedor para acceder a los activos.
 
 La frase semilla puede permitir controlar una cartera. No la compartas con soportes, formularios ni con Beneficio Diario. Verifica la red y dirección antes de una operación: muchos errores o firmas maliciosas son irreversibles.
 
-### Exchanges y DeFi
+#### Exchanges y DeFi
 
 Un exchange permite intercambiar activos según sus condiciones. Los protocolos DeFi utilizan contratos inteligentes para funciones como intercambio o préstamos. Una interfaz descentralizada no elimina dependencias técnicas, riesgos de administración, contratos u oráculos.
 
 Antes de usar un proveedor comprueba la entidad real, los permisos para operar donde resides, las comisiones, la custodia, las condiciones de retirada y el procedimiento de reclamaciones. Evita asumir que todo producto está cubierto por una garantía.
 
-### Stablecoins y volatilidad
+#### Stablecoins y volatilidad
 
 Las stablecoins buscan seguir una referencia, por ejemplo una moneda fiduciaria, mediante distintos mecanismos. Pueden perder esa referencia, presentar riesgos de reservas o de emisor y tener restricciones de reembolso. No son automáticamente equivalentes a un depósito bancario.
 
 La volatilidad también afecta a tokens de recompensas y activos utilizados para pagar comisiones. Un ingreso expresado en tokens puede perder valor antes de poder utilizarlo.
 
-### Cómo utilizar este portal
+#### Cómo utilizar este portal
 
 Puedes leer gratuitamente guías y artículos, comparar explicaciones y consultar las fuentes. No necesitas una cuenta en Beneficio Diario. Los enlaces pueden ser de referido y las condiciones se comprueban en el sitio del proveedor.
 
 Empieza por el glosario si encuentras términos como gas, APY, KYC, DYOR o slashing. El aviso de riesgos detalla las limitaciones de los ejemplos financieros.
-- [Airdrops y testnets: cómo funcionan y sus riesgos · Beneficio Diario](https://beneficiodiario.com/airdrops): Qué son los airdrops, puntos, snapshots y testnets. Cómo revisar requisitos, costes, elegibilidad y señales de fraude sin confundir expectativas con dinero.
 
-### Airdrop confirmado frente a expectativa
+- CNMV: portal del inversor: https://www.cnmv.es/portal/Inversor
+- ESMA: información para inversores: https://www.esma.europa.eu/investor-corner
+
+### Airdrops y testnets: cómo funcionan y sus riesgos
+
+URL: https://beneficiodiario.com/airdrops · Actualizado: 2026-10-26
+
+Un airdrop es una distribución de tokens según las reglas de un proyecto. Participar en tareas, acumular puntos o probar una red no garantiza que exista una distribución ni que vayas a recibir dinero.
+
+#### Airdrop confirmado frente a expectativa
 
 Distingue un anuncio oficial con reglas de una posibilidad comentada por la comunidad. Incluso una distribución anunciada puede cambiar sus condiciones o resultar inaccesible en tu país. Si un contenido habla de una campaña pasada, comprueba si sigue abierta.
 
 Un snapshot suele registrar un estado en una fecha; no demuestra por sí solo quién cobrará ni cuánto. Las comprobaciones de actividad artificial, identidad o jurisdicción pueden afectar a la elegibilidad.
 
-### Puntos y testnets no son dinero
+#### Puntos y testnets no son dinero
 
 Los puntos pueden ser un sistema interno sin conversión garantizada. En una testnet se prueban funciones con activos de prueba que habitualmente no representan un derecho a tokens de la red principal.
 
 Separa las recompensas recibidas, los importes realizables y las estimaciones. No calcules una rentabilidad como si todos los puntos fueran vendibles al precio de un token que todavía no existe.
 
-### Costes que conviene medir
+#### Costes que conviene medir
 
 Aunque una tarea no exija depósito, puede consumir tiempo, comisiones de red, datos móviles o información personal. Otras campañas exigen volumen de trading o capital expuesto. Las comisiones y las pérdidas pueden superar la recompensa.
 
 Lee si existen bloqueos, requisitos de custodia, pagos para reclamar o condiciones de referido. Ningún código de Beneficio Diario garantiza elegibilidad ni un premio.
 
-### Protege la cartera
+#### Protege la cartera
 
 Comprueba el dominio y el anuncio en canales oficiales. Desconfía de mensajes que exijan tu frase semilla, pagos para desbloquear una recompensa o firmas cuyo alcance no entiendes. Los permisos de contrato pueden permitir mover activos.
 
 Un enlace aparentemente gratuito puede conducir a phishing. Revisa las autorizaciones, las redes y la procedencia del sitio; no confundas una cartera separada para pruebas con una garantía de seguridad.
 
-### Cómo leer nuestras publicaciones
+#### Cómo leer nuestras publicaciones
 
 Mostramos artículos con su fecha original. Los resultados históricos no convierten una campaña cerrada en una oportunidad activa. Consulta la documentación del proyecto para fechas, criterios y reclamaciones.
 
 El portal es gratuito y no pide registro. Si decides probar un tercero, su cuenta, privacidad y condiciones son responsabilidad de ese servicio. Nuestros enlaces pueden incluir un referido.
-- [Glosario cripto: airdrop, staking, APY, DeFi y DYOR · Beneficio Diario](https://beneficiodiario.com/glosario-cripto): Significado de términos cripto e ingresos pasivos: airdrop, testnet, snapshot, staking, APY, APR, DeFi, gas, wallet, KYC, cashback, slashing y DYOR.
 
-### Airdrop, puntos, snapshot y testnet
+- CNMV: portal del inversor: https://www.cnmv.es/portal/Inversor
+- ESMA: información para inversores: https://www.esma.europa.eu/investor-corner
+
+### Perp DEX: qué son, cómo funcionan los puntos y sus riesgos
+
+URL: https://beneficiodiario.com/perp-dex · Actualizado: 2026-11-15
+
+Un perp DEX es un exchange descentralizado de contratos perpetuos: permite abrir posiciones long o short con apalancamiento sobre un activo, sin fecha de vencimiento y, según la plataforma, sin ceder la custodia de los fondos. Muchos premian la actividad con puntos, pero operar con apalancamiento puede hacerte perder todo el margen depositado.
+
+#### Qué es un contrato perpetuo
+
+Un perpetuo sigue el precio de un activo, como BTC o ETH, sin que tengas que comprarlo. Abres una posición long si esperas que suba o short si esperas que baje, y aportas un margen como garantía. A diferencia de un futuro tradicional no vence: la posición sigue abierta mientras mantengas margen suficiente.
+
+El apalancamiento multiplica la exposición respecto al margen. Con 5x, un movimiento del 10 % en contra consume aproximadamente la mitad del margen, antes de comisiones. Por eso el tamaño de la posición importa más que acertar la dirección.
+
+#### Funding rate y liquidación
+
+El funding rate es un pago periódico entre posiciones long y short que acerca el precio del perpetuo al del mercado al contado. Cuando es positivo suelen pagar los long; cuando es negativo, los short. Por periodo puede parecer pequeño, pero se acumula si mantienes la posición días o semanas.
+
+La liquidación es el cierre forzoso de la posición cuando las pérdidas agotan el margen de mantenimiento, a menudo con una penalización. Un movimiento brusco, poca liquidez o un fallo técnico pueden liquidarte antes de que puedas reaccionar.
+
+#### Libro de órdenes, comisiones y deslizamiento
+
+Algunos perp DEX usan un libro de órdenes on-chain o híbrido y otros, pools de liquidez. Las órdenes limitadas (maker) y las de mercado (taker) suelen pagar comisiones distintas. En mercados poco profundos una orden grande se ejecuta a peor precio: es el deslizamiento o slippage.
+
+Suma comisiones de apertura y cierre, funding, coste de mover fondos entre redes y deslizamiento. En estrategias pensadas para generar volumen, esos costes pueden superar cualquier recompensa.
+
+#### Programas de puntos y posibles airdrops
+
+Muchos perp DEX nuevos reparten puntos por volumen operado, comisiones pagadas, interés abierto o referidos. Los puntos son un registro interno: el proyecto decide si se convierten en tokens, cuándo y en qué proporción, y puede excluir actividad que considere artificial o cuentas de determinados países.
+
+En noviembre de 2026 seguimos RISEx (RISE Points Season 1: Ignite), TxFlow (campañas de créditos de comisiones, sin token confirmado) y Onchain.cc (Colosseum Season 2). GRVT ya cerró su campaña y repartió el airdrop por tramos. Las condiciones cambian a menudo: comprueba siempre las reglas oficiales antes de operar.
+
+- Proyectos que seguimos ahora: https://beneficiodiario.com/#proyectos
+- Archivo: cómo funcionaba el programa de puntos de GRVT: https://beneficiodiario.com/blog/grvt-trading-descentralizado
+
+#### Estrategia delta neutral
+
+Consiste en abrir dos posiciones opuestas del mismo tamaño, por ejemplo long en una plataforma y short en otra, para que el precio afecte poco al conjunto mientras se acumula actividad en ambas. No elimina el riesgo: cada lado puede liquidarse por separado, el funding puede ir en contra en los dos y los costes se duplican.
+
+Si la aplicas, usa apalancamiento bajo, deja margen de seguridad en cada plataforma y revisa que las reglas de puntos no penalicen ese tipo de actividad.
+
+- Estrategia delta neutral en TxFlow y RISEx, paso a paso: https://beneficiodiario.com/blog/estrategia-delta-neutral-txflow-risex
+
+#### Antes de conectar la wallet
+
+Comprueba el dominio oficial, la red, quién opera la plataforma y si está disponible en tu país. Usa una wallet separada con solo los fondos necesarios y revisa qué firmas y permisos concedes. Ningún soporte legítimo te pedirá la frase semilla.
+
+Empieza con una cantidad que puedas perder, practica abrir y cerrar posiciones pequeñas y anota todos los costes. Si no sabes en qué precio se liquidaría tu posición, todavía no es momento de usar apalancamiento.
+
+- CNMV: portal del inversor: https://www.cnmv.es/portal/Inversor
+- ESMA: información para inversores: https://www.esma.europa.eu/investor-corner
+
+### Glosario cripto: airdrop, staking, perp DEX, funding y DYOR
+
+URL: https://beneficiodiario.com/glosario-cripto · Actualizado: 2026-11-15
+
+Un glosario para entender las guías de Beneficio Diario. Conocer el término no elimina el riesgo de un activo o plataforma: revisa siempre sus condiciones concretas.
+
+#### Airdrop, puntos, snapshot y testnet
 
 Airdrop: distribución de tokens con reglas fijadas por un proyecto. Puntos: unidades internas que pueden no convertirse en un activo. Snapshot: registro de un estado o actividad en una fecha. Testnet: red de pruebas; sus activos no equivalen necesariamente a dinero.
 
-### Staking y slashing
+#### Staking y slashing
 
 Staking: participación con activos en ciertos mecanismos de prueba de participación, con condiciones y posibles recompensas. Slashing: penalización que puede reducir activos vinculados a un validador en determinadas redes. El staking delegado, líquido o a través de custodios añade condiciones propias.
 
-### APR y APY
+#### APR y APY
 
 APR: tasa anual expresada sin incorporar necesariamente capitalización. APY: tasa anual que incorpora una hipótesis de capitalización. Comprueba frecuencia, variabilidad, activo de pago y costes. Ninguna de las dos garantiza lo que realmente cobrarás.
 
-### DeFi, liquidez y pérdida impermanente
+#### DeFi, liquidez y pérdida impermanente
 
 DeFi: servicios financieros construidos con contratos inteligentes. Aportar liquidez facilita intercambios u otras operaciones a cambio de comisiones o incentivos. La pérdida impermanente describe una diferencia de valor frente a mantener los activos por separado en ciertos pools; puede materializarse al salir.
 
-### Wallet, seed phrase y gas
+#### Wallet, seed phrase y gas
 
 Wallet: herramienta para gestionar claves o interactuar con direcciones. Seed phrase o frase semilla: palabras que permiten recuperar o controlar una cartera; nunca las compartas. Gas: coste de ejecutar operaciones en una red, pagado según sus reglas. Una operación fallida también puede consumir comisiones.
 
-### Stablecoin, exchange y KYC
+#### Stablecoin, exchange y KYC
 
 Stablecoin: activo que intenta seguir una referencia y puede perderla. Exchange: servicio de intercambio de activos. KYC: comprobaciones de identidad que un proveedor puede exigir. Beneficio Diario no realiza KYC ni abre cuentas; esos requisitos corresponden al tercero.
 
-### Cashback, referido y DYOR
+#### Cashback, referido y DYOR
 
 Cashback: devolución de parte de una compra, con condiciones; no es rentabilidad de inversión. Referido: enlace o código que atribuye una acción y puede conceder incentivos. DYOR, do your own research: investigar fuentes, costes y riesgos antes de actuar; no es una exención de responsabilidad de quien publica.
 
-### Trading, apalancamiento y FOMO
+#### Trading, apalancamiento y FOMO
 
 Trading: compraventa activa; no equivale a ingreso pasivo. Apalancamiento: exposición que amplifica resultados y pérdidas y puede causar liquidaciones. FOMO: miedo a quedarse fuera; una emoción que puede precipitar decisiones sin información suficiente.
-- [Aviso legal de Beneficio Diario](https://beneficiodiario.com/aviso-legal): Información sobre Beneficio Diario, portal gratuito gestionado por particulares: contacto, acceso libre, enlaces a terceros y propiedad intelectual.
 
-### El portal y su contacto
+#### Perpetuo, long, short y funding rate
+
+Perpetuo: contrato derivado sin vencimiento que sigue el precio de un activo. Long: posición que gana si el precio sube. Short: posición que gana si baja. Funding rate: pago periódico entre long y short que acerca el perpetuo al precio al contado. Perp DEX: exchange descentralizado de contratos perpetuos.
+
+#### Liquidación, delta neutral, slippage y Layer 2
+
+Liquidación: cierre forzoso de una posición cuando las pérdidas agotan el margen. Delta neutral: combinación de posiciones cuyo valor apenas cambia con el precio del activo. Slippage o deslizamiento: diferencia entre el precio esperado y el de ejecución. Layer 2: red construida sobre otra de capa 1 para abaratar o acelerar transacciones.
+
+## Noticias y análisis
+
+### Estrategia delta neutral: cómo farmear puntos en TxFlow y RISEx sin exposición al mercado
+
+URL: https://beneficiodiario.com/blog/estrategia-delta-neutral-txflow-risex · English: https://beneficiodiario.com/en/blog/estrategia-delta-neutral-txflow-risex
+
+Etiqueta: Estrategia · publicado 2026-11-12
+
+TxFlow y RISEx son dos de los perp DEX más comentados de estas últimas semanas, y los dos tienen un programa activo de puntos. Si estás pensando en participar en los dos a la vez, hay una forma de hacerlo con mucho menos ruido en la cuenta: la estrategia delta neutral.
+
+¿Qué es ser "delta neutral"?
+
+En trading, delta mide cuánto cambia el valor de tu posición cuando el precio del activo sube o baja. Una posición long gana con la subida; una short al revés. Si mantienes long y short del mismo tamaño a la vez, el efecto se compensa: lo que pierdes por un lado lo recuperas por el otro. Tu "delta" neto queda cerca de cero.
+
+En términos prácticos: el mercado puede moverse arriba o abajo, pero tu cartera apenas se mueve. Lo único que trabaja es la actividad —volumen, interés abierto, comisiones—, es decir, lo que suele contar para los puntos.
+
+¿Por qué TxFlow y RISEx encajan tan bien?
+
+Son plataformas distintas, cada una con su propio programa:
+
+· TxFlow es una Layer 1 con libro de órdenes on-chain. Anuncia un descuento del 5% en comisiones durante los primeros 25 millones de dólares de volumen por referido, y suele tener campañas puntuales de créditos de comisiones.
+
+· RISEx es un perp DEX sobre RISE, una Layer 2. Su programa RISE Points Season 1: Ignite reparte puntos cada semana en función del volumen, las comisiones y el interés abierto.
+
+Como son dos protocolos diferentes, abrir una posición en uno y la contraria en el otro acumula actividad en ambos a la vez, sin que ninguna gane terreno frente a la otra.
+
+Cómo se hace, paso a paso
+
+La idea es sencilla, pero cada paso tiene que ser consciente:
+
+1. Fondea la misma cantidad de USDC en cada plataforma. Mejor en redes con comisiones bajas (Base, Arbitrum o la propia L2 de RISE). Mantén algo de margen de seguridad fuera de la posición.
+
+2. Elige un activo con buena liquidez en los dos sitios. BTC y ETH son los más seguros porque tienen libros de órdenes profundos. Evita los ilíquidos: el deslizamiento se come la estrategia.
+
+3. Abre long en una plataforma y short en la otra, del mismo tamaño nominal. Por ejemplo, long de ETH por un valor dado en TxFlow y short del mismo valor en RISEx. Delta neto cercano a cero.
+
+4. Usa apalancamiento bajo. 2x o 3x como mucho. No estás buscando dirección, estás acumulando actividad. Un apalancamiento alto solo multiplica el riesgo de liquidación ante un pico de precio o un fallo técnico.
+
+5. Revisa el funding rate. Es la tasa que pagan o cobran las posiciones abiertas. Si es muy favorable en un lado y muy caro en el otro, tu estrategia puede sangrar lentamente. Equilibra la posición del lado con funding negativo o rota según toque.
+
+6. Rota cuando haga falta. Cerca del snapshot de una campaña, si una plataforma pide más volumen para subir de rango, cierra la posición y vuelve a abrirla en el otro sentido. Vas acumulando volumen sin asumir dirección.
+
+Qué riesgos tiene
+
+Esto no es gratis. Los puntos más obvios:
+
+· Liquidación. Un movimiento violento del precio contra tu lado apalancado puede liquidarte antes de que el otro lado compense. Margen de seguridad obligatorio.
+
+· Funding desfavorable. Si pagas funding en los dos lados a la vez, estás sangrando saldo todo el rato. Vigila las tasas.
+
+· Riesgo técnico. Son plataformas nuevas. Pausas, bugs, retrasos en los retiros existen. Nunca metas lo que no puedas permitirte tener bloqueado unos días.
+
+· Reglas de los puntos. Que el programa haga snapshot "hoy" no significa que premie exactamente lo que hiciste ayer. Revisa las reglas oficiales antes de cada ronda.
+
+En resumen
+
+La delta neutral no es magia: es una forma de aprovechar que dos protocolos premian actividad para posicionarse en los dos sin asumir que el mercado va a ir en una dirección concreta. Requiere disciplina con el apalancamiento, atención al funding y gestión del tamaño de la posición.
+
+Si quieres probarlo, regístrate primero en los dos perp DEX con nuestros enlaces y familiarízate con cada interfaz con cantidades pequeñas antes de montar la posición completa:
+
+Enlace de referido: https://www.rise.trade/invite/javiitolevelup (código javiitolevelup)
+
+Enlace de referido: https://app.txflow.com/r/M12HAK2TB6 (código M12HAK2TB6)
+
+### KAST lanza el USD Cashback: dinero real de vuelta en cada compra
+
+URL: https://beneficiodiario.com/blog/kast-usd-cashback-dinero-real · English: https://beneficiodiario.com/en/blog/kast-usd-cashback-dinero-real
+
+Etiqueta: Histórico · publicado 2026-05-05, revisado 2026-11-14, archivo histórico: la campaña descrita ya no está activa
+
+Nota de actualización: KAST ya no forma parte de los proyectos que seguimos. Mantenemos este artículo como archivo de cómo funcionaba su cashback en mayo de 2026. Planes, porcentajes y límites pueden haber cambiado: consulta la web oficial de KAST antes de usar el enlace.
+
+KAST acaba de dar un paso importante: a partir de ahora, cada vez que uses tu tarjeta recibes dólares reales de vuelta de forma automática. Sin puntos que canjear manualmente, sin esperas innecesarias. Gastas y el cashback llega directo.
+
+Es un cambio relevante respecto al modelo anterior, y merece la pena entender bien cómo funciona para sacarle el máximo partido.
+
+¿Cómo funciona el cashback según tu plan?
+
+KAST tiene tres niveles, y el porcentaje de devolución varía en función del que tengas activo:
+
+· Plan Standard (gratuito): 1,5% de cashback en USD sobre los primeros $2.000 de gasto mensual (máximo $30 al mes). Sin puntos adicionales.
+
+· Plan Premium ($1.000/año): 2% de cashback en USD sobre los primeros $10.000 de gasto mensual (máximo $200 al mes) + 1% en KAST Points sin límite.
+
+· Plan Private ($10.000/año): 3% de cashback en USD sobre los primeros $40.000 de gasto mensual (máximo $1.200 al mes) + 2% en KAST Points sin límite.
+
+Los límites de cashback se reinician el 1 de cada mes. Si superas el tope, puedes seguir usando la tarjeta con normalidad, simplemente dejarás de acumular cashback hasta el siguiente ciclo.
+
+¿Cómo cobras el cashback?
+
+El USD que vayas generando queda bloqueado durante 14 días. Pasado ese periodo, ve a la sección Rewards dentro de la app y pulsa "Redeem". En ese momento, el saldo pasa directamente a tu cuenta de gasto.
+
+En resumen
+
+El nuevo sistema es más directo y más fácil de entender. Sabes exactamente cuánto recibirás, cuándo y cómo canjearlo. Para el día a día, esto marca una diferencia real.
+
+Si aún no tienes cuenta, regístrate con el código de referidos y empieza a acumular desde el primer gasto:
+
+Enlace de referido: https://go.kast.xyz/VqVO/AUVXU5UF (código AUVXU5UF)
+
+### VOID Network supera los 1.000 usuarios y ajusta su modelo de distribución
+
+URL: https://beneficiodiario.com/blog/void-network-1000-usuarios · English: https://beneficiodiario.com/en/blog/void-network-1000-usuarios
+
+Etiqueta: Actualización · publicado 2026-05-06
+
+VOID Network acaba de alcanzar un hito relevante: más de 1.000 usuarios activos en plena fase de acceso anticipado. Para un proyecto que todavía no ha salido al público de forma masiva, es una señal de tracción real en una etapa muy temprana.
+
+¿Qué significa esto para los que ya están dentro?
+
+Significa que sigues siendo de los primeros. Y en este tipo de proyectos, llegar antes que la masa es exactamente donde está la ventaja.
+
+¿Qué viene ahora?
+
+El equipo ha confirmado que en aproximadamente dos semanas estará lista la app para iPhone (iOS). Una vez disponible en ambas plataformas, arrancará la fase de expansión pública: creadores de contenido, marketing y llegada de nuevos usuarios de forma masiva.
+
+Este momento, justo antes de ese empujón, es el que más valor tiene para posicionarse. Cuando llegue la ola, los que llevan más tiempo acumulando tokens y construyendo su red estarán mucho mejor situados.
+
+Con el crecimiento de la red, VOID ha ajustado su modelo de distribución de tokens para mejorar el equilibrio del sistema y garantizar su sostenibilidad a largo plazo. Es un movimiento normal y esperable en proyectos que están creciendo.
+
+Lo importante
+
+La app sigue siendo completamente gratuita. Sin pagos, sin compras dentro de la plataforma, sin sorpresas. Solo tiempo y constancia.
+
+Si aún no estás dentro y quieres aprovechar el early access antes del lanzamiento público:
+
+Enlace de referido: https://app.voidnetwork.app/auth?ref=6FFB3B1B (código 6FFB3B1B)
+
+### GRVT: trading descentralizado con el capital siempre trabajando
+
+URL: https://beneficiodiario.com/blog/grvt-trading-descentralizado · English: https://beneficiodiario.com/en/blog/grvt-trading-descentralizado
+
+Etiqueta: Histórico · publicado 2026-04-20, revisado 2026-11-14, archivo histórico: la campaña descrita ya no está activa
+
+Nota de actualización: La campaña de puntos terminó y el airdrop ya se ha repartido: nuestra asignación fue de 452,76 GRVT (unos 106 $ al cambio del reparto), liberada por tramos. GRVT sigue operativo como perp DEX, pero la Season 2, los multiplicadores y el bonus de referido que se describen abajo ya no están activos. Lo mantenemos como archivo de cómo funcionaba el programa.
+
+GRVT (Gravity) no es un exchange más. Es una plataforma que intenta resolver uno de los problemas más grandes del trading descentralizado: que tu capital esté parado mientras no operas.
+
+La idea central es un balance "composable": el mismo dinero que usas para tradear genera rendimiento automáticamente. Sin mover fondos, sin elegir entre operar o ganar intereses. Las dos cosas a la vez.
+
+¿Qué hace GRVT diferente?
+
+Técnicamente, GRVT funciona sobre ZK Validium (tecnología de zkSync), lo que le permite combinar la velocidad de un exchange centralizado con la seguridad y autocustodia de uno descentralizado. Tus fondos no los controla GRVT, los controlas tú.
+
+Los números que respaldan el proyecto son reales:
+
+· TVL actual: ~$65-107M (llegó a superar los $100M en 2026)
+· Interés abierto: ~$484M acumulado
+· Volumen de trading: más de $393.000 millones en volumen acumulado
+· Base de usuarios activos: superó los 10.000 traders en enero 2026
+
+Financiación: $33,3M recaudados en total, incluyendo una Serie A de $19M liderada por ZKsync, Further Ventures y 500 Global.
+
+La Season 2 y el airdrop
+
+Esto es lo que más nos interesa ahora mismo. GRVT ha confirmado el TGE (lanzamiento del token $GRVT) para después del 30 de junio de 2026, cuando cierra la Season 2.
+
+Los puntos se acumulan por:
+
+· Trading en la plataforma (volumen de operaciones)
+· Depósitos mantenidos en la cuenta (TVL)
+· Referidos activos
+· Proveer liquidez como market maker
+
+La asignación para participantes de la Season 2 ha aumentado del 12% al 18% del supply total de 1.000 millones de tokens. En total, la comunidad recibirá el 28% del supply.
+
+El detalle importante: el volumen en altcoins tiene un multiplicador de 2x respecto a BTC, ETH y SOL. Si tradeas en pares alternativos, acumulas el doble de puntos por el mismo volumen.
+
+¿Cómo empezar?
+
+El proceso es sencillo: registro, verificación KYC, depósito de fondos y empezar a operar. No hace falta ser un trader profesional: incluso mantener un balance depositado ya genera puntos por TVL cada semana.
+
+Si ya operas perps en otro sitio, aquí básicamente haces lo mismo pero sumando puntos hacia un airdrop confirmado con fecha de cierre clara: 30 de junio de 2026.
+
+Únete con el código de referidos y suma un 20% extra de puntos:
+
+Enlace de referido: https://grvt.io/?ref=QUE4FO5 (código QUE4FO5)
+
+### Top 5 criptos compradas en 2020: balance a 6 años
+
+URL: https://beneficiodiario.com/blog/top-5-criptos-2020-balance · English: https://beneficiodiario.com/en/blog/top-5-criptos-2020-balance
+
+Etiqueta: Portfolio · publicado 2026-04-15
+
+En enero de 2020, invertir en criptomonedas seguía siendo algo que la mayoría de la gente veía como demasiado arriesgado o demasiado complicado. El mercado todavía cargaba con el estigma del crash de 2018. Y sin embargo, los que entraron ese año con una tesis clara hoy tienen carteras que no se parecen en nada a lo que pusieron.
+
+Vamos con los números reales. ¿Qué habrías ganado invirtiendo €1.000 en cada una de las 5 mayores criptomonedas por capitalización en 2020?
+
+Bitcoin (BTC)
+
+Precio en enero 2020: ~$9.200
+Precio actual (mayo 2026): ~$95.000
+
+€1.000 invertidos = 0,1087 BTC
+Valor actual: ~$10.326 = aprox. €9.500
+
+ROI aproximado: +850%
+
+Ethereum (ETH)
+
+Precio en enero 2020: ~$130
+Precio actual (mayo 2026): ~$1.800
+
+€1.000 invertidos = 7,69 ETH
+Valor actual: ~$13.842 = aprox. €12.700
+
+ROI aproximado: +1.270%
+
+Solana (SOL)
+
+Precio en enero 2020: ~$0,50
+Precio actual (mayo 2026): ~$145
+
+€1.000 invertidos = 2.000 SOL
+Valor actual: ~$290.000 = aprox. €266.000
+
+ROI aproximado: +26.500%
+
+Sí, lo has leído bien. SOL era prácticamente desconocida en 2020 y cotizaba a céntimos. Los que entraron entonces y aguantaron tienen una de las mayores ganancias de la historia reciente del mercado.
+
+BNB (Binance Coin)
+
+Precio en enero 2020: ~$13
+Precio actual (mayo 2026): ~$595
+
+€1.000 invertidos = 76,9 BNB
+Valor actual: ~$45.760 = aprox. €42.000
+
+ROI aproximado: +4.100%
+
+XRP
+
+Precio en enero 2020: ~$0,18
+Precio actual (mayo 2026): ~$2,10
+
+€1.000 invertidos = 5.555 XRP
+Valor actual: ~$11.666 = aprox. €10.700
+
+ROI aproximado: +970%
+
+El resumen en una tabla
+
+· BTC: +850% → €9.500
+· ETH: +1.270% → €12.700
+· SOL: +26.500% → €266.000
+· BNB: +4.100% → €42.000
+· XRP: +970% → €10.700
+
+Si hubieras repartido €1.000 en cada una (€5.000 en total), hoy tendrías aproximadamente €341.000.
+
+¿Qué aprendemos de esto?
+
+Primero: el tiempo en el mercado bate al timing del mercado. La mayoría de estas ganancias vinieron de simplemente aguantar, no de comprar en el mínimo exacto.
+
+Segundo: la diversificación entre los activos principales no sacrificó rentabilidad. Los cinco subieron de forma brutal.
+
+Tercero: los activos que parecían más arriesgados (SOL, BNB) fueron los que más retorno dieron. El riesgo y la recompensa van de la mano.
+
+Esto no es una promesa de que el mercado repita. Es un ejercicio de perspectiva: ¿estás posicionándote en los proyectos que dentro de 6 años alguien va a querer haber tenido?
+
+## Sobre el portal, transparencia e información legal
+
+### Qué es Beneficio Diario y cómo funciona
+
+URL: https://beneficiodiario.com/sobre-beneficio-diario · Actualizado: 2026-10-26
+
+Beneficio Diario es un portal gratuito, gestionado por particulares, que reúne información y guías sobre proyectos y servicios de terceros. Puedes leerlo sin crear una cuenta.
+
+#### Qué encontrarás
+
+Guías para entender criptomonedas, posibles ingresos pasivos, airdrops, testnets, cashback y herramientas de terceros. El objetivo es distinguir qué ofrece cada opción, qué exige y qué riesgos y costes tiene. No todas las actividades generan ingresos y algunas pueden ocasionar pérdidas.
+
+#### Quiénes publican
+
+El proyecto editorial está impulsado por Sergio Olmo y Javier Rodríguez. La presentación del equipo está disponible en la portada. Beneficio Diario es el nombre del portal: no se presenta como una empresa de inversión ni como una entidad autorizada para gestionar dinero.
+
+#### Tu relación con los terceros
+
+No abrimos cuentas, custodiamos activos, conectamos carteras ni ejecutamos operaciones. Los registros y verificaciones que exija una plataforma enlazada se realizan en su propio sitio y bajo sus condiciones. Nunca nos envíes fondos, contraseñas o frases semilla.
+
+#### Cómo se financia
+
+El portal puede obtener ingresos mediante anuncios y enlaces de afiliación o referido. La consulta sigue siendo gratuita. La política de transparencia explica los incentivos y sus posibles conflictos de interés.
+
+#### Contacto y correcciones
+
+El proyecto se gestiona desde Barcelona, España. Puedes escribir a info@beneficiodiario.com para consultas, errores, enlaces rotos, privacidad o colaboraciones. Lee la política editorial para conocer el alcance de los análisis y las correcciones.
+
+### Contactar con Beneficio Diario
+
+URL: https://beneficiodiario.com/contacto · Actualizado: 2026-10-26
+
+Escríbenos a info@beneficiodiario.com. Beneficio Diario es un portal informativo gratuito gestionado desde Barcelona, España.
+
+#### Consultas y correcciones
+
+Indica la página o el enlace al que te refieres y explica el error o la duda. Si tienes una fuente oficial o documentación que permita comprobarlo, incluye su dirección. No prometemos una respuesta en un plazo fijo.
+
+- Escribir a info@beneficiodiario.com: mailto:info@beneficiodiario.com
+
+#### Privacidad
+
+Puedes utilizar el mismo correo para ejercer derechos o plantear dudas sobre tus datos. Explica qué solicitas y evita enviar documentación de identidad salvo que sea necesaria y te indiquemos cómo facilitarla de forma proporcionada.
+
+#### Incidencias con una plataforma
+
+No tenemos acceso a cuentas, depósitos ni operaciones de los servicios enlazados. Contacta con el soporte oficial del proveedor para retiradas, bloqueos, tarjetas, KYC o recompensas. Podemos revisar la información del portal, pero no actuar sobre tu cuenta externa.
+
+#### Colaboraciones
+
+Identifica el proyecto, la entidad responsable, el sitio oficial y las condiciones de la propuesta. Las colaboraciones comerciales deben estar identificadas; no ofrecemos garantías de cobertura, resultados ni posicionamiento.
+
+#### Protege tu información
+
+No envíes contraseñas, códigos de acceso, claves privadas, frases semilla ni datos bancarios. No solicitamos transferencias para desbloquear una inversión o entregar un premio. El tratamiento de los mensajes se explica en la política de privacidad.
+
+### Política editorial y fuentes de Beneficio Diario
+
+URL: https://beneficiodiario.com/politica-editorial · Actualizado: 2026-10-26
+
+Publicamos información para ayudarte a comprender un proyecto antes de salir a su web. Una guía editorial no sustituye la documentación oficial ni una valoración personal del riesgo.
+
+#### Fuentes y comprobación
+
+Priorizamos documentación del proveedor, condiciones oficiales y comunicaciones de los reguladores. Contrastamos los datos cuando resulta posible. Una fuente oficial puede contener información comercial: su existencia no demuestra que una promesa vaya a cumplirse.
+
+Cuando una recompensa, fecha o lanzamiento no están confirmados deben tratarse como hipótesis. No equiparamos puntos, tokens de testnet o expectativas de airdrop a un saldo de dinero disponible.
+
+#### Fechas y vigencia
+
+Las noticias reflejan el contexto de su fecha de publicación. Un artículo antiguo no confirma que una campaña siga activa hoy. Cambiar el diseño o desplegar el sitio no equivale a revisar el contenido, y no actualizamos automáticamente su fecha editorial por ese motivo.
+
+#### Experiencias y resultados
+
+Diferenciamos experiencias personales, datos de terceros y simulaciones cuando se aportan. No son auditorías ni rentabilidades representativas. Los resultados pasados no garantizan los futuros y deben interpretarse junto a costes, impuestos, periodo y riesgo.
+
+#### Financiación y conflictos
+
+La publicidad, la afiliación y los referidos pueden influir en la selección de temas. Identificamos esos enlaces y explicamos los incentivos en Transparencia. No presentamos un enlace comercial como certificación independiente de seguridad.
+
+#### Errores y límites
+
+Si detectas un error, envía la URL, el dato cuestionado y la fuente a info@beneficiodiario.com. Podemos corregir, ampliar o retirar una publicación. Los cambios materiales deben explicar qué se ha corregido; no cambiamos fechas para simular actualidad.
+
+No somos una agencia de calificación ni un servicio de asesoramiento individual. Las etiquetas de riesgo son orientativas y no recogen todos los riesgos de cada plataforma.
+
+### Transparencia, publicidad y afiliación
+
+URL: https://beneficiodiario.com/transparencia · Actualizado: 2026-10-26
+
+#### Acceso gratuito y financiación
+
+Consultar el portal es gratis y no exige registro. Podemos recibir ingresos de publicidad, colaboraciones o referidos. Gestionarlo como particulares no significa que carezca de financiación o intereses económicos.
+
+#### Enlaces y códigos de referido
+
+Una plataforma puede atribuirnos tu registro u operación y concedernos una comisión, puntos o recompensas si utilizas nuestro enlace o código. Los incentivos dependen del proveedor y no garantizamos bonos para el visitante.
+
+No afirmamos que las condiciones, el precio o las comisiones sean siempre idénticos a los de un acceso sin referido. Compara la oferta oficial antes de participar.
+
+#### Identificación y conflicto de interés
+
+Los enlaces comerciales se identifican como referidos o afiliados cuando corresponde y utilizan el atributo sponsored. Los anuncios se etiquetan como «Publicidad». Una relación comercial puede influir en qué proyectos se cubren o destacan: considera ese conflicto al leer.
+
+Una mención, posición en portada o anuncio no acredita solvencia, autorización ni rentabilidad. Los servicios enlazados son independientes de Beneficio Diario.
+
+#### Resultados y correcciones
+
+Los resultados publicados tienen el alcance y fecha indicados y no son una auditoría ni el resultado de todas las personas. Las simulaciones deben diferenciarse de operaciones efectivamente realizadas.
+
+Priorizamos fuentes oficiales y explicamos riesgos y limitaciones. Comunica errores o publicidad insuficientemente identificada a info@beneficiodiario.com. La política editorial explica cómo revisamos los contenidos.
+
+### Aviso legal de Beneficio Diario
+
+URL: https://beneficiodiario.com/aviso-legal · Actualizado: 2026-10-26
+
+#### El portal y su contacto
 
 Beneficio Diario es el nombre de un portal informativo gestionado por particulares desde Barcelona, España. Su dominio es beneficiodiario.com y el correo de contacto es info@beneficiodiario.com. No se presenta como una sociedad mercantil ni como una entidad financiera.
 
 El acceso gratuito no elimina las obligaciones que puedan resultar aplicables a quien gestiona el portal por la publicidad, los referidos o el tratamiento de datos. El nombre del portal es una denominación editorial.
 
-### Objeto y acceso gratuito
+#### Objeto y acceso gratuito
 
 Publicamos información educativa y enlaces sobre criptomonedas, airdrops, cashback, ingresos pasivos y plataformas de terceros. Consultar el portal es gratuito y no exige iniciar sesión, crear una cuenta ni facilitar datos de pago.
 
 No ofrecemos cuentas de inversión, custodia, cambio de criptoactivos, ejecución de órdenes ni asesoramiento individualizado. No recibimos depósitos ni solicitamos claves privadas, frases semilla o transferencias de dinero.
 
-### Servicios externos
+#### Servicios externos
 
 Al seguir un enlace externo sales del portal. El registro, KYC, pagos, depósitos, comisiones y condiciones dependen de su proveedor. Una cuenta en una plataforma externa no es una cuenta de Beneficio Diario.
 
 Un enlace no acredita la solvencia, autorización, seguridad o disponibilidad del proveedor. Verifica la entidad responsable, su documentación y las restricciones de tu país antes de utilizarlo.
 
-### Publicidad y propiedad intelectual
+#### Publicidad y propiedad intelectual
 
 El portal puede financiarse mediante publicidad, colaboraciones y afiliación o referidos. Identificamos los espacios publicitarios y explicamos los conflictos de interés en la política de transparencia.
 
 Los textos y elementos originales pertenecen a sus respectivos autores. Las marcas, logotipos e imágenes de terceros pertenecen a sus titulares. Puedes enlazar nuestras páginas y realizar citas dentro de los límites legales identificando la fuente. Para otros usos o para comunicar una infracción, contacta por correo.
 
-### Responsabilidad y derechos
+#### Responsabilidad y derechos
 
 Procuramos corregir los errores, pero los datos y servicios externos pueden cambiar. No garantizamos resultados económicos ni disponibilidad ininterrumpida. Estas condiciones no excluyen responsabilidades que no puedan limitarse legalmente ni derechos imperativos.
 
 Se atenderá a la normativa aplicable. Si tienes la condición de consumidor, se mantienen las normas y la competencia judicial que te correspondan; no imponemos renuncia a los tribunales legalmente competentes.
-- [Política de privacidad · Beneficio Diario](https://beneficiodiario.com/privacidad): Datos técnicos, contacto, Vercel Web Analytics, publicidad y derechos de privacidad en Beneficio Diario. Sin cuentas de usuario ni registro obligatorio.
 
-### Gestión y contacto
+### Política de privacidad
+
+URL: https://beneficiodiario.com/privacidad · Actualizado: 2026-11-15
+
+#### Gestión y contacto
 
 El portal Beneficio Diario se gestiona por particulares desde Barcelona, España. Para cuestiones sobre tus datos escribe a info@beneficiodiario.com. La información disponible sobre la gestión del sitio se recoge en el aviso legal.
 
-### Sin cuentas ni registro
+#### Sin cuentas ni registro
 
 Puedes consultar el contenido sin registrarte ni iniciar sesión. No hay perfiles de usuario, cuentas de inversión, conexiones de cartera ni formularios de pago propios. No pedimos contraseñas, documentos de identidad, claves privadas ni frases semilla.
 
 La ausencia de registro no significa ausencia de tratamiento de datos: el alojamiento, la seguridad, tus correos y los servicios opcionales pueden tratar información técnica o personal.
 
-### Datos, finalidades y bases jurídicas
+#### Datos, finalidades y bases jurídicas
 
 Alojamiento y seguridad: el proveedor puede tratar IP, fechas, solicitudes y datos técnicos para entregar la web y prevenir abusos. La base es el interés legítimo en prestar y proteger el servicio, con las garantías y ponderación correspondientes.
 
@@ -261,21 +806,28 @@ Analítica: Vercel Web Analytics se carga solo si consientes la categoría de an
 
 Publicidad: las integraciones opcionales se bloquean hasta que consientes esa categoría. El consentimiento puede retirarse en cualquier momento y rechazarlo no impide leer la web.
 
-### Vercel Web Analytics
+#### Vercel Web Analytics
 
 Permite obtener estadísticas agregadas sobre páginas visitadas, fuentes de tráfico y características generales del dispositivo o región. Según su documentación, no usa cookies de terceros y utiliza un identificador derivado de la solicitud que se descarta tras 24 horas. Este plazo no equivale a la conservación de todas las estadísticas.
 
 Eliminamos consultas y fragmentos de las URL enviadas a la analítica. No enviamos nombres, correos o contenido de formularios como eventos. La recogida requiere que el servicio esté activado en Vercel y que hayas aceptado la analítica.
 
-### Proveedores y newsletter externa
+- Privacidad de Vercel Web Analytics: https://vercel.com/docs/analytics/privacy-policy
+- Acuerdo de tratamiento de Vercel: https://vercel.com/legal/dpa
+
+#### Proveedores
 
 Vercel Inc. puede prestar alojamiento y analítica. La configuración publicitaria puede utilizar Google AdSense o A-ADS con consentimiento y cuando haya espacios activos. Google Fonts sirve fuentes tipográficas y recibe la solicitud técnica de descarga, que incluye la IP.
 
-La newsletter es opcional y se tramita en una página externa de Beehiiv. Aquí no introduces un correo ni lo enviamos en parámetros de URL. Revisa el formulario externo, su información de privacidad, quién lo gestiona y cómo darte de baja antes de suscribirte.
+El portal no tiene newsletter ni formularios de suscripción: no recogemos direcciones de correo salvo las que nos envíes tú al escribirnos.
 
 No vendemos bases de datos de usuarios ni disponemos de cuentas propias. Las comunicaciones a autoridades se realizan cuando exista una obligación o requerimiento legal aplicable.
 
-### Transferencias y conservación
+- Privacidad de Google: https://policies.google.com/privacy
+- Privacidad de A-ADS: https://a-ads.com/privacy
+- Google Fonts y privacidad: https://developers.google.com/fonts/faq/privacy
+
+#### Transferencias y conservación
 
 Algunos proveedores pueden tratar datos fuera del Espacio Económico Europeo. Cuando proceda deben existir garantías válidas, como una decisión de adecuación aplicable o cláusulas contractuales tipo y medidas complementarias. Consulta los acuerdos de cada proveedor para conocer las entidades y mecanismos concretos.
 
@@ -283,130 +835,126 @@ Los mensajes se conservan mientras sean necesarios para atender la consulta y, c
 
 La elección de privacidad caduca a los seis meses y se solicita de nuevo. La preferencia de tema visual permanece localmente hasta que la cambies o borres el almacenamiento del navegador.
 
-### Tus derechos
+#### Tus derechos
 
 Cuando corresponda puedes ejercer acceso, rectificación, supresión, oposición, limitación y portabilidad, y retirar tu consentimiento sin afectar a la licitud del tratamiento anterior. Escribe a info@beneficiodiario.com; solo pediremos información proporcionada para verificar la solicitud.
 
 Puedes reclamar ante la Agencia Española de Protección de Datos u otra autoridad competente. El enlace «Configurar privacidad» permite cambiar las categorías opcionales sin dejar de consultar el portal.
 
-### Menores y cambios
+- Agencia Española de Protección de Datos: https://www.aepd.es/
+
+#### Menores y cambios
 
 El contenido financiero se dirige a personas adultas. Los terceros pueden exigir mayoría de edad y otros requisitos. No invitamos a menores a invertir ni solicitamos conscientemente sus datos. Actualizaremos esta política si cambian los tratamientos y pediremos un nuevo consentimiento cuando sea necesario.
-- [Política de cookies y tecnologías similares · Beneficio Diario](https://beneficiodiario.com/cookies): Almacenamiento y servicios opcionales de Beneficio Diario: cómo aceptar, rechazar, configurar y retirar la analítica y la publicidad.
 
-### Decide por separado
+### Política de cookies y tecnologías similares
+
+URL: https://beneficiodiario.com/cookies · Actualizado: 2026-11-15
+
+#### Decide por separado
 
 Puedes aceptar todo, rechazar las tecnologías opcionales o elegir por separado analítica y publicidad. Ambas categorías están desactivadas por defecto. El enlace «Configurar privacidad» del pie de página permite cambiar tu elección en cualquier momento.
 
-### Almacenamiento propio
+#### Almacenamiento propio
 
 bd_cookie_consent: almacenamiento local que guarda categorías, versión de política y fecha de decisión durante seis meses para respetar tu elección. No es un identificador publicitario.
 
 bd_dark: almacenamiento local que recuerda el tema visual. No se comparte con anunciantes y puedes borrarlo en el navegador. No hay cookies para mantener una sesión de usuario, porque no hay cuentas propias.
 
-### Analítica opcional de Vercel
+#### Analítica opcional de Vercel
 
 Vercel Web Analytics no usa cookies de terceros según su documentación. Trata información de las solicitudes y un hash de visita de duración limitada para estadísticas. En este portal lo bloqueamos igualmente hasta que aceptes la analítica. No cargamos Google Analytics.
 
 Eliminamos consultas y fragmentos de las URL antes de enviar eventos. La duración del identificador de visita no equivale al plazo de conservación de los informes agregados.
 
-### Publicidad de terceros
+- Tecnologías de Vercel Web Analytics: https://vercel.com/docs/analytics/privacy-policy
+
+#### Publicidad de terceros
 
 Google AdSense y A-ADS solo se cargan con permiso publicitario y espacios configurados. Sus scripts o marcos pueden procesar IP, datos técnicos y sus propios identificadores. El proveedor y la duración de cada tecnología dependen de la campaña servida: consulta sus políticas.
 
 Esta herramienta de preferencias no sustituye una CMP certificada cuando la red publicitaria la exige. Antes de activar espacios de AdSense en territorios donde Google exige una CMP certificada debe configurarse esa CMP.
 
-### Recursos y páginas externas
+- Cookies de Google: https://policies.google.com/technologies/cookies
+- Política de A-ADS: https://a-ads.com/privacy
 
-Los referidos pueden incluir un código de atribución del proveedor. Una vez sales del portal, las tecnologías de ese sitio se rigen por su política. La newsletter de Beehiiv es externa y opcional.
+#### Recursos y páginas externas
+
+Los referidos pueden incluir un código de atribución del proveedor. Una vez sales del portal, las tecnologías de ese sitio se rigen por su política.
 
 Google Fonts y las imágenes externas de los contenidos implican conexiones técnicas con sus respectivos servidores para descargar esos recursos.
 
-### Retirar permisos y borrar datos
+#### Retirar permisos y borrar datos
 
 Abre «Configurar privacidad», cambia las categorías y guarda. Al retirar un permiso concedido recargamos la página para detener recursos ya cargados y bloquear nuevas cargas o eventos. La retirada no elimina información que un tercero ya hubiera recibido.
 
 Puedes borrar cookies y almacenamiento local desde las opciones del navegador. Las cookies de dominios externos deben eliminarse desde el navegador o las herramientas del tercero. Si borras la elección, volveremos a solicitarla.
-- [Condiciones de uso del portal · Beneficio Diario](https://beneficiodiario.com/condiciones-de-uso): Consulta gratuita de Beneficio Diario, sin registro ni venta propia: uso de los contenidos, enlaces y relaciones con proveedores externos.
 
-### Alcance del servicio
+### Condiciones de uso del portal
+
+URL: https://beneficiodiario.com/condiciones-de-uso · Actualizado: 2026-10-26
+
+#### Alcance del servicio
 
 El portal ofrece contenido informativo gratuito sobre sitios de terceros. No necesitas una cuenta ni celebras un contrato de inversión con nosotros. No vendemos criptoactivos, productos financieros ni suscripciones de acceso.
 
-### Uso permitido
+#### Uso permitido
 
 Respeta la ley y los derechos de sus autores. No alteres el servicio, distribuyas código malicioso o suplantes al equipo. Compartir enlaces o realizar citas dentro de los límites legales está permitido. El rastreo autorizado en robots.txt no cede derechos de autor ni garantiza la exactitud del contenido.
 
-### Plataformas de terceros
+#### Plataformas de terceros
 
 Comprueba costes, privacidad, entidad responsable, requisitos y riesgos antes de registrarte en un sitio enlazado. Sus exigencias de KYC, edad, residencia o capital pertenecen al proveedor externo.
 
 Las incidencias de operaciones, tarjetas, recompensas o retiradas se reclaman ante ese proveedor. Puedes avisarnos de errores, enlaces rotos o suplantaciones para revisarlos.
 
-### Información y disponibilidad
+#### Información y disponibilidad
 
 Los ejemplos y resultados históricos no predicen rendimientos futuros. Pueden no incluir comisiones, impuestos o variaciones de cambio salvo indicación expresa. Podemos actualizar o retirar contenido. No garantizamos la permanencia de promociones ni disponibilidad ininterrumpida.
 
 Estas condiciones no limitan derechos irrenunciables. Las leyes aplicables y los tribunales competentes se determinan conforme a la normativa, respetando las protecciones imperativas del consumidor.
 
-### Sin ventas ni devoluciones propias
+#### Sin ventas ni devoluciones propias
 
 No ofrecemos pagos ni contratación de productos en el portal. Por ello no existe un procedimiento propio de entrega, devolución o desistimiento para operaciones de terceros. Los derechos de una contratación externa se ejercen frente a su proveedor.
 
 Para dudas sobre el portal escribe a info@beneficiodiario.com. La versión vigente y su fecha de actualización aparecen en estas páginas.
-- [Aviso de riesgos financieros y de criptoactivos · Beneficio Diario](https://beneficiodiario.com/aviso-de-riesgos): Riesgos de criptoactivos, airdrops, cashback, trading y DeFi. Beneficio Diario es informativo y no garantiza ingresos ni rentabilidad.
 
-### Sin asesoramiento individualizado
+### Aviso de riesgos financieros y de criptoactivos
+
+URL: https://beneficiodiario.com/aviso-de-riesgos · Actualizado: 2026-10-26
+
+#### Sin asesoramiento individualizado
 
 El contenido es educativo y general. No considera tu patrimonio, experiencia, objetivos o tolerancia al riesgo. No constituye asesoramiento financiero, jurídico o fiscal ni una oferta de inversión de Beneficio Diario.
 
-### Pérdida de capital y protección
+#### Pérdida de capital y protección
 
 Los criptoactivos pueden sufrir volatilidad extrema, falta de liquidez y pérdida total de valor. No todos los productos o proveedores tienen la misma regulación. No presupongas que existe garantía de depósitos o indemnización. Una autorización no garantiza rendimientos ni elimina el riesgo.
 
-### Staking, DeFi e ingresos pasivos
+#### Staking, DeFi e ingresos pasivos
 
 Un APY es una tasa estimada o histórica, sujeta a condiciones. Existen riesgos de contraparte, bloqueo, slashing, pérdida de paridad de stablecoins, fallos de contratos y puentes y pérdida impermanente en ciertos pools.
 
 La rentabilidad puede ser negativa tras gastos e impuestos. Obtener recompensas puede exigir tiempo y mantenimiento: no son ingresos automáticos garantizados.
 
-### Airdrops y testnets
+#### Airdrops y testnets
 
 Acumular puntos o realizar tareas no garantiza recibir tokens, cumplir los criterios o conseguir algo con valor de mercado. Un punto no equivale necesariamente a dinero. Existen costes de gas, exposición de datos, phishing y permisos peligrosos incluso sin depósito.
 
 No compartas frases semilla. Revisa cada dominio, firma y permiso. La elegibilidad y las fechas dependen del proveedor y pueden cambiar.
 
-### Cashback y trading
+#### Cashback y trading
 
 El cashback devuelve parte de un gasto y no es rentabilidad de inversión. Revisa límites, tarifas y condiciones. Los porcentajes promocionales pueden cambiar.
 
 El trading y los derivados requieren gestión activa: no son ingresos pasivos. El apalancamiento amplifica pérdidas y puede provocar liquidaciones o responsabilidades adicionales según el producto.
 
-### Verificación y fiscalidad
+#### Verificación y fiscalidad
 
 Verifica la entidad y la documentación oficial, y consulta avisos del regulador. Una etiqueta editorial de riesgo no es una certificación. Los resultados anteriores no representan lo que obtendrás.
 
 La fiscalidad depende de tu residencia y operaciones. Guarda registros y busca asesoramiento cualificado cuando sea necesario.
-- [Transparencia, publicidad y afiliación · Beneficio Diario](https://beneficiodiario.com/transparencia): Cómo puede financiarse Beneficio Diario mediante publicidad y referidos, identificación de enlaces comerciales y conflictos de interés.
 
-### Acceso gratuito y financiación
-
-Consultar el portal es gratis y no exige registro. Podemos recibir ingresos de publicidad, colaboraciones o referidos. Gestionarlo como particulares no significa que carezca de financiación o intereses económicos.
-
-### Enlaces y códigos de referido
-
-Una plataforma puede atribuirnos tu registro u operación y concedernos una comisión, puntos o recompensas si utilizas nuestro enlace o código. Los incentivos dependen del proveedor y no garantizamos bonos para el visitante.
-
-No afirmamos que las condiciones, el precio o las comisiones sean siempre idénticos a los de un acceso sin referido. Compara la oferta oficial antes de participar.
-
-### Identificación y conflicto de interés
-
-Los enlaces comerciales se identifican como referidos o afiliados cuando corresponde y utilizan el atributo sponsored. Los anuncios se etiquetan como «Publicidad». Una relación comercial puede influir en qué proyectos se cubren o destacan: considera ese conflicto al leer.
-
-Una mención, posición en portada o anuncio no acredita solvencia, autorización ni rentabilidad. Los servicios enlazados son independientes de Beneficio Diario.
-
-### Resultados y correcciones
-
-Los resultados publicados tienen el alcance y fecha indicados y no son una auditoría ni el resultado de todas las personas. Las simulaciones deben diferenciarse de operaciones efectivamente realizadas.
-
-Priorizamos fuentes oficiales y explicamos riesgos y limitaciones. Comunica errores o publicidad insuficientemente identificada a info@beneficiodiario.com. La política editorial explica cómo revisamos los contenidos.
+- CNMV: información para inversores: https://www.cnmv.es/portal/Inversor
+- ESMA: información para inversores: https://www.esma.europa.eu/investor-corner
