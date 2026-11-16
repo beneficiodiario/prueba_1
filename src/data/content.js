@@ -1,46 +1,6 @@
 // ── Projects ──
 export const projects = [
   {
-    id: 'kast',
-    title: 'KAST Card',
-    tag: 'CRYPTO CARD',
-    tagColor: '#8b5cf6',
-    emoji: '💳',
-    desc: {
-      es: 'KAST es una aplicación financiera que conecta el mundo cripto con el día a día de forma sencilla y práctica. No es solo una app de almacenamiento: es una herramienta con la que puedes pagar en cualquier comercio del mundo, acumular recompensas con cada gasto y posicionarte en un ecosistema que todavía está en fase temprana.\n\nLo que la hace diferente es que combina utilidad real con incentivos por uso: un 4% de cashback* en tus compras y acumulación de puntos de cara a un posible airdrop* previsto para el tercer trimestre de 2026.',
-      en: 'KAST is a financial app that connects the crypto world with everyday life in a simple and practical way. It\'s not just a storage app: it\'s a tool you can use to pay at any merchant worldwide, accumulate rewards with every purchase, and position yourself in an ecosystem that is still in its early stages.\n\nWhat makes it different is that it combines real utility with usage incentives: 4% cashback* on your purchases and point accumulation towards a potential airdrop* planned for Q3 2026.',
-    },
-    features: {
-      es: [
-        '4% de cashback* en compras del día a día',
-        'Acumulación de puntos para el airdrop* de Q3 2026',
-        'Tarjeta Visa prepago conectada al ecosistema cripto',
-        'Experiencia fintech* sin necesidad de banco tradicional',
-        'Proceso de registro rápido con verificación de identidad',
-        'Disponible en más de 160 países',
-      ],
-      en: [
-        '4% cashback* on everyday purchases',
-        'Point accumulation for the Q3 2026 airdrop*',
-        'Prepaid Visa card connected to the crypto ecosystem',
-        'Fintech* experience without needing a traditional bank',
-        'Fast registration with identity verification',
-        'Available in 160+ countries',
-      ],
-    },
-    stats: {
-      es: { roi: '4%+', risk: 'Bajo', time: 'Diario', min: 'Variable' },
-      en: { roi: '4%+', risk: 'Low', time: 'Daily', min: 'Variable' },
-    },
-    gradient: 'linear-gradient(135deg, #7c3aed, #a855f7)',
-    image: '/kast-cover.png',
-    link: 'https://go.kast.xyz/VqVO/AUVXU5UF',
-    refCode: 'AUVXU5UF',
-    videoUrl: null,
-    featured: true,
-    featuredRow: 2,
-  },
-  {
     id: 'void',
     title: 'VOID Network',
     tag: 'EARLY STAGE',
@@ -153,128 +113,7 @@ export const projects = [
     refCode: 'QUE4FO5',
     videoUrl: 'https://youtu.be/Z6N7A9qE0qM?si=wk7JMO1srFiMJK12',
     featured: true,
-    featuredRow: 3,
-  },
-  {
-    id: 'dac',
-    title: 'DAC — DAChain',
-    tag: 'LAYER 1 · TESTNET',
-    tagColor: '#06b6d4',
-    emoji: '🔬',
-    desc: {
-      es: 'DAC es una blockchain* de capa 1 diseñada para resistir los ataques de los ordenadores cuánticos del futuro, algo que la mayoría de redes actuales no contemplan. Su enfoque combina RWA* (activos del mundo real en blockchain), DeFi* e inteligencia artificial, con un modelo de doble token*.\n\nAhora mismo lo más relevante es su testnet* activo llamado Inception, lanzado el 18 de abril de 2026. Participar en esta fase es la forma más temprana de posicionarse: el proyecto confirma que el QE (Quantum Energy), los badges* y el leaderboard* acumulados en testnet pasarán a la red principal.',
-      en: 'DAC is a Layer 1 blockchain* designed to withstand attacks from future quantum computers — something most current networks do not address. Its approach combines RWA* (real world assets on blockchain), DeFi* and artificial intelligence, with a dual token* model.\n\nRight now the most relevant thing is its active testnet* called Inception, launched on April 18, 2026. Participating in this phase is the earliest way to position yourself: the project confirms that QE (Quantum Energy), badges* and leaderboard* accumulated in testnet will carry over to mainnet.',
-    },
-    features: {
-      es: [
-        'Testnet* Inception activo: faucet* de 1 DACC cada 8 horas',
-        'Sistema de puntos QE: quema DACC para obtener Quantum Energy',
-        'Quantum Crates: hasta 5 aperturas diarias con QE, DACC y multiplicadores',
-        'Referidos: 250 QE + 1 DACC por cada usuario verificado que traigas',
-        'Clearance Levels: más referidos = más multiplicadores y bonus QE',
-        '⚠️ Airdrop* potencial, no confirmado — posicionamiento temprano, con cabeza',
-      ],
-      en: [
-        'Active Inception testnet*: faucet* of 1 DACC every 8 hours',
-        'QE point system: burn DACC to get Quantum Energy',
-        'Quantum Crates: up to 5 daily openings with QE, DACC and multipliers',
-        'Referrals: 250 QE + 1 DACC per verified user you bring',
-        'Clearance Levels: more referrals = more multipliers and bonus QE',
-        '⚠️ Potential airdrop*, not confirmed — early positioning, stay smart',
-      ],
-    },
-    stats: {
-      es: { roi: 'Potencial', risk: 'Medio-Alto', time: 'Diario', min: '€0' },
-      en: { roi: 'Potential', risk: 'Medium-High', time: 'Daily', min: '€0' },
-    },
-    gradient: 'linear-gradient(135deg, #0e7490, #06b6d4)',
-    image: '/dac-cover.png',
-    link: 'https://inception.dachain.io/?ref=DAC4001202',
-    refCode: 'DAC4001202',
-    videoUrl: 'https://youtu.be/6gyFejCVSnU?si=J-pFKTTHbSiiCJQq',
-    featured: true,
-    featuredRow: 3,
-  },
-  {
-    id: 'abstract',
-    title: 'Abstract',
-    tag: 'L2 · ECOSISTEMA',
-    tagColor: '#22c55e',
-    emoji: '🟢',
-    isNew: true,
-    desc: {
-      es: 'Abstract es una blockchain de capa 2* (Layer 2) construida para la próxima generación de cripto de consumo: gaming, NFTs, IA, redes sociales y trading. La idea es hacer que las apps Web3* sean tan fáciles de usar como cualquier app del día a día.\n\nDestaca por su Abstract Global Wallet (AGW)*, una cartera con la que entras sin frase semilla* y empiezas a usar el ecosistema en minutos. Su Portal reúne las mejores apps, comunidades y proyectos de la red en un solo sitio.',
-      en: 'Abstract is a Layer 2* blockchain built for the next generation of consumer crypto: gaming, NFTs, AI, social and trading. The idea is to make Web3* apps as easy to use as any everyday app.\n\nIt stands out for its Abstract Global Wallet (AGW)*, a wallet that lets you join without a seed phrase* and start using the ecosystem in minutes. Its Portal brings together the best apps, communities and projects of the network in one place.',
-    },
-    features: {
-      es: [
-        'Layer 2* enfocado en apps de consumo: gaming, NFTs, IA y social',
-        'Abstract Global Wallet (AGW): sin frase semilla*, listo en minutos',
-        'Portal de Abstract: descubre las mejores apps, comunidades y proyectos del ecosistema',
-        'Ecosistema en expansión respaldado por fondos como EVG y Fenbushi',
-        'Posicionamiento temprano de cara a posibles futuras recompensas',
-        'Comunidad española activa (Telegram, X y YouTube)',
-      ],
-      en: [
-        'Layer 2* focused on consumer apps: gaming, NFTs, AI and social',
-        'Abstract Global Wallet (AGW): no seed phrase*, ready in minutes',
-        'Abstract Portal: discover the best apps, communities and projects in the ecosystem',
-        'Growing ecosystem backed by funds like EVG and Fenbushi',
-        'Early positioning for potential future rewards',
-        'Active Spanish community (Telegram, X and YouTube)',
-      ],
-    },
-    stats: {
-      es: { roi: 'Variable', risk: 'Bajo', time: 'Diario', min: 'Variable' },
-      en: { roi: 'Variable', risk: 'Low', time: 'Daily', min: 'Variable' },
-    },
-    gradient: 'linear-gradient(135deg, #047857, #22c55e)',
-    image: '/abstract-cover.png',
-    link: 'https://portal.abs.xyz',
-    refCode: null,
-    videoUrl: 'https://www.youtube.com/@AbstractEspa%C3%B1ol',
-    featured: true,
-    featuredRow: 1,
-  },
-  {
-    id: 'markets',
-    title: 'Markets',
-    tag: 'HYPERLIQUID · APP',
-    tagColor: '#14b8a6',
-    emoji: '📱',
-    desc: {
-      es: 'Markets es una app móvil construida sobre Hyperliquid, una de las infraestructuras más potentes de las finanzas descentralizadas ahora mismo. Te permite operar cripto, índices, acciones, oro o petróleo desde el móvil de forma sencilla, y con una ventaja clave: al estar todo on-chain*, puedes ver qué hacen las grandes carteras y los mejores traders en lugar de operar a ciegas.\n\nLo más interesante es el momento. Usando Markets te posicionas de cara a posibles airdrops* tanto de Hyperliquid (su token HYPE) como de Kinetiq, el equipo detrás de la app. Y además está gamificada —niveles, misiones y recompensas—, así que posicionarte pronto es casi como jugar.',
-      en: 'Markets is a mobile app built on Hyperliquid, one of the strongest infrastructures in decentralized finance right now. It lets you trade crypto, indices, stocks, gold or oil from your phone simply, with a key advantage: since everything is on-chain*, you can see what the big wallets and best traders are doing instead of trading blind.\n\nThe most interesting part is the timing. By using Markets you position yourself for potential airdrops* from both Hyperliquid (its HYPE token) and Kinetiq, the team behind the app. Plus it is gamified —levels, missions and rewards—, so getting in early feels almost like playing.',
-    },
-    features: {
-      es: [
-        'Opera cripto, índices, acciones, oro y petróleo desde el móvil',
-        'Sobre Hyperliquid: la velocidad de un exchange* con transparencia on-chain*',
-        'Depósitos con tarjeta, transferencia, cripto, Apple Pay o Google Pay',
-        'Mira y sigue las carteras de los mejores traders en tiempo real',
-        'App gamificada: niveles, misiones y recompensas (tipo pase de batalla)',
-        'Acumula kPoints y posiciónate para posibles airdrops*: Hyperliquid (HYPE) + Kinetiq',
-      ],
-      en: [
-        'Trade crypto, indices, stocks, gold and oil from your phone',
-        'Built on Hyperliquid: the speed of an exchange* with on-chain* transparency',
-        'Deposits via card, transfer, crypto, Apple Pay or Google Pay',
-        'Watch and follow the wallets of top traders in real time',
-        'Gamified app: levels, missions and rewards (like a battle pass)',
-        'Earn kPoints and position for potential airdrops*: Hyperliquid (HYPE) + Kinetiq',
-      ],
-    },
-    stats: {
-      es: { roi: 'Variable', risk: 'Medio', time: 'Diario', min: 'Variable' },
-      en: { roi: 'Variable', risk: 'Medium', time: 'Daily', min: 'Variable' },
-    },
-    gradient: 'linear-gradient(135deg, #0d9488, #2dd4bf)',
-    image: '/markets-cover.png',
-    link: 'https://markets.xyz/mobile-app/u/javiitolevelup?ref=javiitolevelup',
-    refCode: 'javiitolevelUP',
-    videoUrl: null,
-    featured: true,
-    featuredRow: 1,
+    featuredRow: 2,
   },
   {
     id: 'polymarket',
@@ -391,6 +230,48 @@ export const projects = [
     refCode: null,
     featured: false,
   },
+  {
+    id: 'risex', title: 'RISEx', tag: 'PERP DEX · RISE L2', tagColor: '#7c5cff', emoji: '📊', isNew: true,
+    desc: {
+      es: 'RISEx es un exchange descentralizado de contratos perpetuos construido sobre RISE, una red de capa 2. Su programa RISE Points Season 1: Ignite distribuye puntos semanalmente según la actividad elegible. Los puntos pueden ayudar a posicionarse ante futuras recompensas, pero el valor, reparto y fecha de un posible airdrop no están garantizados ni definidos públicamente. Conecta tu wallet, revisa las reglas y costes antes de operar. El apalancamiento puede provocar pérdidas rápidas: no operes solo para acumular puntos.',
+      en: 'RISEx is a decentralized perpetuals exchange built on RISE, a Layer 2 network. Its RISE Points Season 1: Ignite program distributes points weekly based on eligible activity. Points may help qualify for future rewards, but the value, allocation and date of any potential airdrop are not guaranteed or publicly defined. Connect your wallet and review rules and fees before trading. Leverage can cause rapid losses, so do not trade solely to accumulate points.'
+    },
+    features: {
+      es: ['Programa RISE Points Season 1: Ignite activo; consulta las reglas oficiales', 'Puntos semanales según actividad elegible', 'La actividad puede incluir volumen, comisiones e interés abierto', 'El referido puede ofrecer ventajas según las condiciones vigentes', 'Dificultad media: requiere entender órdenes, comisiones y perpetuos', 'Airdrop potencial, no garantizado; sin asignación individual confirmada'],
+      en: ['RISE Points Season 1: Ignite is active; check official rules', 'Weekly points based on eligible activity', 'Activity may include volume, fees and open interest', 'Referral benefits depend on current terms', 'Medium difficulty: understand orders, fees and perpetuals', 'Potential airdrop, not guaranteed; no confirmed individual allocation']
+    },
+    stats: { es: { roi: 'Variable', risk: 'Variable', time: 'Sem/Día', min: '$50' }, en: { roi: 'Variable', risk: 'Variable', time: 'Wk/Day', min: '$50' } },
+    gradient: 'linear-gradient(135deg, #312e81, #8b5cf6)', image: '/risex-cover.webp',
+    link: 'https://www.rise.trade/invite/javiitolevelup', refCode: 'javiitolevelup', videoUrl: null, featured: true, featuredRow: 1,
+  },
+  {
+    id: 'txflow', title: 'TxFlow', tag: 'PERP DEX · LAYER 1', tagColor: '#0ea5e9', emoji: '🌊', isNew: true,
+    desc: {
+      es: 'TxFlow es una infraestructura blockchain de capa 1 con mercados on-chain de spot, perpetuos y predicciones. Su exchange utiliza un libro de órdenes on-chain. El referido anuncia un 5% de descuento en comisiones para los primeros 25 millones de dólares de volumen, sujeto a condiciones. No hay un airdrop ni un token confirmado públicamente. Existen campañas puntuales de créditos de comisiones y fuentes externas mencionan posible contabilización retroactiva de actividad, pero no debe tratarse como una promesa oficial. Revisa campañas activas y evita asumir riesgo solo por especular con recompensas.',
+      en: 'TxFlow is a Layer 1 blockchain with on-chain spot, perpetual and prediction markets and an on-chain order book. The referral advertises a 5% trading-fee discount on the first $25 million in volume, subject to terms. No airdrop or token has been publicly confirmed. Occasional fee-credit campaigns exist and external sources mention possible retroactive activity tracking, but this is not an official token promise. Check active campaigns and do not take risks solely to speculate on rewards.'
+    },
+    features: {
+      es: ['Mercados on-chain de perpetuos, spot y predicciones sobre TxFlow L1', 'Referido: descuento anunciado del 5% en comisiones para los primeros $25M de volumen', 'Puede haber campañas temporales de créditos de comisiones', 'Airdrop y token no confirmados oficialmente', 'Dificultad media-alta: plataforma nueva y trading especializado', 'Tiempo inicial estimado: 10-20 minutos; luego depende de la actividad'],
+      en: ['On-chain perpetual, spot and prediction markets on TxFlow L1', 'Referral advertises 5% fee discount on the first $25M in volume', 'Temporary fee-credit campaigns may be available', 'No officially confirmed airdrop or token', 'Medium-high difficulty: new platform and specialised trading', 'Estimated setup: 10-20 minutes; ongoing time depends on activity']
+    },
+    stats: { es: { roi: 'Variable', risk: 'Variable', time: 'Sem/Día', min: '$50' }, en: { roi: 'Variable', risk: 'Variable', time: 'Wk/Day', min: '$50' } },
+    gradient: 'linear-gradient(135deg, #0f172a, #0ea5e9)', image: '/txflow-cover.webp',
+    link: 'https://app.txflow.com/r/M12HAK2TB6', refCode: 'M12HAK2TB6', videoUrl: null, featured: true, featuredRow: 1,
+  },
+  {
+    id: 'onchain', title: 'Onchain.cc', tag: 'PERP DEX · PREDICTIONS', tagColor: '#22c55e', emoji: '🏟️', isNew: true,
+    desc: {
+      es: 'Onchain.cc es una terminal de trading autocustodiada con perpetuos, spot, memecoins, mercados de predicción y swaps. Su programa Colosseum Season 2 está activo y anuncia un fondo de recompensas de 300.000 USD, sesiones semanales, misiones, cajas de botín y puntos de clasificación. Lo que reciba cada usuario depende de las reglas y resultados de la campaña; no es una cantidad garantizada ni implica necesariamente un airdrop de token. Las operaciones elegibles suman puntos y el rango desbloquea cashback de parte de las comisiones en USDC. Comprueba las comisiones antes de operar.',
+      en: 'Onchain.cc is a self-custodial trading terminal with perpetuals, spot, memecoins, prediction markets and swaps. Its Colosseum Season 2 is live and advertises a $300,000 rewards pool, weekly sessions, quests, loot boxes and rank points. Individual rewards depend on campaign rules and results; they are not guaranteed and do not necessarily mean a token airdrop. Eligible trades earn points and rank unlocks cashback on part of fees in USDC. Check fees before trading.'
+    },
+    features: {
+      es: ['Colosseum Season 2 activo: fondo anunciado de 300.000 USD en recompensas', 'Perpetuos, spot, predicciones, swaps y mercados de memecoins', 'Puntos, misiones, sesiones semanales y cajas de botín', 'Cashback anunciado del 25% al 50% de las comisiones según rango', 'Dificultad media: conectar wallet y revisar mercado y costes', 'Recompensas de campaña activas; airdrop de token no garantizado'],
+      en: ['Colosseum Season 2 is live: advertised $300,000 rewards pool', 'Perpetuals, spot, predictions, swaps and memecoin markets', 'Points, quests, weekly sessions and loot boxes', 'Advertised 25%-50% fee cashback depending on rank', 'Medium difficulty: connect a wallet and check market costs', 'Campaign rewards are live; token airdrop is not guaranteed']
+    },
+    stats: { es: { roi: 'Variable', risk: 'Variable', time: 'Diaria', min: '$50' }, en: { roi: 'Variable', risk: 'Variable', time: 'Daily', min: '$50' } },
+    gradient: 'linear-gradient(135deg, #064e3b, #22c55e)', image: '/onchain-cover.webp',
+    link: 'https://app.onchain.cc/?referral=75308D2B', refCode: '75308D2B', videoUrl: null, featured: true, featuredRow: 1,
+  },
 ]
 
 // ── Crypto Portfolio ──
@@ -406,157 +287,101 @@ export const cryptoPortfolio = [
 export const blogPosts = [
   {
     id: 6,
-    slug: 'beneficiodiario-comunidad-abstract-espanol',
-    title: { es: 'Nos sumamos a Abstract: la comunidad española y por qué nos parece importante', en: 'We are joining Abstract: the Spanish community and why we think it matters' },
-    excerpt: { es: 'Javier Rodríguez, cofundador de BeneficioDiario, es ahora administrador de la comunidad española de Abstract Chain. Te contamos qué es Abstract y cómo unirte.', en: 'Javier Rodríguez, BeneficioDiario co-founder, is now admin of the Spanish community of Abstract Chain. We explain what Abstract is and how to join.' },
-    date: '5 Jun 2026',
-    tag: { es: 'Comunidad', en: 'Community' },
-    readTime: '5 min',
-    image: '/abstract-cover.png',
+    slug: 'estrategia-delta-neutral-txflow-risex',
+    title: { es: 'Estrategia delta neutral: cómo farmear puntos en TxFlow y RISEx sin exposición al mercado', en: 'Delta neutral strategy: how to farm points on TxFlow and RISEx without market exposure' },
+    excerpt: { es: 'Dos perp DEX nuevos con programas de puntos activos. Combínalos con posiciones opuestas y acumula actividad en los dos sin depender de si el mercado sube o baja.', en: 'Two new perp DEXes with active points programs. Combine them with opposite positions and accumulate activity on both without depending on whether the market goes up or down.' },
+    date: '12 Nov 2026',
+    tag: { es: 'Estrategia', en: 'Strategy' },
+    readTime: '7 min',
+    image: '/delta-neutral-cover.webp',
     content: {
-      es: `Tenemos una novedad importante: Javier Rodríguez, cofundador de BeneficioDiario, es ahora administrador de la comunidad española de Abstract Chain. Esto significa más recursos en español, mejor red y, sobre todo, estar dentro de uno de los Layer 2* más interesantes ahora mismo.
+      es: `TxFlow y RISEx son dos de los perp DEX más comentados de estas últimas semanas, y los dos tienen un programa activo de puntos. Si estás pensando en participar en los dos a la vez, hay una forma de hacerlo con mucho menos ruido en la cuenta: la estrategia delta neutral.
 
-¿Qué es Abstract?
+¿Qué es ser "delta neutral"?
 
-Abstract es una blockchain de capa 2* (L2) construida para la próxima generación de cripto de consumo: gaming, NFTs, IA, redes sociales y trading. La filosofía es sencilla: que usar Web3* sea tan fácil como abrir cualquier app del móvil.
+En trading, delta mide cuánto cambia el valor de tu posición cuando el precio del activo sube o baja. Una posición long* gana con la subida; una short* al revés. Si mantienes long y short del mismo tamaño a la vez, el efecto se compensa: lo que pierdes por un lado lo recuperas por el otro. Tu "delta" neto queda cerca de cero.
 
-¿Qué la hace diferente?
+En términos prácticos: el mercado puede moverse arriba o abajo, pero tu cartera apenas se mueve. Lo único que trabaja es la actividad —volumen, interés abierto, comisiones—, es decir, lo que suele contar para los puntos.
 
-· Abstract Global Wallet (AGW): entras sin frase semilla* y estás operativo en minutos
-· Portal de Abstract: un sitio único donde descubres apps, comunidades y oportunidades para ganar
-· Foco en consumo (gaming, NFTs, IA y social), no solo finanzas técnicas
-· Respaldo: fondos como EVG y Fenbushi Capital detrás del proyecto
+¿Por qué TxFlow y RISEx encajan tan bien?
 
-¿Por qué importa estar pronto?
+Son plataformas distintas, cada una con su propio programa:
 
-Como en todo Layer 2* nuevo, los primeros usuarios suelen llevarse la mejor parte: incentivos, beneficios y posicionamiento de cara a posibles futuras recompensas. No hay garantías, pero el coste de entrar es muy bajo: es gratis crear la wallet y explorar.
+· TxFlow es una Layer 1 con libro de órdenes on-chain*. Anuncia un descuento del 5% en comisiones durante los primeros 25 millones de dólares de volumen por referido, y suele tener campañas puntuales de créditos de comisiones.
 
-¿Por qué la comunidad española?
+· RISEx es un perp DEX sobre RISE, una Layer 2. Su programa RISE Points Season 1: Ignite reparte puntos cada semana en función del volumen, las comisiones y el interés abierto.
 
-La mayor parte del contenido de Abstract está en inglés y en horario americano. Una comunidad española sólida significa avisos en tu idioma, ayuda más cercana y oportunidades que en grupos enormes se pierden. Si estás empezando, el grupo es el sitio donde preguntar sin miedo.
+Como son dos protocolos diferentes, abrir una posición en uno y la contraria en el otro acumula actividad en ambos a la vez, sin que ninguna gane terreno frente a la otra.
 
-¿Cómo me uno?
+Cómo se hace, paso a paso
 
-Lo más rápido es entrar al Telegram de la comunidad española (te dejamos el enlace en el bloque de "Novedades" de la portada). Allí van los avisos, las guías y las oportunidades del día a día. También tenemos canal en X y en YouTube en español.
+1. Fondea la misma cantidad de USDC en cada plataforma. Mejor en redes con comisiones bajas (Base, Arbitrum o la propia L2 de RISE). Mantén algo de margen de seguridad fuera de la posición.
 
-Muy pronto publicaremos aquí guías paso a paso para que empieces sin perderte: crear tu AGW, primeros pasos en el Portal y cómo aprovechar las mejores apps del ecosistema.
+2. Elige un activo con buena liquidez en los dos sitios. BTC y ETH son los más seguros porque tienen libros de órdenes profundos.
 
-Empieza explorando Abstract desde su Portal oficial:`,
-      en: `We have important news: Javier Rodríguez, co-founder of BeneficioDiario, is now admin of the Spanish community of Abstract Chain. That means more resources in Spanish, a stronger network and, above all, being inside one of the most interesting Layer 2s* right now.
+3. Abre long* en una plataforma y short* en la otra, del mismo tamaño nominal. Delta neto cercano a cero.
 
-What is Abstract?
+4. Usa apalancamiento* bajo. 2x o 3x como mucho. Estás acumulando actividad, no buscando dirección.
 
-Abstract is a Layer 2* (L2) blockchain built for the next generation of consumer crypto: gaming, NFTs, AI, social and trading. The philosophy is simple: make using Web3* as easy as opening any phone app.
+5. Revisa el funding rate*. Equilibra la posición del lado con funding negativo o rota según toque.
 
-What makes it different?
+6. Rota cuando toque. Cerca del snapshot* de una campaña, si una plataforma pide más volumen para subir de rango, cierra la posición y vuelve a abrirla en el otro sentido.
 
-· Abstract Global Wallet (AGW): join without a seed phrase* and be operational in minutes
-· Abstract Portal: a single place to discover apps, communities and earning opportunities
-· Consumer focus (gaming, NFTs, AI and social), not just technical finance
-· Backing: funds like EVG and Fenbushi Capital behind the project
+Qué riesgos tiene
 
-Why does being early matter?
+· Liquidación*. Un movimiento violento del precio contra tu lado apalancado puede liquidarte antes de que el otro lado compense. Margen de seguridad obligatorio.
+· Funding* desfavorable. Si pagas funding en los dos lados a la vez, estás sangrando saldo todo el rato.
+· Riesgo técnico. Son plataformas nuevas. Pausas, bugs, retrasos en los retiros existen.
+· Reglas de los puntos. Que el programa haga snapshot* "hoy" no significa que premie exactamente lo que hiciste ayer.
 
-As with every new Layer 2*, early users tend to get the best part: incentives, benefits and positioning for potential future rewards. There are no guarantees, but the cost to enter is very low: creating the wallet and exploring is free.
+En resumen
 
-Why a Spanish community?
+La delta neutral no es magia: es una forma de aprovechar que dos protocolos premian actividad para posicionarse en los dos sin asumir que el mercado va a ir en una dirección concreta. Requiere disciplina con el apalancamiento, atención al funding y gestión del tamaño de la posición.
 
-Most of Abstract's content is in English and on US schedule. A solid Spanish community means alerts in your language, closer support and opportunities that get lost in huge groups. If you're starting out, the group is where you can ask without fear.
+Si quieres probarlo, regístrate primero en los dos perp DEX con nuestros enlaces y familiarízate con cada interfaz con cantidades pequeñas antes de montar la posición completa:`,
+      en: `TxFlow and RISEx are two of the most talked-about perp DEXes of the last few weeks, and both have an active points program. If you are thinking of taking part in both at the same time, there is a way to do it with much less noise in the account: the delta neutral strategy.
 
-How do I join?
+What does "delta neutral" mean?
 
-The fastest way is to enter the Telegram of the Spanish community (you have the link in the "News" block on the homepage). That's where the alerts, guides and day-to-day opportunities go. We also have channels on X and YouTube in Spanish.
+In trading, delta measures how much your position value changes when the asset price moves up or down. A long* position gains with the move up; a short* the other way around. If you hold the same size long and short at the same time, the effect cancels out. Your net "delta" stays close to zero.
 
-Very soon we'll publish step-by-step guides here so you can start without getting lost: creating your AGW, first steps in the Portal, and how to get the most out of the best apps in the ecosystem.
+In practical terms: the market can move up or down, but your portfolio barely moves. What is working is the activity — volume, open interest, fees — exactly what usually counts for points.
 
-Get started by exploring Abstract from its official Portal:`,
+Why do TxFlow and RISEx fit so well together?
+
+· TxFlow is a Layer 1 with an on-chain* order book. It advertises a 5% fee discount for the first 25 million dollars of volume per referral.
+· RISEx is a perp DEX on RISE, a Layer 2. Its RISE Points Season 1: Ignite program distributes points every week based on volume, fees and open interest.
+
+Since they are two separate protocols, opening a position on one and the opposite on the other accumulates activity on both at the same time, with neither gaining ground over the other.
+
+How to do it, step by step
+
+1. Fund the same amount of USDC on each platform. Use low-fee networks (Base, Arbitrum or RISE own L2).
+2. Pick an asset with good liquidity on both sites. BTC and ETH are the safest.
+3. Open a long* on one platform and a short* on the other, same nominal size. Net delta near zero.
+4. Use low leverage*. 2x or 3x at most.
+5. Watch the funding rate*. Rebalance toward the side with negative funding or rotate when needed.
+6. Rotate when it makes sense. Close to a campaign snapshot*, close the position and reopen it the other way around.
+
+What are the risks?
+
+· Liquidation*. A violent price move against your leveraged side can liquidate you before the other side compensates.
+· Unfavorable funding*. If you pay funding on both sides at once, you bleed balance the whole time.
+· Technical risk. These are new platforms. Pauses, bugs, withdrawal delays exist.
+· Points rules. Just because a program snapshots* today does not mean it rewards exactly what you did yesterday.
+
+In summary
+
+Delta neutral is not magic: it is a way to take advantage of two protocols rewarding activity so you can position in both without betting that the market will move in a specific direction.
+
+If you want to try it, sign up on both perp DEXes with our links first and get familiar with each interface using small amounts before building the full position:`,
     },
-    refLink: 'https://portal.abs.xyz',
-    refCode: null,
-    refLabel: { es: 'Entrar en Abstract', en: 'Enter Abstract' },
-  },
-  {
-    id: 5,
-    slug: 'markets-hyperliquid-app',
-    title: { es: 'Markets: opera en Hyperliquid desde el móvil y posiciónate para el airdrop', en: 'Markets: trade on Hyperliquid from your phone and position for the airdrop' },
-    excerpt: { es: 'Markets es una app móvil sobre Hyperliquid para operar cripto, acciones e índices desde el teléfono, ver a los mejores traders y farmear kPoints de cara a posibles airdrops.', en: 'Markets is a mobile app on Hyperliquid to trade crypto, stocks and indices from your phone, watch the best traders and farm kPoints for potential airdrops.' },
-    date: '27 May 2026',
-    tag: { es: 'Nuevo', en: 'New' },
-    readTime: '6 min',
-    image: '/markets-cover.png',
-    content: {
-      es: `Markets es una app móvil construida sobre Hyperliquid, una de las infraestructuras más potentes de las finanzas descentralizadas ahora mismo. La idea es sencilla: acercar todo el potencial de Hyperliquid a cualquier persona, desde el móvil y sin complicaciones.
-
-Hasta ahora, usar Hyperliquid podía echar para atrás a alguien nuevo: wallets*, redes, fondear la cuenta, entender la interfaz... Markets simplifica todo eso. Te descargas la app, creas tu cuenta y empiezas a operar.
-
-¿Qué es Hyperliquid y por qué importa?
-
-Hyperliquid es una plataforma donde operas cripto y otros mercados sin depender de un exchange* centralizado como Binance o Coinbase. La diferencia clave es la transparencia: al estar todo on-chain*, puedes comprobar lo que hacen las wallets*, las ballenas* y los grandes traders. No operas a ciegas.
-
-Y no crece por humo: el producto funciona, la gente lo usa y mueve volúmenes enormes. Parte de las comisiones que genera se usan para recomprar su token, HYPE, lo que le ha dado mucha fuerza incluso cuando el resto del mercado corregía.
-
-¿Qué puedes hacer con Markets?
-
-· Operar cripto, índices, acciones, oro y petróleo desde el móvil
-· Depositar con tarjeta, transferencia, cripto, Apple Pay o Google Pay
-· Ver y seguir en tiempo real las carteras de los mejores traders
-· Operar incluso en mercados que normalmente cierran el fin de semana
-
-Además está gamificada: tiene niveles, misiones y recompensas. Es casi como un pase de batalla aplicado al trading, y vas acumulando kPoints por usarla.
-
-¿Y el posible airdrop?
-
-Aquí está lo interesante. Hyperliquid ya hizo uno de los mayores airdrops* de la historia cripto, y todavía queda una parte destinada a la comunidad. No sabemos cuándo ni cuánto, pero históricamente premian a sus usuarios.
-
-Y usando Markets también te posicionas para el posible airdrop* de Kinetiq, el equipo detrás de la app. La oportunidad es doble: farmear* kPoints de cara a Hyperliquid (HYPE) y a Kinetiq a la vez, con una app que de por sí ya tiene utilidad.
-
-¿Qué riesgo tiene?
-
-Markets es trading real: puedes usar apalancamiento* y, como en cualquier mercado, puedes perder dinero. Empieza con poco, familiarízate con la app y opera solo lo que puedas permitirte arriesgar. Esto no es asesoría financiera: investiga por tu cuenta (DYOR).
-
-¿Cómo empiezo?
-
-Lo más sencillo es descargar la app, crear tu cuenta y trastear con cantidades pequeñas para entender cómo funciona. Muy pronto publicaremos un vídeo con los primeros pasos explicados paso a paso para que no te pierdas nada.
-
-Regístrate con nuestro enlace y empieza a posicionarte:`,
-      en: `Markets is a mobile app built on Hyperliquid, one of the strongest infrastructures in decentralized finance right now. The idea is simple: bring the full potential of Hyperliquid to anyone, from their phone and without the hassle.
-
-Until now, using Hyperliquid could put off a newcomer: wallets*, networks, funding the account, understanding the interface... Markets simplifies all of that. You download the app, create your account and start trading.
-
-What is Hyperliquid and why does it matter?
-
-Hyperliquid is a platform where you trade crypto and other markets without relying on a centralized exchange* like Binance or Coinbase. The key difference is transparency: since everything is on-chain*, you can check what wallets*, whales* and big traders are doing. You don't trade blind.
-
-And it isn't growing on hype: the product works, people use it and it moves huge volumes. Part of the fees it generates are used to buy back its token, HYPE, which has given it real strength even while the rest of the market was correcting.
-
-What can you do with Markets?
-
-· Trade crypto, indices, stocks, gold and oil from your phone
-· Deposit via card, transfer, crypto, Apple Pay or Google Pay
-· Watch and follow the best traders in real time
-· Trade even in markets that normally close on weekends
-
-It is also gamified: levels, missions and rewards. It's almost like a battle pass applied to trading, and you accumulate kPoints just by using it.
-
-What about the potential airdrop?
-
-Here's the interesting part. Hyperliquid already did one of the biggest airdrops* in crypto history, and a portion is still reserved for the community. We don't know when or how much, but historically they reward their users.
-
-And by using Markets you also position yourself for the potential airdrop* of Kinetiq, the team behind the app. The opportunity is double: farm* kPoints towards both Hyperliquid (HYPE) and Kinetiq at the same time, with an app that already has real utility.
-
-What's the risk?
-
-Markets is real trading: you can use leverage* and, as in any market, you can lose money. Start small, get familiar with the app and only trade what you can afford to risk. This is not financial advice: do your own research (DYOR).
-
-How do I start?
-
-The easiest way is to download the app, create your account and play around with small amounts to understand how it works. Very soon we'll publish a video explaining the first steps so you don't miss anything.
-
-Sign up with our link and start positioning yourself:`,
-    },
-    refLink: 'https://markets.xyz/mobile-app/u/javiitolevelup?ref=javiitolevelup',
-    refCode: 'javiitolevelUP',
-    refLabel: { es: 'Probar Markets', en: 'Try Markets' },
+    refLink: 'https://www.rise.trade/invite/javiitolevelup',
+    refCode: 'javiitolevelup',
+    refLabel: { es: 'Empezar en RISEx', en: 'Start on RISEx' },
+    extraRefLink: 'https://app.txflow.com/r/M12HAK2TB6',
+    extraRefCode: 'M12HAK2TB6',
+    extraRefLabel: { es: 'Empezar en TxFlow', en: 'Start on TxFlow' },
   },
   {
     id: 1,
@@ -564,12 +389,14 @@ Sign up with our link and start positioning yourself:`,
     title: { es: 'KAST lanza el USD Cashback: dinero real de vuelta en cada compra', en: 'KAST launches USD Cashback: real money back on every purchase' },
     excerpt: { es: 'KAST acaba de activar el cashback en dólares reales. Ya no son puntos ni tokens: es USD directo a tu saldo cada vez que usas la tarjeta.', en: 'KAST has just activated cashback in real dollars. No more points or tokens: it\'s USD directly to your balance every time you use the card.' },
     date: '5 May 2026',
-    tag: { es: 'Actualización', en: 'Update' },
+    tag: { es: 'Histórico', en: 'Archive' },
     readTime: '4 min',
     image: '/kast-cashback.jpg',
     extraImage: '/kast-cashback.jpg',
     content: {
-      es: `KAST acaba de dar un paso importante: a partir de ahora, cada vez que uses tu tarjeta recibes dólares reales de vuelta de forma automática. Sin puntos que canjear manualmente, sin esperas innecesarias. Gastas y el cashback* llega directo.
+      es: `ACTUALIZACIÓN (noviembre 2026): KAST ya no forma parte de nuestros proyectos destacados actuales. Mantenemos este artículo como archivo histórico sobre su programa de cashback. La información sobre comisiones y planes puede haber cambiado — consulta la web oficial de KAST antes de usar el enlace.
+
+KAST acaba de dar un paso importante: a partir de ahora, cada vez que uses tu tarjeta recibes dólares reales de vuelta de forma automática. Sin puntos que canjear manualmente, sin esperas innecesarias. Gastas y el cashback* llega directo.
 
 Es un cambio relevante respecto al modelo anterior, y merece la pena entender bien cómo funciona para sacarle el máximo partido.
 
@@ -594,7 +421,9 @@ En resumen
 El nuevo sistema es más directo y más fácil de entender. Sabes exactamente cuánto recibirás, cuándo y cómo canjearlo. Para el día a día, esto marca una diferencia real.
 
 Si aún no tienes cuenta, regístrate con el código de referidos y empieza a acumular desde el primer gasto:`,
-      en: `KAST has just taken an important step: from now on, every time you use your card you automatically receive real dollars back. No manual point redemption, no unnecessary waits. You spend and the cashback* arrives directly.
+      en: `UPDATE (November 2026): KAST is no longer one of our current featured projects. We keep this article as a historical archive about its cashback program. Fees and plan details may have changed — check KAST's official site before using the link.
+
+KAST has just taken an important step: from now on, every time you use your card you automatically receive real dollars back. No manual point redemption, no unnecessary waits. You spend and the cashback* arrives directly.
 
 This is a relevant change from the previous model, and it's worth understanding how it works to get the most out of it.
 
@@ -937,14 +766,14 @@ This is not a promise that the market will repeat. It's an exercise in perspecti
 
 // ── Hero Stats ──
 export const heroStats = [
-  { value: 6, suffix: '', label: { es: 'Proyectos destacados', en: 'Featured projects' } },
+  { value: 5, suffix: '', label: { es: 'Proyectos destacados', en: 'Featured projects' } },
   { value: 2850, prefix: '€', suffix: '', label: { es: 'Beneficio aprox. proyectos actuales', en: 'Approx. earnings current projects' } },
 ]
 
 // ── Marquee ──
 export const marqueeItems = [
-  'ABSTRACT', 'KAST CARD', 'VOID NETWORK', 'GRVT', 'DAC · DACHAIN', 'MARKETS', 'HYPERLIQUID', 'AGW', 'FOREX', 'BITCOIN', 'ETHEREUM', 'SOLANA',
-  'CASHBACK', 'DeFi', 'STAKING', 'AIRDROP', 'TRADING', 'BNB', 'XRP', 'LAYER 1', 'TESTNET', 'RWA',
+  'VOID NETWORK', 'GRVT', 'TXFLOW', 'RISEX', 'ONCHAIN.CC', 'PERP DEX', 'DELTA NEUTRAL', 'AIRDROPS', 'FARMING DE PUNTOS', 'TRADING', 'BITCOIN', 'ETHEREUM', 'SOLANA',
+  'DeFi', 'STAKING', 'LAYER 1', 'LAYER 2', 'RISE L2', 'BNB', 'XRP', 'FOREX', 'IA CRIPTO', 'RWA',
 ]
 
 export const TWITTER_URL = 'https://twitter.com/BeneficioDiario'

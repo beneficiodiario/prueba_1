@@ -12,8 +12,8 @@ import { fadeUp, stagger, viewport, duration, ease, revealInitial } from '../lib
 const ROWS = [1, 2, 3].map((n) => projects.filter((p) => p.featured && p.featuredRow === n))
 
 const BTN_LABEL = {
-  es: { kast: 'Acceder a KAST', void: 'Unirse a VOID Network', grvt: 'Explorar GRVT', dac: 'Entrar al testnet de DAC', markets: 'Probar Markets', abstract: 'Entrar en Abstract' },
-  en: { kast: 'Access KAST', void: 'Join VOID Network', grvt: 'Explore GRVT', dac: 'Enter DAC testnet', markets: 'Try Markets', abstract: 'Enter Abstract' },
+  es: { void: 'Unirse a VOID Network', grvt: 'Explorar GRVT', risex: 'Entrar en RISEx', txflow: 'Entrar en TxFlow', onchain: 'Entrar en Onchain.cc' },
+  en: { void: 'Join VOID Network', grvt: 'Explore GRVT', risex: 'Join RISEx', txflow: 'Join TxFlow', onchain: 'Explore Onchain.cc' },
 }
 
 const T = {
@@ -36,7 +36,7 @@ const T = {
 }
 
 const HIGH_RISK = ['Alto', 'High', 'Medio-Alto', 'Medium-High']
-const MID_RISK  = ['Medio', 'Medium']
+const MID_RISK  = ['Medio', 'Medium', 'Variable']
 
 /** Colorea el riesgo, pero el texto siempre lo dice: el color no es el único indicador. */
 const riskColor = (risk) =>
@@ -188,15 +188,16 @@ function FeaturedCard({ p, lang }) {
 }
 
 /** Una fila de proyectos destacados, escalonada al entrar. */
-function Row({ items, lang, className = '' }) {
+function Row({ items, lang, cols = 2, className = '' }) {
   if (!items.length) return null
+  const gridCols = cols === 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-2'
   return (
     <motion.div
       variants={stagger(0.1)}
       initial={revealInitial}
       whileInView="visible"
       viewport={viewport}
-      className={`grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6 ${className}`}
+      className={`grid grid-cols-1 ${gridCols} gap-5 sm:gap-6 ${className}`}
     >
       {items.map((p) => <FeaturedCard key={p.id} p={p} lang={lang} />)}
     </motion.div>
@@ -220,10 +221,9 @@ export default function FeaturedProjects({ lang }) {
         subtitle={T.sub[lang]}
       />
 
-      <Row items={ROWS[0]} lang={lang} />
+      <Row items={ROWS[0]} lang={lang} cols={3} />
       <Divider label={T.more[lang]} className="my-9" />
-      <Row items={ROWS[1]} lang={lang} className="mb-5 sm:mb-6" />
-      <Row items={ROWS[2]} lang={lang} />
+      <Row items={ROWS[1]} lang={lang} />
     </Section>
   )
 }

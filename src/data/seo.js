@@ -3,7 +3,7 @@ export const SITE = {
   name: 'Beneficio Diario',
   alternateName: 'BeneficioDiario',
   url: 'https://beneficiodiario.com',
-  description: 'Portal gratuito de información sobre criptomonedas, ingresos pasivos, airdrops y cashback. Sin registro. Guías, riesgos y enlaces a servicios de terceros.',
+  description: 'Los mejores proyectos cripto para generar ingresos: perp DEX (RISEx, TxFlow, Onchain.cc), VOID Network y GRVT. Guías de airdrops, trading descentralizado, estrategia delta neutral e inversión inteligente. La web referente en español.',
   logo: '/logo-bd.png',
   twitter: 'https://twitter.com/BeneficioDiario',
   youtube: 'https://www.youtube.com/@beneficiodiario_com',
@@ -15,13 +15,13 @@ export const SITE = {
 export const PAGES = {
   home: {
     es: {
-      title: 'Beneficio Diario | Criptomonedas e ingresos pasivos',
-      description: 'Portal gratuito sobre criptomonedas, ingresos pasivos, airdrops y cashback. Guías y riesgos de sitios de terceros, sin login ni registro en Beneficio Diario.',
+      title: 'BeneficioDiario · Airdrops cripto, perp DEX e inversión rentable en España',
+      description: 'Los mejores proyectos cripto para generar ingresos: perp DEX (RISEx, TxFlow, Onchain.cc), VOID Network y GRVT. Guías de airdrops, trading descentralizado, estrategia delta neutral e inversión inteligente. Web referente en español.',
       path: '/',
     },
     en: {
-      title: 'Beneficio Diario | Crypto and passive income guides',
-      description: 'Free information about crypto, passive income, airdrops and cashback. Guides, risks and links to third-party services. No account or login on this portal.',
+      title: 'BeneficioDiario · Crypto airdrops, perp DEXes & profitable investment in Spain',
+      description: 'The best crypto projects to generate income: perp DEXes (RISEx, TxFlow, Onchain.cc), VOID Network and GRVT. Airdrop farming, decentralized trading, delta neutral strategy and smart investment. The leading Spanish-first crypto site.',
       path: '/en',
     },
   },

@@ -41,12 +41,7 @@ export const A_ADS = {
 // Mientras esté vacío verás un cajón de ejemplo.
 export const BEEHIIV_FORM_ID = '5729e3fe-2866-4dc3-9cb7-10c7694b174d'
 
-// ── 4) COMUNIDAD ESPAÑOLA DE ABSTRACT (sección "Novedades") ────
-// Pega aquí los enlaces de la comunidad española de Abstract Chain.
-// Cualquier campo vacío oculta su botón. Si están todos vacíos se muestra
-// solo el aviso "enlaces próximamente".
-export const ABSTRACT_COMMUNITY = {
-  telegram: 'https://t.me/AbstractESP',
-  x:        'https://x.com/AbstractChainES',
-  youtube:  'https://www.youtube.com/@AbstractEspa%C3%B1ol',
-}
+// ── 4) COMUNIDAD EXTERNA (sección "Novedades") ─────────────────
+// Dejar todos los campos vacíos oculta los botones de redes bajo la noticia.
+// (Antes se usaba para la comunidad de Abstract, retirada de la web.)
+export const ABSTRACT_COMMUNITY = {}
