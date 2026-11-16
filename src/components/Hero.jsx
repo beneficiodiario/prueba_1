@@ -13,12 +13,12 @@ const T = {
   badge:  { es: 'Proyectos analizados · 2026', en: 'Analyzed projects · 2026' },
   lead:   { es: 'Beneficio Diario', en: 'Beneficio Diario' },
   seq:    {
-    es: ['cada día', 3000, 'sin complicaciones', 2500, 'con cripto', 2500, 'con KAST', 3000, 'con VOID', 2500],
-    en: ['every day', 3000, 'without the noise', 2500, 'with crypto', 2500, 'with KAST', 3000, 'with VOID', 2500],
+    es: ['cada día', 3000, 'sin complicaciones', 2500, 'con cripto', 2500, 'con perp DEX', 3000, 'con VOID', 2500],
+    en: ['every day', 3000, 'without the noise', 2500, 'with crypto', 2500, 'with perp DEXes', 3000, 'with VOID', 2500],
   },
   sub: {
-    es: 'Tu portal gratuito sobre criptomonedas, ingresos pasivos, airdrops y cashback. Información, riesgos y enlaces a sitios de terceros. Sin login, sin registro y sin ganancias garantizadas.',
-    en: 'Your free portal about crypto, passive income, airdrops and cashback. Information, risks and links to third-party sites. No login, no registration and no guaranteed returns.',
+    es: 'Descubrimos, analizamos y compartimos los mejores proyectos cripto para que generes ingresos de forma inteligente. Desde VOID Network y GRVT hasta los nuevos perp DEX TxFlow, RISEx y Onchain.cc. Sin promesas de dinero fácil.',
+    en: 'We discover, analyze and share the best crypto projects so you can generate income intelligently. From VOID Network and GRVT to the new perp DEXes TxFlow, RISEx and Onchain.cc. No easy-money promises.',
   },
   cta1:   { es: 'Explorar proyectos', en: 'Explore projects' },
   cta2:   { es: 'Ver en YouTube', en: 'Watch on YouTube' },
