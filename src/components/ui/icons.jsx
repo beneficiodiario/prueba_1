@@ -6,7 +6,7 @@
 //  Las marcas vienen de Simple Icons; la interfaz, de Feather.
 // ════════════════════════════════════════════════════════════════
 
-export { SiYoutube, SiTelegram, SiX } from 'react-icons/si'
+export { SiYoutube, SiTelegram, SiX, SiInstagram } from 'react-icons/si'
 
 export {
   FiSearch,        // Descubre
