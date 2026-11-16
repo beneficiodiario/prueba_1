@@ -35,10 +35,11 @@ export default function Footer({ lang = 'es' }) {
     {
       title: c.projects,
       links: [
-        { label: 'KAST Card',    href: '#proyectos' },
+        { label: 'RISEx',        href: '#proyectos' },
+        { label: 'TxFlow',       href: '#proyectos' },
+        { label: 'Onchain.cc',   href: '#proyectos' },
         { label: 'VOID Network', href: '#proyectos' },
         { label: 'GRVT',         href: '#proyectos' },
-        { label: 'DAC',          href: '#proyectos' },
       ],
     },
     {
@@ -54,10 +55,11 @@ export default function Footer({ lang = 'es' }) {
     {
       title: c.community,
       links: [
+        { label: 'Telegram',   href: 'https://t.me/BeneficioDiario', external: true },
+        { label: 'Instagram',  href: 'https://www.instagram.com/beneficiodiario_com', external: true },
         { label: 'YouTube',    href: YOUTUBE_URL, external: true },
         { label: c.faq, href: `${home}#faq` },
         { label: lang === 'en' ? 'About (ES)' : 'Sobre el portal', href: '/sobre-beneficio-diario' },
-        { label: lang === 'en' ? 'Editorial policy (ES)' : 'Política editorial', href: '/politica-editorial' },
         { label: lang === 'en' ? 'Contact (ES)' : 'Contacto', href: '/contacto' },
       ],
     },

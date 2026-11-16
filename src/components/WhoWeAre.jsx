@@ -30,11 +30,11 @@ export default function WhoWeAre({ lang }) {
         initial={revealInitial}
         whileInView="visible"
         viewport={viewport}
-        className="mx-auto max-w-[44ch]"
+        className="mx-auto max-w-[52ch]"
       >
-        <Card className="p-7 sm:p-9 text-center">
-          <p className="font-display text-display-3 text-balance text-fg">{T.intro[lang]}</p>
-          <p className="font-body text-sm leading-relaxed text-fg-muted mt-5">{T.body[lang]}</p>
+        <Card className="p-6 sm:p-8 text-center">
+          <p className="font-display font-extrabold text-lg sm:text-xl text-balance text-fg leading-snug">{T.intro[lang]}</p>
+          <p className="font-body text-sm leading-relaxed text-fg-muted mt-4">{T.body[lang]}</p>
         </Card>
       </motion.div>
     </Section>
