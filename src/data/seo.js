@@ -44,8 +44,8 @@ export const faqs = [
       "en": "Do I need to register or log in?"
     },
     "a": {
-      "es": "No. Todo el contenido de Beneficio Diario se puede consultar sin login ni registro. Los sitios de terceros pueden pedirte una cuenta, verificación de identidad u otros requisitos bajo sus propias condiciones. La newsletter externa es opcional.",
-      "en": "No. You can read all Beneficio Diario content without an account or login. Third-party sites may require an account, identity checks or other conditions. The external newsletter is optional."
+      "es": "No. Todo el contenido de BeneficioDiario se puede consultar sin login ni registro. Los sitios de terceros pueden pedirte una cuenta, verificación de identidad u otros requisitos bajo sus propias condiciones. Opcionalmente puedes unirte a nuestra comunidad en Telegram o Instagram.",
+      "en": "No. You can read all BeneficioDiario content without an account or login. Third-party sites may require an account, identity checks or other conditions. Optionally, you can join our Telegram or Instagram community."
     }
   },
   {
