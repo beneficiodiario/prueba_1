@@ -3,6 +3,7 @@ import App from './App'
 import ArticlePage from './pages/ArticlePage'
 import DocumentPage from './pages/DocumentPage'
 import NotFoundPage from './pages/NotFoundPage'
+import AppWaitlistPage from './pages/AppWaitlistPage'
 import { DOCUMENT_PAGES } from './data/routes'
 
 export default function SiteRoutes() {
@@ -11,6 +12,8 @@ export default function SiteRoutes() {
     <Route path="/en" element={<App initialLang="en" />} />
     <Route path="/blog/:slug" element={<ArticlePage lang="es" />} />
     <Route path="/en/blog/:slug" element={<ArticlePage lang="en" />} />
+    <Route path="/app" element={<AppWaitlistPage lang="es" />} />
+    <Route path="/en/app" element={<AppWaitlistPage lang="en" />} />
     {DOCUMENT_PAGES.map(page => <Route key={page.path} path={page.path} element={<DocumentPage page={page} />} />)}
     <Route path="*" element={<NotFoundPage />} />
   </Routes>

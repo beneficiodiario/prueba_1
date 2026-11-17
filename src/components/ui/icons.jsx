@@ -32,6 +32,10 @@ export {
   FiArrowUpRight,
   FiChevronDown,
   FiRefreshCw,
+  FiSmartphone,
+  FiBell,
+  FiDollarSign,
+  FiPieChart,
 } from 'react-icons/fi'
 
 /** Bandera de España como SVG: los emojis 🇪🇸/🇬🇧 no se pintan en Windows. */

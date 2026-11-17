@@ -45,6 +45,7 @@ export default function Footer({ lang = 'es' }) {
     {
       title: c.content,
       links: [
+        { label: lang === 'en' ? 'Mobile app (waitlist)' : 'App móvil (waitlist)', href: lang === 'en' ? '/en/app' : '/app' },
         { label: 'Blog', href: `${home}#blog` },
         { label: lang === 'en' ? 'Passive income (ES)' : 'Ingresos pasivos', href: '/ingresos-pasivos' },
         { label: lang === 'en' ? 'Crypto guide (ES)' : 'Guía de criptomonedas', href: '/criptomonedas' },
