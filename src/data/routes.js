@@ -16,10 +16,26 @@ export const articleMeta = (post, lang) => ({
     image: post.extraImage || post.image, date: articleDate(post), url: articlePath(post, lang), lang }),
 })
 
+const APP_WAITLIST_META = {
+  es: {
+    title: 'App BeneficioDiario · Controla tus finanzas en una sola pantalla',
+    description: 'Lista de espera para la app móvil de BeneficioDiario. Banco, broker, cripto y efectivo en un mismo sitio. Los 500 primeros tienen 1 año gratis.',
+    path: '/app',
+  },
+  en: {
+    title: 'BeneficioDiario App · All your finances in one place',
+    description: 'Waitlist for the BeneficioDiario mobile app. Bank, broker, crypto and cash in a single app. First 500 users get 1 year free.',
+    path: '/en/app',
+  },
+}
+
 export const INDEXABLE_ROUTES = [
   ...['es', 'en'].map(lang => ({ ...PAGES.home[lang], lang,
     alternates: { es: '/', en: '/en' }, image: SITE.logo,
     jsonLd: homeJsonLd({ lang, faqs, url: PAGES.home[lang].path }),
+  })),
+  ...['es', 'en'].map(lang => ({ ...APP_WAITLIST_META[lang], lang,
+    alternates: { es: '/app', en: '/en/app' }, image: SITE.logo, jsonLd: null,
   })),
   ...blogPosts.flatMap(post => ['es', 'en'].filter(lang => post.content?.[lang]).map(lang => ({
     ...articleMeta(post, lang), lastmod: post.modifiedAt || articleDate(post),
