@@ -1,8 +1,14 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'motion/react'
 import { useTheme } from '../lib/theme'
-import { FiMenu, FiX, FiSun, FiMoon, FlagES, FlagGB } from './ui/icons'
+import { FiMenu, FiX, FiSun, FiMoon, FiSmartphone, FlagES, FlagGB } from './ui/icons'
 import { ease, duration, revealInitial } from '../lib/motion'
+
+const APP_CTA = {
+  es: { label: 'App', title: 'Nueva app móvil — waitlist', badge: 'Nueva' },
+  en: { label: 'App', title: 'New mobile app — waitlist', badge: 'New' },
+}
 
 const LINKS = {
   es: [
@@ -164,6 +170,17 @@ export default function Navbar({ lang, setLang, topOffset = 0 }) {
         </div>
 
         <div className="hidden md:flex items-center gap-3 shrink-0">
+          <Link
+            to={isEN ? '/en/app' : '/app'}
+            title={APP_CTA[lang].title}
+            className="relative inline-flex items-center gap-1.5 rounded-pill bg-brand-500 text-white px-3.5 py-1.5 font-display font-bold text-[12px] shadow-e1 hover:shadow-e2 hover:-translate-y-0.5 transition-all"
+          >
+            <FiSmartphone size={13} aria-hidden="true" />
+            {APP_CTA[lang].label}
+            <span className="absolute -top-1 -right-1 rounded-full bg-warning text-[9px] font-bold text-white px-1.5 py-0.5 leading-none">
+              {APP_CTA[lang].badge}
+            </span>
+          </Link>
           <Toggle
             on={isEN}
             onChange={() => setLang(isEN ? 'es' : 'en')}
