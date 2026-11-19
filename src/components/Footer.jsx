@@ -56,7 +56,7 @@ export default function Footer({ lang = 'es' }) {
     {
       title: c.community,
       links: [
-        { label: 'Telegram',   href: 'https://t.me/BeneficioDiario', external: true },
+        { label: 'Telegram',   href: 'https://t.me/beneficiodiario', external: true },
         { label: 'Instagram',  href: 'https://www.instagram.com/beneficiodiario_com', external: true },
         { label: 'YouTube',    href: YOUTUBE_URL, external: true },
         { label: c.faq, href: `${home}#faq` },

@@ -16,7 +16,7 @@ const T = {
 const CHANNELS = [
   {
     key: 'telegram',
-    href: 'https://t.me/BeneficioDiario',
+    href: 'https://t.me/beneficiodiario',
     cta: { es: 'Unirme al Telegram', en: 'Join Telegram' },
     Icon: SiTelegram,
     bg: 'bg-[#229ED9]',

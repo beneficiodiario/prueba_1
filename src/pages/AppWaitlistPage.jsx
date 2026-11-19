@@ -166,7 +166,7 @@ const INTEGRATIONS = {
 }
 
 const SOCIALS = [
-  { href: 'https://t.me/BeneficioDiario', label: 'Telegram', Icon: SiTelegram, bg: 'bg-[#229ED9]' },
+  { href: 'https://t.me/beneficiodiario', label: 'Telegram', Icon: SiTelegram, bg: 'bg-[#229ED9]' },
   { href: 'https://www.instagram.com/beneficiodiario_com', label: 'Instagram', Icon: SiInstagram, bg: 'bg-gradient-to-br from-[#F58529] via-[#DD2A7B] to-[#8134AF]' },
   { href: 'https://www.youtube.com/@beneficiodiario_com', label: 'YouTube', Icon: SiYoutube, bg: 'bg-[#ff0033]' },
 ]
