@@ -5,6 +5,9 @@ import static org.junit.Assert.*;
 import android.content.Context;
 import android.os.ParcelFileDescriptor;
 import android.os.SystemClock;
+import android.webkit.WebView;
+import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.view.accessibility.AccessibilityNodeInfo;
 import androidx.test.core.app.ActivityScenario;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
@@ -41,9 +44,31 @@ public class OfflineJourneyTest {
         fail("Condition not reached: " + condition);
     }
 
-    private void screenshot(String name) throws Exception {
+    private void screenshot(ActivityScenario<MainActivity> scenario, String name) throws Exception {
+        CountDownLatch painted = new CountDownLatch(1);
+        scenario.onActivity(activity -> {
+            WebView web = activity.getBridge().getWebView();
+            web.postVisualStateCallback(SystemClock.uptimeMillis(), new WebView.VisualStateCallback() {
+                @Override public void onComplete(long requestId) {
+                    web.invalidate();
+                    painted.countDown();
+                }
+            });
+        });
+        assertTrue("WebView did not commit a visual frame", painted.await(15, TimeUnit.SECONDS));
         InstrumentationRegistry.getInstrumentation().waitForIdleSync();
-        SystemClock.sleep(1500);
+        SystemClock.sleep(2000);
+        Bitmap image = InstrumentationRegistry.getInstrumentation().getUiAutomation().takeScreenshot();
+        assertNotNull("No screenshot available", image);
+        int contentPixels = 0;
+        for (int y = image.getHeight() / 4; y < image.getHeight() * 3 / 4; y += 4) {
+            for (int x = 40; x < image.getWidth() - 40; x += 4) {
+                int pixel = image.getPixel(x, y);
+                if (Math.abs(Color.red(pixel)-252) + Math.abs(Color.green(pixel)-253) + Math.abs(Color.blue(pixel)-249) > 120) contentPixels++;
+            }
+        }
+        image.recycle();
+        assertTrue("The app must visibly paint content, not a blank surface", contentPixels > 200);
         // The shell capture runs only inside this isolated test emulator. No personal data is used.
         ParcelFileDescriptor command = InstrumentationRegistry.getInstrumentation().getUiAutomation()
             .executeShellCommand("screencap -p /sdcard/Download/afin-" + name + ".png");
@@ -82,13 +107,13 @@ public class OfflineJourneyTest {
             waitFor(scenario, "document.readyState === 'complete' && document.querySelector('.hero-copy h1') && document.querySelector('.hero-art img').complete");
             waitFor(scenario, "document.querySelector('.hero-copy h1').getBoundingClientRect().height > 0 && document.querySelector('.hero-copy h1').getBoundingClientRect().top < innerHeight");
             assertEquals("true", evaluate(scenario, "document.documentElement.classList.contains('native-app')"));
-            screenshot("01-inicio");
+            screenshot(scenario, "01-inicio");
             evaluate(scenario, "document.querySelector('a[href=\"/test\"]').click()");
             waitFor(scenario, "location.pathname === '/test' && document.querySelector('.answer-option')");
             String firstHeading = evaluate(scenario, "document.querySelector('h1').textContent.trim()");
             evaluate(scenario, "document.querySelector('.answer-option input[value=\"-2\"]').click()");
             waitFor(scenario, "!document.querySelector('.quiz-actions .button-dark').disabled");
-            screenshot("02-pregunta");
+            screenshot(scenario, "02-pregunta");
             evaluate(scenario, "document.querySelector('.quiz-actions .button-dark').click()");
             waitFor(scenario, "document.querySelector('h1').textContent.trim() !== " + firstHeading);
             Espresso.pressBack();
@@ -106,7 +131,7 @@ public class OfflineJourneyTest {
             }
             waitFor(scenario, "document.querySelector('.result-hero')");
             evaluate(scenario, "window.scrollTo(0, document.querySelector('.result-hero').getBoundingClientRect().top + window.scrollY - document.querySelector('.site-header').getBoundingClientRect().height - 24)");
-            screenshot("03-resultados-ejemplo");
+            screenshot(scenario, "03-resultados-ejemplo");
             assertEquals("true", evaluate(scenario, "localStorage.length === 0 && sessionStorage.length === 0 && document.cookie === ''"));
             evaluate(scenario, "[...document.querySelectorAll('button')].find(b=>b.textContent.includes('Guardar mis datos')).click()");
             File exports = new File(context.getCacheDir(), "afin-exports");
@@ -128,7 +153,7 @@ public class OfflineJourneyTest {
             evaluate(scenario, "document.querySelector('a[href=\"/programas\"]').click()");
             waitFor(scenario, "location.pathname === '/programas' && document.querySelector('.program-card')");
             evaluate(scenario, "window.scrollTo(0, document.querySelector('.program-filters').getBoundingClientRect().top + window.scrollY - document.querySelector('.site-header').getBoundingClientRect().height - 24)");
-            screenshot("04-fuentes");
+            screenshot(scenario, "04-fuentes");
             evaluate(scenario, "document.querySelector('a[href=\"/privacidad\"]').click()");
             waitFor(scenario, "location.pathname === '/privacidad' && document.body.textContent.includes('caché privada')");
             assertEquals("true", evaluate(scenario, "document.body.textContent.includes('info@beneficiodiario.com')"));
