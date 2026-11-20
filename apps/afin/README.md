@@ -71,7 +71,7 @@ La entrega supera TypeScript, 17 pruebas de cálculo e interfaz (incluidos puent
 
 ## Integración continua
 
-.github/workflows/android.yml compila y adjunta un APK debug. Un lanzamiento manual firmado requiere los secretos AFIN_KEYSTORE_BASE64, AFIN_STORE_PASSWORD y AFIN_KEY_ALIAS. No ejecuta pagos, creación de cuentas ni publicación automática. El workflow está preparado; no se ha ejecutado en GitHub en esta sesión.
+.github/workflows/android.yml compila y adjunta un APK debug. Un lanzamiento manual firmado requiere los secretos AFIN_KEYSTORE_BASE64, AFIN_STORE_PASSWORD y AFIN_KEY_ALIAS. No ejecuta pagos, creación de cuentas ni publicación automática. El resultado del workflow se consulta en las comprobaciones de la pull request de GitHub.
 
 ## Créditos
 
