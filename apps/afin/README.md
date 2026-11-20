@@ -65,9 +65,9 @@ Las páginas HTML se copian a public/ y se sirven con cleanUrls de Vercel. Prepa
 
 ## Publicación y verificación
 
-Consulta publishing/GOOGLE_PLAY_PASO_A_PASO.md, PLAY_STORE_ES.md, DATA_SAFETY.md y PRUEBAS_DISPOSITIVO.md. Se incluyen icono y gráfico de ficha. Quedan pendientes cuenta y verificaciones de Google, despliegue público de la política, pruebas reales, capturas y el envío a revisión. Las cuentas personales nuevas pueden requerir una prueba cerrada de 12 personas durante 14 días según Google; consulta tu consola.
+Consulta publishing/GOOGLE_PLAY_PASO_A_PASO.md, PLAY_STORE_ES.md, DATA_SAFETY.md y PRUEBAS_DISPOSITIVO.md. Se incluyen icono, gráfico de ficha y cuatro capturas reales de un emulador Android 16, con respuestas ficticias. Quedan pendientes cuenta y verificaciones de Google, despliegue público de la política, pruebas de Play y el envío a revisión. Las cuentas personales nuevas pueden requerir una prueba cerrada de 12 personas durante 14 días según Google; consulta tu consola.
 
-La entrega supera TypeScript, 17 pruebas de cálculo e interfaz (incluidos puentes nativos simulados), compilación release, Android Lint sin errores, bundletool validate y verificación de firmas. La revisión visual en emulador no se completó por caducidad del permiso de acceso. No se afirma una prueba real de instalación o de recorrido.
+La entrega supera TypeScript, 17 pruebas de cálculo e interfaz (incluidos puentes nativos simulados), compilación release, Android Lint sin errores, bundletool validate y verificación de firmas. También pasa un recorrido instrumentado en Android 16 (API 36), Pixel 2, sin Wi-Fi ni datos: 34 respuestas ficticias, Atrás nativo, exportación JSON, selector de compartir y privacidad. Se comprueba que la pantalla pinta contenido y se incluyen cuatro capturas reales revisadas. Las pruebas manuales en teléfono/API 24, paisaje y accesibilidad siguen recomendadas antes de publicar.
 
 ## Integración continua
 
@@ -76,3 +76,11 @@ La entrega supera TypeScript, 17 pruebas de cálculo e interfaz (incluidos puent
 ## Créditos
 
 Fotografía local del Congreso: AMPERIO, Wikimedia Commons, CC BY-SA 4.0. La adaptación visual se ofrece con la misma licencia; ver la sección Créditos de la app y THIRD_PARTY_NOTICES.md. Las denominaciones y documentos pertenecen a sus titulares. No se redistribuyen copias completas de los programas. El origen web se conserva como referencia en docs/WEB_ORIGINAL.md.
+
+## Código y evidencia de esta entrega
+
+Código completo: https://github.com/beneficiodiario/prueba_1/tree/codex/afin-android-privacy/apps/afin
+
+Revisión de cambios: https://github.com/beneficiodiario/prueba_1/pull/2
+
+Prueba instrumentada y compilación verificadas: https://github.com/beneficiodiario/prueba_1/actions/runs/44775062545

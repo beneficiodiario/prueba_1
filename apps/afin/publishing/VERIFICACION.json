@@ -12,7 +12,7 @@
     "nativeBridge": "mocked"
   },
   "gradleBuild": "PASS",
-  "androidLint": "0 errors, 7 warnings",
+  "androidLint": "0 errors, 8 warnings",
   "bundletool": {
     "version": "1.18.3",
     "validateExit": 0
@@ -20,9 +20,29 @@
   "apkVerifyExit": 0,
   "aabVerifyExit": 0,
   "publicCertificateSha256": "e14adc881029391ac5b5fbb1d37e92d6fbbd973603f882745e6f1f4d9025003c",
-  "deviceTesting": "PENDING: emulator window approval expired",
-  "screenshots": "PENDING: real device captures required",
+  "deviceTesting": {
+    "status": "PASS",
+    "device": "Pixel 2 emulator",
+    "android": "16",
+    "api": 36,
+    "network": "Wi-Fi and mobile data disabled",
+    "journey": "34 fictitious answers, native Back, private JSON export, native share sheet, privacy and no web storage",
+    "visualFrameCheck": "PASS: nonblank rendered content in all four screenshots"
+  },
+  "screenshots": {
+    "status": "PASS",
+    "count": 4,
+    "size": "1080x1920",
+    "format": "PNG RGB 24-bit",
+    "directory": "publishing/screenshots",
+    "source": "Actual debug build using production web assets; fictitious answers"
+  },
   "playUpload": "NOT_PERFORMED",
   "privacyDeployment": "PENDING",
-  "githubWorkflow": "PREPARED_NOT_EXECUTED"
+  "githubWorkflow": {
+    "status": "PASS",
+    "commit": "e982ec1",
+    "url": "https://github.com/beneficiodiario/prueba_1/actions/runs/44775062545"
+  },
+  "manualPhoneTesting": "PENDING: physical phone, API24, landscape and accessibility checks"
 }

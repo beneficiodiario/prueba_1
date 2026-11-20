@@ -1,6 +1,8 @@
 # Comprobación real antes de enviar a revisión
 
-Pendiente en esta sesión: no se pudo acceder a la ventana del emulador porque caducó la autorización. No se ha registrado un recorrido visual real ni se han fabricado capturas. Las pruebas automáticas de React y de los puentes nativos simulados sí pasan.
+Completado: recorrido instrumentado y capturas reales en un emulador aislado Android 16 API 36, Pixel 2, sin Wi-Fi ni datos. Se completan las 34 preguntas con respuestas ficticias y se comprueban Atrás, exportación privada, selector de compartir, privacidad, ausencia de historial web y contenido visual no vacío. Evidencia: https://github.com/beneficiodiario/prueba_1/actions/runs/44775062545. Las cuatro capturas revisadas están en screenshots/. También pasan las 17 pruebas de cálculo e interfaz.
+
+El siguiente guion sirve para la revisión manual complementaria en un teléfono, API 24, paisaje, texto grande y accesibilidad. No se marca como realizado en su totalidad por haber pasado la instrumentación.
 
 Instala el APK release en un teléfono de pruebas. Utiliza respuestas ficticias. Comprueba como mínimo Android 7 (API 24) y Android 16 (API 36), o el conjunto de dispositivos que ofrezca Play antes del lanzamiento.
 

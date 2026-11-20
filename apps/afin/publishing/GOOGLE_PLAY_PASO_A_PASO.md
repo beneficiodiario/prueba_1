@@ -1,6 +1,6 @@
 # Del paquete compilado a Google Play
 
-Estado de la entrega: app compilada y firmada; no subida ni publicada. No existe todavía una cuenta de desarrollador proporcionada para este proyecto. Las capturas y las pruebas reales en dispositivo están pendientes. La creación de la cuenta, su identidad, las declaraciones y los pagos deben completarse con los datos del titular.
+Estado de la entrega: app compilada y firmada; no subida ni publicada. No existe todavía una cuenta de desarrollador proporcionada para este proyecto. Hay cuatro capturas reales y un recorrido instrumentado correcto en un emulador Android 16. Las comprobaciones manuales en teléfono y las pruebas de Google Play siguen pendientes. La creación de la cuenta, su identidad, las declaraciones y los pagos deben completarse con los datos del titular.
 
 ## 1. Crear y verificar la cuenta
 
@@ -21,7 +21,7 @@ Ambas deben responder HTTP 200 con el contenido de Afín. La política debe most
 
 Nombre: Afín: afinidad política. Idioma: español de España. Aplicación gratuita de Entretenimiento. Sin anuncios ni compras integradas. El identificador de paquete del binario es `com.beneficiodiario.afin`; una vez publicada una app con él, no puede cambiarse para esa misma ficha.
 
-Pega la ficha de `PLAY_STORE_ES.md` y sube el icono, el gráfico y las capturas reales. No marques que ya tiene una clasificación de edad: completa el cuestionario IARC con el contenido real. Audiencia prevista: adultos. Declara que no es una app gubernamental y conserva visibles los avisos de independencia y las fuentes.
+Pega la ficha de `PLAY_STORE_ES.md` y sube el icono, el gráfico y las cuatro capturas reales incluidas en `screenshots/`. No marques que ya tiene una clasificación de edad: completa el cuestionario IARC con el contenido real. Audiencia prevista: adultos. Declara que no es una app gubernamental y conserva visibles los avisos de independencia y las fuentes.
 
 ## 4. Acceso, seguridad de datos y permisos
 

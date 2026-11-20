@@ -69,6 +69,6 @@ Primera versión para Android: cuestionario sin conexión, afinidades explicadas
 
 `graphics/feature-graphic-1024x500.png`: gráfico de funciones 1024 × 500, PNG RGB.
 
-Las capturas de pantalla reales quedan pendientes de obtener en un dispositivo. No se incluyen imágenes que simulen una app ya probada visualmente. Prepara al menos dos capturas de teléfono de la versión final; se recomiendan cuatro de 1080 × 1920: inicio, pregunta, resultados y fuentes. Evita mostrar respuestas personales: utiliza respuestas ficticias de prueba e identifica cualquier resultado como ejemplo.
+Se incluyen cuatro capturas reales de la app instalada en un emulador Android 16 API 36, Pixel 2, con respuestas ficticias: inicio, pregunta, resultados de ejemplo y fuentes. Están en screenshots/, 1080 × 1920, PNG RGB de 24 bits. Se conserva la interfaz sin retoques; solo se elimina el canal alfa completamente opaco. Textos alternativos y procedencia en CAPTURAS_ES.md.
 
 Los tamaños y requisitos deben contrastarse con la consola en el momento de subirlos: https://support.google.com/googleplay/android-developer/answer/9866151
