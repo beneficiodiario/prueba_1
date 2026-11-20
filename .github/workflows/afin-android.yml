@@ -64,9 +64,7 @@ jobs:
           script: |
             adb shell svc wifi disable
             adb shell svc data disable
-            ./gradlew connectedDebugAndroidTest --no-daemon
-            mkdir -p ../publishing/screenshots
-            for name in 01-inicio 02-pregunta 03-resultados-ejemplo 04-fuentes; do adb pull /sdcard/Download/afin-$name.png ../publishing/screenshots/$name.png; done
+            status=0; ./gradlew :app:connectedDebugAndroidTest --no-daemon || status=$?; mkdir -p ../publishing/screenshots; for name in 01-inicio 02-pregunta 03-resultados-ejemplo 04-fuentes; do adb pull /sdcard/Download/afin-$name.png ../publishing/screenshots/$name.png || status=1; done; exit "$status"
       - name: Guardar capturas y resultados instrumentados
         if: always() && github.event_name == 'pull_request'
         uses: actions/upload-artifact@v4

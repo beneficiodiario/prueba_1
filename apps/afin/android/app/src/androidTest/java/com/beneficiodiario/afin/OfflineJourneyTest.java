@@ -82,7 +82,7 @@ public class OfflineJourneyTest {
                     "document.querySelector('h1').textContent.trim() !== " + previousHeading);
             }
             waitFor(scenario, "document.querySelector('.result-hero')");
-            evaluate(scenario, "document.querySelector('.result-hero').scrollIntoView({block:'start'})");
+            evaluate(scenario, "window.scrollTo(0, document.querySelector('.result-hero').getBoundingClientRect().top + window.scrollY - document.querySelector('.site-header').getBoundingClientRect().height - 24)");
             screenshot("03-resultados-ejemplo");
             assertEquals("true", evaluate(scenario, "localStorage.length === 0 && sessionStorage.length === 0 && document.cookie === ''"));
             evaluate(scenario, "[...document.querySelectorAll('button')].find(b=>b.textContent.includes('Guardar mis datos')).click()");
