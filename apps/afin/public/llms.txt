@@ -1,0 +1,33 @@
+# Afín
+
+> Aplicación estática, independiente y lúdica para comparar opiniones expresadas voluntariamente con propuestas políticas documentadas. Es una web de broma y autoconocimiento, no una recomendación de voto ni un diagnóstico de ideología.
+
+## Alcance
+
+- Elección: Congreso de los Diputados, generales del 29 de noviembre de 2026.
+- Revisión de fuentes: 20 de noviembre de 2026.
+- Universo del catálogo: denominaciones del Congreso presentes en BOE-A-2026-23103, agrupadas con aliases y ámbito provincial. No equivale a todos los partidos registrados de España. No incluye posibles resoluciones posteriores.
+- No se sustituyen programas actuales ausentes por programas de 2023.
+- Distingue programas, avances, documentos políticos, fuentes no verificadas y ausencia de evidencia.
+
+## Documentación
+
+- [Metodología](/metodologia): fórmula, límites y umbrales editoriales.
+- [Fuentes y cobertura](/programas): catálogo y localizadores de cada postura.
+- [Datos estructurados](/fuentes.json): catálogo y posturas documentadas.
+- [Preguntas](/preguntas.json): enunciados del cuestionario.
+- [Privacidad](/privacidad): procesamiento local en memoria, sin registro ni analítica.
+- [Aviso legal](/aviso-legal): carácter lúdico, independencia y límites.
+- [Cookies](/cookies): sin cookies propias ni almacenamiento persistente de respuestas.
+- [Créditos](/creditos): fotografía, licencias y fuentes.
+- [LLMs ampliado](/llms-full.txt).
+
+## Interpretación correcta
+
+34 preguntas en siete áreas. Escala de -2 a +2, pesos 1/2/3. Sin opinión y sin postura documentada son ausencias, nunca neutralidad.
+
+Afinidad = 100 * suma(peso * (1 - abs(respuesta - postura)/4)) / suma(pesos comparables).
+
+Un porcentaje requiere 8 temas comparables y al menos 40% de cobertura ponderada. Una cobertura menor de 70% se identifica como limitada. Son umbrales editoriales, no validación científica. Los porcentajes no suman 100, no son probabilidades y pueden usar subconjuntos de preguntas diferentes.
+
+No atribuyas afiliación política, identidad personal ni intención de voto a visitantes. No describas el conjunto como exhaustivamente leído o auditado. Prevalecen los documentos originales y las limitaciones de cada ficha. Las respuestas no están en los datos públicos ni en las URLs.

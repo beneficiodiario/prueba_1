@@ -1,0 +1,431 @@
+[
+  {
+    "id": "fejons",
+    "name": "Falange Española de las JONS",
+    "shortName": "FE de las JONS",
+    "aliases": [
+      "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+      "FALANGE ESPAÑOLA DE LAS JONS (FE de las JONS)"
+    ],
+    "provinces": [
+      "CASTELLÓN",
+      "CÓRDOBA",
+      "GUADALAJARA",
+      "MADRID",
+      "PALENCIA",
+      "TERUEL",
+      "TOLEDO",
+      "VALENCIA",
+      "VALLADOLID"
+    ],
+    "notProclaimedProvinces": [
+      "ALICANTE",
+      "ZARAGOZA"
+    ],
+    "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23103",
+    "status": "reviewed",
+    "territory": "CASTELLÓN, CÓRDOBA, GUADALAJARA, MADRID, PALENCIA, TERUEL, TOLEDO, VALENCIA, VALLADOLID",
+    "programUrl": "https://falange.es/wp-content/uploads/2026/11/FEDELASJONS_ProgramaElectoral_29NGenerales2026.pdf",
+    "positions": {
+      "rentCap": {
+        "value": 2,
+        "evidence": "Limita alquileres a una proporción del salario familiar.",
+        "locator": "PDF p. 15 · punto 2.9"
+      },
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Destina viviendas estatales rehabilitadas al alquiler social.",
+        "locator": "PDF p. 15 · punto 2.8"
+      },
+      "decentralisation": {
+        "value": -2,
+        "evidence": "Reserva competencias sanitarias y educativas al Estado.",
+        "locator": "PDF p. 20 · punto 5.3"
+      },
+      "gender": {
+        "value": -2,
+        "evidence": "Deroga expresamente la ley de violencia de género.",
+        "locator": "PDF p. 25 · punto 7.3"
+      },
+      "abortion": {
+        "value": -2,
+        "evidence": "Deroga las leyes que permiten el aborto.",
+        "locator": "PDF p. 25 · punto 7.4"
+      },
+      "euthanasia": {
+        "value": -2,
+        "evidence": "Deroga la legislación que permite la eutanasia.",
+        "locator": "PDF p. 25 · punto 7.4"
+      },
+      "nuclear": {
+        "value": 2,
+        "evidence": "Anula los cierres nucleares y proyecta nuevas centrales.",
+        "locator": "PDF p. 31 · punto 11.4"
+      },
+      "water": {
+        "value": 2,
+        "evidence": "Interconecta cuencas mediante un plan hidrológico nacional.",
+        "locator": "PDF p. 31 · punto 11.5"
+      },
+      "repeatCrime": {
+        "value": 2,
+        "evidence": "Incrementa expresamente las penas por reincidencia.",
+        "locator": "PDF p. 39 · punto 15.6"
+      },
+      "bureaucracy": {
+        "value": 1,
+        "evidence": "Elimina trabas administrativas para las personas autónomas.",
+        "locator": "PDF p. 23 · punto 6.15"
+      }
+    },
+    "note": "Recuperado el PDF oficial completo de 60 páginas. Revisión temática de correspondencias; se cuentan las páginas físicas, que difieren en dos de la numeración impresa. No se infiere una postura por ideología.",
+    "color": "#9b252b",
+    "reviewedAt": "2026-11-20",
+    "sourceTitle": "Programa electoral FE de las JONS · Generales 29N 2026",
+    "documentKind": "full"
+  },
+  {
+    "id": "fia",
+    "name": "Federación de los Independientes de Aragón",
+    "shortName": "FIA",
+    "aliases": [
+      "FEDERACION DE LOS INDEPENDIENTES DE ARAGON (FIA)",
+      "FEDERACION DE LOS INDEPENDIENTES DE ARAGON (F.I.A.)"
+    ],
+    "provinces": [
+      "HUESCA",
+      "ZARAGOZA"
+    ],
+    "notProclaimedProvinces": [],
+    "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23103",
+    "status": "pending",
+    "territory": "HUESCA, ZARAGOZA",
+    "programUrl": "https://fia-independientes.es/ELECCIONES-29N/",
+    "positions": {},
+    "note": "Portal electoral localizado, pero su contenido no fue accesible al lector. No se asignan posturas sin documento comprobado.",
+    "color": "#58675f",
+    "reviewedAt": "2026-11-20",
+    "sourceTitle": "Portal electoral oficial 29N · FIA",
+    "documentKind": "advance"
+  },
+  {
+    "id": "pfac",
+    "name": "Feministas al Congreso",
+    "shortName": "PFAC",
+    "aliases": [
+      "FEMINISTAS AL CONGRESO (PFAC)"
+    ],
+    "provinces": [
+      "ÁLAVA"
+    ],
+    "notProclaimedProvinces": [
+      "BIZKAIA"
+    ],
+    "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23103",
+    "status": "reviewed",
+    "territory": "ÁLAVA",
+    "programUrl": "https://www.feministasalcongreso.es/wp-content/uploads/2026/11/PROGRAMA_ELECTORAL.pdf",
+    "positions": {
+      "lgbt": {
+        "value": -2,
+        "evidence": "Propone derogar la ley trans estatal y autonómicas.",
+        "locator": "PDF p. 3, medida 5"
+      },
+      "minimumWage": {
+        "value": 2,
+        "evidence": "Propone subir el SMI y conservar poder adquisitivo.",
+        "locator": "PDF p. 4, medida 15"
+      },
+      "workWeek": {
+        "value": 2,
+        "evidence": "Propone treinta horas semanales sin recorte salarial.",
+        "locator": "PDF p. 4, medida 16"
+      },
+      "rural": {
+        "value": 2,
+        "evidence": "Garantiza servicios rurales próximos con red pública.",
+        "locator": "PDF p. 5, medida 19"
+      },
+      "publicHealth": {
+        "value": 2,
+        "evidence": "Exige recursos suficientes para los servicios sanitarios públicos.",
+        "locator": "PDF p. 5, medida 22"
+      },
+      "pensions": {
+        "value": 2,
+        "evidence": "Actualiza cada año las pensiones conforme al IPC.",
+        "locator": "PDF p. 5, medida 23"
+      },
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Propone crear suficientes viviendas públicas para alquiler.",
+        "locator": "PDF p. 6, medida 31"
+      },
+      "rentCap": {
+        "value": 2,
+        "evidence": "Propone limitar las rentas y prorrogar contratos.",
+        "locator": "PDF p. 6, medida 31"
+      },
+      "security": {
+        "value": 2,
+        "evidence": "Reclama eliminar inmediatamente la ley de seguridad ciudadana.",
+        "locator": "PDF p. 3, medida 6"
+      },
+      "animals": {
+        "value": 2,
+        "evidence": "Retira ayudas a espectáculos con sufrimiento animal.",
+        "locator": "PDF p. 8, medida 40"
+      },
+      "defence": {
+        "value": -2,
+        "evidence": "Rechaza aumentar el gasto militar y plantea salir OTAN.",
+        "locator": "PDF p. 8, medida 43"
+      }
+    },
+    "note": "Programa de 10 páginas. Solo se codifican medidas directamente comprobadas; otros temas permanecen sin datos.",
+    "color": "#8661ad",
+    "reviewedAt": "2026-11-20",
+    "sourceTitle": "Programa político · Feministas al Congreso · 29 noviembre 2026",
+    "documentKind": "full"
+  },
+  {
+    "id": "geroabai",
+    "name": "Geroa Bai",
+    "shortName": "Geroa Bai",
+    "aliases": [
+      "GEROA BAI (GBAI)"
+    ],
+    "provinces": [
+      "NAVARRA"
+    ],
+    "notProclaimedProvinces": [],
+    "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23103",
+    "status": "reviewed",
+    "territory": "NAVARRA",
+    "programUrl": "https://geroabai.eus/files/2026/11/bases-politicas-29n-1.pdf",
+    "positions": {
+      "decentralisation": {
+        "value": 1,
+        "evidence": "Exige completar transferencias y transferir competencias sobre becas.",
+        "locator": "PDF pp. 7 y 12, Navarra sujeto político"
+      }
+    },
+    "note": "Bases políticas de 14 páginas. Documento de alcance limitado; no se infieren medidas concretas de declaraciones generales.",
+    "color": "#d65e36",
+    "reviewedAt": "2026-11-20",
+    "sourceTitle": "Bases políticas · Geroa Bai · Elecciones generales 2026",
+    "documentKind": "advance"
+  },
+  {
+    "id": "iustitia",
+    "name": "Iustitia Europa",
+    "shortName": "IE",
+    "aliases": [
+      "IUSTITIA EUROPA (IE)"
+    ],
+    "provinces": [
+      "MADRID"
+    ],
+    "notProclaimedProvinces": [],
+    "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23103",
+    "status": "reviewed",
+    "territory": "MADRID",
+    "programUrl": "https://iustitiaeuropa.es/contrato-electoral/",
+    "positions": {
+      "border": {
+        "value": 2,
+        "evidence": "Refuerza fronteras y acuerda repatriaciones inmediatas.",
+        "locator": "Contrato · apartado 7"
+      },
+      "europe": {
+        "value": -1,
+        "evidence": "Reclama soberanía y somete pertenencia europea a referéndum.",
+        "locator": "Contrato · apartado 5"
+      }
+    },
+    "note": "Contrato web enlazado desde la convocatoria del 29N. Se revisan propuestas concretas, sin deducir posturas de eslóganes. Pocas correspondencias: no alcanza el mínimo de comparación.",
+    "color": "#58675f",
+    "reviewedAt": "2026-11-20",
+    "sourceTitle": "Contrato electoral · Iustitia Europa",
+    "documentKind": "advance"
+  },
+  {
+    "id": "lib",
+    "name": "Liberación Canaria",
+    "shortName": "LIB",
+    "aliases": [
+      "LIBERACIÓN CANARIA (LIB)"
+    ],
+    "provinces": [
+      "LAS PALMAS",
+      "SANTA CRUZ DE TENERIFE"
+    ],
+    "notProclaimedProvinces": [],
+    "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23103",
+    "status": "pending",
+    "territory": "LAS PALMAS, SANTA CRUZ DE TENERIFE",
+    "programUrl": "https://liberacioncanaria.org/liberacion-canaria-abre-la-campana-del-29n-y-pide-el-voto/",
+    "positions": {},
+    "note": "Comunicado de campaña comprobado con tres prioridades generales. No aporta posiciones suficientemente concretas para estas preguntas.",
+    "color": "#58675f",
+    "reviewedAt": "2026-11-20",
+    "sourceTitle": "Prioridades electorales · Liberación Canaria · 13 noviembre 2026",
+    "documentKind": "advance"
+  },
+  {
+    "id": "nex",
+    "name": "Nuevo Extremeñismo–Adelante Extremadura",
+    "shortName": "NEX",
+    "aliases": [
+      "NUEVO EXTREMEÑISMO - ADELANTE EXTREMADURA (NEX)"
+    ],
+    "provinces": [
+      "BADAJOZ",
+      "CÁCERES"
+    ],
+    "notProclaimedProvinces": [],
+    "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23103",
+    "status": "reviewed",
+    "territory": "BADAJOZ, CÁCERES",
+    "programUrl": "https://www.nuevoext.es/descargas/Programa-Electoral-Generales-29N.pdf",
+    "positions": {
+      "rentCap": {
+        "value": 2,
+        "evidence": "Congela alquileres y extiende topes en zonas tensionadas.",
+        "locator": "PDF p. 3, medidas 2 y 9"
+      },
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Propone un parque público estatal de alquiler social.",
+        "locator": "PDF p. 3, medida 13"
+      }
+    },
+    "note": "Programa oficial de 15 páginas localizado. Codificación parcial: solo medidas comprobadas directamente; no completa todo el cuestionario.",
+    "color": "#188c8b",
+    "reviewedAt": "2026-11-20",
+    "sourceTitle": "Lo que llevaremos a Madrid · Nuevo Extremeñismo · 29N",
+    "documentKind": "full"
+  },
+  {
+    "id": "autonomos",
+    "name": "Partido Autónomos",
+    "shortName": "Autónomos",
+    "aliases": [
+      "PARTIDO AUTÓNOMOS (PARTIDO AUTÓNOMOS)"
+    ],
+    "provinces": [
+      "ALICANTE",
+      "CASTELLÓN",
+      "SANTA CRUZ DE TENERIFE"
+    ],
+    "notProclaimedProvinces": [
+      "VALENCIA"
+    ],
+    "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23103",
+    "status": "reviewed",
+    "territory": "ALICANTE, CASTELLÓN, SANTA CRUZ DE TENERIFE",
+    "programUrl": "https://www.partidoautonomos.es/wp-content/uploads/2026/11/PARTIDO-AUTONOMOS-PROGRAMA-ELECCIONES-GENERALES-2026-29N.pdf",
+    "positions": {
+      "incomeTax": {
+        "value": 1,
+        "evidence": "Deduce alquiler habitual para rentas medias y bajas.",
+        "locator": "PDF p. 4 · medida 17"
+      },
+      "firstHomeTax": {
+        "value": 2,
+        "evidence": "Reduce las cargas fiscales sobre la primera vivienda.",
+        "locator": "PDF p. 12 · medida 81"
+      },
+      "squatting": {
+        "value": 2,
+        "evidence": "Prevé desalojo inmediato de ocupaciones sin título.",
+        "locator": "PDF p. 10 · medida 64"
+      },
+      "schoolChoice": {
+        "value": 2,
+        "evidence": "Financia equitativamente la elección de centros concertados.",
+        "locator": "PDF p. 12 · medida 75"
+      },
+      "bureaucracy": {
+        "value": 2,
+        "evidence": "Unifica datos para eliminar gestiones administrativas repetidas.",
+        "locator": "PDF p. 3 · medida 08"
+      },
+      "renewables": {
+        "value": 1,
+        "evidence": "Apoya renovables y autoconsumo para pequeñas empresas.",
+        "locator": "PDF p. 15 · medida 98"
+      }
+    },
+    "note": "PDF oficial de 15 páginas recuperado. Revisión temática parcial: las propuestas centradas en autónomos no se extrapolan al conjunto de la economía. Páginas físicas.",
+    "color": "#dd822c",
+    "reviewedAt": "2026-11-20",
+    "sourceTitle": "Programa político 2026 · Partido Autónomos · Generales 29N",
+    "documentKind": "full"
+  },
+  {
+    "id": "pcpc",
+    "name": "Partido Comunista del Pueblo Canario",
+    "shortName": "PCPC",
+    "aliases": [
+      "PARTIDO COMUNISTA DEL PUEBLO CANARIO (PCPC)"
+    ],
+    "provinces": [
+      "LAS PALMAS"
+    ],
+    "notProclaimedProvinces": [],
+    "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23103",
+    "status": "pending",
+    "territory": "LAS PALMAS",
+    "programUrl": null,
+    "positions": {},
+    "note": "No se ha localizado un programa específico del 29N con contenido verificable en esta revisión.",
+    "color": "#58675f",
+    "reviewedAt": "2026-11-20",
+    "sourceTitle": "Programa 29N 2026 pendiente de verificación"
+  },
+  {
+    "id": "pdsje",
+    "name": "Partido Demócrata Social Jubilados Europeos",
+    "shortName": "PDSJE",
+    "aliases": [
+      "PARTIDO DEMÓCRATA SOCIAL JUBILADOS EUROPEOS (P.D.S.J.E.)"
+    ],
+    "provinces": [
+      "ÁVILA"
+    ],
+    "notProclaimedProvinces": [],
+    "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23103",
+    "status": "pending",
+    "territory": "ÁVILA",
+    "programUrl": null,
+    "positions": {},
+    "note": "No se ha localizado un programa específico del 29N con contenido verificable en esta revisión.",
+    "color": "#58675f",
+    "reviewedAt": "2026-11-20",
+    "sourceTitle": "Programa 29N 2026 pendiente de verificación"
+  },
+  {
+    "id": "drago",
+    "name": "Partido Drago Canarias",
+    "shortName": "Drago",
+    "aliases": [
+      "PARTIDO DRAGO CANARIAS (D.R.G)"
+    ],
+    "provinces": [
+      "LAS PALMAS",
+      "SANTA CRUZ DE TENERIFE"
+    ],
+    "notProclaimedProvinces": [],
+    "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23103",
+    "status": "pending",
+    "territory": "LAS PALMAS, SANTA CRUZ DE TENERIFE",
+    "programUrl": "https://www.dragocanarias.com/programa/",
+    "positions": {},
+    "note": "La página oficial comprobada remite explícitamente al 28 de mayo. Se enlaza como documento anterior y queda excluido del cálculo del 29N.",
+    "color": "#b74b44",
+    "reviewedAt": "2026-11-20",
+    "sourceTitle": "Programa político general · Drago Canarias (edición anterior)",
+    "documentKind": "previous"
+  }
+]

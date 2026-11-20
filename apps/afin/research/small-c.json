@@ -1,0 +1,320 @@
+[
+  {
+    "id": "humanista",
+    "name": "Partido Humanista",
+    "shortName": "PH",
+    "color": "#ed6a24",
+    "territory": "Madrid",
+    "programUrl": "https://www.partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf",
+    "sourceTitle": "Programa Generales 2026 · Lo primero es la gente",
+    "documentKind": "full",
+    "status": "reviewed",
+    "note": "Documento oficial de 31 páginas; solo se codifican propuestas explícitas. Páginas indicadas por orden físico del PDF.",
+    "positions": {
+      "wealthTax": {
+        "value": 2,
+        "evidence": "Gravamen sobre fortunas superiores a tres millones.",
+        "locator": "PDF, p. 6"
+      },
+      "workWeek": {
+        "value": 2,
+        "evidence": "Treinta horas semanales manteniendo la remuneración.",
+        "locator": "PDF, p. 7"
+      },
+      "rentCap": {
+        "value": 2,
+        "evidence": "Tope residencial vinculado a ingresos del área.",
+        "locator": "PDF, p. 9"
+      },
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Incorporar viviendas al alquiler social público.",
+        "locator": "PDF, p. 8"
+      },
+      "publicHealth": {
+        "value": 2,
+        "evidence": "Elevar inversión sanitaria pública al 9,5 %.",
+        "locator": "PDF, p. 11"
+      },
+      "schoolChoice": {
+        "value": -2,
+        "evidence": "Extinguir conciertos educativos cuando venzan.",
+        "locator": "PDF, p. 13"
+      },
+      "tuition": {
+        "value": 2,
+        "evidence": "Eliminar las tasas de matrícula universitarias.",
+        "locator": "PDF, p. 13"
+      },
+      "transport": {
+        "value": 2,
+        "evidence": "Trenes cotidianos y autobuses sin coste.",
+        "locator": "PDF, p. 21"
+      },
+      "renewables": {
+        "value": 1,
+        "evidence": "Financiar energía solar comunitaria en cubiertas.",
+        "locator": "PDF, p. 21"
+      },
+      "abortion": {
+        "value": 2,
+        "evidence": "Interrupción voluntaria gratuita en centros públicos.",
+        "locator": "PDF, p. 27"
+      },
+      "migration": {
+        "value": 2,
+        "evidence": "Regularización inmediata de residentes migrantes.",
+        "locator": "PDF, p. 19"
+      },
+      "border": {
+        "value": -2,
+        "evidence": "Derogar extranjería sancionadora y cerrar internamientos.",
+        "locator": "PDF, p. 18"
+      },
+      "defence": {
+        "value": -2,
+        "evidence": "Reducir a la mitad el presupuesto militar.",
+        "locator": "PDF, p. 17"
+      },
+      "republic": {
+        "value": 2,
+        "evidence": "Jefatura estatal electiva y revocable.",
+        "locator": "PDF, p. 25"
+      }
+    }
+  },
+  {
+    "id": "pancal",
+    "name": "Partido Nacionalista de Castilla y León–Unión Reformista Ciudadana",
+    "shortName": "PANCAL–URCI",
+    "color": "#823c8b",
+    "territory": "Valladolid",
+    "programUrl": "https://pancal-urci.es/wp-content/uploads/2025/02/PROGRAMA-PANCAL-URCi_PDF.pdf",
+    "sourceTitle": "Programa para Castilla y León · documento de 2025",
+    "documentKind": "previous",
+    "status": "pending",
+    "note": "Se localizó un programa territorial anterior, no una edición específica verificada del 29N. Se enlaza como referencia y no se usa en el cálculo.",
+    "positions": {}
+  },
+  {
+    "id": "prepal",
+    "name": "Partido Regionalista del País Leonés",
+    "shortName": "PREPAL",
+    "color": "#713678",
+    "territory": "León, Salamanca y Zamora",
+    "programUrl": null,
+    "sourceTitle": "Programa 29N no localizado",
+    "documentKind": "unavailable",
+    "status": "pending",
+    "note": "No se ha localizado un documento programático oficial del 29N accesible y verificable. Esto no demuestra que la formación no lo haya publicado.",
+    "positions": {}
+  },
+  {
+    "id": "puede",
+    "name": "Partido Unionista Estado de España",
+    "shortName": "PUEDE",
+    "color": "#546a87",
+    "territory": "Asturias",
+    "programUrl": null,
+    "sourceTitle": "Programa 29N no localizado",
+    "documentKind": "unavailable",
+    "status": "pending",
+    "note": "No se ha localizado un documento programático oficial del 29N accesible y verificable. No se deducen propuestas del nombre de la formación.",
+    "positions": {}
+  },
+  {
+    "id": "psc",
+    "name": "Partit dels Socialistes de Catalunya",
+    "shortName": "PSC",
+    "color": "#dc1b2d",
+    "territory": "Cataluña",
+    "programUrl": null,
+    "websiteUrl": "https://www.socialistes.cat/",
+    "sourceTitle": "Manifiesto propio 29N pendiente de lectura verificable",
+    "documentKind": "unavailable",
+    "status": "pending",
+    "note": "Se informa de un manifiesto propio de ocho páginas, pero no se ha podido leer su documento original. No se atribuye automáticamente el programa del PSOE.",
+    "positions": {}
+  },
+  {
+    "id": "alantre",
+    "name": "Proyecto Alantre",
+    "shortName": "Alantre",
+    "color": "#764281",
+    "territory": "León",
+    "programUrl": null,
+    "websiteUrl": "https://www.alantre.org/programas",
+    "sourceTitle": "Doce compromisos 29N pendientes de lectura primaria",
+    "documentKind": "unavailable",
+    "status": "pending",
+    "note": "La prensa identifica doce compromisos y el portal ya-toca.com. Este portal no ha sido accesible durante la revisión; las noticias no se usan para puntuar.",
+    "positions": {}
+  },
+  {
+    "id": "renacer",
+    "name": "Renacer Renaixer",
+    "shortName": "RRB",
+    "color": "#24977d",
+    "territory": "Valencia",
+    "programUrl": "https://renacerenaixer.es/",
+    "sourceTitle": "Propuestas web · Elecciones 2026",
+    "documentKind": "advance",
+    "status": "reviewed",
+    "note": "La web distingue un bloque electoral de 2026 de sus estatutos generales. Solo se codifica una propuesta explícita de ese bloque; cobertura insuficiente para un porcentaje.",
+    "positions": {
+      "decentralisation": {
+        "value": -2,
+        "evidence": "Devolver competencias esenciales al Gobierno estatal.",
+        "locator": "Web: EL ESTADO DEBE REPLANTEARSE"
+      }
+    }
+  },
+  {
+    "id": "soriaya",
+    "name": "Soria ¡Ya!",
+    "shortName": "Soria ¡Ya!",
+    "color": "#7d2444",
+    "territory": "Soria",
+    "programUrl": "https://soriaya.org/programa-generales-2026/",
+    "sourceTitle": "Programa Generales 2026 · noviembre 2026",
+    "documentKind": "advance",
+    "status": "reviewed",
+    "note": "Programa breve oficial para las generales. No se confunde con el extenso programa autonómico. Sus propuestas no cubren suficientes preguntas para calcular afinidad.",
+    "positions": {
+      "rural": {
+        "value": 2,
+        "evidence": "Servicios esenciales accesibles en treinta minutos.",
+        "locator": "Web: GARANTÍA DE SERVICIOS PÚBLICOS EN EL MEDIO RURAL"
+      }
+    }
+  },
+  {
+    "id": "terceraedad",
+    "name": "Tercera Edad en Acción",
+    "shortName": "3e",
+    "color": "#1b8b93",
+    "territory": "Murcia",
+    "programUrl": "https://3edad.org/wp-content/uploads/2026/11/Programa_Politico_En_Accion_3e_2026_Propuesta_Revisada.pdf",
+    "sourceTitle": "Programa político 2026 · propuesta revisada",
+    "documentKind": "political",
+    "status": "pending",
+    "note": "La web lo enlaza como Programa Electoral 2026, pero el documento se titula programa político y no identifica el 29N. Requiere confirmar su aplicación a esta convocatoria.",
+    "positions": {}
+  },
+  {
+    "id": "teruelexiste",
+    "name": "Teruel Existe",
+    "shortName": "Teruel Existe",
+    "color": "#2c7462",
+    "territory": "Teruel",
+    "programUrl": "https://teruelexiste.info/wp-content/uploads/2026/11/Programa_Teruel_Existe_Completo_29N.pdf",
+    "sourceTitle": "Programa electoral completo 29N",
+    "documentKind": "full",
+    "status": "reviewed",
+    "note": "Programa oficial de quince páginas. Sus propuestas territoriales solo permiten codificar parte del cuestionario; las páginas son las físicas del PDF.",
+    "positions": {
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Alquiler público en todos los municipios.",
+        "locator": "PDF, p. 7"
+      },
+      "publicHealth": {
+        "value": 2,
+        "evidence": "Más financiación para la atención primaria.",
+        "locator": "PDF, p. 5"
+      },
+      "rural": {
+        "value": 2,
+        "evidence": "Garantizar servicios básicos cerca del hogar rural.",
+        "locator": "PDF, p. 13"
+      },
+      "renewables": {
+        "value": -1,
+        "evidence": "Moratoria a grandes parques y despliegue ordenado.",
+        "locator": "PDF, p. 3"
+      },
+      "water": {
+        "value": -1,
+        "evidence": "Oposición al trasvase del Ebro.",
+        "locator": "PDF, p. 10"
+      },
+      "gender": {
+        "value": 1,
+        "evidence": "Actualizar y aplicar el pacto contra violencia machista.",
+        "locator": "PDF, p. 15"
+      }
+    }
+  },
+  {
+    "id": "upc",
+    "name": "Unidad del Pueblo Canario",
+    "shortName": "UPC",
+    "color": "#137bab",
+    "territory": "Canarias",
+    "programUrl": "https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf",
+    "sourceTitle": "Manifiesto electoral · Todo un pueblo · 29N",
+    "documentKind": "advance",
+    "status": "reviewed",
+    "note": "Manifiesto original de la coalición, de diecinueve páginas. No se heredan posturas de partidos integrantes. Páginas físicas del PDF.",
+    "positions": {
+      "wealthTax": {
+        "value": 2,
+        "evidence": "Conservar el tributo sobre grandes fortunas.",
+        "locator": "PDF, p. 12"
+      },
+      "rentCap": {
+        "value": 2,
+        "evidence": "Intervenir y controlar precios de alquiler.",
+        "locator": "PDF, p. 2"
+      },
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Ampliar la vivienda pública hasta el 9 %.",
+        "locator": "PDF, p. 3"
+      },
+      "minimumWage": {
+        "value": 2,
+        "evidence": "Elevar el suelo salarial de forma progresiva.",
+        "locator": "PDF, p. 7"
+      },
+      "pensions": {
+        "value": 2,
+        "evidence": "Actualizar pensiones siguiendo la evolución de precios.",
+        "locator": "PDF, p. 6"
+      },
+      "publicHealth": {
+        "value": 2,
+        "evidence": "Financiar suficientemente los servicios públicos universales.",
+        "locator": "PDF, p. 6"
+      },
+      "transport": {
+        "value": 2,
+        "evidence": "Mantener guaguas gratuitas y bonificaciones insulares.",
+        "locator": "PDF, p. 9"
+      },
+      "renewables": {
+        "value": 2,
+        "evidence": "Impulsar generación renovable distribuida con empresa pública.",
+        "locator": "PDF, p. 14"
+      },
+      "decentralisation": {
+        "value": 1,
+        "evidence": "Cogestionar aeropuertos y desarrollar competencias estatutarias.",
+        "locator": "PDF, p. 15"
+      }
+    }
+  },
+  {
+    "id": "valenciaunida",
+    "name": "Valencia Unida",
+    "shortName": "VLC",
+    "color": "#3c7cb7",
+    "territory": "Valencia",
+    "programUrl": "https://valenciaunida.es/programa-electoral-2027/",
+    "sourceTitle": "Programa electoral 2027 · Comunitat Valenciana",
+    "documentKind": "other-election",
+    "status": "pending",
+    "note": "El programa enlazado corresponde a la convocatoria autonómica de 2027, no a las generales del 29N de 2026. Se ofrece para consulta y no puntúa.",
+    "positions": {}
+  }
+]

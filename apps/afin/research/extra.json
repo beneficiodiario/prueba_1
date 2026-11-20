@@ -1,0 +1,309 @@
+[
+  {
+    "id": "pacma",
+    "name": "Partido Animalista con el Medio Ambiente",
+    "shortName": "PACMA",
+    "color": "#237B42",
+    "territory": "Estatal",
+    "programUrl": "https://pacma.es/wp-content/uploads/2026/11/PE_GENERALES_29N26.pdf",
+    "sourceTitle": "Programa electoral · Generales 29N 2026",
+    "documentKind": "full",
+    "status": "reviewed",
+    "note": "Selección de propuestas verificadas; el cuestionario no cubre toda su agenda animalista. Los temas sin evidencia específica no se puntúan.",
+    "positions": {
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Construcción pública y adquisición para alquiler social.",
+        "locator": "§3.5, vivienda, páginas físicas 69–70"
+      },
+      "renewables": {
+        "value": 2,
+        "evidence": "Objetivos climáticos ambiciosos y transición renovable acelerada.",
+        "locator": "§2.1 y §2.1.1, página física 34"
+      },
+      "animals": {
+        "value": 2,
+        "evidence": "Retirar financiación pública a los espectáculos taurinos.",
+        "locator": "§1.1.7, página física 12"
+      },
+      "schoolChoice": {
+        "value": 1,
+        "evidence": "Conciertos condicionados al servicio público y no segregación.",
+        "locator": "§3.3.3, página física 61"
+      },
+      "rural": {
+        "value": 2,
+        "evidence": "Servicios esenciales próximos en el plan rural.",
+        "locator": "§3.6, página física 71"
+      }
+    }
+  },
+  {
+    "id": "fo",
+    "name": "Frente Obrero",
+    "shortName": "FO",
+    "color": "#A81C26",
+    "territory": "Estatal",
+    "programUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf",
+    "sourceTitle": "Un programa para recuperar España · versión difundida en 2026",
+    "documentKind": "full",
+    "status": "reviewed",
+    "note": "El propio documento se define como programa político y aclara que no es un programa electoral. Se conserva esa distinción; no se presenta como compromiso exclusivo del 29N.",
+    "positions": {
+      "wealthTax": {
+        "value": 2,
+        "evidence": "Centralizar patrimonio y eliminar bonificaciones a grandes fortunas.",
+        "locator": "§06 Fiscalidad, página física 19"
+      },
+      "schoolChoice": {
+        "value": -2,
+        "evidence": "Suprimir las ayudas a la enseñanza privada.",
+        "locator": "§07 Educación, página física 22"
+      },
+      "tuition": {
+        "value": 1,
+        "evidence": "Gratuidad superior dirigida a las rentas más bajas.",
+        "locator": "§07 Educación, página física 22"
+      },
+      "nuclear": {
+        "value": 2,
+        "evidence": "Frenar cierres y ampliar el parque nuclear.",
+        "locator": "§05 Soberanía energética, página física 16"
+      },
+      "renewables": {
+        "value": 1,
+        "evidence": "Renovables como complemento de la generación nuclear.",
+        "locator": "§05 Soberanía energética, página física 16"
+      },
+      "lgbt": {
+        "value": -2,
+        "evidence": "Plantea derogar la actual Ley Trans.",
+        "locator": "§10 Mujer e igualdad real, página física 32"
+      },
+      "publicHealth": {
+        "value": 2,
+        "evidence": "Incrementar gasto sanitario y terminar con externalizaciones.",
+        "locator": "§14 Sanidad, página física 42"
+      },
+      "migration": {
+        "value": -2,
+        "evidence": "Expulsión por irregularidad y prohibición de posterior regularización.",
+        "locator": "§17 Inmigración, página física 53"
+      },
+      "border": {
+        "value": 2,
+        "evidence": "Control fronterizo y ejecución de todas las expulsiones.",
+        "locator": "§17 Inmigración, páginas físicas 53–54"
+      },
+      "decentralisation": {
+        "value": -2,
+        "evidence": "Centralizar sanidad, educación y servicios de emergencia.",
+        "locator": "§18 Estructura territorial, página física 56"
+      },
+      "republic": {
+        "value": 2,
+        "evidence": "Defiende una república orientada al socialismo.",
+        "locator": "§18 Estructura territorial, página física 56"
+      },
+      "europe": {
+        "value": -2,
+        "evidence": "Propone abandonar expresamente la Unión Europea.",
+        "locator": "§03 Soberanía nacional, página física 11"
+      }
+    }
+  },
+  {
+    "id": "pcte",
+    "name": "Partido Comunista de los Trabajadores de España",
+    "shortName": "PCTE",
+    "color": "#A91A24",
+    "territory": "Estatal",
+    "programUrl": "https://oposicionobrera.pcte.es/es/",
+    "sourceTitle": "Programa de lucha · difusión 29N 2026",
+    "documentKind": "full",
+    "status": "reviewed",
+    "note": "El PCTE lo define como programa de lucha y expresamente no como programa electoral de aplicación institucional. Las posiciones proceden del texto oficial íntegro en castellano.",
+    "positions": {
+      "workWeek": {
+        "value": 2,
+        "evidence": "35 horas sin rebaja salarial, avanzando hacia 30.",
+        "locator": "§01, Jornada laboral"
+      },
+      "rentCap": {
+        "value": 2,
+        "evidence": "Bajar alquileres y establecer máximos vinculados a salarios.",
+        "locator": "§03, Bajada de alquileres"
+      },
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Parque público permanente de alquiler hasta el 10 %.",
+        "locator": "§03, Parque público"
+      },
+      "schoolChoice": {
+        "value": -2,
+        "evidence": "Integrar la concertada en una única red pública.",
+        "locator": "§04, Educación pública"
+      },
+      "tuition": {
+        "value": 2,
+        "evidence": "Educación pública gratuita en todas sus etapas.",
+        "locator": "§04, Educación pública y Gratuidad educativa"
+      },
+      "pensions": {
+        "value": 2,
+        "evidence": "Actualización automática con inflación real y recuperación de pérdidas.",
+        "locator": "§04, Pensiones"
+      },
+      "rural": {
+        "value": 2,
+        "evidence": "Equiparar derechos y servicios rurales con los urbanos.",
+        "locator": "§05, Medio rural"
+      },
+      "abortion": {
+        "value": 2,
+        "evidence": "Interrupciones del embarazo garantizadas en hospitales públicos.",
+        "locator": "§07, Derechos reproductivos"
+      },
+      "defence": {
+        "value": -2,
+        "evidence": "Reducir el gasto militar y cancelar programas de rearme.",
+        "locator": "§09, Rearme"
+      },
+      "europe": {
+        "value": -2,
+        "evidence": "Salir de la Unión Europea y de OTAN.",
+        "locator": "§09, OTAN y UE"
+      },
+      "security": {
+        "value": 2,
+        "evidence": "Derogar seguridad ciudadana y anular sanciones por protestas.",
+        "locator": "§10, Ley Mordaza"
+      },
+      "migration": {
+        "value": 2,
+        "evidence": "Mecanismo permanente para regularizar trabajadores sin papeles.",
+        "locator": "§10, CIE y regularización"
+      },
+      "border": {
+        "value": -1,
+        "evidence": "Cerrar CIE y terminar con devoluciones en caliente.",
+        "locator": "§10, CIE y regularización"
+      }
+    }
+  },
+  {
+    "id": "mj",
+    "name": "Por Un Mundo Más Justo",
+    "shortName": "M+J",
+    "color": "#5D3993",
+    "territory": "Estatal",
+    "programUrl": "https://www.porunmundomasjusto.es/wp-content/uploads/2026/11/Castellano.pdf",
+    "sourceTitle": "Programa electoral · Generales 29N 2026",
+    "documentKind": "full",
+    "status": "reviewed",
+    "note": "Se utiliza la versión de 95 páginas y 32 ejes, actualizada en noviembre de 2026. No se traslada su respeto a derechos generales a posturas específicas no expresadas.",
+    "positions": {
+      "wealthTax": {
+        "value": 2,
+        "evidence": "Fiscalidad patrimonial progresiva y gravamen para grandes fortunas.",
+        "locator": "Eje07, página física 27"
+      },
+      "rentCap": {
+        "value": 2,
+        "evidence": "Precios máximos por características y ubicación del inmueble.",
+        "locator": "Eje01, medida04, página física 8"
+      },
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Más parque social permanente bajo control público.",
+        "locator": "Eje01, medida01, página física 5"
+      },
+      "workWeek": {
+        "value": 2,
+        "evidence": "35 horas progresivas manteniendo íntegro el salario.",
+        "locator": "Eje08, medida02, página física 29"
+      },
+      "publicHealth": {
+        "value": 2,
+        "evidence": "Elevar inversión sanitaria y financiación de atención primaria.",
+        "locator": "Eje11, medidas01–02, páginas físicas 37–38"
+      },
+      "schoolChoice": {
+        "value": 2,
+        "evidence": "Coexistencia pública y concertada con equidad y gratuidad.",
+        "locator": "Eje14, medida01, página física 45"
+      },
+      "renewables": {
+        "value": 2,
+        "evidence": "Inversión renovable y autoconsumo con evaluación ambiental.",
+        "locator": "Eje19, medidas01–02, página física 58"
+      },
+      "rural": {
+        "value": 2,
+        "evidence": "Servicios esenciales garantizados en territorios rurales despoblados.",
+        "locator": "Eje32, página física 91"
+      },
+      "gender": {
+        "value": 2,
+        "evidence": "Aplicar la directiva específica sobre violencia contra mujeres.",
+        "locator": "Eje27, medida01, página física 78"
+      },
+      "defence": {
+        "value": -2,
+        "evidence": "Detener aumentos militares y reorientarlos a necesidades sociales.",
+        "locator": "Eje22, medida02, página física 65"
+      }
+    }
+  },
+  {
+    "id": "salf",
+    "name": "Se Acabó La Fiesta",
+    "shortName": "SALF",
+    "color": "#7D6334",
+    "territory": "Estatal",
+    "programUrl": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf",
+    "sourceTitle": "Contrato electoral · Generales 29N 2026",
+    "documentKind": "full",
+    "reviewScope": "official-summary-and-indexed-sections",
+    "status": "reviewed",
+    "note": "Lectura parcial: resumen oficial web y apartados indexados del contrato. El PDF completo excedió el límite del lector. Solo se incorporan las posturas accesibles; el resto permanece sin datos.",
+    "positions": {
+      "wealthTax": {
+        "value": -2,
+        "evidence": "Eliminar patrimonio y el impuesto sobre grandes fortunas.",
+        "locator": "Contrato, III Impuestos, medida06, página impresa13",
+        "sourceUrl": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf?v=073425b9522d"
+      },
+      "migration": {
+        "value": -1,
+        "evidence": "Prohibir regularizaciones masivas y revisar las concedidas.",
+        "locator": "Web oficial29N, Compromiso04 Inmigración",
+        "sourceUrl": "https://www.seacabolafiesta.com/"
+      },
+      "border": {
+        "value": 2,
+        "evidence": "Ejecutar expulsiones y condicionar acuerdos a readmisión.",
+        "locator": "Web oficial29N, Compromiso04 Inmigración",
+        "sourceUrl": "https://www.seacabolafiesta.com/"
+      },
+      "pensions": {
+        "value": 2,
+        "evidence": "Actualizar pensiones actuales según inflación y blindarlas constitucionalmente.",
+        "locator": "Web oficial29N, Compromiso05 Pensiones",
+        "sourceUrl": "https://www.seacabolafiesta.com/"
+      },
+      "schoolChoice": {
+        "value": 2,
+        "evidence": "Cheque escolar para centros públicos, concertados y privados.",
+        "locator": "Web oficial29N, Compromiso09 Educación",
+        "sourceUrl": "https://www.seacabolafiesta.com/"
+      },
+      "europe": {
+        "value": -1,
+        "evidence": "Renegociación europea y consulta de salida si fracasa.",
+        "locator": "Web oficial29N, Compromiso10 Geopolítica",
+        "sourceUrl": "https://www.seacabolafiesta.com/"
+      }
+    }
+  }
+]

@@ -1,0 +1,107 @@
+name: Android
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      signed_release:
+        description: Generar un AAB firmado usando los secretos de este repositorio
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/afin
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: apps/afin/package-lock.json
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: android-actions/setup-android@v4
+        with:
+          packages: platform-tools
+          cmdline-tools-version: '15859902'
+          log-accepted-android-sdk-licenses: false
+      - run: sdkmanager 'platforms;android-36' 'build-tools;36.0.0'
+      - run: npm ci
+      - run: npm run check && npm test && npm run android:sync
+      - run: chmod +x android/gradlew
+      - name: APK de prueba y análisis Android
+        working-directory: apps/afin/android
+        run: ./gradlew assembleDebug lintRelease --no-daemon
+      - uses: actions/upload-artifact@v4
+        with:
+          name: afin-debug
+          path: apps/afin/android/app/build/outputs/apk/debug/app-debug.apk
+      - name: Habilitar KVM en el runner de pruebas
+        if: github.event_name == 'pull_request'
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Recorrido real y capturas Android 16
+        if: github.event_name == 'pull_request'
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 36
+          target: google_apis
+          arch: x86_64
+          profile: pixel_2
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none
+          working-directory: apps/afin/android
+          script: |
+            adb shell svc wifi disable
+            adb shell svc data disable
+            status=0; ./gradlew :app:connectedDebugAndroidTest --no-daemon || status=$?; mkdir -p ../publishing/screenshots; for name in 01-inicio 02-pregunta 03-resultados-ejemplo 04-fuentes; do adb pull /sdcard/Download/afin-$name.png ../publishing/screenshots/$name.png || status=1; done; exit "$status"
+      - name: Guardar capturas y resultados instrumentados
+        if: always() && github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: afin-android-capturas
+          path: |
+            apps/afin/publishing/screenshots/
+            apps/afin/android/app/build/reports/androidTests/
+            apps/afin/android/app/build/outputs/androidTest-results/
+      - name: Preparar firma privada
+        if: github.event_name == 'workflow_dispatch' && inputs.signed_release
+        env:
+          KEYSTORE_BASE64: ${{ secrets.AFIN_KEYSTORE_BASE64 }}
+          STORE_PASSWORD: ${{ secrets.AFIN_STORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.AFIN_KEY_ALIAS }}
+        run: |
+          test -n "$KEYSTORE_BASE64" && test -n "$STORE_PASSWORD" && test -n "$KEY_ALIAS"
+          printf '%s' "$KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/afin-upload.p12"
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const p=process.env;
+          const escape=s=>s.replaceAll('\\','\\\\').replaceAll('\n','\\n').replaceAll('\r','\\r').replaceAll('=','\\=').replaceAll(':','\\:');
+          fs.writeFileSync(p.RUNNER_TEMP+'/afin-signing.properties',`storeFile=${escape(p.RUNNER_TEMP+'/afin-upload.p12')}\nstorePassword=${escape(p.STORE_PASSWORD)}\nkeyAlias=${escape(p.KEY_ALIAS)}\nkeyPassword=${escape(p.STORE_PASSWORD)}\n`,{mode:0o600});
+          JS
+      - name: AAB firmado
+        if: github.event_name == 'workflow_dispatch' && inputs.signed_release
+        working-directory: apps/afin/android
+        env:
+          AFIN_SIGNING_PROPERTIES: ${{ runner.temp }}/afin-signing.properties
+        run: ./gradlew bundleRelease --no-daemon
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'workflow_dispatch' && inputs.signed_release
+        with:
+          name: afin-release
+          path: |
+            apps/afin/android/app/build/outputs/bundle/release/app-release.aab
+            apps/afin/android/app/build/outputs/mapping/release/mapping.txt
+      - name: Limpiar firma temporal
+        if: always()
+        run: rm -f "$RUNNER_TEMP/afin-upload.p12" "$RUNNER_TEMP/afin-signing.properties"

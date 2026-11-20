@@ -1,0 +1,22 @@
+{
+  "appId":"com.beneficiodiario.afin",
+  "appName":"Afín",
+  "versionName":"1.0.0",
+  "versionCode":1,
+  "publisher":"Beneficio Diario",
+  "supportEmail":"info@beneficiodiario.com",
+  "website":"https://beneficiodiario.com/politica",
+  "privacyUrl":"https://beneficiodiario.com/politica/privacidad",
+  "language":"es-ES",
+  "category":"ENTERTAINMENT",
+  "pricing":"free",
+  "ads":false,
+  "inAppPurchases":false,
+  "targetAudience":["18+"],
+  "accountRequired":false,
+  "dataCollected":false,
+  "dataSharedByDeveloper":false,
+  "exportIsUserInitiated":true,
+  "targetSdk":36,
+  "minSdk":24
+}

@@ -1,0 +1,354 @@
+[
+  {
+    "id": "adelante",
+    "name": "Adelante Andalucía",
+    "shortName": "Adelante Andalucía",
+    "color": "#178355",
+    "territory": "Andalucía",
+    "programUrl": "https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf",
+    "sourceTitle": "Programa electoral completo · Generales 29N 2026",
+    "status": "reviewed",
+    "documentKind": "full",
+    "note": "Programa oficial de 134 páginas. Solo se codifican propuestas expresamente verificadas; no se interpreta el silencio como neutralidad.",
+    "positions": {
+      "wealthTax": {
+        "value": 2,
+        "evidence": "Nuevo tributo sobre fortunas y grandes propiedades.",
+        "locator": "PDF p. 58 · propuesta 233"
+      },
+      "rentCap": {
+        "value": 2,
+        "evidence": "Alquiler limitado según ingresos salariales.",
+        "locator": "PDF p. 4 · medida 1"
+      },
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Parque público de alquiler de mayor tamaño.",
+        "locator": "PDF p. 4 · medida 1"
+      },
+      "workWeek": {
+        "value": 2,
+        "evidence": "Semana de 32 horas manteniendo remuneración.",
+        "locator": "PDF p. 63 · propuesta 268"
+      },
+      "minimumWage": {
+        "value": 2,
+        "evidence": "Actualización obligatoria del mínimo según inflación.",
+        "locator": "PDF p. 63 · propuesta 269"
+      },
+      "pensions": {
+        "value": 2,
+        "evidence": "Actualización legal según inflación real.",
+        "locator": "PDF p. 55 · propuesta 216"
+      },
+      "publicHealth": {
+        "value": 1,
+        "evidence": "Mayor financiación para cubrir necesidades sanitarias andaluzas.",
+        "locator": "PDF p. 41 · propuesta 65"
+      },
+      "schoolChoice": {
+        "value": -2,
+        "evidence": "Una sola red pública educativa progresivamente.",
+        "locator": "PDF p. 42 · sección 1.2 Educación"
+      },
+      "tuition": {
+        "value": 2,
+        "evidence": "Eliminar progresivamente el coste de matrícula.",
+        "locator": "PDF p. 47 · propuesta 132"
+      },
+      "transport": {
+        "value": 2,
+        "evidence": "Abonos asequibles y gratuidad para colectivos.",
+        "locator": "PDF p. 80 · propuestas 390–391"
+      },
+      "gender": {
+        "value": 2,
+        "evidence": "Ampliar el marco integral específico vigente.",
+        "locator": "PDF p. 98 · propuesta 509"
+      },
+      "abortion": {
+        "value": 2,
+        "evidence": "Prestación pública garantizada en todas las provincias.",
+        "locator": "PDF p. 40 · propuesta 47"
+      },
+      "euthanasia": {
+        "value": 2,
+        "evidence": "Agilizar legalmente el procedimiento de ayuda médica.",
+        "locator": "PDF p. 38 · propuesta 33"
+      },
+      "decentralisation": {
+        "value": 2,
+        "evidence": "Traspasos ferroviarios y más competencias autonómicas.",
+        "locator": "PDF p. 73 · propuestas 347–352"
+      },
+      "migration": {
+        "value": 2,
+        "evidence": "Regularización extraordinaria siguiendo la iniciativa ciudadana.",
+        "locator": "PDF p. 106 · propuesta 548"
+      },
+      "animals": {
+        "value": 2,
+        "evidence": "Suprimir toda financiación pública de festejos taurinos.",
+        "locator": "PDF p. 120 · propuesta 632"
+      },
+      "security": {
+        "value": 2,
+        "evidence": "Derogar normas que criminalizan la protesta.",
+        "locator": "PDF p. 29 · medida 26"
+      }
+    }
+  },
+  {
+    "id": "agenda",
+    "name": "Agenda Valenciana",
+    "shortName": "Agenda Valenciana",
+    "color": "#df8b22",
+    "territory": "Valencia",
+    "programUrl": "https://www.agendavalenciana.org/index.html",
+    "sourceTitle": "Hoja de Ruta para Valencia · 29N",
+    "status": "reviewed",
+    "documentKind": "advance",
+    "note": "Leídos los seis ejes publicados en la web oficial del 29N. Solo una correspondencia suficientemente concreta con este cuestionario; no alcanza el mínimo para un porcentaje.",
+    "positions": {
+      "decentralisation": {
+        "value": 2,
+        "evidence": "Recupera competencias civiles y profundiza el autogobierno.",
+        "locator": "Programa · eje 04, Autogobierno, Derecho Civil e Identidad"
+      }
+    }
+  },
+  {
+    "id": "alhora",
+    "name": "Alhora",
+    "shortName": "Alhora",
+    "color": "#e27d36",
+    "territory": "Cataluña",
+    "programUrl": null,
+    "sourceTitle": "Programa específico 29N pendiente de verificar",
+    "status": "pending",
+    "documentKind": "unavailable",
+    "note": "La web oficial acredita la candidatura del 29N, pero no se verificó un programa específico de esta convocatoria. No se trasladan automáticamente propuestas generales o anteriores.",
+    "positions": {}
+  },
+  {
+    "id": "alternativamalaguena",
+    "name": "Alternativa Malagueña",
+    "shortName": "Alternativa Malagueña",
+    "color": "#537d96",
+    "territory": "Málaga",
+    "programUrl": null,
+    "sourceTitle": "Programa específico 29N pendiente de verificar",
+    "status": "pending",
+    "documentKind": "unavailable",
+    "note": "Consultada la web oficial alternativamalaguena.com; no se localizó un programa electoral escrito verificable para el 29N. El ideario no se convierte en respuestas del test.",
+    "positions": {}
+  },
+  {
+    "id": "arames",
+    "name": "Aramés–Front Ampli",
+    "shortName": "Aramés",
+    "color": "#c16087",
+    "territory": "Illes Balears",
+    "programUrl": null,
+    "sourceTitle": "Programa específico 29N pendiente de verificar",
+    "status": "pending",
+    "documentKind": "unavailable",
+    "note": "No se localizó un documento específico verificable. La participación en una coalición no basta para heredar automáticamente todas las posturas de otra candidatura.",
+    "positions": {}
+  },
+  {
+    "id": "cha",
+    "name": "Chunta Aragonesista–Frente Amplio Aragón",
+    "shortName": "CHA–FA",
+    "color": "#cf4555",
+    "territory": "Huesca y Zaragoza",
+    "programUrl": null,
+    "sourceTitle": "Programa específico 29N pendiente de verificar",
+    "status": "pending",
+    "documentKind": "unavailable",
+    "note": "Se encontraron referencias a propuestas y anexos, pero no se pudo verificar su documento actual en una fuente primaria. No se reutilizan programas autonómicos anteriores.",
+    "positions": {}
+  },
+  {
+    "id": "comuns",
+    "name": "Comuns–Front Ampli",
+    "shortName": "Comuns",
+    "color": "#9d3970",
+    "territory": "Cataluña",
+    "programUrl": "https://comuns.cat/wp-content/uploads/2026/11/Comuns-FA-Programa29N-1.pdf",
+    "sourceTitle": "Un com una casa · Programa 29N 2026",
+    "status": "reviewed",
+    "documentKind": "full",
+    "note": "Programa oficial en catalán de 135 páginas. Las evidencias se parafrasean en castellano y la numeración indica la página del PDF, incluida la portada.",
+    "positions": {
+      "wealthTax": {
+        "value": 2,
+        "evidence": "Hacer permanente la tributación de grandes fortunas.",
+        "locator": "PDF p. 25 · fiscalidad"
+      },
+      "workWeek": {
+        "value": 2,
+        "evidence": "Jornada máxima reducida sin pérdida salarial.",
+        "locator": "PDF p. 28 · primeros cien días"
+      },
+      "minimumWage": {
+        "value": 1,
+        "evidence": "Mínimo ligado al sesenta por ciento salarial.",
+        "locator": "PDF p. 34 · Salaris i negociació col·lectiva"
+      },
+      "pensions": {
+        "value": 2,
+        "evidence": "Blindar su actualización según inflación real.",
+        "locator": "PDF p. 72 · Pensions"
+      },
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Adquirir viviendas y ampliar alquiler público asequible.",
+        "locator": "PDF pp. 8–9 · sistema públic d’habitatge"
+      },
+      "publicHealth": {
+        "value": 2,
+        "evidence": "Incrementar gasto sanitario hasta ocho puntos del PIB.",
+        "locator": "PDF p. 74 · Salut"
+      },
+      "nuclear": {
+        "value": -2,
+        "evidence": "Calendario de cierre sin nuevas extensiones.",
+        "locator": "PDF p. 47 · Tancament nuclear"
+      },
+      "renewables": {
+        "value": 1,
+        "evidence": "Acelerar despliegue con planificación y participación territorial.",
+        "locator": "PDF pp. 47–48 · aliança renovables-territori"
+      },
+      "transport": {
+        "value": 2,
+        "evidence": "Financiar descuentos y ampliar progresivamente la gratuidad.",
+        "locator": "PDF p. 54 · Mobilitat urbana"
+      },
+      "abortion": {
+        "value": 2,
+        "evidence": "Acceso gratuito garantizado en la red pública.",
+        "locator": "PDF p. 95 · drets sexuals"
+      },
+      "euthanasia": {
+        "value": 2,
+        "evidence": "Proteger la ayuda médica legal para morir.",
+        "locator": "PDF p. 77 · Salut"
+      },
+      "migration": {
+        "value": 1,
+        "evidence": "Ampliar vías estables y accesibles de regularización.",
+        "locator": "PDF p. 105 · Estrangeria i regularització"
+      },
+      "republic": {
+        "value": 2,
+        "evidence": "Modelo estatal republicano, federal y plurinacional.",
+        "locator": "PDF p. 110 · model territorial"
+      },
+      "language": {
+        "value": 2,
+        "evidence": "Extender cooficialidad a las instituciones estatales.",
+        "locator": "PDF p. 90 · pluralitat lingüística"
+      },
+      "security": {
+        "value": 2,
+        "evidence": "Eliminar preceptos represivos de seguridad ciudadana.",
+        "locator": "PDF p. 118 · policia democràtica"
+      }
+    }
+  },
+  {
+    "id": "convergents",
+    "name": "Convergents",
+    "shortName": "Convergents",
+    "color": "#486a9c",
+    "territory": "Tarragona",
+    "programUrl": "https://www.convergents.org/_files/ugd/d24b0b_2c84e86795954481a948f644038a7cb3.pdf",
+    "sourceTitle": "Programa Electoral · Eleccions Generals 2026",
+    "status": "reviewed",
+    "documentKind": "full",
+    "note": "Documento oficial de 48 páginas en catalán. La postura nuclear condiciona la continuidad al desarrollo de alternativas. No se equipara el derecho a decidir genérico a un referéndum concreto.",
+    "positions": {
+      "wealthTax": {
+        "value": -2,
+        "evidence": "Eliminar el impuesto sobre patrimonio.",
+        "locator": "PDF p. 2 · Presentació"
+      },
+      "rentCap": {
+        "value": -2,
+        "evidence": "Derogar controles de precios de alquiler.",
+        "locator": "PDF p. 13 · habitatge"
+      },
+      "publicHousing": {
+        "value": 1,
+        "evidence": "Ceder inmuebles estatales para vivienda social.",
+        "locator": "PDF p. 13 · habitatge"
+      },
+      "nuclear": {
+        "value": 1,
+        "evidence": "Continuidad condicionada mientras se desarrollan alternativas renovables.",
+        "locator": "PDF p. 37 · innovació i coneixement"
+      },
+      "renewables": {
+        "value": 1,
+        "evidence": "Impulso renovable con mayor capacidad de almacenamiento.",
+        "locator": "PDF p. 40 · sistema elèctric"
+      },
+      "decentralisation": {
+        "value": 2,
+        "evidence": "Delegación integral de competencias sanitarias y educativas.",
+        "locator": "PDF p. 7 · sobirania nacional"
+      },
+      "language": {
+        "value": 2,
+        "evidence": "Catalán en administraciones estatales y europeas.",
+        "locator": "PDF p. 6 · defensa del català"
+      },
+      "europe": {
+        "value": 2,
+        "evidence": "Construir una Unión federal y más integrada.",
+        "locator": "PDF p. 3 · Presentació"
+      }
+    }
+  },
+  {
+    "id": "d21",
+    "name": "Democracia para el Siglo 21",
+    "shortName": "D21",
+    "color": "#b69b22",
+    "territory": "Madrid y Barcelona",
+    "programUrl": "https://mi.democracia21.es/programa",
+    "sourceTitle": "Programa electoral 29N · Democracia21",
+    "status": "pending",
+    "documentKind": "full",
+    "note": "La web oficial enlaza el programa actual por áreas. Se comprobó su existencia, pero no se pudo completar la lectura verificable de sus medidas; no se puntúa por aproximaciones.",
+    "positions": {}
+  },
+  {
+    "id": "eguzkilore",
+    "name": "Eguzkilore",
+    "shortName": "Eguzkilore",
+    "color": "#687d41",
+    "territory": "Navarra",
+    "programUrl": null,
+    "sourceTitle": "Programa específico 29N pendiente de verificar",
+    "status": "pending",
+    "documentKind": "unavailable",
+    "note": "No se verificó un programa específico de esta convocatoria en una fuente primaria. Las declaraciones de campaña y el programa general no se usan como programa actual.",
+    "positions": {}
+  },
+  {
+    "id": "eb",
+    "name": "Escaños en Blanco para dejar Escaños Vacíos",
+    "shortName": "Escaños en Blanco",
+    "color": "#69706b",
+    "territory": "Varias circunscripciones",
+    "programUrl": "https://escanos.org/conocenos/programa-electoral-de-escanos-en-blanco/",
+    "sourceTitle": "Programa electoral de artículo único · referencia general",
+    "status": "pending",
+    "documentKind": "reference",
+    "note": "Programa general de artículo único sobre dejar vacíos los escaños obtenidos. No se acreditó una edición específica del 29N ni corresponde asignarle opiniones sobre otras políticas.",
+    "positions": {}
+  }
+]
