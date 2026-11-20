@@ -40,6 +40,38 @@ jobs:
         with:
           name: afin-debug
           path: android/app/build/outputs/apk/debug/app-debug.apk
+      - name: Habilitar KVM en el runner de pruebas
+        if: github.event_name == 'pull_request'
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Recorrido real y capturas Android 16
+        if: github.event_name == 'pull_request'
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 36
+          target: google_apis
+          arch: x86_64
+          profile: pixel_2
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none
+          working-directory: ./android
+          script: |
+            adb shell svc wifi disable
+            adb shell svc data disable
+            ./gradlew connectedDebugAndroidTest --no-daemon
+            mkdir -p ../publishing/screenshots
+            for name in 01-inicio 02-pregunta 03-resultados-ejemplo 04-fuentes; do adb pull /sdcard/Download/afin-$name.png ../publishing/screenshots/$name.png; done
+      - name: Guardar capturas y resultados instrumentados
+        if: always() && github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: afin-android-capturas
+          path: |
+            ./publishing/screenshots/
+            ./android/app/build/reports/androidTests/
+            ./android/app/build/outputs/androidTest-results/
       - name: Preparar firma privada
         if: github.event_name == 'workflow_dispatch' && inputs.signed_release
         env:
