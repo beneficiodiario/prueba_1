@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import android.content.Context;
 import android.os.ParcelFileDescriptor;
 import android.os.SystemClock;
-import android.view.KeyEvent;
+import android.view.accessibility.AccessibilityNodeInfo;
 import androidx.test.core.app.ActivityScenario;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
@@ -43,7 +43,7 @@ public class OfflineJourneyTest {
 
     private void screenshot(String name) throws Exception {
         InstrumentationRegistry.getInstrumentation().waitForIdleSync();
-        SystemClock.sleep(500);
+        SystemClock.sleep(1500);
         // The shell capture runs only inside this isolated test emulator. No personal data is used.
         ParcelFileDescriptor command = InstrumentationRegistry.getInstrumentation().getUiAutomation()
             .executeShellCommand("screencap -p /sdcard/Download/afin-" + name + ".png");
@@ -53,11 +53,34 @@ public class OfflineJourneyTest {
         }
     }
 
+    private boolean appIsForeground() {
+        AccessibilityNodeInfo root = InstrumentationRegistry.getInstrumentation().getUiAutomation().getRootInActiveWindow();
+        return root != null && "com.beneficiodiario.afin".equals(String.valueOf(root.getPackageName()));
+    }
+
+    private void closeShareSheet() throws Exception {
+        long deadline = SystemClock.uptimeMillis() + 15000;
+        while (appIsForeground() && SystemClock.uptimeMillis() < deadline) SystemClock.sleep(200);
+        assertFalse("The native share sheet must open", appIsForeground());
+        for (int attempt = 0; attempt < 3 && !appIsForeground(); attempt++) {
+            SystemClock.sleep(1000);
+            ParcelFileDescriptor command = InstrumentationRegistry.getInstrumentation().getUiAutomation().executeShellCommand("input keyevent 4");
+            try (InputStream stream = new ParcelFileDescriptor.AutoCloseInputStream(command)) {
+                byte[] buffer = new byte[128];
+                while (stream.read(buffer) != -1) { }
+            }
+            SystemClock.sleep(1000);
+        }
+        assertTrue("Share sheet did not close", appIsForeground());
+    }
+
     @Test
     public void packagedQuestionnaireBackExportPrivacyAndScreenshots() throws Exception {
         Context context = InstrumentationRegistry.getInstrumentation().getTargetContext();
         try (ActivityScenario<MainActivity> scenario = ActivityScenario.launch(MainActivity.class)) {
-            waitFor(scenario, "document.querySelector('h1') && document.querySelector('a[href=\"/test\"]')");
+            scenario.onActivity(activity -> assertNull("No native action bar may obscure the web header", activity.getSupportActionBar()));
+            waitFor(scenario, "document.readyState === 'complete' && document.querySelector('.hero-copy h1') && document.querySelector('.hero-art img').complete");
+            waitFor(scenario, "document.querySelector('.hero-copy h1').getBoundingClientRect().height > 0 && document.querySelector('.hero-copy h1').getBoundingClientRect().top < innerHeight");
             assertEquals("true", evaluate(scenario, "document.documentElement.classList.contains('native-app')"));
             screenshot("01-inicio");
             evaluate(scenario, "document.querySelector('a[href=\"/test\"]').click()");
@@ -101,11 +124,10 @@ public class OfflineJourneyTest {
                 while ((line = reader.readLine()) != null) text.append(line);
             }
             assertEquals(34, new JSONObject(text.toString()).getJSONObject("answers").length());
-            SystemClock.sleep(1000);
-            InstrumentationRegistry.getInstrumentation().getUiAutomation().injectInputEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_BACK), true);
-            InstrumentationRegistry.getInstrumentation().getUiAutomation().injectInputEvent(new KeyEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_BACK), true);
+            closeShareSheet();
             evaluate(scenario, "document.querySelector('a[href=\"/programas\"]').click()");
             waitFor(scenario, "location.pathname === '/programas' && document.querySelector('.program-card')");
+            evaluate(scenario, "window.scrollTo(0, document.querySelector('.program-filters').getBoundingClientRect().top + window.scrollY - document.querySelector('.site-header').getBoundingClientRect().height - 24)");
             screenshot("04-fuentes");
             evaluate(scenario, "document.querySelector('a[href=\"/privacidad\"]').click()");
             waitFor(scenario, "location.pathname === '/privacidad' && document.body.textContent.includes('caché privada')");

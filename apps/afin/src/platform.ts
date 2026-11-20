@@ -94,5 +94,5 @@ export async function exitNativeApp() {
 export async function configureNative() {
   if (!isNative) return;
   document.documentElement.classList.add("native-app");
-  await SystemBars.setStyle({ style: SystemBarsStyle.Dark });
+  await SystemBars.setStyle({ style: SystemBarsStyle.Light });
 }

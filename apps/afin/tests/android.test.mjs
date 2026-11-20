@@ -31,7 +31,7 @@ const calls = [];
 const listeners = new Set();
 const fake = (globalThis.__afinNativeMock = {
   Capacitor: { isNativePlatform: () => true },
-  SystemBarsStyle: { Dark: "DARK" },
+  SystemBarsStyle: { Light: "LIGHT" },
   SystemBars: { setStyle: async (options) => calls.push(["bars", options]) },
   App: {
     addListener: async (name, callback) => {

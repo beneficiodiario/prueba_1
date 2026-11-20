@@ -6,7 +6,7 @@ const config: CapacitorConfig = {
   backgroundColor: "#fcfdf9",
   android: { allowMixedContent: false, backgroundColor: "#fcfdf9" },
   plugins: {
-    SystemBars: { insetsHandling: "css", style: "DARK" },
+    SystemBars: { insetsHandling: "css", style: "LIGHT" },
   },
 };
 export default config;
