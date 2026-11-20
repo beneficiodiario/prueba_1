@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.vercel/
+*.log
+.env*
+!.env.example
+
+# Android private/local data
+android/local.properties
+android/.gradle/
+android/**/build/
+*.jks
+*.keystore
+*.p12
+*signing*.properties
+!signing.example.properties

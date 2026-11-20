@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-20",
+  "versionName": "1.0.0",
+  "versionCode": 1,
+  "appId": "com.beneficiodiario.afin",
+  "minSdk": 24,
+  "targetSdk": 36,
+  "typescript": "PASS",
+  "tests": {
+    "passed": 17,
+    "failed": 0,
+    "nativeBridge": "mocked"
+  },
+  "gradleBuild": "PASS",
+  "androidLint": "0 errors, 7 warnings",
+  "bundletool": {
+    "version": "1.18.3",
+    "validateExit": 0
+  },
+  "apkVerifyExit": 0,
+  "aabVerifyExit": 0,
+  "publicCertificateSha256": "e14adc881029391ac5b5fbb1d37e92d6fbbd973603f882745e6f1f4d9025003c",
+  "deviceTesting": "PENDING: emulator window approval expired",
+  "screenshots": "PENDING: real device captures required",
+  "playUpload": "NOT_PERFORMED",
+  "privacyDeployment": "PENDING",
+  "githubWorkflow": "PREPARED_NOT_EXECUTED"
+}

@@ -1,0 +1,60 @@
+{
+  "election": "Congreso de los Diputados · 29 de noviembre de 2026",
+  "reviewedAt": "2026-11-20",
+  "scale": "-2 oposición explícita; -1 oposición parcial; 0 posición intermedia explícita; 1 apoyo parcial; 2 apoyo explícito. Ausencia = no incluir. Nunca inferir de ideología ni de silencio.",
+  "questions": {
+    "wealthTax": "Mantener impuestos específicos sobre los grandes patrimonios.",
+    "rentCap": "Limitar por ley el precio del alquiler en zonas tensionadas.",
+    "publicHousing": "Ampliar el parque de vivienda pública de alquiler.",
+    "workWeek": "Reducir la jornada laboral legal sin reducir el salario.",
+    "minimumWage": "Seguir elevando el salario mínimo interprofesional.",
+    "publicHealth": "Aumentar la financiación de la sanidad pública.",
+    "schoolChoice": "Mantener la financiación pública de los centros concertados.",
+    "tuition": "Avanzar hacia la gratuidad de la universidad pública.",
+    "nuclear": "Mantener en funcionamiento las centrales nucleares más allá del calendario de cierre.",
+    "renewables": "Acelerar la implantación de energías renovables.",
+    "transport": "Mantener ayudas públicas para abaratar el transporte colectivo.",
+    "animals": "Eliminar las subvenciones públicas a la tauromaquia.",
+    "gender": "Mantener una legislación específica contra la violencia de género.",
+    "lgbt": "Mantener la autodeterminación de género en el cambio registral de sexo.",
+    "abortion": "Garantizar el acceso al aborto en la sanidad pública.",
+    "migration": "Regularizar a las personas migrantes que ya viven y trabajan en España.",
+    "border": "Endurecer los controles fronterizos y las expulsiones por estancia irregular.",
+    "decentralisation": "Transferir más competencias del Estado a las comunidades autónomas.",
+    "referendum": "Permitir un referéndum acordado sobre la independencia de una comunidad autónoma.",
+    "language": "Reforzar la presencia de las lenguas cooficiales en las instituciones estatales.",
+    "republic": "Sustituir la monarquía por una república.",
+    "rural": "Garantizar servicios públicos básicos en las zonas rurales, aunque tengan pocos habitantes.",
+    "water": "Impulsar los trasvases entre cuencas como solución a la falta de agua.",
+    "pensions": "Revalorizar las pensiones con el IPC.",
+    "euthanasia": "Mantener el derecho a la eutanasia en los supuestos previstos por la ley.",
+    "security": "Derogar o reformar en profundidad la ley de seguridad ciudadana conocida como ley mordaza.",
+    "defence": "Aumentar el gasto militar hasta el 2 % del PIB.",
+    "europe": "Avanzar hacia una mayor integración política de la Unión Europea.",
+    "incomeTax": "Bajar o deflactar el IRPF de las rentas bajas y medias.",
+    "firstHomeTax": "Reducir los impuestos por la compra de la primera vivienda habitual.",
+    "squatting": "Agilizar el desalojo de viviendas ocupadas sin título legal.",
+    "nationalPriority": "Dar prioridad a la nacionalidad española en el acceso a ayudas públicas.",
+    "bureaucracy": "Simplificar los trámites y licencias para crear o ampliar una empresa.",
+    "repeatCrime": "Endurecer las penas para los delitos cometidos de forma reiterada."
+  },
+  "partyFormat": {
+    "id": "slug",
+    "name": "Nombre",
+    "shortName": "Siglas",
+    "color": "#abcdef",
+    "territory": "Estatal o territorio",
+    "programUrl": "URL oficial verificada, no adivinar",
+    "sourceTitle": "Programa 23J 2023",
+    "status": "reviewed o pending",
+    "note": "Limitación relevante, en su caso",
+    "positions": {
+      "questionId": {
+        "value": 2,
+        "evidence": "Paráfrasis muy breve, máximo 9 palabras",
+        "locator": "Página PDF exacta si comprobada; si no, epígrafe exacto comprobado",
+        "sourceUrl": "opcional, si distinto del programa"
+      }
+    }
+  }
+}

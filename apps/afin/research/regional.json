@@ -1,0 +1,563 @@
+[
+  {
+    "id": "erc",
+    "name": "Esquerra Republicana de Catalunya",
+    "shortName": "ERC",
+    "color": "#edb126",
+    "territory": "Cataluña",
+    "programUrl": "https://www.larepublica.cat/wp-content/uploads/2026/11/Programa-ERC-29N.pdf",
+    "sourceTitle": "Pel país. Per la gent. Pel futur. · Congreso 2026",
+    "status": "reviewed",
+    "documentKind": "full",
+    "note": "Documento original de 48 páginas, consultado en copia publicada por La República: no se utiliza su comentario periodístico. El enlace de origen https://www.esquerrarepublicana.cat/documents/e2026-programa.pdf devolvió 403. Revisión temática parcial; no se atribuye una postura donde no se ha comprobado. Páginas físicas.",
+    "positions": {
+      "referendum": {
+        "value": 2,
+        "evidence": "Negocia una consulta de autodeterminación con acompañamiento internacional.",
+        "locator": "PDF p. 8 · medida 1"
+      },
+      "security": {
+        "value": 2,
+        "evidence": "Deroga la ley y revisa restricciones fundamentales.",
+        "locator": "PDF p. 8 · medida 2"
+      },
+      "language": {
+        "value": 2,
+        "evidence": "Garantiza lenguas cooficiales ante todas las instituciones estatales.",
+        "locator": "PDF p. 9 · medida 10"
+      },
+      "decentralisation": {
+        "value": 2,
+        "evidence": "Reclama transferencias tributarias, migratorias y de seguridad.",
+        "locator": "PDF p. 14 · medidas 34–36"
+      },
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Aumenta recursos para viviendas públicas en alquiler.",
+        "locator": "PDF p. 19 · medida 56"
+      },
+      "firstHomeTax": {
+        "value": 1,
+        "evidence": "Reduce tributos al destinar vivienda a residencia habitual.",
+        "locator": "PDF p. 19 · medida 59"
+      },
+      "incomeTax": {
+        "value": 2,
+        "evidence": "Reduce el IRPF de la clase trabajadora.",
+        "locator": "PDF p. 20 · apartado B"
+      },
+      "minimumWage": {
+        "value": 2,
+        "evidence": "Eleva el mínimo estatal al sesenta por ciento.",
+        "locator": "PDF p. 20 · medida 66"
+      },
+      "wealthTax": {
+        "value": 2,
+        "evidence": "Hace permanente el impuesto sobre grandes fortunas.",
+        "locator": "PDF p. 22 · medida 74"
+      },
+      "gender": {
+        "value": 2,
+        "evidence": "Amplía expresamente la legislación contra violencia de género.",
+        "locator": "PDF p. 24 · medida 88"
+      },
+      "pensions": {
+        "value": 2,
+        "evidence": "Actualiza pensiones mediante el IPC territorial.",
+        "locator": "PDF p. 26 · medida 107"
+      },
+      "renewables": {
+        "value": 2,
+        "evidence": "Amplía ayudas al autoconsumo y las comunidades energéticas.",
+        "locator": "PDF p. 30 · medidas 138–140"
+      },
+      "publicHealth": {
+        "value": 2,
+        "evidence": "Incrementa estructuralmente la financiación estatal de sanidad.",
+        "locator": "PDF p. 41 · medida 234"
+      }
+    }
+  },
+  {
+    "id": "junts",
+    "name": "Junts per Catalunya",
+    "shortName": "Junts",
+    "color": "#20a9a3",
+    "territory": "Cataluña",
+    "programUrl": "https://www.tualcentre.cat/app/uploads/2026/11/PROGRAMA-ELECTORAL_JUNTS_29N.pdf",
+    "sourceTitle": "Junts per Catalunya · Programa electoral 29N 2026",
+    "status": "reviewed",
+    "documentKind": "full",
+    "note": "Programa original de 90 páginas, en catalán, alojado en el sitio de campaña. Codificación parcial y paráfrasis en castellano. Los números de página cuentan la portada como página 1.",
+    "positions": {
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Suelo estatal para alquiler asequible.",
+        "locator": "PDF pp. 17 y 18"
+      },
+      "minimumWage": {
+        "value": 1,
+        "evidence": "Mínimo catalán progresivamente más alto.",
+        "locator": "PDF p. 70"
+      },
+      "publicHealth": {
+        "value": 2,
+        "evidence": "Eleva financiación sanitaria pública plurianual.",
+        "locator": "PDF p. 51"
+      },
+      "schoolChoice": {
+        "value": 2,
+        "evidence": "Actualiza conciertos conforme costes reales.",
+        "locator": "PDF p. 54"
+      },
+      "nuclear": {
+        "value": 1,
+        "evidence": "Prórroga condicionada a suministro insuficiente.",
+        "locator": "PDF p. 78"
+      },
+      "renewables": {
+        "value": 2,
+        "evidence": "Acelera proyectos solares y eólicos.",
+        "locator": "PDF p. 81"
+      },
+      "transport": {
+        "value": 1,
+        "evidence": "Transporte gratuito para personas mayores.",
+        "locator": "PDF p. 57"
+      },
+      "gender": {
+        "value": 2,
+        "evidence": "Refuerza legislación especializada contra violencia.",
+        "locator": "PDF p. 33"
+      },
+      "decentralisation": {
+        "value": 2,
+        "evidence": "Amplía competencias y espacios de soberanía.",
+        "locator": "PDF p. 5"
+      },
+      "referendum": {
+        "value": 1,
+        "evidence": "Admite referéndum acordado sobre independencia.",
+        "locator": "PDF p. 12"
+      },
+      "language": {
+        "value": 2,
+        "evidence": "Uso del catalán ante jurisdicción estatal.",
+        "locator": "PDF p. 15"
+      },
+      "rural": {
+        "value": 2,
+        "evidence": "Garantiza escuelas y atención sanitaria rurales.",
+        "locator": "PDF p. 86"
+      },
+      "pensions": {
+        "value": 2,
+        "evidence": "Actualización anual con IPC catalán.",
+        "locator": "PDF p. 57"
+      },
+      "security": {
+        "value": 2,
+        "evidence": "Deroga la ley de seguridad.",
+        "locator": "PDF p. 14"
+      },
+      "europe": {
+        "value": 2,
+        "evidence": "Defiende una UE más integrada.",
+        "locator": "PDF p. 26"
+      }
+    }
+  },
+  {
+    "id": "bildu",
+    "name": "Euskal Herria Bildu",
+    "shortName": "EH Bildu",
+    "color": "#a7bd39",
+    "territory": "País Vasco y Navarra",
+    "programUrl": "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf",
+    "sourceTitle": "Posible egin · Programa de las generales 29N 2026",
+    "status": "reviewed",
+    "documentKind": "full",
+    "note": "Documento oficial de 30 páginas. Codificación parcial del contenido: los temas omitidos no reciben postura. Los números de página cuentan la portada como página 1.",
+    "positions": {
+      "wealthTax": {
+        "value": 2,
+        "evidence": "Mayor gravamen a grandes fortunas.",
+        "locator": "PDF p. 14"
+      },
+      "rentCap": {
+        "value": 2,
+        "evidence": "Regulación de precios y actualización limitada.",
+        "locator": "PDF p. 5"
+      },
+      "workWeek": {
+        "value": 2,
+        "evidence": "32 horas sin rebaja salarial.",
+        "locator": "PDF p. 6"
+      },
+      "nuclear": {
+        "value": -2,
+        "evidence": "Conserva el calendario de cierre.",
+        "locator": "PDF p. 15"
+      },
+      "renewables": {
+        "value": 2,
+        "evidence": "Despliegue renovable rápido con participación comunitaria.",
+        "locator": "PDF p. 15"
+      },
+      "transport": {
+        "value": 2,
+        "evidence": "Mantiene y amplía bonos subvencionados.",
+        "locator": "PDF p. 9"
+      },
+      "migration": {
+        "value": 2,
+        "evidence": "Regularización accesible, estable y efectiva.",
+        "locator": "PDF p. 20"
+      },
+      "decentralisation": {
+        "value": 2,
+        "evidence": "Transferencias pendientes y nuevas competencias plenas.",
+        "locator": "PDF p. 24"
+      },
+      "language": {
+        "value": 2,
+        "evidence": "Atención estatal garantizada en euskera.",
+        "locator": "PDF p. 25"
+      },
+      "pensions": {
+        "value": 2,
+        "evidence": "Actualización anual vinculada al IPC.",
+        "locator": "PDF p. 7"
+      },
+      "euthanasia": {
+        "value": 2,
+        "evidence": "Amplía y protege la prestación.",
+        "locator": "PDF p. 10"
+      },
+      "security": {
+        "value": 2,
+        "evidence": "Sustituye disposiciones restrictivas de libertades.",
+        "locator": "PDF p. 22"
+      },
+      "defence": {
+        "value": -2,
+        "evidence": "Rechaza aumentar el gasto militar.",
+        "locator": "PDF p. 28"
+      }
+    }
+  },
+  {
+    "id": "pnv",
+    "name": "Euzko Alderdi Jeltzalea–Partido Nacionalista Vasco",
+    "shortName": "EAJ-PNV",
+    "color": "#16804b",
+    "territory": "País Vasco",
+    "programUrl": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n",
+    "sourceTitle": "Programa elecciones generales 2026 · Defendemos Euskadi",
+    "status": "reviewed",
+    "documentKind": "full",
+    "note": "Documento oficial de 43 páginas. Solo se codifican correspondencias expresas con las preguntas. Un salario mínimo vasco superior al estatal se considera apoyo parcial, no promesa de aumento estatal. Los números de página cuentan la portada como página 1.",
+    "positions": {
+      "minimumWage": {
+        "value": 1,
+        "evidence": "Mínimo vasco superior al estatal.",
+        "locator": "PDF p. 9"
+      },
+      "renewables": {
+        "value": 1,
+        "evidence": "Agiliza autoconsumo y generación próxima.",
+        "locator": "PDF p. 16"
+      },
+      "gender": {
+        "value": 2,
+        "evidence": "Aplica íntegramente el pacto estatal.",
+        "locator": "PDF p. 26"
+      },
+      "migration": {
+        "value": 1,
+        "evidence": "Facilita regularización con requisitos legales.",
+        "locator": "PDF p. 25"
+      },
+      "decentralisation": {
+        "value": 2,
+        "evidence": "Culmina todas las transferencias pendientes.",
+        "locator": "PDF p. 38"
+      },
+      "pensions": {
+        "value": 2,
+        "evidence": "Mantiene su actualización mediante IPC.",
+        "locator": "PDF p. 31"
+      },
+      "security": {
+        "value": 1,
+        "evidence": "Reforma restricciones desproporcionadas de seguridad ciudadana.",
+        "locator": "PDF p. 27 · apartado 3.5, propuesta 02"
+      }
+    }
+  },
+  {
+    "id": "bng",
+    "name": "Bloque Nacionalista Galego",
+    "shortName": "BNG",
+    "color": "#76b9e1",
+    "territory": "Galicia",
+    "programUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceTitle": "29N · Xerais 2026 · Programa electoral",
+    "status": "reviewed",
+    "documentKind": "full",
+    "note": "Documento oficial de 91 páginas en gallego. Paráfrasis en castellano; selección parcial de propuestas. La ayuda al transporte juvenil y el fomento renovable se codifican como apoyos parciales. Los números de página cuentan la portada como página 1.",
+    "positions": {
+      "wealthTax": {
+        "value": 2,
+        "evidence": "Blindaje fiscal de grandes fortunas.",
+        "locator": "PDF p. 44"
+      },
+      "rentCap": {
+        "value": 2,
+        "evidence": "Precios del alquiler limitados legalmente.",
+        "locator": "PDF p. 12"
+      },
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Financiación permanente del alquiler público.",
+        "locator": "PDF p. 12"
+      },
+      "workWeek": {
+        "value": 2,
+        "evidence": "Reducción sin disminución de salario.",
+        "locator": "PDF pp. 6 y 15"
+      },
+      "minimumWage": {
+        "value": 2,
+        "evidence": "Aumento hasta referencia salarial europea.",
+        "locator": "PDF p. 15"
+      },
+      "publicHealth": {
+        "value": 2,
+        "evidence": "Eleva inversión sanitaria por habitante.",
+        "locator": "PDF p. 37"
+      },
+      "schoolChoice": {
+        "value": -2,
+        "evidence": "Supresión progresiva de los conciertos.",
+        "locator": "PDF p. 35"
+      },
+      "renewables": {
+        "value": 1,
+        "evidence": "Fomento renovable con planificación territorial.",
+        "locator": "PDF p. 55"
+      },
+      "transport": {
+        "value": 1,
+        "evidence": "Bonificaciones para menores de treinta.",
+        "locator": "PDF p. 86"
+      },
+      "lgbt": {
+        "value": 2,
+        "evidence": "Autodeterminación también para menores trans.",
+        "locator": "PDF p. 29"
+      },
+      "migration": {
+        "value": 2,
+        "evidence": "Facilita regularización y evita explotación.",
+        "locator": "PDF pp. 22 y 23"
+      },
+      "decentralisation": {
+        "value": 2,
+        "evidence": "Nuevas transferencias legislativas y ejecutivas.",
+        "locator": "PDF pp. 9 y 10"
+      },
+      "referendum": {
+        "value": 2,
+        "evidence": "Reforma legal para referendos autodeterministas.",
+        "locator": "PDF p. 32"
+      },
+      "rural": {
+        "value": 1,
+        "evidence": "Mejora servicios y conectividad rural.",
+        "locator": "PDF p. 85"
+      },
+      "pensions": {
+        "value": 2,
+        "evidence": "Revalorización anual según IPC real.",
+        "locator": "PDF p. 18"
+      },
+      "security": {
+        "value": 2,
+        "evidence": "Eliminación íntegra de legislación restrictiva.",
+        "locator": "PDF p. 30"
+      },
+      "defence": {
+        "value": -2,
+        "evidence": "Rechaza el incremento presupuestario militar.",
+        "locator": "PDF p. 90"
+      }
+    }
+  },
+  {
+    "id": "cc",
+    "name": "Coalición Canaria–Municipalistas Primero Canarias",
+    "shortName": "CC–1 CAN",
+    "color": "#e9c52b",
+    "territory": "Canarias",
+    "programUrl": "https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf",
+    "sourceTitle": "Defiende Canarias · 29 de noviembre de 2026",
+    "status": "reviewed",
+    "documentKind": "advance",
+    "note": "Documento oficial conjunto de diez causas y cien acciones que se describe como bases del programa común abiertas a aportaciones. Se utilizan sus puntos numerados porque la extracción del PDF no conserva una paginación verificable. Cobertura temática limitada.",
+    "positions": {
+      "publicHealth": {
+        "value": 2,
+        "evidence": "Financiación adicional por sobrecostes sanitarios.",
+        "locator": "Puntos 10 y 12"
+      },
+      "gender": {
+        "value": 2,
+        "evidence": "Financia prevención y protección específicas.",
+        "locator": "Punto 17"
+      },
+      "renewables": {
+        "value": 1,
+        "evidence": "Promueve autoconsumo colectivo y renovables.",
+        "locator": "Puntos 58 y 61"
+      },
+      "decentralisation": {
+        "value": 2,
+        "evidence": "Completa transferencias y amplía gestión.",
+        "locator": "Puntos 1 y 52"
+      },
+      "rural": {
+        "value": 1,
+        "evidence": "Servicios e inversiones para municipios rurales.",
+        "locator": "Punto 74"
+      }
+    }
+  },
+  {
+    "id": "upn",
+    "name": "Unión del Pueblo Navarro en coalición con el Partido Popular",
+    "shortName": "UPN–PP",
+    "color": "#286dc0",
+    "territory": "Navarra",
+    "programUrl": "https://www.upn.org/",
+    "sourceTitle": "Portal de UPN · programa conjunto 29N pendiente",
+    "status": "pending",
+    "documentKind": null,
+    "note": "No se ha verificado un programa conjunto de UPN–PP para 2026. No se imputan automáticamente las posiciones de PP a esta coalición ni las del programa de UPN de 2023.",
+    "positions": {}
+  },
+  {
+    "id": "compromis",
+    "name": "Compromís: Front Valencià",
+    "shortName": "Compromís",
+    "color": "#ed6b28",
+    "territory": "Comunidad Valenciana",
+    "programUrl": "https://frontvalencia.org/programa-compromis-front-valencia.pdf",
+    "sourceTitle": "Compromís–Front Valencià · Programa de las generales 2026",
+    "status": "reviewed",
+    "documentKind": "full",
+    "note": "Programa original de la coalición de 57 páginas, en valenciano. Codificación parcial y paráfrasis en castellano. Los números de página cuentan la portada como página 1.",
+    "positions": {
+      "wealthTax": {
+        "value": 2,
+        "evidence": "Mantiene y amplía gravamen patrimonial.",
+        "locator": "PDF p. 17"
+      },
+      "rentCap": {
+        "value": 2,
+        "evidence": "Control municipal efectivo del alquiler.",
+        "locator": "PDF p. 5"
+      },
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Amplía parque y bolsa pública arrendaticia.",
+        "locator": "PDF pp. 5 y 42"
+      },
+      "workWeek": {
+        "value": 2,
+        "evidence": "32 horas sin disminución salarial.",
+        "locator": "PDF p. 7"
+      },
+      "minimumWage": {
+        "value": 2,
+        "evidence": "Aumento conforme referencia salarial europea.",
+        "locator": "PDF p. 7"
+      },
+      "publicHealth": {
+        "value": 2,
+        "evidence": "Amplía financiación sanitaria y salud mental.",
+        "locator": "PDF p. 9"
+      },
+      "schoolChoice": {
+        "value": -1,
+        "evidence": "Concertada subsidiaria de la pública.",
+        "locator": "PDF p. 10"
+      },
+      "tuition": {
+        "value": 1,
+        "evidence": "Rebaja tasas según recursos económicos.",
+        "locator": "PDF p. 16"
+      },
+      "nuclear": {
+        "value": -2,
+        "evidence": "Cierre sin aceptar nuevas prórrogas.",
+        "locator": "PDF p. 27"
+      },
+      "renewables": {
+        "value": 2,
+        "evidence": "Agiliza permisos y aceleración renovable.",
+        "locator": "PDF p. 27"
+      },
+      "transport": {
+        "value": 1,
+        "evidence": "Aportación estatal para tarifas accesibles.",
+        "locator": "PDF p. 12"
+      },
+      "animals": {
+        "value": 2,
+        "evidence": "Suprime ayudas a espectáculos taurinos.",
+        "locator": "PDF p. 40"
+      },
+      "gender": {
+        "value": 2,
+        "evidence": "Refuerza justicia especializada y protección.",
+        "locator": "PDF p. 47"
+      },
+      "abortion": {
+        "value": 2,
+        "evidence": "Acceso gratuito en sanidad pública.",
+        "locator": "PDF p. 46"
+      },
+      "migration": {
+        "value": 2,
+        "evidence": "Regulariza residentes y facilita documentación.",
+        "locator": "PDF p. 56"
+      },
+      "decentralisation": {
+        "value": 2,
+        "evidence": "Transfiere nuevas competencias con recursos.",
+        "locator": "PDF p. 52"
+      },
+      "language": {
+        "value": 2,
+        "evidence": "Plurilingüismo en función pública estatal.",
+        "locator": "PDF p. 38"
+      },
+      "rural": {
+        "value": 2,
+        "evidence": "Garantiza servicios básicos en municipios pequeños.",
+        "locator": "PDF p. 53"
+      },
+      "security": {
+        "value": 2,
+        "evidence": "Deroga la ley de seguridad.",
+        "locator": "PDF p. 38"
+      },
+      "europe": {
+        "value": 2,
+        "evidence": "Más competencias parlamentarias y decisiones comunes.",
+        "locator": "PDF pp. 55 y 56"
+      }
+    }
+  }
+]

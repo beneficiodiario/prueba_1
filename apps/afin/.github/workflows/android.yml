@@ -1,0 +1,69 @@
+name: Android
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      signed_release:
+        description: Generar un AAB firmado usando los secretos de este repositorio
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager 'platforms;android-36' 'build-tools;36.0.0'
+      - run: npm ci
+      - run: npm run check && npm test && npm run android:sync
+      - run: chmod +x android/gradlew
+      - name: APK de prueba y análisis Android
+        working-directory: android
+        run: ./gradlew assembleDebug lintRelease --no-daemon
+      - uses: actions/upload-artifact@v4
+        with:
+          name: afin-debug
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+      - name: Preparar firma privada
+        if: github.event_name == 'workflow_dispatch' && inputs.signed_release
+        env:
+          KEYSTORE_BASE64: ${{ secrets.AFIN_KEYSTORE_BASE64 }}
+          STORE_PASSWORD: ${{ secrets.AFIN_STORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.AFIN_KEY_ALIAS }}
+        run: |
+          test -n "$KEYSTORE_BASE64" && test -n "$STORE_PASSWORD" && test -n "$KEY_ALIAS"
+          printf '%s' "$KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/afin-upload.p12"
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const p=process.env;
+          const escape=s=>s.replaceAll('\\','\\\\').replaceAll('\n','\\n').replaceAll('\r','\\r').replaceAll('=','\\=').replaceAll(':','\\:');
+          fs.writeFileSync(p.RUNNER_TEMP+'/afin-signing.properties',`storeFile=${escape(p.RUNNER_TEMP+'/afin-upload.p12')}\nstorePassword=${escape(p.STORE_PASSWORD)}\nkeyAlias=${escape(p.KEY_ALIAS)}\nkeyPassword=${escape(p.STORE_PASSWORD)}\n`,{mode:0o600});
+          JS
+      - name: AAB firmado
+        if: github.event_name == 'workflow_dispatch' && inputs.signed_release
+        working-directory: android
+        env:
+          AFIN_SIGNING_PROPERTIES: ${{ runner.temp }}/afin-signing.properties
+        run: ./gradlew bundleRelease --no-daemon
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'workflow_dispatch' && inputs.signed_release
+        with:
+          name: afin-release
+          path: |
+            android/app/build/outputs/bundle/release/app-release.aab
+            android/app/build/outputs/mapping/release/mapping.txt
+      - name: Limpiar firma temporal
+        if: always()
+        run: rm -f "$RUNNER_TEMP/afin-upload.p12" "$RUNNER_TEMP/afin-signing.properties"

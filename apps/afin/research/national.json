@@ -1,0 +1,528 @@
+[
+  {
+    "id": "pp",
+    "name": "Partido Popular",
+    "shortName": "PP",
+    "color": "#0076CE",
+    "territory": "Estatal",
+    "programUrl": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf",
+    "sourceTitle": "La Reconstrucción Nacional · Generales 29N 2026",
+    "election": "2026-11-29",
+    "documentKind": "full",
+    "status": "reviewed",
+    "note": "PDF oficial de 64 páginas recuperado y revisado temáticamente. No se atribuyen propuestas por ideología o por programas anteriores. El apoyo sanitario codificado es territorial y el fiscal de primera vivienda se limita a jóvenes. Páginas físicas, incluida portada.",
+    "positions": {
+      "rentCap": {
+        "value": -2,
+        "evidence": "Suprime zonas tensionadas e índice de alquiler.",
+        "locator": "PDF p. 42 · medida 145"
+      },
+      "schoolChoice": {
+        "value": 2,
+        "evidence": "Mantiene y financia conciertos donde exista demanda.",
+        "locator": "PDF p. 51 · medida 212"
+      },
+      "nuclear": {
+        "value": 2,
+        "evidence": "Prolonga las centrales y elimina el cierre previsto.",
+        "locator": "PDF p. 54 · medida 228"
+      },
+      "rural": {
+        "value": 2,
+        "evidence": "Acerca servicios mediante centros comarcales y atención móvil.",
+        "locator": "PDF p. 32 · medida 99"
+      },
+      "gender": {
+        "value": 2,
+        "evidence": "Mantiene órganos especializados y el pacto estatal.",
+        "locator": "PDF p. 17 · medida 28"
+      },
+      "lgbt": {
+        "value": -2,
+        "evidence": "Elimina la autodeterminación registral del sexo.",
+        "locator": "PDF p. 35 · medida 115"
+      },
+      "migration": {
+        "value": -1,
+        "evidence": "Prohíbe regularizaciones masivas y limita el arraigo.",
+        "locator": "PDF p. 19 · medida 42"
+      },
+      "border": {
+        "value": 2,
+        "evidence": "Refuerza fronteras y acelera devoluciones y retornos.",
+        "locator": "PDF pp. 18–19 · medidas 36–45"
+      },
+      "language": {
+        "value": -1,
+        "evidence": "Restringe el Congreso; conserva cooficialidad en Senado.",
+        "locator": "PDF p. 37 · medida 127"
+      },
+      "pensions": {
+        "value": 2,
+        "evidence": "Garantiza subidas anuales conforme al IPC.",
+        "locator": "PDF p. 34 · medida 108"
+      },
+      "publicHealth": {
+        "value": 1,
+        "evidence": "Financiación sanitaria específica para Ceuta y Melilla.",
+        "locator": "PDF p. 54 · medida 227"
+      },
+      "incomeTax": {
+        "value": 2,
+        "evidence": "Baja rentas medias y bajas; deflacta tarifas.",
+        "locator": "PDF p. 47 · medidas 177–178"
+      },
+      "firstHomeTax": {
+        "value": 1,
+        "evidence": "Rebaja IVA e ITP para compradores jóvenes.",
+        "locator": "PDF p. 43 · medida 153"
+      },
+      "squatting": {
+        "value": 2,
+        "evidence": "Desalojo judicial en un plazo de 48 horas.",
+        "locator": "PDF p. 43 · medida 157"
+      },
+      "bureaucracy": {
+        "value": 2,
+        "evidence": "Evita permisos duplicados para operar entre comunidades.",
+        "locator": "PDF p. 32 · medida 94"
+      },
+      "repeatCrime": {
+        "value": 1,
+        "evidence": "Amplía prisión permanente para violadores reincidentes.",
+        "locator": "PDF p. 17 · medida 30"
+      }
+    }
+  },
+  {
+    "id": "psoe",
+    "name": "Partido Socialista Obrero Español",
+    "shortName": "PSOE",
+    "color": "#E30613",
+    "territory": "Estatal",
+    "programUrl": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26-1.pdf",
+    "sourceTitle": "La fuerza de seguir avanzando · Generales 29N 2026",
+    "election": "2026-11-29",
+    "documentKind": "full",
+    "status": "reviewed",
+    "note": "Posturas verificadas en la edición HTML íntegra de la web oficial de campaña. No se atribuyen posturas a los temas omitidos.",
+    "positions": {
+      "rentCap": {
+        "value": 2,
+        "evidence": "Congelar rentas superiores al índice en mercados tensionados.",
+        "locator": "Compromiso 62 · Más ayudas, estabilidad y protección",
+        "sourceUrl": "https://lafuerzadelagente.es/programa/vivienda"
+      },
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Ampliar permanentemente vivienda pública y alquiler estatal asequible.",
+        "locator": "Compromisos 39–42 · Recursos públicos históricos",
+        "sourceUrl": "https://lafuerzadelagente.es/programa/vivienda"
+      },
+      "workWeek": {
+        "value": 2,
+        "evidence": "Completar 37,5 horas semanales manteniendo el salario.",
+        "locator": "Compromiso 108 · Trabajo digno",
+        "sourceUrl": "https://lafuerzadelagente.es/programa/salarios-y-trabajo"
+      },
+      "minimumWage": {
+        "value": 2,
+        "evidence": "SMI superior al 60 % del salario medio.",
+        "locator": "Compromiso 87 · Coste de vida y poder adquisitivo",
+        "sourceUrl": "https://lafuerzadelagente.es/programa/salarios-y-trabajo"
+      },
+      "publicHealth": {
+        "value": 2,
+        "evidence": "Consolidar financiación sanitaria pública cercana al 7 % PIB.",
+        "locator": "Compromiso 136 · La sanidad pública, la gran prioridad",
+        "sourceUrl": "https://lafuerzadelagente.es/programa/estado-del-bienestar"
+      },
+      "nuclear": {
+        "value": -2,
+        "evidence": "Conservar el calendario de cierre nuclear hasta 2035.",
+        "locator": "Compromiso 240 · Energía renovable",
+        "sourceUrl": "https://lafuerzadelagente.es/programa/cambio-climatico"
+      },
+      "renewables": {
+        "value": 2,
+        "evidence": "Impulsar renovables hasta el 81 % eléctrico en 2030.",
+        "locator": "Compromiso 234 · Energía renovable",
+        "sourceUrl": "https://lafuerzadelagente.es/programa/cambio-climatico"
+      },
+      "transport": {
+        "value": 2,
+        "evidence": "Financiación estable y tarifas asequibles del transporte público.",
+        "locator": "Compromisos 280–281 · Movilidad sostenible",
+        "sourceUrl": "https://lafuerzadelagente.es/programa/cambio-climatico"
+      },
+      "gender": {
+        "value": 2,
+        "evidence": "Ampliar la ley integral contra la violencia de género.",
+        "locator": "Compromiso 350 · Iguales también en la red",
+        "sourceUrl": "https://lafuerzadelagente.es/programa/igualdad-de-las-mujeres"
+      },
+      "abortion": {
+        "value": 2,
+        "evidence": "Blindaje constitucional del aborto y acceso sanitario efectivo.",
+        "locator": "Compromisos 327–328 · Derechos sexuales y reproductivos",
+        "sourceUrl": "https://lafuerzadelagente.es/programa/igualdad-de-las-mujeres"
+      },
+      "rural": {
+        "value": 2,
+        "evidence": "Servicios básicos accesibles con independencia del lugar residencial.",
+        "locator": "Compromiso 275 · Un mundo rural conectado y con futuro",
+        "sourceUrl": "https://lafuerzadelagente.es/programa/cambio-climatico"
+      },
+      "pensions": {
+        "value": 2,
+        "evidence": "Garantizar poder adquisitivo mediante revalorización vinculada al IPC.",
+        "locator": "Pensiones · compromisos 98–100",
+        "sourceUrl": "https://lafuerzadelagente.es/programa/salarios-y-trabajo"
+      },
+      "euthanasia": {
+        "value": 2,
+        "evidence": "Garantizar el ejercicio efectivo de la eutanasia vigente.",
+        "locator": "Compromiso 147 · La sanidad pública, la gran prioridad",
+        "sourceUrl": "https://lafuerzadelagente.es/programa/estado-del-bienestar"
+      },
+      "security": {
+        "value": 2,
+        "evidence": "Sustituir la ley de 2015 protegiendo manifestación y derechos.",
+        "locator": "Compromiso 431 · Fomentar una seguridad ciudadana democrática",
+        "sourceUrl": "https://lafuerzadelagente.es/programa/democracia-y-derechos"
+      },
+      "europe": {
+        "value": 2,
+        "evidence": "Profundizar en una unión política y fiscal europea.",
+        "locator": "Compromisos 472–473 · Unión Europea más integrada",
+        "sourceUrl": "https://lafuerzadelagente.es/programa/espana-en-el-mundo"
+      }
+    }
+  },
+  {
+    "id": "vox",
+    "name": "VOX",
+    "shortName": "VOX",
+    "color": "#63BE21",
+    "territory": "Estatal",
+    "programUrl": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf",
+    "sourceTitle": "Es sentido común · Generales 29N 2026",
+    "election": "2026-11-29",
+    "documentKind": "full",
+    "status": "reviewed",
+    "note": "PDF oficial completo recuperado, 66 páginas, con revisión temática. Sanidad y transporte son correspondencias parciales: inversiones concretas y ayudas insulares. En alquiler, la oposición parcial se deriva de la derogación expresa de la Ley de Vivienda; no se atribuyen propuestas de 2023 ni del silencio. Páginas físicas.",
+    "positions": {
+      "incomeTax": {
+        "value": 2,
+        "evidence": "Reduce y simplifica los tipos del IRPF.",
+        "locator": "PDF p. 9 · medida 1"
+      },
+      "firstHomeTax": {
+        "value": 2,
+        "evidence": "Suprime IVA e ITP de primera vivienda.",
+        "locator": "PDF p. 24 · medida 34"
+      },
+      "squatting": {
+        "value": 2,
+        "evidence": "Ordena desalojar las ocupaciones en veinticuatro horas.",
+        "locator": "PDF p. 24 · medida 31"
+      },
+      "nationalPriority": {
+        "value": 2,
+        "evidence": "Prioriza españoles en ayudas y prestaciones sociales.",
+        "locator": "PDF p. 19 · medida 18"
+      },
+      "bureaucracy": {
+        "value": 2,
+        "evidence": "Reduce licencias mediante declaración responsable y mercado único.",
+        "locator": "PDF pp. 27–28 · medidas 36–42"
+      },
+      "nuclear": {
+        "value": 2,
+        "evidence": "Deroga el cierre y mantiene las centrales actuales.",
+        "locator": "PDF p. 12 · medida 8"
+      },
+      "migration": {
+        "value": -2,
+        "evidence": "Impide regularizar entradas ilegales y suprime arraigo.",
+        "locator": "PDF p. 15 · medidas 9–11"
+      },
+      "border": {
+        "value": 2,
+        "evidence": "Refuerza fronteras y promueve deportaciones y retornos.",
+        "locator": "PDF pp. 15–16 · medidas 9–17"
+      },
+      "gender": {
+        "value": -2,
+        "evidence": "Sustituye las actuales leyes específicas de género.",
+        "locator": "PDF p. 30 · medida 47"
+      },
+      "water": {
+        "value": 2,
+        "evidence": "Propone interconectar todas las cuencas hidrográficas.",
+        "locator": "PDF pp. 61–62 · medida 115"
+      },
+      "rural": {
+        "value": 2,
+        "evidence": "Refuerza atención primaria rural y conexiones ferroviarias.",
+        "locator": "PDF pp. 37 y 61 · medidas 61 y 113"
+      },
+      "publicHealth": {
+        "value": 1,
+        "evidence": "Prevé inversiones sanitarias directas y mejores retribuciones.",
+        "locator": "PDF pp. 37–38 · medidas 63 y 65"
+      },
+      "transport": {
+        "value": 1,
+        "evidence": "Mejora ayudas al transporte de los archipiélagos.",
+        "locator": "PDF p. 10 · medida 4"
+      },
+      "rentCap": {
+        "value": -1,
+        "evidence": "Deroga la ley que regula la intervención residencial.",
+        "locator": "PDF p. 23 · medida 30"
+      }
+    }
+  },
+  {
+    "id": "fa",
+    "name": "Frente Amplio",
+    "shortName": "F. Amplio",
+    "color": "#F24A32",
+    "territory": "Estatal",
+    "programUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceTitle": "Un programa como una casa · Generales 29N 2026",
+    "election": "2026-11-29",
+    "documentKind": "full",
+    "status": "reviewed",
+    "note": "Codificación parcial de medidas verificadas del programa de 2026. No se traslada el programa de Sumar de 2023.",
+    "positions": {
+      "wealthTax": {
+        "value": 2,
+        "evidence": "Incrementar los impuestos sobre los grandes patrimonios.",
+        "locator": "Impuesto a los ultrarricos",
+        "sourceUrl": "https://frenteamplio.info/programa/todas/"
+      },
+      "rentCap": {
+        "value": 2,
+        "evidence": "Topar alquileres según los ingresos de los hogares.",
+        "locator": "Introducción · primera transformación"
+      },
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Construir 1,5 millones de viviendas públicas en alquiler.",
+        "locator": "Introducción · primera transformación"
+      },
+      "workWeek": {
+        "value": 2,
+        "evidence": "Reducir la semana hasta 32 horas manteniendo salarios.",
+        "locator": "Introducción · segunda transformación"
+      },
+      "minimumWage": {
+        "value": 2,
+        "evidence": "Elevar progresivamente el SMI con un suelo legal.",
+        "locator": "4.1 · Subir los salarios · PDF p. 51"
+      },
+      "publicHealth": {
+        "value": 2,
+        "evidence": "Establecer financiación sanitaria mínima del 8 % PIB.",
+        "locator": "Introducción · tercera transformación · PDF p. 7"
+      },
+      "tuition": {
+        "value": 2,
+        "evidence": "Reducir los precios universitarios hasta alcanzar la gratuidad.",
+        "locator": "2.5 · Sostenibilidad financiera y plantillas universitarias · PDF p. 33"
+      },
+      "nuclear": {
+        "value": -2,
+        "evidence": "Cumplir el calendario de cierre de centrales nucleares.",
+        "locator": "5.1 · Energía limpia · PDF p. 64"
+      },
+      "renewables": {
+        "value": 2,
+        "evidence": "Acelerar renovables con planificación territorial y garantías ambientales.",
+        "locator": "5.1 · Renovables justas y respetuosas · PDF p. 61"
+      },
+      "animals": {
+        "value": 2,
+        "evidence": "Suprimir las subvenciones estatales directas e indirectas taurinas.",
+        "locator": "5.7 · Acabar con la financiación pública de la tauromaquia · PDF p. 76"
+      },
+      "lgbt": {
+        "value": 2,
+        "evidence": "Aplicar la Ley Trans y garantizar la autodeterminación.",
+        "locator": "15.1–15.2 · Despliegue de la Ley Trans · PDF p. 123"
+      },
+      "abortion": {
+        "value": 2,
+        "evidence": "Garantizar abortos en centros públicos de todos los territorios.",
+        "locator": "2.4 · Garantía del aborto (IVE) · PDF p. 28"
+      },
+      "migration": {
+        "value": 2,
+        "evidence": "Crear una regularización administrativa estable, permanente y reglada.",
+        "locator": "16.2 · Reforma de extranjería · PDF p. 126"
+      },
+      "language": {
+        "value": 2,
+        "evidence": "Lenguas cooficiales en las relaciones con instituciones estatales.",
+        "locator": "18.1 · Derechos lingüísticos · PDF p. 141"
+      },
+      "republic": {
+        "value": 2,
+        "evidence": "Avanzar hacia una república federal con jefatura elegida.",
+        "locator": "18.1 · Hacia una República Federal · PDF p. 140"
+      },
+      "euthanasia": {
+        "value": 2,
+        "evidence": "Reconocer el derecho a eutanasia y suicidio asistido.",
+        "locator": "18.8 · Laicidad del Estado · PDF p. 150"
+      },
+      "transport": {
+        "value": 2,
+        "evidence": "Ampliar descuentos, abonos y financiación del transporte público.",
+        "locator": "5.2 · PDF p. 65"
+      },
+      "pensions": {
+        "value": 2,
+        "evidence": "Blindar constitucionalmente la revalorización automática con el IPC.",
+        "locator": "4.3 · PDF pp. 57–58"
+      },
+      "security": {
+        "value": 2,
+        "evidence": "Derogar completamente la ley de seguridad ciudadana vigente.",
+        "locator": "18.3 · PDF p. 142"
+      },
+      "rural": {
+        "value": 2,
+        "evidence": "Garantizar servicios básicos rurales a menos de treinta minutos.",
+        "locator": "9.1 · PDF p. 97"
+      },
+      "border": {
+        "value": -1,
+        "evidence": "Cerrar internamientos y derogar el rechazo en frontera.",
+        "locator": "16.2 · PDF pp. 126–127"
+      },
+      "defence": {
+        "value": -2,
+        "evidence": "Reducir efectivamente las partidas destinadas al gasto militar.",
+        "locator": "17.1 · PDF p. 130"
+      },
+      "schoolChoice": {
+        "value": -2,
+        "evidence": "Destinar progresivamente todos los fondos educativos a centros públicos.",
+        "locator": "2.5 · PDF p. 31"
+      },
+      "water": {
+        "value": -1,
+        "evidence": "Moratoria de trasvases que agraven la sobreexplotación hídrica.",
+        "locator": "5.6 · PDF p. 74"
+      },
+      "europe": {
+        "value": 1,
+        "evidence": "Más mayorías europeas con excepciones en seguridad y defensa.",
+        "locator": "17.3 · PDF p. 136"
+      },
+      "gender": {
+        "value": 2,
+        "evidence": "Ampliar por ley la protección contra violencia vicaria.",
+        "locator": "2.7 · PDF p. 38"
+      }
+    }
+  },
+  {
+    "id": "podemos",
+    "name": "Podemos",
+    "shortName": "Podemos",
+    "color": "#713783",
+    "territory": "Estatal",
+    "programUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceTitle": "Así de básico: paz, casa y trabajo · Generales 29N 2026",
+    "election": "2026-11-29",
+    "documentKind": "full",
+    "status": "reviewed",
+    "note": "Codificación parcial de propuestas verificadas en el PDF oficial de 141 páginas. Las páginas indicadas son físicas, contando la portada.",
+    "positions": {
+      "wealthTax": {
+        "value": 2,
+        "evidence": "Convertir el impuesto de grandes fortunas en permanente.",
+        "locator": "PDF p. 17 · fiscalidad de patrimonio"
+      },
+      "minimumWage": {
+        "value": 2,
+        "evidence": "Elevar el salario mínimo mensual a 1.800 euros.",
+        "locator": "Medida 111 · PDF p. 41"
+      },
+      "schoolChoice": {
+        "value": -2,
+        "evidence": "Eliminar progresivamente conciertos y ampliar la red pública.",
+        "locator": "Medida 279 · PDF p. 79"
+      },
+      "tuition": {
+        "value": 2,
+        "evidence": "Alcanzar progresivamente la gratuidad total de universidad pública.",
+        "locator": "Medida 294 · PDF p. 85"
+      },
+      "nuclear": {
+        "value": -2,
+        "evidence": "Cumplir el cierre nuclear y rechazar prórrogas indefinidas.",
+        "locator": "Medida 339 · PDF p. 103"
+      },
+      "transport": {
+        "value": 2,
+        "evidence": "Hacer gratuito todo el transporte público de viajeros.",
+        "locator": "Medida 40 · PDF p. 19"
+      },
+      "workWeek": {
+        "value": 2,
+        "evidence": "Reducir jornada a treinta horas manteniendo salarios.",
+        "locator": "Medida 113 · PDF p. 41"
+      },
+      "publicHealth": {
+        "value": 2,
+        "evidence": "Incrementar financiación sanitaria hasta 2.900 euros por habitante.",
+        "locator": "Medida 302 · PDF p. 89"
+      },
+      "animals": {
+        "value": 2,
+        "evidence": "Eliminar ayudas y promoción de espectáculos con maltrato.",
+        "locator": "Medida 404 · PDF p. 124"
+      },
+      "migration": {
+        "value": 2,
+        "evidence": "Instaurar regularización permanente basada en arraigo social.",
+        "locator": "Medida 210 · PDF p. 67"
+      },
+      "rentCap": {
+        "value": 2,
+        "evidence": "Reducir legalmente alquileres, incluidos los contratos vigentes.",
+        "locator": "Medida 1 · PDF p. 8"
+      },
+      "publicHousing": {
+        "value": 2,
+        "evidence": "Ampliar significativamente el parque público de alquiler social.",
+        "locator": "Medidas 9 y 16 · PDF p. 10"
+      },
+      "security": {
+        "value": 2,
+        "evidence": "Derogar la ley mordaza y garantizar la manifestación.",
+        "locator": "Medida 427 · PDF p. 133"
+      },
+      "republic": {
+        "value": 2,
+        "evidence": "Aprobar una constitución republicana con participación ciudadana.",
+        "locator": "Medida 406 · PDF p. 128"
+      },
+      "renewables": {
+        "value": 2,
+        "evidence": "Financiar ambiciosamente instalaciones solares y comunidades energéticas.",
+        "locator": "Medida 332 · PDF p. 100"
+      },
+      "defence": {
+        "value": -2,
+        "evidence": "Reorientar gasto militar hacia cooperación y seguridad colectiva.",
+        "locator": "Medida 77 · PDF p. 29"
+      }
+    }
+  }
+]
